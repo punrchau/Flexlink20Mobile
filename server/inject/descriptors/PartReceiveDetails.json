@@ -1,0 +1,342 @@
+{
+  "type": "object",
+  "properties": {
+    "partInfo": {
+      "type": "object",
+      "properties": {
+        "info": {
+          "type": "object",
+          "properties": {
+            "PRNumber": {
+              "type": "string",
+              "selector": "#PRNumber",
+              "control": "text"
+            },
+            "PO": {
+              "type": "string",
+              "selector": {
+                "fn": "function(node){return node.options[1].text}",
+                "selector": "[name='ddlPONumbers']"
+              },
+              "control": "property"
+            },
+            "remarks": {
+              "type": "string",
+              "control": "text",
+              "selector": "#Remark"
+            },
+            "PRDate": {
+              "type": "date",
+              "control": "text",
+              "format": "MM/DD/YYYY",
+              "selector": "#PRDate"
+            },
+            "AWBNumber": {
+              "type": "string",
+              "selector": "#AWBNumber",
+              "control": "text"
+            }
+          }
+        },
+        "partDetails": {
+          "type": "array",
+          "selectorAll": "#gdPODParts > div:nth-child(3) > table tr",
+          "items": {
+            "type": "object",
+            "properties": {
+              "editQuantity": {
+                "type": "action",
+                "selector": "td > a",
+                "control": "action.link"
+              },
+              "partNumber": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return node[1].previousSibling}return node[1]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "partDescription": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return node[2].previousSibling}return node[2]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "receiveQty": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return node[3].previousSibling}return node[3]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "shortageQty": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return node[4].previousSibling}return node[4]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "damagedQty": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return node[5].previousSibling}return node[5]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "excessQty": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return node[6].previousSibling}return node[6]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "lostQty": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return node[7].previousSibling}return node[7]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "unitPrice": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return node[8].previousSibling}return node[8]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "totalAmount": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return node[9].previousSibling}return node[9]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "binName": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return node[10].previousSibling}return node[10]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "partID": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return node[11].previousSibling}return node[11]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "alternativePartNumber": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return node[12].previousSibling}return node[12]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "alternativePartID": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return node[13].previousSibling}return node[13]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "alternativeLSmapID": {
+                "type": "string",
+                "selector": {
+                  "fn": "function(node){if(node.length==14){return null}return node[14]}",
+                  "selectorAll": "td"
+                },
+                "control": "property.innerText"
+              },
+              "isEditQuantity": {
+                "type": "boolean",
+                "selector": "td > a",
+                "control": "exists"
+              }
+            }
+          }
+        }
+      }
+    },
+    "partDiscrepancy": {
+      "type": "object",
+      "properties": {
+        "details": {
+          "type": "array",
+          "selectorAll": "#gdUploadDetails > div:nth-child(3) > table tr",
+          "items": {
+            "type": "object",
+            "properties": {
+              "upload": {
+                "type": "action",
+                "control": "action.link",
+                "selector": "td > a"
+              },
+              "partNumber": {
+                "type": "string",
+                "control": "property.innerText",
+                "selector": "td",
+                "selectIndex": 1
+              },
+              "partDescription": {
+                "type": "string",
+                "selector": "td",
+                "control": "property.innerText",
+                "selectIndex": 2
+              },
+              "fileName": {
+                "type": "string",
+                "selector": "td",
+                "control": "property.innerText",
+                "selectIndex": 3
+              },
+              "fileDescription": {
+                "type": "string",
+                "selector": "td",
+                "control": "property.innerHTML",
+                "selectIndex": 4
+              },
+              "fileType": {
+                "type": "string",
+                "selector": "td",
+                "control": "property.innerHTML",
+                "selectIndex": 5
+              },
+              "DateTime": {
+                "type": "string",
+                "selector": "td",
+                "control": "property.innerHTML",
+                "selectIndex": 6
+              },
+              "photoType": {
+                "type": "string",
+                "selector": "td",
+                "control": "property.innerHTML",
+                "selectIndex": 7
+              },
+              "isUpload": {
+                "type": "boolean",
+                "selector": "td > a",
+                "control": "exists"
+              },
+              "selectRecord": {
+                "type": "action",
+                "selector": ".",
+                "control": "action.link"
+              }
+            }
+          }
+        },
+        "download": {
+          "type": "action",
+          "selector": "button",
+          "control": "action.button",
+          "selectContains": "Download"
+        },
+        "delete": {
+          "type": "action",
+          "selector": "button",
+          "control": "action.button",
+          "selectContains": "Delete"
+        },
+        "isDownloadEnabled": {
+          "type": "boolean",
+          "selector": "button",
+          "control": "exists",
+          "selectContains": "Download"
+        }
+      }
+    },
+    "isPartReceiveDetail": {
+      "type": "identifier",
+      "selector": "h2",
+      "control": "exists",
+      "selectContains": "PART RECEIVE DETAIL"
+    },
+    "selectTab": {
+      "type": "array",
+      "selectorAll": "#unitTabs li",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tabName": {
+            "type": "string",
+            "control": "property.innerText",
+            "selector": "a"
+          },
+          "isSelected": {
+            "type": "boolean",
+            "selector": {
+              "fn": "function(node){if(node.getAttribute('class')=='active'){return true}else{if(node.getAttribute('class')=='ng-scope active'){return true}}}",
+              "selector": ""
+            },
+            "control": "exists"
+          },
+          "clickTab": {
+            "type": "action",
+            "selector": "a",
+            "control": "action.link"
+          }
+        }
+      }
+    },
+    "actions": {
+      "type": "object",
+      "properties": {
+        "save": {
+          "type": "action",
+          "selector": "button",
+          "control": "action.button",
+          "selectContains": "Save Receive"
+        },
+        "update": {
+          "type": "action",
+          "selector": "button",
+          "control": "action.button",
+          "selectContains": "Update Inventory"
+        },
+        "cancel": {
+          "type": "action",
+          "selector": "button",
+          "control": "action.button",
+          "selectContains": "Cancel"
+        },
+        "isUpdateDisable": {
+          "type": "boolean",
+          "selector": "button[disabled='disabled']",
+          "control": "exists",
+          "selectContains": "Update Inventory"
+        },
+        "isSaveDisable": {
+          "type": "boolean",
+          "selector": "button[disabled='disabled']",
+          "control": "exists",
+          "selectContains": "Save Receive"
+        }
+      }
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isPartReceiveDetail"
+      ],
+      "screens": [
+        "partreceivedetails"
+      ]
+    }
+  ]
+}

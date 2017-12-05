@@ -1,0 +1,74 @@
+{
+  "id": "app",
+  "name": "Flex Part Management",
+  "startScreen": "app.login",
+  "screens": [
+    {
+      "id": "menu",
+      "name": "menu",
+      "sourceAppId": "_blank",
+      "sourceScreenId": "app.menu"
+    },
+    {
+      "id": "multiselect",
+      "name": "multiselect",
+      "sourceAppId": "_blank",
+      "sourceScreenId": "app.multiselect"
+    },
+    {
+      "id": "login",
+      "name": "Login",
+      "sourceScreenId": "app.login.loginconfident",
+      "sourceAppId": "universaltemplates",
+      "model": "Login"
+    },
+    {
+      "id": "home",
+      "name": "Home",
+      "sourceScreenId": "app.home.homecool",
+      "sourceAppId": "universaltemplates",
+      "model": "Home"
+    },
+    {
+      "id": "partreceivedetails",
+      "name": "Part Receive Details",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank",
+      "model": "PartReceiveDetails"
+    },
+    {
+      "id": "changepartquantity",
+      "name": "Change Part Quantity",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank",
+      "model": "ChangePartQuantity"
+    },
+    {
+      "id": "uploadimage",
+      "name": "Upload Image",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank",
+      "model": "UploadImage"
+    },
+    {
+      "id": "prehomeloadflexlink",
+      "name": "preHome Load Flexlink",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    },
+    {
+      "id": "prehomeloadoem",
+      "name": "preHome Load OEM",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    },
+    {
+      "id": "prehomeloadjobmgmt",
+      "name": "preHome Load Job Mgmt",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    }
+  ],
+  "sourceAppId": "_blank",
+  "sourceScreenId": "app"
+}

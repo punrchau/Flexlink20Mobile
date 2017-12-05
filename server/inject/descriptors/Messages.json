@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "properties": {
+    "validationMsg": {
+      "type": "object",
+      "properties": {
+        "msg": {
+          "type": "string",
+          "control": "property.innerText",
+          "selector": ".content-pane"
+        },
+        "ok": {
+          "type": "action",
+          "selector": ".buttons button[class='btn btn-success']",
+          "control": "action.button"
+        },
+        "isValidationMsg": {
+          "type": "boolean",
+          "control": "exists",
+          "selector": ".buttons button[class='btn btn-success']"
+        }
+      }
+    },
+    "confirmationMsg": {
+      "type": "object",
+      "selector": ".jconfirm-box",
+      "properties": {
+        "msg": {
+          "type": "string",
+          "selector": ".content-pane",
+          "control": "property.innerText"
+        },
+        "ok": {
+          "type": "action",
+          "selector": ".buttons button",
+          "control": "action.button"
+        },
+        "cancel": {
+          "type": "action",
+          "selector": ".buttons button",
+          "control": "action.button",
+          "selectIndex": 1
+        },
+        "isConfirmMsg": {
+          "type": "boolean",
+          "selector": ".buttons button[class='btn btn-danger']",
+          "control": "exists"
+        }
+      }
+    },
+    "isMessages": {
+      "type": "identifier",
+      "selector": ".jconfirm-box",
+      "control": "exists"
+    },
+    "isPartReceiveDetail": {
+      "type": "boolean",
+      "selector": "h2",
+      "control": "exists",
+      "selectContains": "PART RECEIVE DETAIL"
+    },
+    "isChangePartQuantity": {
+      "type": "boolean",
+      "selector": "h4",
+      "control": "exists",
+      "selectContains": "Part Quantity Change"
+    },
+    "isUploadPhoto": {
+      "type": "boolean",
+      "selector": "h3",
+      "control": "exists",
+      "selectContains": "Upload Photo for Damaged Part"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isMessages"
+      ],
+      "event": "messages"
+    }
+  ]
+}

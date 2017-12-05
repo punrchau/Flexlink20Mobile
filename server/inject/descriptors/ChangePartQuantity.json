@@ -1,0 +1,76 @@
+{
+  "type": "object",
+  "properties": {
+    "partNumber": {
+      "type": "string",
+      "selector": "input[ng-model='partReceiveCtrl.partReceiveDetailForPopup.partNumber']",
+      "control": "text"
+    },
+    "orderedQuantity": {
+      "type": "string",
+      "selector": "input[ng-model='partReceiveCtrl.partReceiveDetailForPopup.orderedQuantity']",
+      "control": "text"
+    },
+    "binMaster": {
+      "type": "select",
+      "selector": "select[name='ddlBinMaster']",
+      "control": "select"
+    },
+    "alternativePart": {
+      "type": "select",
+      "selector": "select[name='ddlAlternativePart']",
+      "control": "select"
+    },
+    "receivedQuantity": {
+      "type": "string",
+      "selector": "input[type='number']",
+      "control": "text"
+    },
+    "damagedQuantity": {
+      "type": "string",
+      "selector": "input[type='number']",
+      "control": "text",
+      "selectIndex": 1
+    },
+    "excessQuantity": {
+      "type": "string",
+      "selector": "input[type='number']",
+      "control": "text",
+      "selectIndex": 2
+    },
+    "lostQuantity": {
+      "type": "string",
+      "selector": "input[type='number']",
+      "control": "text",
+      "selectIndex": 3
+    },
+    "update": {
+      "type": "action",
+      "selector": "button",
+      "control": "action.button",
+      "selectContains": "Update Received Quantity"
+    },
+    "close": {
+      "type": "action",
+      "selector": "button",
+      "control": "action.button",
+      "selectContains": "Close"
+    },
+    "isChangePartQuantity": {
+      "type": "identifier",
+      "selector": "h4",
+      "control": "exists",
+      "selectContains": "Part Quantity Change"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isChangePartQuantity"
+      ],
+      "screens": [
+        "changepartquantity"
+      ]
+    }
+  ]
+}

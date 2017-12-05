@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "userName": {
+      "type": "string",
+      "selector": "#okta-signin-username",
+      "control": "text"
+    },
+    "password": {
+      "type": "string",
+      "selector": "#okta-signin-password",
+      "control": "text"
+    },
+    "signIn": {
+      "type": "action",
+      "selector": "#okta-signin-submit",
+      "control": "action.button"
+    },
+    "isLogin": {
+      "type": "identifier",
+      "selector": "#okta-signin-submit",
+      "control": "exists"
+    },
+    "signInError": {
+      "type": "string",
+      "selector": "p",
+      "control": "property.innerText",
+      "selectContains": "Sign in failed!"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isLogin"
+      ],
+      "screens": [
+        "login"
+      ]
+    }
+  ]
+}

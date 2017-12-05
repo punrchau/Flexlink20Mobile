@@ -1,0 +1,156 @@
+{
+  "type": "object",
+  "properties": {
+    "records": {
+      "type": "array",
+      "selectorAll": ".tab-pane.active table tbody tr",
+      "items": {
+        "type": "object",
+        "properties": {
+          "partReceiveNumber": {
+            "type": "string",
+            "selector": "td",
+            "control": "property.innerText"
+          },
+          "partOrder": {
+            "type": "string",
+            "selector": "td",
+            "control": "property.innerText",
+            "selectIndex": 1
+          },
+          "partReceiveDate": {
+            "type": "string",
+            "selector": "td",
+            "control": {
+              "fn": "function(node){return node.replace('T',' AT ')}",
+              "control": "property.innerText"
+            },
+            "selectIndex": 2
+          },
+          "partReceivedBy": {
+            "type": "string",
+            "selector": "td",
+            "control": "property.innerText",
+            "selectIndex": 3
+          },
+          "partReceivedStatus": {
+            "type": "string",
+            "selector": "td",
+            "control": "property.innerText",
+            "selectIndex": 4
+          },
+          "partOrderStatus": {
+            "type": "string",
+            "selector": "td",
+            "control": "property.innerText",
+            "selectIndex": 5
+          },
+          "selectRecord": {
+            "type": "action",
+            "control": "action.link",
+            "selector": "."
+          }
+        }
+      }
+    },
+    "selectTabs": {
+      "type": "array",
+      "selectorAll": "#stateTabs li",
+      "items": {
+        "type": "object",
+        "properties": {
+          "clickTab": {
+            "type": "action",
+            "selector": "a",
+            "control": "action.link"
+          },
+          "tabName": {
+            "type": "string",
+            "selector": "a",
+            "control": "property.innerText"
+          },
+          "isSelected": {
+            "type": "boolean",
+            "control": "exists",
+            "selector": {
+              "fn": "function(node){if(node.getAttribute('class')=='active'){return true}}",
+              "selector": ""
+            }
+          }
+        }
+      }
+    },
+    "isHome": {
+      "type": "identifier",
+      "selector": "h2",
+      "control": "exists",
+      "selectContains": "Part Receives"
+    },
+    "isFlexLink": {
+      "type": "identifier",
+      "selector": "p[class='app-button-name']",
+      "control": "exists",
+      "selectContains": "Flexlink20"
+    },
+    "isOEM2": {
+      "type": "identifier",
+      "selector": ".blog-content div[class='content-show'] span",
+      "control": "exists",
+      "selectContains": "OEM2"
+    },
+    "isPartMgmt": {
+      "type": "identifier",
+      "selector": ".page-content-wrapper",
+      "control": "exists",
+      "selectContains": "Welcome to FlexLink App..!"
+    },
+    "OEM2": {
+      "type": "action",
+      "selector": ".blog-content div[class='content-show'] span",
+      "control": "action.link",
+      "selectContains": "OEM2"
+    },
+    "editRecord": {
+      "type": "action",
+      "selector": ".btn.btn-info.ng-scope",
+      "control": "action.button",
+      "selectContains": "EDIT"
+    },
+    "flexLink20": {
+      "type": "action",
+      "control": "action.link",
+      "selector": {
+        "fn": "function(node){console.log(node);var paraElements=node.querySelectorAll('li > p');paraElementsLength=paraElements.length;for(i=0;i<paraElementsLength;i+=1){if(paraElements[i].textContent=='Flexlink20'){return paraElements[i].previousElementSibling}}}",
+        "selector": "#main-content > div > div:nth-child(2) > ul:nth-child(2)"
+      }
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isFlexLink"
+      ],
+      "event": "InvokeFlexLink"
+    },
+    {
+      "match": [
+        "isHome"
+      ],
+      "screens": [
+        "home"
+      ]
+    },
+    {
+      "match": [
+        "isOEM2"
+      ],
+      "event": "InvokeOEM2"
+    },
+    {
+      "match": [
+        "isPartMgmt"
+      ],
+      "event": "InvokePartMgmt"
+    }
+  ]
+}

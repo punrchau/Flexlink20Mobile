@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "cancel": {
+      "type": "action",
+      "selector": "button",
+      "control": "action.button",
+      "selectContains": "Cancel"
+    },
+    "isUploadPhoto": {
+      "type": "identifier",
+      "selector": "h3",
+      "control": "exists",
+      "selectContains": "Upload Photo for Damaged Part"
+    },
+    "add": {
+      "type": "action",
+      "selector": "button",
+      "control": "action.button",
+      "selectContains": "Add"
+    },
+    "description": {
+      "type": "string",
+      "selector": "input[ng-model='partReceiveCtrl.fileDescription']",
+      "control": "text"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isUploadPhoto"
+      ],
+      "screens": [
+        "uploadimage"
+      ]
+    }
+  ]
+}
