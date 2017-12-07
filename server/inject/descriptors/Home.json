@@ -90,7 +90,7 @@
       "type": "identifier",
       "selector": "p[class='app-button-name']",
       "control": "exists",
-      "selectContains": "Flexlink20"
+      "selectContains": "DevFlexlink 2.0"
     },
     "isOEM2": {
       "type": "identifier",
