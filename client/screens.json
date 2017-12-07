@@ -1,6 +1,6 @@
 {
   "id": "app",
-  "name": "Flex Part Management",
+  "name": "Flexlink20 Mobile",
   "startScreen": "app.login",
   "screens": [
     {
