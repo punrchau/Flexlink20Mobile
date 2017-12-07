@@ -5,7 +5,7 @@ exports.on_InvokeFlexLink = function (page) {
 }
 exports.on_InvokeOEM2 = function (page) {
     
-    page.action('Home','OEM2').screen('prehomeloadoem');
+    page.action('Home','OEM1').screen('prehomeloadoem');
 }
 exports.on_InvokePartMgmt = function (page) {
     //page.href('http://fl20tmobqa.cloudapp.net/#/partreceives').screen('prehomeloadjobmgmt');
