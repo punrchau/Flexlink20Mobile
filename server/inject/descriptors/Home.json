@@ -96,7 +96,7 @@
       "type": "identifier",
       "selector": ".blog-content div[class='content-show'] span",
       "control": "exists",
-      "selectContains": "OEM2"
+      "selectContains": "OEM1"
     },
     "isPartMgmt": {
       "type": "identifier",
