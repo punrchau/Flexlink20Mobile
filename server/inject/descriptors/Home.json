@@ -108,7 +108,7 @@
       "type": "action",
       "selector": ".blog-content div[class='content-show'] span",
       "control": "action.link",
-      "selectContains": "OEM2"
+      "selectContains": "OEM1"
     },
     "editRecord": {
       "type": "action",
