@@ -127,7 +127,8 @@
     "isServiceJob": {
       "type": "identifier",
       "selector": "h2",
-      "control": "property.innerText"
+      "control": "property.innerText",
+      "selectContains": "h2"
     }
   },
   "connect": [
