@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "comment": "ListView",
+  "properties": {
+    "listItems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "action"
+          },
+          "ticketnumber": {
+            "type": "string",
+            "update": {
+              "type": "none"
+            }
+          },
+          "status": {
+            "type": "string"
+          },
+          "firstname": {
+            "type": "string"
+          }
+        }
+      },
+      "update": {
+        "type": "none"
+      }
+    }
+  },
+  "connect": []
+}
