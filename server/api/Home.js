@@ -11,8 +11,15 @@ exports.on_InvokePartMgmt = function (page) {
     //page.href('http://fl20tmobqa.cloudapp.net/#/partreceives').screen('prehomeloadjobmgmt');
 	//page.href('http://fl20qa.azurewebsites.net/tmobile/#/partreceives').screen('prehomeloadjobmgmt');
 	page.href('http://fl20dev.azurewebsites.net/lenovo/#/partreceives').screen('prehomeloadjobmgmt');
-	
 }
+
+exports.on_InvokeServiceJob = function (page) {
+    //page.href('http://fl20tmobqa.cloudapp.net/#/partreceives').screen('prehomeloadjobmgmt');
+	//page.href('http://fl20qa.azurewebsites.net/tmobile/#/partreceives').screen('prehomeloadjobmgmt');
+	page.href('http://fl20dev.azurewebsites.net/lenovo/#/repairjobs').screen('prehomeloadjobmgmt');
+}
+
+
 
 exports.editRecord = function(page, params) {
     page.action('Home', 'records[' + params.index + '].selectRecord');
