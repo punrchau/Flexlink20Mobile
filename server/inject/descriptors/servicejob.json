@@ -50,9 +50,7 @@
       "event": "InvokeServiceJob"
     },
     {
-      "match": [
-        "isServiceJob"
-      ],
+      "match": [],
       "screens": [
         "servicejob"
       ]
