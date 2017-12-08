@@ -1,56 +1,16 @@
 {
   "servicejobs": [
     {
-      "ticketnumber": "Price & Availability",
-      "status": "fa-tag"
+      "ticketnumber": "IND-JOB#-000000001",
+      "status": "Booked-In"
     },
     {
-      "ticketnumber": "Search by Part Number",
-      "status": "fa-search"
+      "ticketnumber": "IND-JOB#-000000002",
+      "status": "Created"
     },
     {
-      "ticketnumber": "Browse Products",
-      "status": "fa-cogs"
-    },
-    {
-      "ticketnumber": "Direct Order Entry",
-      "status": "fa-file-text"
-    },
-    {
-      "ticketnumber": "Import Order",
-      "status": "fa-download"
-    },
-    {
-      "ticketnumber": "View Order History",
-      "status": "fa-history"
-    },
-    {
-      "ticketnumber": "Quick Quote Entry",
-      "status": "fa-calculator"
-    },
-    {
-      "ticketnumber": "SP/SD Request",
-      "status": "fa-money"
-    },
-    {
-      "ticketnumber": "SD Claim",
-      "status": "fa-bullhorn"
-    },
-    {
-      "ticketnumber": "RMA",
-      "status": "fa-archive"
-    },
-    {
-      "ticketnumber": "Stock Rotation",
-      "status": "fa-repeat"
-    },
-    {
-      "ticketnumber": "New Part Number",
-      "status": "fa-cog"
-    },
-    {
-      "ticketnumber": "View/Print Statement",
-      "status": "fa-print"
+      "ticketnumber": "IND-JOB#-000000003",
+      "status": "Booked-In"
     }
   ]
 }

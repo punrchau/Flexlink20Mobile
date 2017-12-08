@@ -23,21 +23,21 @@
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
         <div class="" data-comp-id="div.2"
             style="padding: 0px; background-color: rgb(241, 241, 247);"></div>
-        <div class=" card" data-comp-id="div.3" ng-repeat="item in data.records"
+        <div class=" card" data-comp-id="div.3" ng-repeat="item in data.servicejobs"
             style="margin: 10px 10px;">
             <div class="row" data-comp-id="row.2" ng-click="editRecord($index)">
                 <div class="col" data-comp-id="column.2" style="padding: 0px;">
                     <div class="row" data-comp-id="row.3" style="padding: 0px 12px;">
                         <div class="col" data-comp-id="column.3">
                             <div class="" data-comp-id="text.2"
-                                style="color: rgb(153, 153, 153); font-size: 12px; font-weight: bold;">PR#</div>
-                            <div class="" data-comp-id="text.3" ng-bind="item.partReceiveNumber"
+                                style="color: rgb(153, 153, 153); font-size: 12px; font-weight: bold;">Service Job</div>
+                            <div class="" data-comp-id="text.3" ng-bind="item.ticketnumber"
                                 style="color: rgb(51, 51, 51); font-size: 14px;">PR-000000156</div>
                         </div>
                         <div class="col" data-comp-id="column.4">
                             <div class="" data-comp-id="text.4"
-                                style="color: rgb(153, 153, 153); font-size: 12px; font-weight: bold;">PART ORDER</div>
-                            <div class="" data-comp-id="text.5" ng-bind="item.partOrder"
+                                style="color: rgb(153, 153, 153); font-size: 12px; font-weight: bold;">Status</div>
+                            <div class="" data-comp-id="text.5" ng-bind="item.status"
                                 style="color: rgb(51, 51, 51); font-size: 14px;">PR-000000189</div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                 </div>
             </div>
         </div>
-        <div data-comp-id="div.5" ng-show="data.records.length==0"
+        <div data-comp-id="div.5" ng-show="data.servicejobs.length==0"
             style="text-align:center; margin-top: 10px">
             <div class=" assertive" data-comp-id="text.15">No Data Available</div>
         </div>
