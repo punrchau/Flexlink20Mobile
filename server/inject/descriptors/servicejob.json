@@ -30,7 +30,7 @@
       "update": {
         "type": "none"
       },
-      "selectorAll": ".tab-pane.active table tbody tr"
+      "selectorAll": "table tbody tr"
     }
   },
   "connect": []
