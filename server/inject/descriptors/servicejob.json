@@ -37,7 +37,7 @@
     },
     "isServiceJob": {
       "type": "identifier",
-      "selector": "#gdRepairJobs",
+      "selector": "h2",
       "control": "property.innerHTML",
       "selectContains": "Repair Job"
     }
