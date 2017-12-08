@@ -147,9 +147,7 @@
       "event": "InvokeOEM2"
     },
     {
-      "match": [
-        "isPartMgmt"
-      ],
+      "match": [],
       "event": "InvokePartMgmt"
     },
     {
