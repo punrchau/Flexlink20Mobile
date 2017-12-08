@@ -84,7 +84,7 @@
       "type": "identifier",
       "selector": "h2",
       "control": "exists",
-      "selectContains": "Part Receivessss"
+      "selectContains": "Part 1 Receivessss"
     },
     "isFlexLink": {
       "type": "identifier",
