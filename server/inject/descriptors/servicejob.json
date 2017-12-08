@@ -38,7 +38,8 @@
     "isServiceJob": {
       "type": "identifier",
       "selector": "#gdRepairJobs",
-      "control": "property.innerHTML"
+      "control": "property.innerHTML",
+      "selectContains": "h2"
     }
   },
   "connect": []
