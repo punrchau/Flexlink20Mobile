@@ -16,7 +16,8 @@
               "type": "none"
             },
             "selector": "td",
-            "control": "property.innerText"
+            "control": "property.innerText",
+            "selectIndex": 1
           },
           "status": {
             "type": "string"
