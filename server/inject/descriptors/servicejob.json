@@ -27,7 +27,7 @@
       "update": {
         "type": "none"
       },
-      "selectorAll": "#gdRepairJobs"
+      "selectorAll": "td"
     }
   },
   "connect": []
