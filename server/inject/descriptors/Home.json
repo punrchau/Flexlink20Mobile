@@ -123,12 +123,6 @@
         "fn": "function(node){console.log(node);var paraElements=node.querySelectorAll('li > p');paraElementsLength=paraElements.length;for(i=0;i<paraElementsLength;i+=1){if(paraElements[i].textContent=='Flexlink20'){return paraElements[i].previousElementSibling}}}",
         "selector": "#main-content > div > div:nth-child(2) > ul:nth-child(2)"
       }
-    },
-    "isServiceJ": {
-      "type": "identifier",
-      "selector": "h2",
-      "control": "exists",
-      "selectContains": "Repair Job"
     }
   },
   "connect": [
