@@ -27,7 +27,7 @@
       "update": {
         "type": "none"
       },
-      "selectorAll": "td"
+      "selectorAll": ".tab-pane.active table tbody tr"
     }
   },
   "connect": []
