@@ -101,8 +101,7 @@
     "isPartMgmt": {
       "type": "identifier",
       "selector": "h3",
-      "control": "exists",
-      "selectContains": "Technician Dashboard"
+      "control": "exists"
     },
     "OEM2": {
       "type": "action",
