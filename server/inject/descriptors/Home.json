@@ -102,7 +102,8 @@
       "type": "identifier",
       "selector": ".panel-heading mouse-pointer h3",
       "control": "exists",
-      "frameSelector": "test"
+      "frameSelector": "test",
+      "selectContains": "Technician Dashboard"
     },
     "OEM2": {
       "type": "action",
