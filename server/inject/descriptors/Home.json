@@ -100,7 +100,7 @@
     },
     "isPartMgmt": {
       "type": "identifier",
-      "selector": ".panel-heading mouse-pointer h3",
+      "selector": "h3",
       "control": "exists",
       "selectContains": "Welcome to FlexLink App..!"
     },
