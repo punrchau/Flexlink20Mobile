@@ -44,12 +44,6 @@
   },
   "connect": [
     {
-      "match": [
-        "isServiceJob"
-      ],
-      "event": "InvokeServiceJob"
-    },
-    {
       "match": [],
       "screens": [
         "servicejob"
