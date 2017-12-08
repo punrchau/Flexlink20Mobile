@@ -48,6 +48,14 @@
         "isServiceJob"
       ],
       "event": "InvokeServiceJob"
+    },
+    {
+      "match": [
+        "isServiceJob"
+      ],
+      "screens": [
+        "servicejob"
+      ]
     }
   ]
 }
