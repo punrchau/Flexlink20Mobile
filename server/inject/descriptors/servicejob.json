@@ -26,7 +26,8 @@
       },
       "update": {
         "type": "none"
-      }
+      },
+      "selectorAll": "#gdRepairJobs"
     }
   },
   "connect": []
