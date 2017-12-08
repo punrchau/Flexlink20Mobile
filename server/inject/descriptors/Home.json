@@ -100,7 +100,7 @@
     },
     "isPartMgmt": {
       "type": "identifier",
-      "selector": "#DashBoardPage2",
+      "selector": "#comment",
       "control": "exists",
       "frameSelector": "test",
       "selectContains": "Technician Dashboard"
