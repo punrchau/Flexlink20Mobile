@@ -102,7 +102,6 @@
       "type": "identifier",
       "selector": "h3",
       "control": "exists",
-      "frameSelector": "test",
       "selectContains": "Technician Dashboard"
     },
     "OEM2": {
