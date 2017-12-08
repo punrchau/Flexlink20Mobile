@@ -14,9 +14,7 @@ exports.on_InvokePartMgmt = function (page) {
 }
 
 exports.on_InvokeServiceJob = function (page) {
-    //page.href('http://fl20tmobqa.cloudapp.net/#/partreceives').screen('prehomeloadjobmgmt');
-	//page.href('http://fl20qa.azurewebsites.net/tmobile/#/partreceives').screen('prehomeloadjobmgmt');
-	page.href('http://fl20dev.azurewebsites.net/lenovo/#/repairjobs').screen('prehomeloadjobmgmt');
+    page.href('http://fl20dev.azurewebsites.net/lenovo/#/repairjobs').screen('prehomeloadjobmgmt');
 }
 
 
