@@ -15,7 +15,8 @@
             "update": {
               "type": "none"
             },
-            "selector": "td"
+            "selector": "td",
+            "control": "property.innerText"
           },
           "status": {
             "type": "string"
