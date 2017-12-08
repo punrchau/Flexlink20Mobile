@@ -96,5 +96,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.servicejob', {
+        views: {
+            app: {
+                controller: 'app_servicejob',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.servicejob');
+                }
+            }
+        }
     });
 });

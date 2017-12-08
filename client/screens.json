@@ -67,6 +67,13 @@
       "name": "preHome Load Job Mgmt",
       "sourceScreenId": "app.blank",
       "sourceAppId": "_blank"
+    },
+    {
+      "id": "servicejob",
+      "name": "Service Job",
+      "sourceScreenId": "app.listview.listviewcool",
+      "sourceAppId": "universaltemplates",
+      "model": "servicejob"
     }
   ],
   "sourceAppId": "_blank",
