@@ -39,7 +39,7 @@
       "type": "identifier",
       "selector": "#gdRepairJobs",
       "control": "property.innerHTML",
-      "selectContains": "h2"
+      "selectContains": "Repair Job"
     }
   },
   "connect": []
