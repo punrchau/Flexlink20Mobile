@@ -100,7 +100,7 @@
     },
     "isPartMgmt": {
       "type": "identifier",
-      "selector": "h3",
+      "selector": ".panel-heading.mouse-pointer",
       "control": "exists",
       "frameSelector": "test",
       "selectContains": "Technician Dashboard"
