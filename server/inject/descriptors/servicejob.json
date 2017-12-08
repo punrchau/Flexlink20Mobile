@@ -30,7 +30,7 @@
       "update": {
         "type": "none"
       },
-      "selectorAll": "#table tbody tr"
+      "selectorAll": "#gdRepairJobs table tbody tr"
     }
   },
   "connect": []
