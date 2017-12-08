@@ -70,7 +70,7 @@
     },
     {
       "id": "servicejob",
-      "name": "Service Job",
+      "name": "ServiceJob",
       "sourceScreenId": "app.listview.listviewcool",
       "sourceAppId": "universaltemplates",
       "model": "servicejob"
