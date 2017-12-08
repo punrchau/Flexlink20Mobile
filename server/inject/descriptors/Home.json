@@ -100,7 +100,7 @@
     },
     "isPartMgmt": {
       "type": "identifier",
-      "selector": ".page-content-wrapper",
+      "selector": "h3",
       "control": "exists",
       "selectContains": "Welcome to FlexLink App..!"
     },
