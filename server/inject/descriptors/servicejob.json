@@ -29,7 +29,7 @@
       "update": {
         "type": "none"
       },
-      "selectorAll": ".tab-pane active table tbody tr"
+      "selectorAll": ".property.innerText table tbody tr"
     }
   },
   "connect": []
