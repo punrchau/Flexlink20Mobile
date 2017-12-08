@@ -101,7 +101,8 @@
     "isPartMgmt": {
       "type": "identifier",
       "selector": "h3",
-      "control": "exists"
+      "control": "exists",
+      "frameSelector": "test"
     },
     "OEM2": {
       "type": "action",
