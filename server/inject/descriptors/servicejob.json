@@ -42,5 +42,12 @@
       "selectContains": "Repair Job"
     }
   },
-  "connect": []
+  "connect": [
+    {
+      "match": [
+        "isServiceJob"
+      ],
+      "event": "InvokeServiceJob"
+    }
+  ]
 }
