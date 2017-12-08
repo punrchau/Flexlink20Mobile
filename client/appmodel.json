@@ -372,16 +372,16 @@
         "items": {
           "type": "object",
           "properties": {
-            "string": {
+            "action": {
+              "type": "action"
+            },
+            "ticketnumber": {
               "type": "string",
               "update": {
                 "type": "none"
               }
             },
-            "action": {
-              "type": "action"
-            },
-            "icon": {
+            "status": {
               "type": "string"
             }
           }
