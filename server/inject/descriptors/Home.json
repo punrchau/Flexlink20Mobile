@@ -125,7 +125,7 @@
       }
     },
     "isServiceJ": {
-      "type": "string",
+      "type": "identifier",
       "selector": "#comment",
       "control": "property.innerText"
     }
