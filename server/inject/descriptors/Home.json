@@ -127,7 +127,7 @@
     "isServiceJob": {
       "type": "identifier",
       "selector": "h2",
-      "control": "property.innerText",
+      "control": "exists",
       "selectContains": "h2",
       "frameSelector": "Repair Job"
     }
