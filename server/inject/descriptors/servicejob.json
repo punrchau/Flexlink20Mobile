@@ -27,6 +27,11 @@
           },
           "firstname": {
             "type": "string"
+          },
+          "isServiceJob": {
+            "type": "string",
+            "selector": "h2",
+            "control": "property.innerText"
           }
         }
       },
