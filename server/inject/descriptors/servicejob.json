@@ -45,7 +45,8 @@
   "connect": [
     {
       "match": [
-        "isServiceJob"
+        "isServiceJob",
+        "servicejobs.isServiceJob"
       ],
       "screens": [
         "servicejob"
