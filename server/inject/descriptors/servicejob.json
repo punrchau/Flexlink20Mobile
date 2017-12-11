@@ -2,12 +2,6 @@
   "type": "object",
   "comment": "ListView",
   "properties": {
-    "isServiceJob": {
-      "type": "identifier",
-      "selector": "h2",
-      "control": "exists",
-      "selectContains": "Repair Job"
-    },
     "servicejobs": {
       "type": "array",
       "items": {
