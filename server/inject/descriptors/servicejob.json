@@ -31,7 +31,8 @@
           "isServiceJob": {
             "type": "identifier",
             "selector": "h2",
-            "control": "exists"
+            "control": "exists",
+            "selectContains": "Repair Job"
           }
         }
       },
