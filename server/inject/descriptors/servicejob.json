@@ -29,7 +29,7 @@
             "type": "string"
           },
           "isServiceJob": {
-            "type": "string",
+            "type": "identifier",
             "selector": "h2",
             "control": "property.innerText"
           }
