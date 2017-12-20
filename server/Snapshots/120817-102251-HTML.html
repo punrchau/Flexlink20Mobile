@@ -1,0 +1,836 @@
+<body class="wow fadeInUp animated ng-scope" ng-controller="masterController as masterCtrl" id="masterBody" style="">
+    <div class="container-fluid" id="container-flexlink">
+
+        <nav class="navbar navbar-default navbar-fixed-top" style="background-image: linear-gradient(39deg, rgb(255, 150, 0) 29%, rgb(27, 169, 225) 96%); background-position: initial initial; background-repeat: initial initial;">
+            <div class="row top-bar">
+                <div class="col-md-4">
+                    
+                    <i class="glyphicon glyphicon-th open-aside-nav-bar-icon" aria-hidden="true"></i>
+                    <div class="flex-logo-div" style="background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QAiRXhpZgAATU0AKgAAAAgAAQESAAMAAAABAAEAAAAAAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCABkAGcDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5rooor+Zz/XQKKKKACiiigAooooAKKKKACiiigAooooAKKkNnMDjyZMjqNpo+xzH/AJZSf98mnysCOipPsc3/ADxk/wC+TR9jm/54yf8AfJoswI6Kk+yTf88pP++TR9jm/wCeUn/fJpAR0VJ9jmH/ACyk/wC+TR9km/55Sf8AfJp2YEdFSfZJv+eUn/fJo+yTf88pP++TSCzI6Kk+xzH/AJZSf98mj7HN/wA8pP8Avk07MLMjop0kTRfeVlz0yMUUgGOuGfHy7WPU9/X/AD6itfW/hn4o8PeFrHXNW8I+KtN8N6jtWw1e80yaDT78spdBDOyhJCyKzjaTlUYjgGsp/llbHHOa/RX/AIKC8f8ABET9nD/r60XPv/xKL2vawOBjXo1qkpa01dHyPFHFFTLMxy7AUoKUcVVUG3ulZu6PzpEYA5H3fl60bV9P1ruv2ZvgBqf7VHx68N/D/Sb6DS7zxDM6PezJvSyhjR5ZZdmRvZY42KoCNzbRlQSw+zn/AGbf2S/h18VNN+AfiKbXNS+LV09vosviaOHU4bEancRqYcwJdbRkvGMKpjy43MBuIvAZJiMVD2sZKMb21drvsjDirxEy3I8SsJUhOrU5eaShG/JC9nOXkrevZH577V9P1o2r6frX6Sfsif8ABHDw9Y/G74r+A/il9n8WXPhfS9G1TRdUt7q7sEaK8F+HYxQTLyJbQptctxEGGA5Bxf2Pv2Nf2WP2n9G1b4c+G/Fl94y+JGl6fPfjxK+natpkM0bMEWRLVrhYv3DzwKVbaXIyAQWI76fCuLlFXai3dJN2d09vPa58xivHDIKdSoqNOpUjBQcpRjeKjNJqT7JXSadne9k7M/PXavp+tG1fT9a+rP2Mv+CZN78d/iT8SE8WeIrHRfC/wZ1mbS9cuIreS5OrS2srfaI4ljeORI/Lic+Znd+8TarHO31K1/Y5/Zx/4KAeGdU0f9mvWJPDPjXw6Yr26Grx6tLDdWrsUxuuJXVM8OCqluikLlivPR4dxVSmp3UZa2i3rK2j0PUzLxbyTC4n2CU5wjy89SMW4Q5knHmfmn0vbrY+Adq+n60bV9P1r7a/a8/Yc8C+Ef8AgnJ4Z+LngzQW0HWtPvLa18VxzandXTJIHksbqJBLK8bbL8KA0aqGVSQQvB2/hf8A8E4vB+vf8E5PDPiu/wBGjuvip8R7yGw8PXD6reQ29s15d+XbSSLHIYdsduDOwMRJClMM+3Nf6u4r2ro6X5ebyt0+d9Cf+IwZGsBHMGpcsqro2srqS1betuVLV+R8FbV9P1o2r6frX6CXX7L/AOyz+xuNA+HfxwvrzXvidq1nFdXmo6cmrx2dgZ3ZYxiGZVdFcMoZUDMEyyLnFfPP/BRX9hi8/YM+Kui6XJq9vrmieKrV7jSrpIWhffDtE8TRl3I2lkYMWIYSYH3SBji8hxNCi6rkny/Ek9VfudmQ+J2VZpjo4GEZ0/aXdOU4uMaqju4N7287PXRHgOMUUUV4Mnd3P0Ce45wrTN823nGW9a/Uz4j/AAds/wBsP/glB8CfBWj+NfA+i61oMGk6ldJrGsLbBFTTriFo/lWRt4aZeCo4Dc8YP5Zt8szEev51Vk0m3kdmaPcxPPzHn9fpXtZTmkMIqlOpDmU1Z620PiuNODa2eTwuIw+I9hUw8+eL5ebW1u67n31+zX+zuP8Agmf+0f4P+JXi/wAffDvUvC8l2+hal/Y+pvf3FqtzBKEm2eUm2NZVi3vk7ULHBHNe5fG5fFfirx1eeKvgFr37NXhLwH4gddR1Hx15yL4mDStvvjJcSLLGMngAoWTCD5duB+Sttp8Nn/ql2n6k/wCelI+nwy3Hmsn7zO7cGPXGK9XDcT06UfY0qVorWyeqfrY+KzXwcxWYYmOYYvG89fl5W3C8ZRvdLlutU31bXdH6uf8ABMv4gaf4V+Lf7QUevfFqx8fI+l6FDp+uXXiA3wnQQ6izQLNKEDeW8hJEY2L5nXeXr5F/4IieINP8I/tZWl1ql5a6bbLo0q+bcyrCg/4mFkcEsQOQGOPQexr5guLSO52h0yF/2jxS3EC3cWyX5lzk8/4Yrn/1j5p05KPwNvfe7v8AgetR8J4QWOj7f/eoU4v3UuVwildJaa2v0P0z/ZE/aC+Gdx42/a5+EPjvxZpvhjT/AIj+NdfuLG9nu0tY76O+kmtJhFcPmPzAvlMqsOQxZQ4V9tP9g34A6L/wSt8c+IfiV8ZviV8PIzd6Wui6PbeH9TmvnuFmmikmZrfyBK5/dQMvlghVMjMoABX82UjCRKg4VV2geg9KjsrCHTv9UhX2Df45rohxQrxlKnzThflfa+uvoeVX8F/dq4bD42UKFdQ9rBRWvJFK8X0va7unqz9DP+Caf7R2h/tM/Ef41fDf4r6jF/wg3xKe58Qabp+oyx28Fm76jLdzxIS2EkaS6Em3L5MLHOFOZP2v/wBt3R/gj+358JfCvhfVop/hD8FodJgnggiF0kEqQT28kqFDmXy7G7C/LzvUgKWXB/POeBbmMpJllOOOgOP1/WliXyYFjX/Vr0A/yT+tZLiiv9XVHl95O9+tr3t9531PB3LZZrPHTqP2MoOPs7Kyk4qHOunNypa2P0O/a7/Yr0b/AIKF/Hy3+Lnw6+JXw/XwF4qsrJ/FJ1XWmt7+yaKNYpVji8hxCwtkj+SbkSBtwANc1/wWC+KXhn9q74p+BfDvwt1rQvE2mfD6zuWvNQXWLRbUzX7RlYormeVVmKiAFjGSqbwrNnKr8I3Omw3k6ySKWZSCDk9sf4D8qcbdWC7lGUJI5PH+felic+hVpVIxpW9pbmaera7GmUeFuIwmMw1WtjHUhhIyVGLjpFS097VczS0VrDopFliVl6MMj3HbjqPx5opxPA+mKK+Wlufq0731CiiipJCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z); background-repeat: no-repeat no-repeat;"></div>
+                    
+                    
+                </div>
+
+                <div class="col-md-4">
+                    <marquee scrolldelay="200" style="color:white ; font-size:15px"><b class="ng-binding"> </b></marquee>
+                </div>
+
+                <div class="col-md-4 text-right margin-top-menu-link text-right dropdown">
+                    <a class="dropdown-toggle welcome-user text-decoration-none ng-binding" data-toggle="dropdown" id="ddlUser" href="" role="button" aria-haspopup="true" aria-expanded="false">
+                        Welcome Ram Chauhan
+                        <img src="/lenovo/images/menu/user.png" class="img-circle" alt="user pic" width="35" height="35">
+                        <i class="fa fa-caret-down fa-fw"></i>
+                    </a>
+
+                    <div class="dropdown-menu text-left dropdown-menu-right margin-top-5">
+                        <div class="login-box clearfix row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        
+                                        <img src="/lenovo/images/menu/user.png" alt="" class="user-photo">
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-12">
+                                        <span ng-click="masterCtrl.navigateToUser()" class="profiler-name-display ng-binding">Ram Chauhan</span>
+                                        <br>
+                                        <div class="roles-display">
+                                            <!-- ngIf: masterCtrl.isRolesAssigned --><span ng-if="masterCtrl.isRolesAssigned" class="ng-binding ng-scope"> Mobile Role, Technician</span><!-- end ngIf: masterCtrl.isRolesAssigned -->
+                                            <!-- ngIf: !masterCtrl.isRolesAssigned -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 store-name-display">
+                                <span class="ng-binding">store1</span>
+                            </div>
+                            
+                            
+                            <div class="col-lg-12 col-md-12 col-sm-12 padding-0">
+                                <a href="#" class="btn btn-flat font-normal btn-danger button-logout width-100-notimportant" ng-click="masterCtrl.closeWindow()">
+                                    <i class="glyph-icon icon-power-off"></i>&nbsp;Logout
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 sub-bar">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav main-menu-flexlink">
+                        
+                        <li href="" class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket" aria-hidden="true"></i>Config Management <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#/formsConfiguration" ui-sref="FormsConfiguration">Forms Configuration</a></li>
+                                <li><a href="#/formsConfiguration" ui-sref="FormsConfiguration">Grids Configuration</a></li>
+                                <li><a href="">List Configuration</a></li>
+                                <li><a href="#/routingConfiguration" ui-sref="RoutingConfiguration">Route Configuration</a></li>
+                                <li><a href="/lenovo/app/views/AppFieldDefinitionConfiguration.html" ui-sref="AppFieldDefinition">App Field Definition </a></li>
+                                <li><a href="#/approvalMatrixList" ui-sref="ApprovalMatrixList">Approval Matrix</a></li>
+                                <li><a href="#/statusMappings" ui-sref="StatusMappings">Status Mapping</a></li>
+                                <li><a href="#/EmailTemplates" ui-sref="EmailTemplates">Email Template</a></li>
+                                <li><a href="#/EmailConfigurations" ui-sref="EmailConfigurations">Email Configuration</a></li>
+                                <li><a href="#/SMSTemplates" ui-sref="SMSTemplates">SMS Template</a></li>
+                                <li><a href="#/SMSConfigurations" ui-sref="SMSConfigurations">SMS Configuration</a></li>
+                                <li><a href="#/userRoleTypeMappings" ui-sref="UserRoleTypeMappings">User Role Type</a></li>
+                                <li><a href="#/pageActionMapping" ui-sref="PageActionMapping">Page Action Map</a></li>
+                                <li><a href="#/PageRouteActions" ui-sref="PageRouteActions" title="Page Route Action Map">Page Route Action Map</a></li>
+                                <li><a href="#/rolePermissions" ui-sref="RolePermissions">Role Permission</a></li>
+                                <li><a href="#/binMaster" ui-sref="BinMaster">Bin Master</a></li>
+                                <li><a href="#/commonmaster" ui-sref="CommonMaster">Common Master</a></li>
+                                <li><a href="/lenovo/app/views/ConsolidateDeliveryChallans.html" ui-sref="ConsolidateDeliveryChallans">Consolidate Delivery Challan</a></li>
+                                <li><a href="#/RTV" ui-sref="RTVCompliance">RTV Compliance</a></li>
+                                <li><a href="#/oembrands" ui-sref="OEMBrands">Brand Configuration</a></li>
+                                <li><a href="/lenovo/app/views/Roles.html" ui-sref="RolesMaster">Role Master</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ticket" aria-hidden="true"></i>Job Management<span class="caret"></span></a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="#/unitowners" ui-sref="UnitOwners">Unit Owner</a></li>
+                                <li><a href="#/units" ui-sref="Units">Unit</a></li>
+                                
+                                <li><a href="#/servicejobs" ui-sref="ServiceJobs">Service Job</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        <li href="" class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs" aria-hidden="true"></i>Repair Management <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#/repairjobs" ui-sref="RepairJobs">Repair Creation</a></li>
+                            </ul>
+                        </li>
+                        <li href="" class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-empire" aria-hidden="true"></i>Retail Management <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#/swapMatrixList" ui-sref="SwapMatrixList">Swap Matrix</a></li>
+                                <li><a href="#/preapprovals" ui-sref="PreApprovals">PreApproval</a></li>
+                                <li><a href="#/MSLUpload" ui-sref="MSLUpload">MSLUpload</a></li>
+                            </ul>
+                        </li>
+                        <li href="" class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-wpforms" aria-hidden="true"></i>Quotation Management <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#/quotationList" ui-sref="QuotationList">Quotation List</a></li>
+                            </ul>
+                        </li>                        
+                    </ul>
+
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+
+        <div class="container-fluid body-content wow fadeInUp animated page-wrapper">
+            <div id="sidebar-wrapper" class="sidebar-wrapper-style" style="background-color: rgb(255, 150, 0); width: 50px; background-position: initial initial; background-repeat: initial initial;">
+                <ul class="sidebar-nav">
+
+                    <li ng-click="masterCtrl.navigateToDashboardPage()">
+                        <a>
+                            <i class="fa fa-home fa-2x aside-icon "></i>
+                            <div class="sidebar-text no-collaps-side-bar">
+                                Home
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.adminManagement --><li ng-if="masterCtrl.authorizationPageCollection.moduleCollection.adminManagement" class="ng-scope">
+                        <a href="" class="dropdown-toggle expand-menu-bar" title="Admin Management" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-television fa-2x aside-icon" aria-hidden="true" onclick="expandsideBar();"></i>
+                            <div class="sidebar-text">
+                                Admin Management
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-ul">
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.hsnAndSacUpLoader -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.cityMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.costBreakDownMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.billingCodeMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.binMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.commonMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.part --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.part" class="ng-scope"><a href="#/partMaster" title="Part Master" ui-sref="PartMaster">Part Master</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.part -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.frontEndProfiler -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.localStore -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.failureCode -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.repairActionCode -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.failureCodeRepairActionCodeMap -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.cpMapping -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.userRegistration -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.roleMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.userRoleType --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.userRoleType" class="ng-scope"><a href="#/userRoleTypeMappings" ui-sref="UserRoleTypeMappings" title="User Role Type">User Role Map</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.userRoleType -->
+                            
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.swapDevice -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.warrantyCheckUpload -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.warrantyMapping -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.swapConfiguration -->
+                        </ul>
+                    </li><!-- end ngIf: masterCtrl.authorizationPageCollection.moduleCollection.adminManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.configManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.jobManagement --><li ng-if="masterCtrl.authorizationPageCollection.moduleCollection.jobManagement" class="ng-scope">
+                        <a href="" class="dropdown-toggle expand-menu-bar" title="Job Management" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ticket fa-2x aside-icon" aria-hidden="true" onclick="expandsideBar();"></i>
+
+                            <div class="sidebar-text">
+                                Job Management
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-ul">
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.unitOwner --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.unitOwner" class="ng-scope"><a href="#/unitowners" title="Unit Owner" ui-sref="UnitOwners">Unit Owner</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.unitOwner -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.unit --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.unit" class="ng-scope"><a href="#/units" title="Unit" ui-sref="Units">Unit</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.unit -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.serviceJob --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.serviceJob" class="ng-scope"><a href="#/servicejobs" title="Service Job" ui-sref="ServiceJobs">Service Job</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.serviceJob -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.deliveryChallan -->
+                            <li><a href="#/inwarddeliverychallans" title="Inward Delivery Challan" ui-sref="InwardDeliveryChallans">Inward DC</a></li>
+                        </ul>
+
+                    </li><!-- end ngIf: masterCtrl.authorizationPageCollection.moduleCollection.jobManagement -->
+
+                    
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.repairManagement --><li ng-if="masterCtrl.authorizationPageCollection.moduleCollection.repairManagement" class="ng-scope">
+                        <a href="" class="dropdown-toggle expand-menu-bar" title="Repair Management" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-cogs fa-2x aside-icon" aria-hidden="true" onclick="expandsideBar();"></i>
+
+                            <div class="sidebar-text">
+                                Repair Management
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-ul">
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.repairJob --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.repairJob" class="ng-scope"><a href="#/repairjobs" ui-sref="RepairJobs" title="Repair Creation">Repair Creation</a></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.repairJob -->
+
+                        </ul>
+                    </li><!-- end ngIf: masterCtrl.authorizationPageCollection.moduleCollection.repairManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.retailManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.quotationManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.adpManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.partManagement --><li ng-if="masterCtrl.authorizationPageCollection.moduleCollection.partManagement" class="ng-scope">
+                        <a href="" class="dropdown-toggle expand-menu-bar" title="Part Management" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-shopping-cart fa-2x aside-icon" aria-hidden="true" onclick="expandsideBar();"></i>
+
+                            <div class="sidebar-text">
+                                Part Management
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-ul">
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.partOrder --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.partOrder" class="ng-scope"><a title="Part Order List" href="#/partorders" ui-sref="PartOrders">Part Order</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.partOrder -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.partReceive --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.partReceive" class="ng-scope"><a title="Part Receive List" href="#/partreceives" ui-sref="PartReceives">Part Receive</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.partReceive -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.partTransferOrder -->
+                            
+                            <li><a title="PartTransferReceives List" href="#/parttransferreceives" ui-sref="PartTransferReceives">PartTransferReceive</a><hr></li>
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.inventoryPage -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.rtvCompliance -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.inventory -->
+                            
+                        </ul>
+                    </li><!-- end ngIf: masterCtrl.authorizationPageCollection.moduleCollection.partManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.logistics -->
+
+        
+                     <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.reports -->
+                </ul>
+            </div>
+            <div class="page-content-wrapper">
+                
+<div class="row margin-body" style="padding-left: 0px;">
+    <div class="col-lg-12 col-md-12">
+        <!-- uiView:  --><ui-view class="ng-scope"><script class="ng-scope">
+    bindToKendoDatePicker();
+</script>
+<div id="partReceiveInfo" class="ng-scope">
+<form name="form" confirm-on-exit="" class="ng-pristine ng-valid">
+    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 page-heading" id="prDetailPage">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <h2>Part Receive Detail</h2>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 text-right div-padding-none-right">
+            <!-- ngIf: partReceiveCtrl.id > 0 ? partReceiveCtrl.authorizationDetails.update : partReceiveCtrl.authorizationDetails.insert --><button type="submit" ng-disabled="partReceiveCtrl.isSavePartReceiveDisable" ng-if="partReceiveCtrl.id &gt; 0 ? partReceiveCtrl.authorizationDetails.update : partReceiveCtrl.authorizationDetails.insert" ng-click="partReceiveCtrl.savePartReceive()" value="Save" class="btn btn-info ng-scope"><i class="fa fa-floppy-o" aria-hidden="true"></i>Save Receive</button><!-- end ngIf: partReceiveCtrl.id > 0 ? partReceiveCtrl.authorizationDetails.update : partReceiveCtrl.authorizationDetails.insert -->
+            <!-- ngIf: partReceiveCtrl.authorizationDetails.inventoryUpdate --><button type="submit" ng-disabled="partReceiveCtrl.isUpdateInventoryDisable" ng-if="partReceiveCtrl.authorizationDetails.inventoryUpdate" ng-click="partReceiveCtrl.updatePartReceiveInventory()" value="UpdateInventory" class="btn btn-info btn-auto-width ng-scope"><i class="fa fa-floppy-o" aria-hidden="true"></i>Update Inventory</button><!-- end ngIf: partReceiveCtrl.authorizationDetails.inventoryUpdate -->
+            <button type="button" ng-click="partReceiveCtrl.cancelPartReceive()" value="Cancel" class="btn btn-info btn-cancel btn-auto-width"><i class="fa fa-times-circle-o" aria-hidden="true"></i>Cancel </button>
+        </div>
+    </div>
+    <hr class="heading-hr">
+    <!-- ngIf: partReceiveCtrl.showValidationMsgs -->
+    <!-- ngIf: partReceiveCtrl.showValidationMsgs -->
+    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12  page-heading">
+        <ul class="nav nav-tabs" id="unitTabs">
+            <li class="active"><a data-target="#PartReceive" data-toggle="tab">Part Receive Details Info</a></li>
+            <!-- ngIf: partReceiveCtrl.isEnablePhotoUpload --><li ng-if="partReceiveCtrl.isEnablePhotoUpload" class="ng-scope">
+                <a data-target="#PartReceivePhoto" data-toggle="tab" ng-disabled="partReceiveCtrl.isPhotoDisable" ng-click="partReceiveCtrl.partReceivePhoto()" disabled="disabled">Discrepancy Part Details</a>
+            </li><!-- end ngIf: partReceiveCtrl.isEnablePhotoUpload -->
+        </ul>
+    </div>
+
+    <div class="tab-content">
+
+        <div class="row fade-backgroud div-padding tab-pane in" id="PartReceivePhoto">
+             <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 page-heading">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+           
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 text-right div-padding-none-right">
+            <button type="submit" ng-show="partReceiveCtrl.isdownload" ng-click="partReceiveCtrl.download()" value="Save" class="btn btn-info"><i class="fa fa-floppy-o" aria-hidden="true"></i>Download</button>
+            <button type="submit" ng-show="partReceiveCtrl.isdelete" ng-click="partReceiveCtrl.delete()" value="Delete" class="btn btn-info btn-auto-width"><i class="fa fa-floppy-o" aria-hidden="true"></i>Delete</button>
+
+             </div>
+    </div>
+<br>
+             <div id="gdUploadDetails" class="row table kendo-grid-custom k-grid k-widget" data-role="grid" style="height: auto;"><a title="Clear Filter" class="k-pager-refresh k-link column-filter-refresh"><span class="fa fa-refresh"></span></a><div class="k-grid-header" style="padding-right: 17px;"><div class="k-grid-header-wrap k-auto-scrollable" data-role="resizable"><table role="grid"><colgroup><col style="width:120px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"></colgroup><thead role="rowgroup"><tr role="row"><th scope="col" id="a37cfaa7-a907-41d9-91b2-326cc24b9c2e" rowspan="1" data-index="0" class="k-header">Upload</th><th scope="col" role="columnheader" data-field="partNumber" rowspan="1" data-title="Part Number" data-index="1" id="0dc55c30-4727-4857-8944-02649fffc255" class="k-header k-with-icon k-filterable" data-role="filtermenu"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a>Part Number</th><th scope="col" role="columnheader" data-field="partDescription" rowspan="1" data-title="Part Description" data-index="2" id="caf8b238-c529-4a1e-8d9c-af0b786ae494" class="k-header k-with-icon k-filterable" data-role="filtermenu"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a>Part Description</th><th scope="col" role="columnheader" data-field="fileName" rowspan="1" data-title="File Name" data-index="3" id="a027ef79-d917-47dc-ad2c-f121b7bf71cc" class="k-header k-with-icon k-filterable" data-role="filtermenu"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a>File Name</th><th scope="col" role="columnheader" data-field="fileDescription" rowspan="1" data-title="File Description" data-index="4" id="42110e5b-13ba-430f-836d-4006cbcc14f9" class="k-header k-with-icon k-filterable" data-role="filtermenu"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a>File Description</th><th scope="col" role="columnheader" data-field="fileType" rowspan="1" data-title="File Type" data-index="5" id="21c36838-f452-4567-b377-26d3ada02038" class="k-header k-with-icon k-filterable" data-role="filtermenu"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a>File Type</th><th scope="col" role="columnheader" data-field="dateTimeTaken" rowspan="1" data-title="Date Time Taken" data-index="6" id="68435a5f-ea7e-46bd-b5d8-3eb5b264483c" class="k-header k-with-icon k-filterable" data-role="filtermenu"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a>Date Time Taken</th><th scope="col" role="columnheader" data-field="photoType" rowspan="1" data-title="PhotoType" data-index="7" id="cef555a5-0290-482c-a797-b906070e9204" class="k-header k-with-icon k-filterable" data-role="filtermenu"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a>PhotoType</th></tr></thead></table></div></div><div class="k-grid-content k-auto-scrollable"><table role="grid" data-role="selectable" class="k-selectable" style="height: auto;"><colgroup><col style="width:120px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"></colgroup><tbody role="rowgroup"></tbody></table><div class="k-grid-norecords"><center class="grid-no-data" style="margin-top:5%">No Data Available</center></div></div><div class="k-pager-wrap k-grid-pager k-widget k-floatwrap" data-role="pager"><a href="#" title="Go to the first page" class="k-link k-pager-nav k-pager-first k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-seek-w">Go to the first page</span></a><a href="#" title="Go to the previous page" class="k-link k-pager-nav  k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-w">Go to the previous page</span></a><ul class="k-pager-numbers k-reset"><li class="k-current-page"><span class="k-link k-pager-nav">0</span></li><li><span class="k-state-selected">0</span></li></ul><a href="#" title="Go to the next page" class="k-link k-pager-nav  k-state-disabled" data-page="0" tabindex="-1"><span class="k-icon k-i-arrow-e">Go to the next page</span></a><a href="#" title="Go to the last page" class="k-link k-pager-nav k-pager-last k-state-disabled" data-page="0" tabindex="-1"><span class="k-icon k-i-seek-e">Go to the last page</span></a><span class="k-pager-sizes k-label"><span title="" style="" class="k-widget k-dropdown k-header" unselectable="on" role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="" aria-disabled="false" aria-busy="false" aria-activedescendant="8f47ceaf-ba10-47ea-b7f3-94da1f34a64e"><span unselectable="on" class="k-dropdown-wrap k-state-default"><span unselectable="on" class="k-input">10</span><span unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-arrow-s">select</span></span></span><select data-role="dropdownlist" style="display: none;"><option value="all">All</option><option value="5">5</option><option value="10">10</option><option value="20">20</option></select></span>items per page</span><span class="k-pager-info k-label">No items to display</span></div></div>
+        </div>
+
+        <div class="tab-pane active" id="PartReceive">
+
+            <div class="panel-group" id="accordion">
+                <div class="panel row fade-backgroud">
+                    <div class="panel-heading modify-padding mouse-pointer" data-toggle="collapse" data-parent="#accordion" href="#partReceiveInfo" onclick="toogleMinusSign(this)">
+                        <i class="fa fa-plus fa-minus" aria-hidden="true"></i>
+                        <h3>part Receive Details Info</h3>
+
+                    </div>
+                    <div id="partReceiveInfo" class="panel-collapse collapse in">
+                        <div class="panel-body">
+
+                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div ng-show="partReceiveCtrl.partReceivePRNumber.isVisible" class="">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right ">
+                                        <i ng-show="partReceiveCtrl.partReceivePRNumber.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">PR Number</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4  col-xs-4">
+                                        <input id="PRNumber" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="partReceiveCtrl.partReceive.partReceiveNumber" ng-disabled="partReceiveCtrl.partReceivePRNumber.isDisable" disabled="disabled">
+                                    </div>
+                                </div>
+
+                                <div ng-show="partReceiveCtrl.partReceiveDate.isVisible" class="">
+                                    <div class="col-lg-2 col-md-2  col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.partReceiveDate.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">PR Date</label>
+                                    </div>
+                                    <div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <span class="k-widget k-datepicker k-header form-control ui-datepicker disable-Date-Picker" style="" readonly="readonly"><span class="k-picker-wrap k-state-default"><input class="form-control ui-datepicker k-datepicker disable-Date-Picker k-input ng-pristine ng-untouched ng-valid ng-not-empty" data-val="true" data-val-required="Date is required" id="PRDate" ng-model="partReceiveCtrl.partReceive.createdOn" ng-disabled="partReceiveCtrl.partReceiveDate.isDisable" set-date-format="" data-role="datepicker" style="width: 100%;" type="text" role="combobox" aria-expanded="false" aria-owns="PRDate_dateview" aria-disabled="false" readonly="readonly" disabled="disabled"><span unselectable="on" class="k-select" role="button" aria-controls="PRDate_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                                <div ng-show="partReceiveCtrl.partReceivePONumberType.isVisible" class="">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  text-right">
+                                        <i ng-show="partReceiveCtrl.partReceivePONumberType.isMandatory" class="fa fa-asterisk error-asterisk" aria-hidden="true"></i>
+                                        <label class="ng-binding">PO Number</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4  col-xs-4">
+                                        <select id="" name="ddlPONumbers" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-not-empty" data-style="btn-warning" ng-model="partReceiveCtrl.selectedPONumberTypeID" ng-options="obj.partOrderID as obj.partOrderNumber for obj in partReceiveCtrl.poNumbers" ng-change="partReceiveCtrl.poNumberSelect()" ng-disabled="partReceiveCtrl.isPONumbersddlDisable" disabled="disabled"><option value="" class="" selected="selected">--Select--</option><option label="PO-000000052" value="number:52" selected="selected">PO-000000052</option></select>
+                                    </div>
+                                </div>
+
+                                <div ng-show="partReceiveCtrl.partReceiveAWBNumber.isVisible" class="">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right ">
+                                        <i ng-show="partReceiveCtrl.partReceiveAWBNumber.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">AWB Number</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4  col-xs-4">
+                                        <input id="AWBNumber" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.awbNumber" ng-disabled="partReceiveCtrl.partReceiveAWBNumber.isDisable">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                                <div ng-show="partReceiveCtrl.partReceiveRemarks.isVisible" class="">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right ">
+                                        <i ng-show="partReceiveCtrl.partReceiveRemarks.isMandatory" class="fa fa-asterisk error-asterisk" aria-hidden="true"></i>
+                                        <label class="ng-binding">Remarks</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <textarea id="Remark" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="partReceiveCtrl.partReceive.remarks" ng-disabled="partReceiveCtrl.partReceiveRemarks.isDisable"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Part Receive Details Info Starts-->
+                <div class="panel row fade-backgroud">
+                    <div class="panel-heading modify-padding mouse-pointer" data-toggle="collapse" data-parent="#accordion" href="#partReceiveSelectionInfo" onclick="tooglePlusSign(this)">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <h3>Part Receive Details INFO</h3>
+                    </div>
+
+                    <div id="partReceiveSelectionInfo" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div ng-show="partReceiveCtrl.isgdAllPartsVisible">
+                                <div id="gdPODParts" class="row table kendo-grid-custom k-grid k-widget" data-role="grid" style="height: 400px;"><a title="Clear Filter" class="k-pager-refresh k-link column-filter-refresh"><span class="fa fa-refresh"></span></a><div class="k-grid-header" style="padding-right: 17px;"><div class="k-grid-header-wrap k-auto-scrollable" data-role="resizable"><table role="grid"><colgroup><col style="width:120px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"></colgroup><thead role="rowgroup"><tr role="row"><th scope="col" id="69aada70-38be-4fd1-aa3f-5d9ea8d8302c" rowspan="1" data-index="0" class="k-header">Edit Rec Quantity</th><th scope="col" role="columnheader" data-field="partNumber" rowspan="1" data-title="Part Number" data-index="1" id="b5b3c54c-747f-403a-a457-171544a8dffa" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Part Number</a></th><th scope="col" role="columnheader" data-field="partDescription" rowspan="1" data-title="Part Description" data-index="2" id="aa5b14cc-338e-4fcc-962e-de6139e88202" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Part Description</a></th><th scope="col" role="columnheader" data-field="receivedQuantity" rowspan="1" data-title="Receive Qty" data-index="3" id="a5f9a268-3b82-4645-8c75-149a560de4c5" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Receive Qty</a></th><th scope="col" role="columnheader" data-field="shortageQuantity" rowspan="1" data-title="Shortage Qty" data-index="4" id="64e8288b-5971-461c-90bd-8356b2e2412f" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Shortage Qty</a></th><th scope="col" role="columnheader" data-field="damagedQuantity" rowspan="1" data-title="Damaged Qty" data-index="5" id="67d3eb6e-f0cf-4b23-9139-3dc98cf03b1e" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Damaged Qty</a></th><th scope="col" role="columnheader" data-field="excessQuantity" rowspan="1" data-title="Excess Quantity" data-index="6" id="e9f0f81b-adea-45a6-a59f-32821fd4ef62" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Excess Quantity</a></th><th scope="col" role="columnheader" data-field="lostQuantity" rowspan="1" data-title="Lost Quantity" data-index="7" id="904117b8-1b2f-4aa8-92c7-f009317b85a3" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Lost Quantity</a></th><th scope="col" role="columnheader" data-field="price" rowspan="1" data-title="Unit Price" data-index="8" id="c8038c14-cd98-416c-a8b5-59408d1caf78" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Unit Price</a></th><th scope="col" role="columnheader" data-field="amount" rowspan="1" data-title="Total Amount" data-index="9" id="6f3a75d4-51ad-4c19-a88c-b104ac78da53" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Total Amount</a></th><th scope="col" role="columnheader" data-field="binName" rowspan="1" data-title="Bin Name" data-index="10" id="6f9e7c90-1edb-4282-b9fd-6c4d620b0f4f" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Bin Name</a></th><th scope="col" role="columnheader" data-field="partID" rowspan="1" data-title="Part Id" data-index="11" id="227f49f9-8dab-42ce-9589-df70a610972f" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Part Id</a></th><th scope="col" role="columnheader" data-field="alternativePartNumber" rowspan="1" data-title="Alternative PartNumber" data-index="12" id="20a2ee24-a526-4422-9d62-5ebb2f9cb4f7" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Alternative PartNumber</a></th><th scope="col" role="columnheader" data-field="alternativePartID" rowspan="1" data-title="Alternative PartID" data-index="13" id="fb33b898-0087-4dda-9934-f4f23acde209" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Alternative PartID</a></th><th scope="col" role="columnheader" data-field="alternativeLocalStorePartMapID" rowspan="1" data-title="Alternative LocalStorePartMapID" data-index="14" id="dd87ad0d-0843-4c93-a5bb-a6012b4d1201" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Alternative LocalStorePartMapID</a></th></tr></thead></table></div></div><div class="k-grid-content k-auto-scrollable" style="height: 313px;"><table role="grid" style="height: auto;" data-role="selectable" class="k-selectable"><colgroup><col style="width:120px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"></colgroup><tbody role="rowgroup"><tr data-uid="a4e8a530-8f58-4598-8b8f-37c68c9564d1" role="row" class="k-state-selected" aria-selected="true"><td role="gridcell"><a class="k-button k-button-icontext grid-command-lnk select k-grid-EditQuantity"><span class=" "></span>Edit Quantity</a></td><td role="gridcell">LGHC-5A19A464M5</td><td role="gridcell">charger&amp;*5V*&amp;1A EU BLACK C-P57</td><td role="gridcell">3</td><td role="gridcell">7</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">104.4</td><td role="gridcell">313.2</td><td role="gridcell">Bin001</td><td role="gridcell">578</td><td role="gridcell"></td><td role="gridcell">0</td><td role="gridcell">0</td></tr><tr class="k-alt" data-uid="9cf70937-2792-4ef3-88b4-f3f90a36ab67" role="row"><td role="gridcell"><a class="k-button k-button-icontext grid-command-lnk select k-grid-EditQuantity"><span class=" "></span>Edit Quantity</a></td><td role="gridcell">LGHC-SB18C03135</td><td role="gridcell">(B/S)SCU-C-N L14D2P31 3.8V26.6Wh 2cell bty</td><td role="gridcell">4</td><td role="gridcell">6</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">667.44</td><td role="gridcell">2669.76</td><td role="gridcell">Bin001</td><td role="gridcell">581</td><td role="gridcell"></td><td role="gridcell">0</td><td role="gridcell">0</td></tr><tr data-uid="dc349114-30d3-4ce7-b703-cc73986eed10" role="row"><td role="gridcell"><a class="k-button k-button-icontext grid-command-lnk select k-grid-EditQuantity"><span class=" "></span>Edit Quantity</a></td><td role="gridcell">LGHC-SB18C00021</td><td role="gridcell">SCU-C L14D2P31 3.8V26.6Wh 2cell bty</td><td role="gridcell">5</td><td role="gridcell">5</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">708.48</td><td role="gridcell">3542.4</td><td role="gridcell">Bin001</td><td role="gridcell">582</td><td role="gridcell"></td><td role="gridcell">0</td><td role="gridcell">0</td></tr><tr class="k-alt" data-uid="1e44ad49-74c0-43c2-b2a6-e3ea48f6ee11" role="row"><td role="gridcell"><a class="k-button k-button-icontext grid-command-lnk select k-grid-EditQuantity"><span class=" "></span>Edit Quantity</a></td><td role="gridcell">LGHC-SC29A6N34S</td><td role="gridcell">Camera&amp;*L545F00 5MP VT</td><td role="gridcell">4</td><td role="gridcell">6</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">119.52</td><td role="gridcell">478.08</td><td role="gridcell">Bin001</td><td role="gridcell">583</td><td role="gridcell"></td><td role="gridcell">0</td><td role="gridcell">0</td></tr><tr data-uid="49790f09-8575-4fdf-9bd9-bf6f4633b11a" role="row"><td role="gridcell"><a class="k-button k-button-icontext grid-command-lnk select k-grid-EditQuantity"><span class=" "></span>Edit Quantity</a></td><td role="gridcell">LGHC-SC29A6N4YE</td><td role="gridcell">camera&amp;*CPLBF05003</td><td role="gridcell">2</td><td role="gridcell">8</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">144.72</td><td role="gridcell">289.44</td><td role="gridcell">Bin001</td><td role="gridcell">589</td><td role="gridcell"></td><td role="gridcell">0</td><td role="gridcell">0</td></tr><tr class="k-alt" data-uid="0f92c93c-0cee-4602-bce9-f3bd99c1398d" role="row"><td role="gridcell"><a class="k-button k-button-icontext grid-command-lnk select k-grid-EditQuantity"><span class=" "></span>Edit Quantity</a></td><td role="gridcell">LGHC-SA18C04967</td><td role="gridcell">(B/S)AC Adapter;C-P37;5.2V/2A;UK;black</td><td role="gridcell">5</td><td role="gridcell">5</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">Bin001</td><td role="gridcell">591</td><td role="gridcell"></td><td role="gridcell">0</td><td role="gridcell">0</td></tr><tr data-uid="ebc18d89-7ebd-4fb2-9728-4874e59a082a" role="row"><td role="gridcell"><a class="k-button k-button-icontext grid-command-lnk select k-grid-EditQuantity"><span class=" "></span>Edit Quantity</a></td><td role="gridcell">LGHC-SB18C00020</td><td role="gridcell">XWD-A L14D2P31 3.8V26.6Wh 2cell bty</td><td role="gridcell">2</td><td role="gridcell">8</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">623.52</td><td role="gridcell">1247.04</td><td role="gridcell">Bin001</td><td role="gridcell">596</td><td role="gridcell"></td><td role="gridcell">0</td><td role="gridcell">0</td></tr><tr class="k-alt" data-uid="2dd029d3-4622-4289-983d-8c082b43a4eb" role="row"><td role="gridcell"><a class="k-button k-button-icontext grid-command-lnk select k-grid-EditQuantity"><span class=" "></span>Edit Quantity</a></td><td role="gridcell">LGHC-Software-Upgarde</td><td role="gridcell">Charger&amp;*5V*&amp;1A EU BLACK C-P57</td><td role="gridcell">2</td><td role="gridcell">8</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">Bin001</td><td role="gridcell">600</td><td role="gridcell"></td><td role="gridcell">0</td><td role="gridcell">0</td></tr><tr data-uid="45184c5f-9913-41d1-b1c7-19e2a0bb49a1" role="row"><td role="gridcell"><a class="k-button k-button-icontext grid-command-lnk select k-grid-EditQuantity"><span class=" "></span>Edit Quantity</a></td><td role="gridcell">LGHC-5D78C00959</td><td role="gridcell">A7-30HC MB_Shield Mylar&amp;*HQ22230650000CS</td><td role="gridcell">2</td><td role="gridcell">8</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0.72</td><td role="gridcell">1.44</td><td role="gridcell">Bin001</td><td role="gridcell">705</td><td role="gridcell"></td><td role="gridcell">0</td><td role="gridcell">0</td></tr><tr class="k-alt" data-uid="7c4ea22b-cedf-481f-9e37-4482a97034d4" role="row"><td role="gridcell"><a class="k-button k-button-icontext grid-command-lnk select k-grid-EditQuantity"><span class=" "></span>Edit Quantity</a></td><td role="gridcell">LGHC-5F78C00954</td><td role="gridcell">A7-30HC LCM_LinkFpc&amp;*HQ22000866000 CS</td><td role="gridcell">1</td><td role="gridcell">9</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">0</td><td role="gridcell">82.8</td><td role="gridcell">82.8</td><td role="gridcell">Bin001</td><td role="gridcell">706</td><td role="gridcell"></td><td role="gridcell">0</td><td role="gridcell">0</td></tr></tbody></table></div><div class="k-pager-wrap k-grid-pager k-widget k-floatwrap" data-role="pager"><a href="#" title="Go to the first page" class="k-link k-pager-nav k-pager-first k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-seek-w">Go to the first page</span></a><a href="#" title="Go to the previous page" class="k-link k-pager-nav  k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-w">Go to the previous page</span></a><ul class="k-pager-numbers k-reset"><li class="k-current-page"><span class="k-link k-pager-nav">1</span></li><li><span class="k-state-selected">1</span></li></ul><a href="#" title="Go to the next page" class="k-link k-pager-nav  k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-e">Go to the next page</span></a><a href="#" title="Go to the last page" class="k-link k-pager-nav k-pager-last k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-seek-e">Go to the last page</span></a><span class="k-pager-sizes k-label"><span title="" style="" class="k-widget k-dropdown k-header" unselectable="on" role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="" aria-disabled="false" aria-busy="false" aria-activedescendant="f53de0fb-e8e0-4841-9f63-6268252fbf0a"><span unselectable="on" class="k-dropdown-wrap k-state-default"><span unselectable="on" class="k-input">All</span><span unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-arrow-s">select</span></span></span><select data-role="dropdownlist" style="display: none;"><option value="all" selected="selected">All</option><option value="5">5</option><option value="10">10</option><option value="20">20</option></select></span>items per page</span><span class="k-pager-info k-label">1 - 10 of 10 items</span></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Additional Info Starts-->
+                <div class="panel row fade-backgroud ng-hide" ng-show="partReceiveCtrl.partReceiveExtraFieldPanel.isVisible">
+                    <div class="panel-heading modify-padding mouse-pointer" data-toggle="collapse" data-parent="#accordion" href="#additionalInfo" onclick="tooglePlusSign(this)">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <!--<h3>Additional Info</h3>-->
+                        <h3 class="ng-binding">Additional Info</h3>
+                    </div>
+
+                    <div id="additionalInfo" class="panel-collapse collapse">
+                        <div class="panel-body">
+
+                            <!--Textarea 1 & 2-->
+                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div ng-show="partReceiveCtrl.prTextarea1.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prTextarea1.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Textarea1</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <textarea id="Textarea1" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.textarea1" ng-disabled="partReceiveCtrl.prTextarea1.isDisable"></textarea>
+                                    </div>
+                                </div>
+                                <div ng-show="partReceiveCtrl.prTextarea2.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prTextarea2.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Textarea2</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <textarea id="Textarea2" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.textarea2" ng-disabled="partReceiveCtrl.prTextarea2.isDisable"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Textbox 1 & 2-->
+                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div ng-show="partReceiveCtrl.prTextbox1.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prTextbox1.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Textbox1</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <input id="Textbox1" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.textbox1" ng-disabled="partReceiveCtrl.prTextbox1.isDisable">
+                                    </div>
+                                </div>
+                                <div ng-show="partReceiveCtrl.prTextbox2.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prTextbox2.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Textbox2</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <input id="Textbox2" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.textbox2" ng-disabled="partReceiveCtrl.prTextbox2.isDisable">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Textbox 3 & 4-->
+                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div ng-show="partReceiveCtrl.prTextbox3.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prTextbox3.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Textbox3</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <input id="Textbox3" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.textbox3" ng-disabled="partReceiveCtrl.prTextbox3.isDisable">
+                                    </div>
+                                </div>
+                                <div ng-show="partReceiveCtrl.prTextbox4.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prTextbox4.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Textbox4</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <input id="Textbox4" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.textbox4" ng-disabled="partReceiveCtrl.prTextbox4.isDisable">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Textbox 5 & 6-->
+                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div ng-show="partReceiveCtrl.prTextbox5.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prTextbox5.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Textbox5</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <input id="Textbox5" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.textbox5" ng-disabled="partReceiveCtrl.prTextbox5.isDisable">
+                                    </div>
+                                </div>
+                                <div ng-show="partReceiveCtrl.prTextbox6.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prTextbox6.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Textbox6</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <input id="Textbox6" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.textbox6" ng-disabled="partReceiveCtrl.prTextbox6.isDisable">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Textbox 7 & 8-->
+                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div ng-show="partReceiveCtrl.prTextbox7.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prTextbox7.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Textbox7</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <input id="Textbox7" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.textbox7" ng-disabled="partReceiveCtrl.prTextbox7.isDisable">
+                                    </div>
+                                </div>
+                                <div ng-show="partReceiveCtrl.prTextbox8.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prTextbox8.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Textbox8</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <input id="Textbox8" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.textbox8" ng-disabled="partReceiveCtrl.prTextbox8.isDisable">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Textbox 9 & 10-->
+                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div ng-show="partReceiveCtrl.prTextbox9.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prTextbox9.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Textbox9</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <input id="Textbox9" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.textbox9" ng-disabled="partReceiveCtrl.prTextbox9.isDisable">
+                                    </div>
+                                </div>
+                                <div ng-show="partReceiveCtrl.prTextbox10.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prTextbox10.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Textbox10</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <input id="Textbox10" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.textbox10" ng-disabled="partReceiveCtrl.prTextbox10.isDisable">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Date 1 & 2-->
+                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div ng-show="partReceiveCtrl.prDate1.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prDate1.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Date1</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <span class="k-widget k-datepicker k-header form-control ui-datepicker cls-datetimepicker" readonly="readonly" style=""><span class="k-picker-wrap k-state-default"><input id="Date1" class="form-control ui-datepicker cls-datetimepicker k-input ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.date1" ng-disabled="partReceiveCtrl.prDate1.isDisable" data-role="datepicker" type="text" role="combobox" aria-expanded="false" aria-owns="Date1_dateview" aria-disabled="false" readonly="readonly" style="width: 100%;"><span unselectable="on" class="k-select" role="button" aria-controls="Date1_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+                                    </div>
+                                </div>
+                                <div ng-show="partReceiveCtrl.prDate2.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prDate2.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Date2</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <span class="k-widget k-datepicker k-header form-control ui-datepicker cls-datetimepicker" readonly="readonly" style=""><span class="k-picker-wrap k-state-default"><input id="Date2" class="form-control ui-datepicker cls-datetimepicker k-input ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.date2" ng-disabled="partReceiveCtrl.prDate2.isDisable" data-role="datepicker" type="text" role="combobox" aria-expanded="false" aria-owns="Date2_dateview" aria-disabled="false" readonly="readonly" style="width: 100%;"><span unselectable="on" class="k-select" role="button" aria-controls="Date2_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <!--Date 3 & 4-->
+                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div ng-show="partReceiveCtrl.prDate3.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prDate3.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Date3</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <span class="k-widget k-datepicker k-header form-control ui-datepicker cls-datetimepicker" readonly="readonly" style=""><span class="k-picker-wrap k-state-default"><input id="Date3" type="text" class="form-control ui-datepicker cls-datetimepicker k-input ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.date3" ng-disabled="partReceiveCtrl.prDate3.isDisable" data-role="datepicker" role="combobox" aria-expanded="false" aria-owns="Date3_dateview" aria-disabled="false" readonly="readonly" style="width: 100%;"><span unselectable="on" class="k-select" role="button" aria-controls="Date3_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+                                    </div>
+                                </div>
+                                <div ng-show="partReceiveCtrl.prDate4.isVisible" class="ng-hide">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                                        <i ng-show="partReceiveCtrl.prDate4.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                        <label class="ng-binding">Date4</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <span class="k-widget k-datepicker k-header form-control ui-datepicker cls-datetimepicker" readonly="readonly" style=""><span class="k-picker-wrap k-state-default"><input id="Date4" class="form-control ui-datepicker cls-datetimepicker k-input ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceive.date4" ng-disabled="partReceiveCtrl.prDate4.isDisable" data-role="datepicker" type="text" role="combobox" aria-expanded="false" aria-owns="Date4_dateview" aria-disabled="false" readonly="readonly" style="width: 100%;"><span unselectable="on" class="k-select" role="button" aria-controls="Date4_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <!--CheckBox 1 & 2-->
+                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ng-hide" ng-show="partReceiveCtrl.prBit1.isVisible">
+                                    <input type="checkbox" ng-model="partReceiveCtrl.partReceive.Bit1" ng-disabled="partReceiveCtrl.prBit1.isDisable" class="ng-pristine ng-untouched ng-valid ng-empty">
+
+                                    <span class="checkbox-top ng-binding">Bit1</span>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ng-hide" ng-show="partReceiveCtrl.prBit2.isVisible">
+                                    <input type="checkbox" ng-model="partReceiveCtrl.partReceive.Bit2" ng-disabled="partReceiveCtrl.prBit2.isDisable" class="ng-pristine ng-untouched ng-valid ng-empty">
+                                    <span class="checkbox-top ng-binding">Bit2</span>
+                                </div>
+                            </div>
+
+                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ng-hide" ng-show="partReceiveCtrl.prBit3.isVisible">
+                                    <input type="checkbox" ng-model="partReceiveCtrl.partReceive.Bit3" ng-disabled="partReceiveCtrl.prBit3.isDisable" class="ng-pristine ng-untouched ng-valid ng-empty">
+                                    <span class="checkbox-top ng-binding">Bit3</span>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ng-hide" ng-show="partReceiveCtrl.prBit4.isVisible">
+                                    <input type="checkbox" ng-model="partReceiveCtrl.partReceive.Bit4" ng-disabled="partReceiveCtrl.prBit4.isDisable" class="ng-pristine ng-untouched ng-valid ng-empty">
+                                    <span class="checkbox-top ng-binding">Bit4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Additional Info Ends-->
+            </div>
+        </div>
+    </div>
+    <hr class="heading-hr">
+    <!--PR Information Starts-->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="receivedQuantityChangeModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header adjust-top-bottom-padding">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title page-heading">Part Quantity Change</h4>
+                </div>
+                <div class="modal-body padding-top-five">
+                    <div class="tab-content margin-top-zero">
+                        <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            <div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  text-right">
+                                    <label>Part Number</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8  col-xs-8">
+                                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.partReceiveDetailForPopup.partNumber" ng-disabled="true" disabled="disabled">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            <div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  text-right">
+                                    <label>Ordered Quantity</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8  col-xs-8">
+                                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="partReceiveCtrl.partReceiveDetailForPopup.orderedQuantity" ng-disabled="true" disabled="disabled">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            <div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  text-right">
+                                    <label>Bin Master</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8  col-xs-8">
+                                    <select id="" name="ddlBinMaster" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-not-empty" data-style="btn-warning" ng-model="partReceiveCtrl.partReceiveDetailForPopup.localStoreBinMapID" ng-options="obj.localStoreBinMapID as obj.binName for obj in partReceiveCtrl.binMaster" ng-disabled="partReceiveCtrl.isBinMasterddlDisable"><option value="" class="" selected="selected">--Select--</option><option label="TEST Bin" value="number:59">TEST Bin</option><option label="Bin001" value="number:2">Bin001</option></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            <div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  text-right">
+                                    <label>Alternative Part</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8  col-xs-8">
+                                    <select id="" name="ddlAlternativePart" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-not-empty" data-style="btn-warning" ng-model="partReceiveCtrl.partReceiveDetailForPopup.alternativePartID" ng-options="obj.alternativePartID as obj.alternativePartNumber for obj in partReceiveCtrl.alternativePartMaster" ng-disabled="partReceiveCtrl.isAlternativePartTddlDisable"><option value="" class="" selected="selected">--Select--</option></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            <div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  text-right">
+                                    <label>Received Quantity</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8  col-xs-8">
+                                    <input type="number" class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" onkeyup="this.value = this.value.replace(/[^0-9]/g, '')" ng-model="partReceiveCtrl.partReceiveDetailForPopup.receivedQuantity">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            <div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  text-right">
+                                    <label>Damaged Quantity</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8  col-xs-8">
+                                    <input type="number" class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" onkeyup="this.value = this.value.replace(/[^0-9]/g, '')" ng-model="partReceiveCtrl.partReceiveDetailForPopup.damagedQuantity">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            <div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  text-right">
+                                    <label>Excess Quantity</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8  col-xs-8">
+                                    <input type="number" class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" onkeyup="this.value = this.value.replace(/[^0-9]/g, '')" ng-model="partReceiveCtrl.partReceiveDetailForPopup.receivedExcessQuantity">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            <div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  text-right">
+                                    <label>Lost Quantity</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8  col-xs-8">
+                                    <input type="number" class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" onkeyup="this.value = this.value.replace(/[^0-9]/g, '')" ng-model="partReceiveCtrl.partReceiveDetailForPopup.receivedLostQuantity">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row text-right col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            <button type="button" ng-click="partReceiveCtrl.updateReceivedQuantity()" value="Save" class="btn btn-info btn-auto-width">
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                Update Received Quantity
+                            </button>
+                            <button type="button" value="Close" class="btn btn-info btn-cancel" data-dismiss="modal">
+                                <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="modal-footer">
+
+                </div>-->
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+<div class="modal fade vertical-alignment-helper" tabindex="-1" role="dialog" id="damagePhotoUpload">
+    <div class="modal-dialog vertical-align-center">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">F L E X L I N K 2.0</h4>
+            </div>
+            <div class="modal-body">
+                <h3 class="ng-binding">Upload Photo for Damaged Part </h3>
+                <br>
+                <br>
+                <div class="row col-md-12">
+                    <input type="file" accept=".jpg,.pdf,.png,.gif" onchange="setFile(this)" id="myFile"><br>
+                    <label id="maxFileSizeMsg" style="color:red" class="ng-binding">Note : Upload file size limit is 2 MB.</label>
+                </div>
+             
+                <div class="row">
+                    <div class="col-lg-2">
+                        <label>Description </label>
+                    </div>
+                    <div class="col-lg-1 col-md-1"></div>
+                    <div class="col-lg-9 col-md-9">
+                        <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="partReceiveCtrl.fileDescription">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal" ng-click="partReceiveCtrl.uploadFile()">Add</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
+</form>    </div>
+</ui-view>
+    </div>
+</div>
+            </div>
+            <a class="scrollToTop" href="#" style="display: none;"></a>
+        </div>
+        
+
+    </div>
+
+    
+
+    <footer style="background-image: linear-gradient(27deg, rgb(255, 150, 0) 19%, rgb(27, 169, 225) 0%); background-position: initial initial; background-repeat: initial initial;">
+        <div class="col-lg-12 ">
+            <div class="col-lg-6">
+                <span class="ng-binding">Flexlink 2.3.1.1 (DEMO)</span>
+            </div>
+            <div class="col-lg-6 text-right top-zero">
+                <span class="ng-binding"><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2017</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="storesModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header adjust-top-bottom-padding">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title page-heading">Stores</h4>
+                </div>
+                <div class="modal-body padding-top-five height-290">
+                    <div class="tab-content margin-top-zero">
+                        <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            
+                            <div class="stores-div">
+                                <!-- ngRepeat: store in masterCtrl.storesCollection --><div ng-repeat="store in masterCtrl.storesCollection" class="row cursor-pointer ng-scope">
+                                    <!-- ngIf: store.localStoreID == masterCtrl.displaySelectedStoreID -->
+                                    <!-- ngIf: store.localStoreID != masterCtrl.displaySelectedStoreID --><div ng-if="store.localStoreID != masterCtrl.displaySelectedStoreID" class="store-display ng-binding ng-scope" ng-click="masterCtrl.onStoreChange(store)">mayurcp</div><!-- end ngIf: store.localStoreID != masterCtrl.displaySelectedStoreID -->
+                                </div><!-- end ngRepeat: store in masterCtrl.storesCollection --><div ng-repeat="store in masterCtrl.storesCollection" class="row cursor-pointer ng-scope">
+                                    <!-- ngIf: store.localStoreID == masterCtrl.displaySelectedStoreID --><div ng-if="store.localStoreID == masterCtrl.displaySelectedStoreID" class="selected-store-display ng-binding ng-scope" ng-click="masterCtrl.onStoreChange(store)">store1</div><!-- end ngIf: store.localStoreID == masterCtrl.displaySelectedStoreID -->
+                                    <!-- ngIf: store.localStoreID != masterCtrl.displaySelectedStoreID -->
+                                </div><!-- end ngRepeat: store in masterCtrl.storesCollection -->
+                            </div>
+                        </div>
+                        <div class="row text-right col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            <button type="button" ng-click="masterCtrl.onStoreSelect()" value="Save" class="btn btn-info btn-auto-width">
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                OK
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="sessionModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content" style="width:400px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h2 class="modal-title"><i class="fa fa-clock-o fa-2x" aria-hidden="true"></i> Session Timeout  </h2>
+                </div>
+                <div class="modal-body">
+                    <h3 style="font-variant:normal">Your Session will expire in <span id="sessionTime"></span> Seconds</h3>
+                    <br>
+                    <h3 style="font-variant:normal">Do you Want to Continue?</h3>
+                </div>
+                <div class="modal-footer" style="background-color:lightgray">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="closeSession()">Continue</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<div class="k-tooltip k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-tooltip-content"></div></div><div class="k-tooltip k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-tooltip-content"></div></div><div class="k-list-container k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-group-header" style="display: none;"></div><div class="k-list-scroller" unselectable="on"><ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" aria-live="off" data-role="staticlist" role="listbox"><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="0">All</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="1">5</li><li tabindex="-1" role="option" unselectable="on" class="k-item k-state-selected k-state-focused" aria-selected="true" data-offset-index="2" id="9f982a9e-9f25-484f-998a-362d48e343a8">10</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="3">20</li></ul></div></div><div aria-hidden="true" class="k-calendar-container k-popup k-group k-reset" id="{{partReceiveCtrl.partReceiveDate.fieldName}}_dateview" data-role="popup" style="display: none; position: absolute;"></div><div aria-hidden="true" class="k-calendar-container k-popup k-group k-reset" id="{{partReceiveCtrl.prDate1.fieldName}}_dateview" data-role="popup" style="display: none; position: absolute;"></div><div aria-hidden="true" class="k-calendar-container k-popup k-group k-reset" id="{{partReceiveCtrl.prDate2.fieldName}}_dateview" data-role="popup" style="display: none; position: absolute;"></div><div aria-hidden="true" class="k-calendar-container k-popup k-group k-reset" id="{{partReceiveCtrl.prDate3.fieldName}}_dateview" data-role="popup" style="display: none; position: absolute;"></div><div aria-hidden="true" class="k-calendar-container k-popup k-group k-reset" id="{{partReceiveCtrl.prDate4.fieldName}}_dateview" data-role="popup" style="display: none; position: absolute;"></div><div class="k-list-container k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-group-header" style="display: none;"></div><div class="k-list-scroller" unselectable="on"><ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" aria-live="off" data-role="staticlist" role="listbox"><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="0">All</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="1">5</li><li tabindex="-1" role="option" unselectable="on" class="k-item k-state-selected k-state-focused" aria-selected="true" data-offset-index="2" id="b64ec170-6ab1-49a2-a669-51907aea12fe">10</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="3">20</li></ul></div></div><div class="k-list-container k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-group-header" style="display: none;"></div><div class="k-list-scroller" unselectable="on"><ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" aria-live="off" data-role="staticlist" role="listbox"><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="0">All</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="1">5</li><li tabindex="-1" role="option" unselectable="on" class="k-item k-state-selected k-state-focused" aria-selected="true" data-offset-index="2" id="8f47ceaf-ba10-47ea-b7f3-94da1f34a64e">10</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="3">20</li></ul></div></div><div class="k-list-container k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-group-header" style="display: none;"></div><div class="k-list-scroller" unselectable="on"><ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" aria-live="off" data-role="staticlist" role="listbox"><li tabindex="-1" role="option" unselectable="on" class="k-item k-state-focused k-state-selected" data-offset-index="0" id="f53de0fb-e8e0-4841-9f63-6268252fbf0a" aria-selected="true">All</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="1">5</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="2">10</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="3">20</li></ul></div></div></body>
