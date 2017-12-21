@@ -9,7 +9,7 @@
         "properties": {
           "action": {
             "type": "action",
-            "selector": ".btn.btn-info.ng-scope",
+            "selector": "#comment",
             "control": "action.button"
           },
           "ticketnumber": {
