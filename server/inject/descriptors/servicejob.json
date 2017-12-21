@@ -26,7 +26,8 @@
             "control": "property.innerText"
           },
           "firstname": {
-            "type": "string"
+            "type": "string",
+            "selector": "td"
           }
         }
       },
