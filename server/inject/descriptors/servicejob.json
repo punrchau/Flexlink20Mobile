@@ -40,7 +40,7 @@
     },
     "isservicejob": {
       "type": "identifier",
-      "selector": "a",
+      "selector": "#liActiveServiceJobs",
       "control": "exists"
     }
   },
