@@ -50,7 +50,8 @@
     {
       "match": [
         "isServiceJob",
-        "servicejobs.isServiceJob"
+        "servicejobs.isServiceJob",
+        "isservicejob"
       ],
       "screens": [
         "servicejob"
