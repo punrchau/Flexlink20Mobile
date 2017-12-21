@@ -27,12 +27,6 @@
           },
           "firstname": {
             "type": "string"
-          },
-          "isServiceJob": {
-            "type": "identifier",
-            "selector": "h2",
-            "control": "exists",
-            "selectContains": "Repair Job"
           }
         }
       },
