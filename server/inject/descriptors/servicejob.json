@@ -37,6 +37,11 @@
         "type": "none"
       },
       "selectorAll": "#gdRepairJobs table tbody tr"
+    },
+    "isservicejob": {
+      "type": "string",
+      "selector": "#masterBody",
+      "control": "property.innerText"
     }
   },
   "connect": [
