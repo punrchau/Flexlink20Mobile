@@ -2,7 +2,12 @@
   "type": "object",
   "comment": "ListView",
   "properties": {
-    "servicejobs": {
+    "isservicejob": {
+      "type": "identifier",
+      "selector": "#liActiveServiceJobs",
+      "control": "exists"
+    },
+    "listItems": {
       "type": "array",
       "items": {
         "type": "object",
@@ -39,11 +44,6 @@
         "type": "none"
       },
       "selectorAll": "#gdRepairJobs table tbody tr"
-    },
-    "isservicejob": {
-      "type": "identifier",
-      "selector": "#liActiveServiceJobs",
-      "control": "exists"
     }
   },
   "connect": [
