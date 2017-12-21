@@ -39,7 +39,7 @@
       "selectorAll": "#gdRepairJobs table tbody tr"
     },
     "isservicejob": {
-      "type": "string",
+      "type": "identifier",
       "selector": "#masterBody",
       "control": "property.innerText"
     }
