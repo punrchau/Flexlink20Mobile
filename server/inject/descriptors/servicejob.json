@@ -8,7 +8,8 @@
         "type": "object",
         "properties": {
           "action": {
-            "type": "action"
+            "type": "action",
+            "selector": ".btn.btn-info.ng-scope"
           },
           "ticketnumber": {
             "type": "string",
