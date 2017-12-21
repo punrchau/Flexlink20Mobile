@@ -28,7 +28,8 @@
           "firstname": {
             "type": "string",
             "selector": "td",
-            "selectIndex": 5
+            "selectIndex": 5,
+            "control": "property.innerText"
           }
         }
       },
