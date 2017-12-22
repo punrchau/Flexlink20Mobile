@@ -43,7 +43,7 @@
     "isservicejob": {
       "type": "identifier",
       "selector": "#liActiveServiceJobs",
-      "control": "property.innerText"
+      "control": "exists"
     }
   },
   "connect": [
