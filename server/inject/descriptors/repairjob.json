@@ -132,7 +132,7 @@
     "isrepairjob": {
       "type": "identifier",
       "selector": "#liRepairJobs",
-      "control": "property.innerText"
+      "control": "exists"
     }
   },
   "connect": []
