@@ -392,6 +392,20 @@
         "update": {
           "type": "none"
         }
+      },
+      "selectTabs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "tabName": {
+              "type": "string"
+            },
+            "isSelected": {
+              "type": "boolean"
+            }
+          }
+        }
       }
     }
   },
