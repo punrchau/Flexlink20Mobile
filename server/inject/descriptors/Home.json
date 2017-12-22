@@ -151,9 +151,7 @@
       "event": "InvokePartMgmt"
     },
     {
-      "match": [
-        "isPartMgmt"
-      ],
+      "match": [],
       "event": "InvokeServiceJob"
     }
   ]
