@@ -64,7 +64,7 @@
           }
         }
       },
-      "selectorAll": ".active"
+      "selectorAll": "#stateTabs li"
     },
     "isrepairjob": {
       "type": "identifier",
