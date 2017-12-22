@@ -51,7 +51,8 @@
           },
           "isSelected": {
             "type": "boolean",
-            "selector": "function(node){if(node.getAttribute('class')=='active'){return true}}"
+            "selector": "function(node){if(node.getAttribute('class')=='active'){return true}}",
+            "control": "exists"
           },
           "clickTab": {
             "type": "action"
