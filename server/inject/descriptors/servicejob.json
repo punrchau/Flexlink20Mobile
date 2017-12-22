@@ -64,9 +64,7 @@
       ]
     },
     {
-      "match": [
-        "isDhashboard"
-      ],
+      "match": [],
       "event": "InvokeServiceJob"
     }
   ]
