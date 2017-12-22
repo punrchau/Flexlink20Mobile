@@ -51,7 +51,11 @@
           },
           "isSelected": {
             "type": "boolean",
-            "control": "exists"
+            "control": "exists",
+            "selector": {
+              "fn": "",
+              "selector": ""
+            }
           },
           "clickTab": {
             "type": "action"
