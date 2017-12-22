@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "comment": "ListView",
+  "properties": {
+    "listItems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "action"
+          },
+          "ticketnumber": {
+            "type": "string",
+            "update": {
+              "type": "none"
+            }
+          },
+          "status": {
+            "type": "string"
+          },
+          "firstname": {
+            "type": "string"
+          }
+        }
+      },
+      "update": {
+        "type": "none"
+      }
+    },
+    "selectTabs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tabName": {
+            "type": "string"
+          },
+          "isSelected": {
+            "type": "boolean"
+          },
+          "clickTab": {
+            "type": "action"
+          }
+        }
+      }
+    }
+  },
+  "connect": []
+}
