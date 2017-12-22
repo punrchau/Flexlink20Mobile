@@ -398,6 +398,10 @@
   "menu": {
     "type": "object",
     "comment": "",
-    "properties": {}
+    "properties": {
+      "logout": {
+        "type": "string"
+      }
+    }
   }
 }
