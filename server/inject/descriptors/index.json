@@ -5,5 +5,6 @@
   "Home.json",
   "ChangePartQuantity.json",
   "UploadImage.json",
-  "PartReceiveDetails.json"
+  "PartReceiveDetails.json",
+  "repairjob.json"
 ]
