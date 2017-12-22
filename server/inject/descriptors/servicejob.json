@@ -46,7 +46,7 @@
       "control": "exists"
     },
     "isDhashboard": {
-      "type": "string",
+      "type": "identifier",
       "selector": ".panel-heading.mouse-pointer",
       "control": "property.innerHTML"
     }
