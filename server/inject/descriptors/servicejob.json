@@ -20,7 +20,8 @@
           },
           "status": {
             "type": "string",
-            "selector": "td"
+            "selector": "td",
+            "selectIndex": 5
           },
           "firstname": {
             "type": "string"
