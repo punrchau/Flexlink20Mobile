@@ -42,7 +42,7 @@
     },
     "isservicejob": {
       "type": "identifier",
-      "selector": "123#liActiveServiceJobs",
+      "selector": "#liRepairJobs",
       "control": "exists"
     },
     "isDhashboard": {
