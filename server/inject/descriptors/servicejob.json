@@ -19,7 +19,8 @@
             "control": "property.innerText"
           },
           "status": {
-            "type": "string"
+            "type": "string",
+            "selector": "td"
           },
           "firstname": {
             "type": "string"
