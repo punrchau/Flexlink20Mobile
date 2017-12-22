@@ -46,7 +46,8 @@
         "properties": {
           "tabName": {
             "type": "string",
-            "selector": "a"
+            "selector": "a",
+            "control": "property.innerText"
           },
           "isSelected": {
             "type": "boolean"
