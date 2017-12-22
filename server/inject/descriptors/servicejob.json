@@ -53,7 +53,7 @@
     },
     "selectTabs": {
       "type": "array",
-      "selectorAll": "#stateTabs li",
+      "selectorAll": "a",
       "items": {
         "type": "object",
         "properties": {}
