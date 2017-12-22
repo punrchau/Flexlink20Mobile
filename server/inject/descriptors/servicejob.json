@@ -24,7 +24,8 @@
             "selectIndex": 5
           },
           "firstname": {
-            "type": "string"
+            "type": "string",
+            "selector": "td"
           }
         }
       },
