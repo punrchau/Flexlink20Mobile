@@ -58,6 +58,11 @@
         }
       },
       "selectorAll": ".active"
+    },
+    "isrepairjob": {
+      "type": "string",
+      "selector": "#liRepairJobs",
+      "control": "property.innerText"
     }
   },
   "connect": []
