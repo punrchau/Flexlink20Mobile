@@ -15,5 +15,20 @@
       "status": "Booked-In",
         "" : "Kiran"
     }
+  ] ,
+  "selectTabs": [
+    {
+      "$i": 0,
+      "tabName": "Partially Receive Info"
+    },
+    {
+      "$i": 1,
+      "tabName": "Fully Receive Info",
+      "isSelected": true
+    },
+    {
+      "$i": 2,
+      "tabName": "Closed Info"
+    }
   ]
 }
