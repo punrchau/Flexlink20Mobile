@@ -25,7 +25,8 @@
           },
           "firstname": {
             "type": "string",
-            "selector": "td"
+            "selector": "td",
+            "selectIndex": 4
           }
         }
       },
