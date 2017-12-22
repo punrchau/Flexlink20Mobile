@@ -19,16 +19,12 @@
   "selectTabs": [
     {
       "$i": 0,
-      "tabName": "Partially Receive Info"
+      "tabName": "Repair Job"
     },
     {
       "$i": 1,
-      "tabName": "Fully Receive Info",
+      "tabName": "Service Job",
       "isSelected": true
-    },
-    {
-      "$i": 2,
-      "tabName": "Closed Info"
     }
   ]
 }
