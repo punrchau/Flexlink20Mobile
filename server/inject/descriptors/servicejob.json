@@ -26,7 +26,8 @@
       },
       "update": {
         "type": "none"
-      }
+      },
+      "selectorAll": "#gdRepairJobs table tbody tr"
     },
     "selectTabs": {
       "type": "array",
