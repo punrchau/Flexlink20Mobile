@@ -48,7 +48,8 @@
     "isDhashboard": {
       "type": "identifier",
       "selector": "div[class=\"panel-heading mouse-pointer\"] h3",
-      "control": "exists"
+      "control": "exists",
+      "selectContains": "Technician Dashboard"
     }
   },
   "connect": [
