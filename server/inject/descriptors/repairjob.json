@@ -131,7 +131,7 @@
     },
     "isrepairjob": {
       "type": "identifier",
-      "selector": "#masterBody",
+      "selector": "a",
       "control": "property.innerText"
     }
   },
