@@ -60,7 +60,7 @@
       "selectorAll": ".active"
     },
     "isrepairjob": {
-      "type": "string",
+      "type": "identifier",
       "selector": "#liRepairJobs",
       "control": "property.innerText"
     }
