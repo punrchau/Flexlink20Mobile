@@ -53,7 +53,7 @@
     },
     "selectTabs": {
       "type": "array",
-      "selectorAll": "#liRepairJobs",
+      "selectorAll": "#stateTabs li",
       "items": {
         "type": "object",
         "properties": {}
