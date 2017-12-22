@@ -52,9 +52,12 @@
       "selectContains": "Technician Dashboard"
     },
     "selectTabs": {
-      "type": "string",
-      "selector": "#liRepairJobs",
-      "control": "property.innerText"
+      "type": "array",
+      "selectorAll": "#liRepairJobs",
+      "items": {
+        "type": "object",
+        "properties": {}
+      }
     }
   },
   "connect": [
