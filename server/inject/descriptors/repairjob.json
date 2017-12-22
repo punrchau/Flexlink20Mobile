@@ -131,7 +131,7 @@
     },
     "isrepairjob": {
       "type": "identifier",
-      "selector": "#liRepairJobs",
+      "selector": "1233#liRepairJobs",
       "control": "exists"
     }
   },
