@@ -2,11 +2,6 @@
   "type": "object",
   "comment": "ListView",
   "properties": {
-    "isservicejob": {
-      "type": "identifier",
-      "selector": "#liActiveServiceJobs",
-      "control": "exists"
-    },
     "listItems": {
       "type": "array",
       "items": {
