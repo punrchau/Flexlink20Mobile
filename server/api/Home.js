@@ -13,7 +13,7 @@ exports.on_InvokePartMgmt = function (page) {
 }
 
 exports.on_InvokeServiceJob = function (page) {
-    page.href('http://fl20dev.azurewebsites.net/lenovo/#/repairjobs')
+    page.href('http://fl20dev.azurewebsites.net/lenovo/#/repairjobs').screen('servicejob');
 }
 
 
