@@ -1,9 +1,9 @@
 [
+  "servicejob.json",
   "Login.json",
   "Messages.json",
   "Home.json",
   "ChangePartQuantity.json",
-  "servicejob.json",
   "UploadImage.json",
   "PartReceiveDetails.json"
 ]
