@@ -105,5 +105,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.repairjob', {
+        views: {
+            app: {
+                controller: 'app_repairjob',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.repairjob');
+                }
+            }
+        }
     });
 });

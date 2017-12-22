@@ -75,6 +75,13 @@
       "sourceScreenId": "app.listview.listviewcool",
       "sourceAppId": "universaltemplates",
       "model": "servicejob"
+    },
+    {
+      "id": "repairjob",
+      "name": "RepairJob",
+      "sourceScreenId": "app.formsmall.formsmallclassic",
+      "sourceAppId": "universaltemplates",
+      "model": "repairjob"
     }
   ],
   "sourceAppId": "_blank",
