@@ -59,7 +59,8 @@
           },
           "clickTab": {
             "type": "action",
-            "selector": "a"
+            "selector": "a",
+            "control": "action.button"
           }
         }
       },
