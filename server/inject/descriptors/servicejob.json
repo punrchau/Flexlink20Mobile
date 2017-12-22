@@ -65,5 +65,14 @@
       "control": "property.innerText"
     }
   },
-  "connect": []
+  "connect": [
+    {
+      "match": [
+        "isrepairjob"
+      ],
+      "screens": [
+        "servicejob"
+      ]
+    }
+  ]
 }
