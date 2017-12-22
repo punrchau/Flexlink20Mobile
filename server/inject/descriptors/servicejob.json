@@ -62,6 +62,12 @@
       "screens": [
         "servicejob"
       ]
+    },
+    {
+      "match": [
+        "isDhashboard"
+      ],
+      "event": "InvokeServiceJob"
     }
   ]
 }
