@@ -26,5 +26,6 @@
       "tabName": "Service Job",
       "isSelected": true
     }
-  ]
+  ],
+  "isservicejob": true
 }
