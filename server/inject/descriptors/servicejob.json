@@ -47,7 +47,7 @@
     },
     "isDhashboard": {
       "type": "identifier",
-      "selector": ".panel-heading.mouse-pointer",
+      "selector": "div[class=\"panel-heading mouse-pointer\"] h3",
       "control": "property.innerHTML"
     }
   },
