@@ -42,7 +42,7 @@
     },
     "isservicejob": {
       "type": "identifier",
-      "selector": "isservicejob",
+      "selector": "#liActiveServiceJobs",
       "control": "property.innerText"
     }
   },
