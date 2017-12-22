@@ -102,7 +102,7 @@
       "type": "identifier",
       "selector": "div[class11=\"panel-heading mouse-pointer\"] h3",
       "control": "exists",
-      "selectContains": "Technician Dashboard"
+      "selectContains": "11Technician Dashboard"
     },
     "OEM2": {
       "type": "action",
