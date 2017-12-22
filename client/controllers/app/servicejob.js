@@ -5,6 +5,6 @@ function app_servicejob($scope, app) {
     app.init($scope);
 
     $scope.editRecord = function(index){
-        app.call('Home.editRecord',{'index':index});
+        app.call('servicejob.editRecord',{'index':index});
     }
 }
