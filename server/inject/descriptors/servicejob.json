@@ -15,7 +15,8 @@
             "update": {
               "type": "none"
             },
-            "selector": "td"
+            "selector": "td",
+            "selectIndex": 1
           },
           "status": {
             "type": "string"
