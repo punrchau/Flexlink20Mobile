@@ -58,7 +58,8 @@
             }
           },
           "clickTab": {
-            "type": "action"
+            "type": "action",
+            "selector": "a"
           }
         }
       },
