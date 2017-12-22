@@ -45,7 +45,8 @@
         "type": "object",
         "properties": {
           "tabName": {
-            "type": "string"
+            "type": "string",
+            "selector": "a"
           },
           "isSelected": {
             "type": "boolean"
