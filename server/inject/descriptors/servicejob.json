@@ -48,7 +48,7 @@
     "isDhashboard": {
       "type": "identifier",
       "selector": "div[class=\"panel-heading mouse-pointer\"] h3",
-      "control": "property.innerHTML"
+      "control": "exists"
     }
   },
   "connect": [
