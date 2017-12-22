@@ -129,7 +129,7 @@
     "submit": {
       "type": "action"
     },
-    "isrepairjob": {
+    "isrepairjob1111": {
       "type": "identifier",
       "selector": "1233#liRepairJobs",
       "control": "exists"
