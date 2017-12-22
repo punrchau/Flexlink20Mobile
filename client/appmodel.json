@@ -403,6 +403,9 @@
             },
             "isSelected": {
               "type": "boolean"
+            },
+            "clickTab": {
+              "type": "action"
             }
           }
         }
