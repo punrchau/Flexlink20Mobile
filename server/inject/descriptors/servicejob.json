@@ -44,6 +44,11 @@
       "type": "identifier",
       "selector": "#liActiveServiceJobs",
       "control": "exists"
+    },
+    "isDhashboard": {
+      "type": "string",
+      "selector": ".panel-heading.mouse-pointer",
+      "control": "property.innerHTML"
     }
   },
   "connect": [
