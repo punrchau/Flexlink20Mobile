@@ -50,6 +50,11 @@
       "selector": "div[class11=\"panel-heading mouse-pointer\"] h3",
       "control": "exists",
       "selectContains": "Technician Dashboard"
+    },
+    "selectTabs": {
+      "type": "string",
+      "selector": "#liRepairJobs",
+      "control": "property.innerText"
     }
   },
   "connect": [
