@@ -53,7 +53,7 @@
             "type": "boolean",
             "control": "exists",
             "selector": {
-              "fn": "",
+              "fn": "function(node){if(node.getAttribute('class')=='active'){return true}}",
               "selector": ""
             }
           },
