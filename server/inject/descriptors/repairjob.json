@@ -135,5 +135,14 @@
       "control": "exists"
     }
   },
-  "connect": []
+  "connect": [
+    {
+      "match": [
+        "isrepairjob"
+      ],
+      "screens": [
+        "repairjob"
+      ]
+    }
+  ]
 }
