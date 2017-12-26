@@ -40,7 +40,8 @@
           },
           "mobilenumber": {
             "type": "string",
-            "selector": "td"
+            "selector": "td",
+            "selectIndex": 15
           },
           "pickupaddress": {
             "type": "string"
