@@ -33,7 +33,8 @@
             "control": "property.innerText"
           },
           "lastname": {
-            "type": "string"
+            "type": "string",
+            "selector": "td"
           },
           "mobilenumber": {
             "type": "string"
