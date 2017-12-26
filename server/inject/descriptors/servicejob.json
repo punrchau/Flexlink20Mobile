@@ -27,7 +27,8 @@
             "control": "property.innerText"
           },
           "problemcategory": {
-            "type": "string"
+            "type": "string",
+            "selector": "td"
           },
           "lastname": {
             "type": "string"
