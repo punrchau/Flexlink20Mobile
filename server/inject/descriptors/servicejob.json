@@ -47,7 +47,8 @@
           "pickupaddress": {
             "type": "string",
             "selector": "td",
-            "selectIndex": 16
+            "selectIndex": 16,
+            "control": "property.innerText"
           }
         }
       },
