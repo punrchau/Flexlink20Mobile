@@ -28,6 +28,10 @@
   "selectTabs": [
     {
       "$i": 0,
+      "tabName": "Repair Job"
+    },
+    {
+      "$i": 1,
       "tabName": "Service Job",
       "isSelected": true
     }
