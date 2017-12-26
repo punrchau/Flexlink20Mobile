@@ -20,12 +20,6 @@
             "selector": "td",
             "control": "property.innerText"
           },
-          "status": {
-            "type": "string",
-            "selector": "td",
-            "selectIndex": 5,
-            "control": "property.innerText"
-          },
           "firstname": {
             "type": "string",
             "selector": "td",
