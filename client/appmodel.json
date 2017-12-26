@@ -381,10 +381,19 @@
                 "type": "none"
               }
             },
-            "status": {
+            "firstname": {
               "type": "string"
             },
-            "firstname": {
+            "problemcategory": {
+              "type": "string"
+            },
+            "lastname": {
+              "type": "string"
+            },
+            "mobilenumber": {
+              "type": "string"
+            },
+            "pickupaddress": {
               "type": "string"
             }
           }

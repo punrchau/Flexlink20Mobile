@@ -2,18 +2,18 @@
   "listItems": [
     {
       "ticketnumber": "IND-JOB#-000000001",
-      "status": "Booked-In",
-      "firstname" : "Ram"
+      "firstname": "Ram",
+      "problemcategory": "Booked-In"
     },
     {
       "ticketnumber": "IND-JOB#-000000002",
-      "status": "Created",
-      "firstname" : "Gaurav"
+      "firstname": "Gaurav",
+      "problemcategory": "Created"
     },
     {
       "ticketnumber": "IND-JOB#-000000003",
-      "status": "Booked-In",
-        "firstname" : "Kiran"
+      "firstname": "Kiran",
+      "problemcategory": "Booked-In"
     }
   ],
   "selectTabs": [
