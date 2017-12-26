@@ -41,7 +41,8 @@
           "mobilenumber": {
             "type": "string",
             "selector": "td",
-            "selectIndex": 15
+            "selectIndex": 15,
+            "control": "property.innerText"
           },
           "pickupaddress": {
             "type": "string"
