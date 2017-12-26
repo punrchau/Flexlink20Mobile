@@ -28,7 +28,8 @@
           },
           "problemcategory": {
             "type": "string",
-            "selector": "td"
+            "selector": "td",
+            "selectIndex": 2
           },
           "lastname": {
             "type": "string"
