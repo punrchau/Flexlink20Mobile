@@ -31,6 +31,18 @@
             "selector": "td",
             "selectIndex": 4,
             "control": "property.innerText"
+          },
+          "problemcategory": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "mobilenumber": {
+            "type": "string"
+          },
+          "pickupaddress": {
+            "type": "string"
           }
         }
       },
