@@ -28,6 +28,11 @@
       "categoryName": "Email",
       "icon": "ion-ios-email1",
       "image": "images/jobdetails/Category1-6.jpg"
+    },
+    {
+      "categoryName": "Email",
+      "icon": "ion-ios-email1",
+      "image": "images/jobdetails/Category1-6.jpg"
     }
   ]
 }
