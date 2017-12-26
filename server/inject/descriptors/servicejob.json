@@ -82,7 +82,7 @@
           }
         }
       },
-      "selectorAll": "#stateTabs li"
+      "selectorAll": "liActiveServiceJobs"
     },
     "isrepairjob": {
       "type": "identifier",
