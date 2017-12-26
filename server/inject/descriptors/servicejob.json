@@ -35,7 +35,8 @@
           "lastname": {
             "type": "string",
             "selector": "td",
-            "selectIndex": 14
+            "selectIndex": 14,
+            "control": "property.innerText"
           },
           "mobilenumber": {
             "type": "string"
