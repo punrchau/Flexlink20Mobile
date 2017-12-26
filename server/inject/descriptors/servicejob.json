@@ -46,7 +46,8 @@
           },
           "pickupaddress": {
             "type": "string",
-            "selector": "td"
+            "selector": "td",
+            "selectIndex": 16
           }
         }
       },
