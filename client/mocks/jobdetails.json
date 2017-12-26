@@ -2,13 +2,13 @@
   "categories": [
     {
       "categoryName": "Job Info",
-      "icon": "ion-ios-info",
+      "icon": "ion-ios-contact",
       "image": "images/jobdetails/info.png"
     },
     {
       "categoryName": "Places",
-      "icon": "ion-ios-location",
-      "image": "images/jobdetails/Category1-2.png"
+      "icon": "ion-ios-contact",
+      "image": "images/jobdetails/Category1-1.png"
     },
     {
       "categoryName": "Training",
