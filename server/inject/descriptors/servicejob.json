@@ -45,7 +45,8 @@
             "control": "property.innerText"
           },
           "pickupaddress": {
-            "type": "string"
+            "type": "string",
+            "selector": "td"
           }
         }
       },
