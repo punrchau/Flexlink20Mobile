@@ -2,7 +2,6 @@
   "categories": [
     {
       "categoryName": "Job Info",
-      "icon": "ion-ios-contact",
       "image": "images/jobdetails/info.png"
     },
     {
