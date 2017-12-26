@@ -34,7 +34,8 @@
           },
           "lastname": {
             "type": "string",
-            "selector": "td"
+            "selector": "td",
+            "selectIndex": 14
           },
           "mobilenumber": {
             "type": "string"
