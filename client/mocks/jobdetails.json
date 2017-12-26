@@ -6,7 +6,7 @@
     },
     {
       "categoryName": "Owner Info",
-      "icon": "ion-ios-contact",
+      "icon": "ion-ios-contact1",
       "image": "images/jobdetails/contact.png"
     },
     {
@@ -16,17 +16,17 @@
     },
     {
       "categoryName": "FAQs",
-      "icon": "ion-ios-help",
+      "icon": "ion-ios-help1",
       "image": "images/jobdetails/Category1-3.png"
     },
     {
       "categoryName": "Alerts",
-      "icon": "ion-ios-bell",
+      "icon": "ion-ios-bell1",
       "image": "images/jobdetails/Category1-5.jpg"
     },
     {
       "categoryName": "Email",
-      "icon": "ion-ios-email",
+      "icon": "ion-ios-email1",
       "image": "images/jobdetails/Category1-6.jpg"
     }
   ]
