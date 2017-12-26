@@ -82,6 +82,13 @@
       "sourceScreenId": "app.formsmall.formsmallclassic",
       "sourceAppId": "universaltemplates",
       "model": "repairjob"
+    },
+    {
+      "id": "jobdetails",
+      "name": "JobDetails",
+      "sourceScreenId": "app.categories.categoriescaptivating",
+      "sourceAppId": "universaltemplates",
+      "model": "jobdetails"
     }
   ],
   "sourceAppId": "_blank",
