@@ -23,7 +23,7 @@
           "firstname": {
             "type": "string",
             "selector": "td",
-            "selectIndex": 4,
+            "selectIndex": 9,
             "control": "property.innerText"
           },
           "problemcategory": {
