@@ -39,7 +39,8 @@
             "control": "property.innerText"
           },
           "mobilenumber": {
-            "type": "string"
+            "type": "string",
+            "selector": "td"
           },
           "pickupaddress": {
             "type": "string"
