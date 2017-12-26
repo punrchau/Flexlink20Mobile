@@ -2,18 +2,27 @@
   "listItems": [
     {
       "ticketnumber": "IND-JOB#-000000001",
+      "problemcategory": "Screen",
       "firstname": "Ram",
-      "problemcategory": "Booked-In"
+      "lastname": "Chauhan",
+      "pickupaddress": "Pune",
+      "mobilenumber": "89812345"
     },
     {
       "ticketnumber": "IND-JOB#-000000002",
+       "problemcategory": "Screen",
       "firstname": "Gaurav",
-      "problemcategory": "Created"
+      "lastname": "Navale",
+      "pickupaddress": "Nashik",
+      "mobilenumber": "9345567856"
     },
     {
       "ticketnumber": "IND-JOB#-000000003",
-      "firstname": "Kiran",
-      "problemcategory": "Booked-In"
+       "problemcategory": "Screen",
+      "firstname": "Ravi",
+      "lastname": "Patil",
+      "pickupaddress": "Mumbai",
+      "mobilenumber": "9123456789"
     }
   ],
   "selectTabs": [
