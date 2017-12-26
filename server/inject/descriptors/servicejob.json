@@ -82,7 +82,7 @@
           }
         }
       },
-      "selectorAll": "liActiveServiceJobs"
+      "selectorAll": "#liActiveServiceJobs"
     },
     "isrepairjob": {
       "type": "identifier",
