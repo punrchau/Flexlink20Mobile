@@ -8,7 +8,7 @@ function app_jobdetails($scope, app) {
                     {categoryName:"Job History", image:"images/jobdetails/History.jpg"},
                     {categoryName:"Remarks", image:"images/jobdetails/Remarks.png"},
                     {categoryName:"Photo", image:"images/jobdetails/Photo.jpg"},
-                     {categoryName:"Unit Info", image:"images/jobdetails/unit_info.png"}
+                    {categoryName:"Unit Info", image:"images/jobdetails/unit_info.png"}
                 ];    
     $scope.goToServiceJob = function () {
         if (window.mocks) {
