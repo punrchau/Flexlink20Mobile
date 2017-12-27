@@ -586,6 +586,14 @@
             }
           }
         }
+      },
+      "actions": {
+        "type": "object",
+        "properties": {
+          "cancel": {
+            "type": "action"
+          }
+        }
       }
     }
   }
