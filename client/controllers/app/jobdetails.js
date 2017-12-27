@@ -3,8 +3,8 @@ function app_jobdetails($scope, app) {
     'use strict';
     
     app.init($scope,function(){
-         $scope.data.categories = 
-                    {categoryName:"Job Info1", image:"images/jobdetails/Service_Info.png"}
+         $scope.data.categories = new Object();
+         $scope.data.categories={categoryName:"Job Info1", image:"images/jobdetails/Service_Info.png"}
     });
    
                 
