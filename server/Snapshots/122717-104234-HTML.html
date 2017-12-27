@@ -1,0 +1,469 @@
+<body class="wow fadeInUp animated ng-scope" ng-controller="masterController as masterCtrl" id="masterBody" style="">
+    <div class="container-fluid" id="container-flexlink">
+
+        <nav class="navbar navbar-default navbar-fixed-top" style="background-image: linear-gradient(39deg, rgb(255, 150, 0) 29%, rgb(27, 169, 225) 96%); background-position: initial initial; background-repeat: initial initial;">
+            <div class="row top-bar">
+                <div class="col-md-4">
+                    
+                    <i class="glyphicon glyphicon-th open-aside-nav-bar-icon" aria-hidden="true"></i>
+                    <div class="flex-logo-div" style="background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSgBBwcHCggKEwoKEygaFhooKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKP/AABEIAGQAZAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AOTjFfDn6MWolpolstxLVJEtluJKpIlstRx1ViGywkfHSnYXMSiP2osHML5dKw7gUqWikxNtS0WmGKTKTFAqSkeS/H3poP8A23/9p17eS/b+X6nzvEH/AC7+f6HSxCvFR9Cy5EtUkS2XYUqkjNsvQx1aRDZdiiq0jNyLSxcVVieYeIqLBzAY6lopSGMlS0WmMZaho0TGYqGi0xMVLLR5H8fv+YD/ANt//ade3k32/l+p87xB/wAu/n+h1EQrxEfQsvQr0q0Q2aNulaJGTZowR1okZNl+KOrSM2yykfFVYi5II6LBcaY/ak0UmRPHWbRomQOtZtGyZERUM0TG4qGaI8h+P/8AzAf+3j/2nXtZN9v5fqfPZ/8A8u/n+h1UIrxUfQM0IB0rRGbNO2XpWiRjJmpbp0rVIxky/ElaJGTZaROKqxLY/ZRYLjWSpaKTIZEqGjSLK0i1k0bRZXYVkzZEZFQzVHkH7QP/ADAf+3j/ANp17WTfb+X6nz2f/wDLv5/odXCK8VH0DNG3HSt6VN1JcsTnrVFTjzSPSNA+Ht/c2IvNTuotMtyu4eaMsB6kZAH4mveo5bCK9/VnzlfNpt/u9jUn8AzR2P2rS9Sh1BcZAVNu4f7JDEGtJ4CntHRmVPM6l/e1RzsK9iMEcEGvMnTcJcrPWhUU48yLaKKVg5h+0U7MOZDGAqGmUpIruKzaNYsqTkKMngVCg5uyNXNQV2SR6Rqc+ly6lFZP9gjBLTMyrwOpAJyfwFdbyyoo8zONZrS5+VGb1Ga8qSs7Hsxd1c8f/aB/5gP/AG8f+069jJvt/L9TwM//AOXfz/Q7eLTrodYv/Hh/jXio+gZ23wu0cXvjC1S8QGOFWn2nBBK4x+pB/CvdymmrSmfPZ1VaSgup13xc1CebVrbTELC3jjEzqDwzEkDP0x+td+LrSo0/d3Z5mX0I1qnvbI2PhGJF0e8D58oT/Lnp90ZxW9KUpU4uW5z4mMY1ZKOxU0Lw/Dql7ql9cK8lulzIIoo2C+Z8xPX0/KiVGPNzMFiJqHIi/deHrQ6JdXD6e+m3EQZlBuPMBAGcnkiqlShJ2JjXnHW5WuNO0vTfDlnd31k89zNt+VZWUsTzjrjp7U4UY35UKVeb1bH+INK0XTLnTybSZzcuIxAsxAOSOSTk8Z7URoxlfQTrzXUxfH2n2Gi31qtmDEssZZkLFsYPB5ya87HU4qHMj1MurSlPlbOSOqRWtxDcRFHkhcSKrq20kHIzjFefhHaqj1cXHmotXPRPiDrEy/Da2lvzHDdX3lB1jBwM/MQByegr6Cs1CMmuh8zho89SKPIzqtkq4M3T/Yb/AAr4ybu2z7uCskjyX47XkF3/AGJ9nk37PPzwRjPl+v0r2Mm+38v1PBz/AP5d/P8AQ9hArxUfQM2PCerjQfEEF86F4dpjlC9dp7j8hXsZZiI024S6niZthpVYqUd0d54jtfDfie6t9QTxBbWsoQI4MigsvXG1iCDya91xjONpK6PnIyqUn7ugmo+I9N0bRxpXhx/OkwVMy8querZ7k+3FZ1q8aSuzWjhp1pGX4d163stKuNM1O2kmtZcndERu569SPzzWNHGRlu7M2xGBlF+7sRXFxocdk0On2l2ZJGG6a42llXOSFxXRLGxT3OeOBm1sX9e8RWeoXOmCOK4W0tnDyKyruOMYxzjtULFwjsy/qVRrUh1bxNZ3viXT71orj7HajOwqu4tz2zj070ljIR0uP6jUauc9431mPW9YN1AsiwhAiLIACMdehPrXn43EKaUYnp5fhpUrykZXh+50K2u5n8R2lzdwFMIkJwQ2ep+ZaWAqwpu8nqVmFKrUVobHS+MvHXhbXdEe0fTdQeeJG+y7wFRHxgE7ZOR+dd9XFUlBrmTuebQwVb2ifLax43Ka+VqO8nY+ypq0Vc84+K3XS/8Atr/7JXr5N9v5fqeDn/8Ay7+f6HvQrxEfQsetaJ2M5K5LGqk/dFdEa01omcs6EHq0W4iAOBiq53LcjkUdiwrVaZm0P31VybDHei4WKszVLZSRQuG61DZpFGVct1rJs2ijLuDWTNkUZTUM0R518Veumf8AbX/2Svayb7fy/U+fz/8A5d/P9D3uvER9ExRVIholU1omZNEyPWiZk0TK9WmZtDt9VcjlI3ei4WK0slJspIoXElQ2aJGbcNWbZqkZ05rNmqRRkNQzRHnfxT66Z/21/wDZK9rJvt/L9T57P/8Al38/0Pfa8Q+iYZqkS0OBqkzNoeGq0yGh4erTM3EDJVXJ5SN5KLhylaWSpbKUSlM9S2WkUZmqGzRIoTHrUMtIpy1JaPPPil/zDP8Atr/7JXt5N9v5fqfO8Qf8u/n+h7+a8M+jY2miWgzVJktCbqpMloXfVJkNDS9O4uUjeSi4cpXkelcdipK1S2UkVJWqblpFOU0mUkVJKko89+KPXTP+2v8A7JXuZL9v5fqfO8Qf8u/n+h9AsK8I+jIzTENNMVhpNVcmwwmncmwxmp3FYidqLhYgdqVx2K8jUrlWKshpXHYqyVJRXcUhnnvxTHOmf9tf/ZK9zJft/L9T5ziD/l38/wBDoz8aM/8AMA/8nP8A7XR/Yv8Af/D/AIIf6wf9O/x/4Aw/GXP/ADAf/Jz/AOwp/wBi/wB/8P8Agh/rB/07/H/gDT8Y/wDqBf8Ak5/9hR/Y39/8P+CL/WD/AKd/j/wBD8Yf+oH/AOTf/wBhT/sb+/8Ah/wRf2//ANO/x/4A0/F//qB/+Tf/ANhR/Y/9/wDD/gh/b/8A07/H/gDT8Xc/8wT/AMm//sKP7H/v/h/wQ/t7/p3+P/AGH4tZ/wCYL/5N/wD2FH9j/wB/8P8Agi/t7/p3+P8AwBh+K+f+YN/5Nf8A2FH9j/3/AMP+CP8At/8A6d/j/wAAjb4pZ/5g/wD5Nf8A2FH9jf3/AMP+CH9v/wDTv8f+ARt8Ts/8wj/yZ/8AsKX9jf3/AMP+CP8A1g/6d/j/AMAjb4k5/wCYV/5M/wD2FH9i/wB/8P8Agh/rB/07/H/gEZ+I2f8AmFf+TH/2NL+xf7/4f8Ef+sH/AE7/AB/4Bz3irxF/b/2X/Rfs/kbv+Wm/dux7D0rvwWC+q83vXvboebmGYfXeX3bWv1vvbyXY/wD/2Q==); background-repeat: no-repeat no-repeat;"></div>
+                    
+                    
+                </div>
+
+                <div class="col-md-4">
+                    <marquee scrolldelay="200" style="color:white ; font-size:15px"><b class="ng-binding"> </b></marquee>
+                </div>
+
+                <div class="col-md-4 text-right margin-top-menu-link text-right dropdown">
+                    <a class="dropdown-toggle welcome-user text-decoration-none ng-binding" data-toggle="dropdown" id="ddlUser" href="" role="button" aria-haspopup="true" aria-expanded="false">
+                        Welcome Ram Chauhan
+                        <img src="/lenovo/images/menu/user.png" class="img-circle" alt="user pic" width="35" height="35">
+                        <i class="fa fa-caret-down fa-fw"></i>
+                    </a>
+
+                    <div class="dropdown-menu text-left dropdown-menu-right margin-top-5">
+                        <div class="login-box clearfix row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        
+                                        <img src="/lenovo/images/menu/user.png" alt="" class="user-photo">
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-12">
+                                        <span ng-click="masterCtrl.navigateToUser()" class="profiler-name-display ng-binding">Ram Chauhan</span>
+                                        <br>
+                                        <div class="roles-display">
+                                            <!-- ngIf: masterCtrl.isRolesAssigned --><span ng-if="masterCtrl.isRolesAssigned" class="ng-binding ng-scope"> Mobile Role, Technician</span><!-- end ngIf: masterCtrl.isRolesAssigned -->
+                                            <!-- ngIf: !masterCtrl.isRolesAssigned -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 store-name-display">
+                                <span class="ng-binding">store1</span>
+                            </div>
+                            
+                            
+                            <div class="col-lg-12 col-md-12 col-sm-12 padding-0">
+                                <a href="#" class="btn btn-flat font-normal btn-danger button-logout width-100-notimportant" ng-click="masterCtrl.closeWindow()">
+                                    <i class="glyph-icon icon-power-off"></i>&nbsp;Logout
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 sub-bar">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav main-menu-flexlink">
+                        
+                        <li href="" class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket" aria-hidden="true"></i>Config Management <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#/formsConfiguration" ui-sref="FormsConfiguration">Forms Configuration</a></li>
+                                <li><a href="#/formsConfiguration" ui-sref="FormsConfiguration">Grids Configuration</a></li>
+                                <li><a href="">List Configuration</a></li>
+                                <li><a href="#/routingConfiguration" ui-sref="RoutingConfiguration">Route Configuration</a></li>
+                                <li><a href="/lenovo/app/views/AppFieldDefinitionConfiguration.html" ui-sref="AppFieldDefinition">App Field Definition </a></li>
+                                <li><a href="#/approvalMatrixList" ui-sref="ApprovalMatrixList">Approval Matrix</a></li>
+                                <li><a href="#/statusMappings" ui-sref="StatusMappings">Status Mapping</a></li>
+                                <li><a href="#/EmailTemplates" ui-sref="EmailTemplates">Email Template</a></li>
+                                <li><a href="#/EmailConfigurations" ui-sref="EmailConfigurations">Email Configuration</a></li>
+                                <li><a href="#/SMSTemplates" ui-sref="SMSTemplates">SMS Template</a></li>
+                                <li><a href="#/SMSConfigurations" ui-sref="SMSConfigurations">SMS Configuration</a></li>
+                                <li><a href="#/userRoleTypeMappings" ui-sref="UserRoleTypeMappings">User Role Type</a></li>
+                                <li><a href="#/pageActionMapping" ui-sref="PageActionMapping">Page Action Map</a></li>
+                                <li><a href="#/PageRouteActions" ui-sref="PageRouteActions" title="Page Route Action Map">Page Route Action Map</a></li>
+                                <li><a href="#/rolePermissions" ui-sref="RolePermissions">Role Permission</a></li>
+                                <li><a href="#/binMaster" ui-sref="BinMaster">Bin Master</a></li>
+                                <li><a href="#/commonmaster" ui-sref="CommonMaster">Common Master</a></li>
+                                <li><a href="/lenovo/app/views/ConsolidateDeliveryChallans.html" ui-sref="ConsolidateDeliveryChallans">Consolidate Delivery Challan</a></li>
+                                <li><a href="#/RTV" ui-sref="RTVCompliance">RTV Compliance</a></li>
+                                <li><a href="#/oembrands" ui-sref="OEMBrands">Brand Configuration</a></li>
+                                <li><a href="/lenovo/app/views/Roles.html" ui-sref="RolesMaster">Role Master</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ticket" aria-hidden="true"></i>Job Management<span class="caret"></span></a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="#/unitowners" ui-sref="UnitOwners">Unit Owner</a></li>
+                                <li><a href="#/units" ui-sref="Units">Unit</a></li>
+                                
+                                <li><a href="#/servicejobs" ui-sref="ServiceJobs">Service Job</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        <li href="" class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs" aria-hidden="true"></i>Repair Management <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#/repairjobs" ui-sref="RepairJobs">Repair Creation</a></li>
+                            </ul>
+                        </li>
+                        <li href="" class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-empire" aria-hidden="true"></i>Retail Management <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#/swapMatrixList" ui-sref="SwapMatrixList">Swap Matrix</a></li>
+                                <li><a href="#/preapprovals" ui-sref="PreApprovals">PreApproval</a></li>
+                                <li><a href="#/MSLUpload" ui-sref="MSLUpload">MSLUpload</a></li>
+                            </ul>
+                        </li>
+                        <li href="" class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-wpforms" aria-hidden="true"></i>Quotation Management <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#/quotationList" ui-sref="QuotationList">Quotation List</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+
+        <div class="container-fluid body-content wow fadeInUp animated page-wrapper">
+            <div id="sidebar-wrapper" class="sidebar-wrapper-style" style="background-color: rgb(255, 150, 0); width: 50px; background-position: initial initial; background-repeat: initial initial;">
+                <ul class="sidebar-nav">
+
+                    <li ng-click="masterCtrl.navigateToDashboardPage()">
+                        <a>
+                            <i class="fa fa-home fa-2x aside-icon "></i>
+                            <div class="sidebar-text no-collaps-side-bar">
+                                Home
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.adminManagement --><li ng-if="masterCtrl.authorizationPageCollection.moduleCollection.adminManagement" class="ng-scope">
+                        <a href="" class="dropdown-toggle expand-menu-bar" title="Admin Management" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-television fa-2x aside-icon" aria-hidden="true" onclick="expandsideBar();"></i>
+                            <div class="sidebar-text">
+                                Admin Management
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-ul">
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.hsnAndSacUpLoader -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.cityMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.costBreakDownMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.billingCodeMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.binMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.commonMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.part --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.part" class="ng-scope"><a href="#/partMaster" title="Part Master" ui-sref="PartMaster">Part Master</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.part -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.frontEndProfiler -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.localStore -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.failureCode -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.repairActionCode -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.failureCodeRepairActionCodeMap -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.cpMapping -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.userRegistration -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.roleMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.userRoleType --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.userRoleType" class="ng-scope"><a href="#/userRoleTypeMappings" ui-sref="UserRoleTypeMappings" title="User Role Type">User Role Map</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.userRoleType -->
+                            
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.swapDevice -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.warrantyCheckUpload -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.warrantyMapping -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.swapConfiguration -->
+                        </ul>
+                    </li><!-- end ngIf: masterCtrl.authorizationPageCollection.moduleCollection.adminManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.configManagement --><li ng-if="masterCtrl.authorizationPageCollection.moduleCollection.configManagement" class="ng-scope">
+                        <a href="" class="dropdown-toggle expand-menu-bar" title="Config Management" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-rocket fa-2x aside-icon" aria-hidden="true" onclick="expandsideBar();"></i>
+                            <div class="sidebar-text">
+                                Config Management
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-ul">
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.formsConfiguration --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.formsConfiguration" class="ng-scope"><a href="#/formsConfiguration" title="Forms Configuration" ui-sref="FormsConfiguration">Forms Configuration</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.formsConfiguration -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.gridsConfiguration --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.gridsConfiguration" class="ng-scope"><a href="#/gridsConfiguration" title="Grids Configuration" ui-sref="GridsConfiguration">Grids Configuration</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.gridsConfiguration -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.routeConfiguration -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.appFieldDefinition -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.approvalMatrix -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.pageRouteActionStatusMap -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.emailTemplate -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.emailConfiguration -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.smsTemplate -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.emailConfiguration -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.pagePermission -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.pageRouteAction -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.rolePermission -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.oemBrand -->
+                        </ul>
+                    </li><!-- end ngIf: masterCtrl.authorizationPageCollection.moduleCollection.configManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.jobManagement --><li ng-if="masterCtrl.authorizationPageCollection.moduleCollection.jobManagement" class="ng-scope">
+                        <a href="" class="dropdown-toggle expand-menu-bar" title="Job Management" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ticket fa-2x aside-icon" aria-hidden="true" onclick="expandsideBar();"></i>
+
+                            <div class="sidebar-text">
+                                Job Management
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-ul">
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.unitOwner --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.unitOwner" class="ng-scope"><a href="#/unitowners" title="Unit Owner" ui-sref="UnitOwners">Unit Owner</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.unitOwner -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.unit --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.unit" class="ng-scope"><a href="#/units" title="Unit" ui-sref="Units">Unit</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.unit -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.serviceJob --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.serviceJob" class="ng-scope"><a href="#/servicejobs" title="Service Job" ui-sref="ServiceJobs">Service Job</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.serviceJob -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.deliveryChallan -->
+                            <li><a href="#/inwarddeliverychallans" title="Inward Delivery Challan" ui-sref="InwardDeliveryChallans">Inward DC</a></li>
+                        </ul>
+
+                    </li><!-- end ngIf: masterCtrl.authorizationPageCollection.moduleCollection.jobManagement -->
+
+                    
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.repairManagement --><li ng-if="masterCtrl.authorizationPageCollection.moduleCollection.repairManagement" class="ng-scope">
+                        <a href="" class="dropdown-toggle expand-menu-bar" title="Repair Management" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-cogs fa-2x aside-icon" aria-hidden="true" onclick="expandsideBar();"></i>
+
+                            <div class="sidebar-text">
+                                Repair Management
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-ul">
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.repairJob --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.repairJob" class="ng-scope"><a href="#/repairjobs" ui-sref="RepairJobs" title="Repair Creation">Repair Creation</a></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.repairJob -->
+
+                        </ul>
+                    </li><!-- end ngIf: masterCtrl.authorizationPageCollection.moduleCollection.repairManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.retailManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.quotationManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.adpManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.partManagement --><li ng-if="masterCtrl.authorizationPageCollection.moduleCollection.partManagement" class="ng-scope">
+                        <a href="" class="dropdown-toggle expand-menu-bar" title="Part Management" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-shopping-cart fa-2x aside-icon" aria-hidden="true" onclick="expandsideBar();"></i>
+
+                            <div class="sidebar-text">
+                                Part Management
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-ul">
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.partOrder --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.partOrder" class="ng-scope"><a title="Part Order List" href="#/partorders" ui-sref="PartOrders">Part Order</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.partOrder -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.partReceive --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.partReceive" class="ng-scope"><a title="Part Receive List" href="#/partreceives" ui-sref="PartReceives">Part Receive</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.partReceive -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.partTransferOrder -->
+                            
+                            <li><a title="PartTransferReceives List" href="#/parttransferreceives" ui-sref="PartTransferReceives">PartTransferReceive</a><hr></li>
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.inventoryPage -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.rtvCompliance -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.inventory -->
+                            
+                        </ul>
+                    </li><!-- end ngIf: masterCtrl.authorizationPageCollection.moduleCollection.partManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.logistics -->
+
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.reports -->
+
+
+
+
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.supportAutomation -->
+
+
+
+
+
+
+
+                </ul>
+            </div>
+            <div class="page-content-wrapper">
+                
+<div class="row margin-body" style="padding-left: 0px;">
+    <div class="col-lg-12 col-md-12">
+        <!-- uiView:  --><ui-view class="ng-scope"><div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 ng-scope" id="rpJobsPage">
+    <div class="row col-lg-3 col-md-3 col-sm-3 col-xs-3 page-heading">
+        <h2>Repair Job</h2>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 text-right">
+        <!--<button type="button" ng-click="repairJobsCtrl.newRepairJob()" value="New" class="btn btn-info"><i class="fa fa-plus" aria-hidden="true"></i>New </button>-->
+        <!-- ngIf: repairJobsCtrl.authorizationDetails.viewJobHistory --><button type="button" ng-if="repairJobsCtrl.authorizationDetails.viewJobHistory" class="btn btn-info unitDetails btn-auto-width ng-scope" value="Unit Details" data-toggle="modal" ng-click="repairJobsCtrl.viewJobHistoryInfo()"><i class="fa fa-user" aria-hidden="true"></i> View Job History</button><!-- end ngIf: repairJobsCtrl.authorizationDetails.viewJobHistory -->
+        <!-- ngIf: repairJobsCtrl.authorizationDetails.update && repairJobsCtrl.showEditBtn -->
+        <!-- ngIf: repairJobsCtrl.authorizationDetails.newRepairJob && repairJobsCtrl.showNewRepairJobBtn --><button type="button" ng-if="repairJobsCtrl.authorizationDetails.newRepairJob &amp;&amp; repairJobsCtrl.showNewRepairJobBtn" ng-click="repairJobsCtrl.createRepairJob()" value="New" class="btn btn-info ng-scope"><i class="fa fa-cogs" aria-hidden="true"></i>New Repair</button><!-- end ngIf: repairJobsCtrl.authorizationDetails.newRepairJob && repairJobsCtrl.showNewRepairJobBtn -->
+        <!--<button type="button" ng-if="repairJobsCtrl.authorizationDetails.delete" ng-click="repairJobsCtrl.deleteRepairJob()" value="Delete" class="btn btn-info" ><i class="fa fa-times" aria-hidden="true"></i>Delete</button>-->
+    </div>
+
+</div>
+<!--<div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <label>Select Type</label>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <label>Search value</label>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <select name="unitOwnerSearch" class="form-control dropdown-select" data-style="btn-warning"
+                    ng-model="repairJobsCtrl.searchModel.columnName" ng-options="obj.columnName as obj.description for obj in repairJobsCtrl.searchColumnData">
+                <option value="">--Select--</option>
+            </select>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <input type="text" class="form-control" ng-model="repairJobsCtrl.searchModel.searchString" />
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <button type="button" ng-click="repairJobsCtrl.getRepairJobs()" value="Search" class="btn btn-info"><i class="fa fa-search" aria-hidden="true"></i>Search </button>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        </div>
+    </div>
+</div>-->
+<!--<hr class="heading-hr" />-->
+
+<hr class="heading-hr ng-scope" style="padding-left: 0px !important">
+<global-search grid="gdRepairJobs" class="ng-scope">
+<form id="formSearch" ng-submit="globalSearchCtrl.btnSearch()" class="ng-pristine ng-valid">
+    <div class="input-group">
+        <div class="left-inner-addon">
+            <i class="glyphicon glyphicon-search" style="opacity:0.5"></i>
+            <input type="text" class="form-control txtSearch ng-pristine ng-untouched ng-valid ng-empty" style="border: solid 1px #E4E4E4;border-radius: 5px;" placeholder="Search" ng-change="globalSearchCtrl.btnSearch()" ng-model="globalSearchCtrl.txtSearch">
+            <i class="glyphicon glyphicon-info-sign" style="opacity:0.5; right: 0px; cursor:pointer" tabindex="0" data-toggle="tooltip" data-trigger="focus" data-placement="right" title="For date field column(s) follow [DD MMM YYYY] format." data-content="For date field column(s) follow [DD MMM YYYY] format."></i>
+        </div>
+    </div>
+</form>
+</global-search>
+
+
+<ul class="nav nav-tabs ng-scope" id="stateTabs" style="margin-top:10px !important">
+    <li class="" id="liRepairJobs"><a data-target="#gdRepairJobs" data-toggle="tab" ng-click="repairJobsCtrl.bindRepairJobData()" aria-expanded="false">Repair Job</a></li>
+    <li id="liActiveServiceJobs" class="active"><a data-target="#ActiveServiceJobs" data-toggle="tab" ng-click="repairJobsCtrl.getTechnicianServiceJobs()" aria-expanded="true">Service Jobs</a></li>
+</ul>
+
+
+<div class="tab-content ng-scope">
+    <!-- ngIf:  -->
+    <div class="tab-pane active" id="ActiveServiceJobs">
+        <div class="text-right">
+            <!--<button type="button" ng-if="repairJobsCtrl.authorizationDetails.newRepairJob" ng-click="repairJobsCtrl.createRepairJob()" value="New" class="btn btn-info"><i class="fa fa-cogs" aria-hidden="true"></i>New Repair</button>-->
+        </div>
+    </div>
+
+    <div id="gdRepairJobs" class="row table kendo-grid-custom k-grid k-widget" data-role="grid" style="height: 480px;"><a title="Clear Filter" class="k-pager-refresh k-link column-filter-refresh"><span class="fa fa-refresh"></span></a><div class="k-grid-header" style="padding-right: 17px;"><div class="k-grid-header-wrap k-auto-scrollable" data-role="resizable"><table role="grid"><colgroup><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"></colgroup><thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader" data-field="ticketNumber" rowspan="1" data-title="Ticket Number" data-index="0" id="f62ccf30-5d7b-44df-b833-1de372d0b747" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Ticket Number</a></th><th scope="col" role="columnheader" data-field="problemCategoryName" rowspan="1" data-title="Problem Category" data-index="1" id="da927bc3-9e32-4d1b-9bc9-328d9ff8e063" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Problem Category</a></th><th scope="col" role="columnheader" data-field="problemDescription" rowspan="1" data-title="Problem Description" data-index="2" id="9f02208e-04d6-4604-8995-093434174afd" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Problem Description</a></th><th scope="col" role="columnheader" data-field="statusName" rowspan="1" data-title="Status " data-index="3" id="588cbfb3-6ab3-4bb4-a16b-d8a0fe489f74" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Status </a></th><th scope="col" role="columnheader" data-field="walkInDate" rowspan="1" data-title="Walk In Date" data-index="4" id="34413757-20eb-45c1-9fc8-c069dce0a818" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Walk In Date</a></th><th scope="col" role="columnheader" data-field="deliveryTypeName" rowspan="1" data-title="Delivery Type" data-index="5" id="679b710a-d820-4e60-be75-a7ca1450a19d" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Delivery Type</a></th><th scope="col" role="columnheader" data-field="warrantyTypeName" rowspan="1" data-title="Warranty Type" data-index="6" id="1cae4d67-2294-4f15-a6b1-d3d0f6a46f8d" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Warranty Type</a></th><th scope="col" role="columnheader" data-field="remark" rowspan="1" data-title="Remark" data-index="7" id="219c4889-23cb-48b8-9dd4-f2fcba2fa2c7" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Remark</a></th><th scope="col" role="columnheader" data-field="serviceTypeName" rowspan="1" data-title="Service Type" data-index="8" id="ebf74ae6-df8f-4357-b148-91f06cd21051" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Service Type</a></th><th scope="col" role="columnheader" data-field="unitSerialNumber" rowspan="1" data-title="Serial Number" data-index="9" id="6a9c6cd1-b8c1-4af8-998b-b154b8bf83f4" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Serial Number</a></th><th scope="col" role="columnheader" data-field="jobPriorityName" rowspan="1" data-title="Job Priority" data-index="10" id="365e15cb-e5fa-429d-a063-b6626bc4da5f" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Job Priority</a></th><th scope="col" role="columnheader" data-field="isJobSheetPrinted" rowspan="1" data-title="Job Sheet Printed" data-index="11" id="6bfe9746-6315-4810-9907-85d9cf3efa03" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Job Sheet Printed</a></th><th scope="col" role="columnheader" data-field="warrantyChangeByFCRC" rowspan="1" data-title="Warranty Change By FCRC" data-index="12" id="6867f354-9291-4b0a-9f18-ad4ecbd81c71" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Warranty Change By FCRC</a></th><th scope="col" role="columnheader" data-field="firstName" rowspan="1" data-title="First Name" data-index="13" id="62cd29fb-0884-49dc-a610-1402e6ab0187" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">First Name</a></th><th scope="col" role="columnheader" data-field="lastName" rowspan="1" data-title="Last Name" data-index="14" id="4cca1ab5-2c92-449c-8d8f-e530bbf469cb" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Last Name</a></th><th scope="col" role="columnheader" data-field="mobileNumber" rowspan="1" data-title="MobileNumber" data-index="15" id="9508f97b-36f0-4c20-af1d-0359a84bb910" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">MobileNumber</a></th><th scope="col" role="columnheader" data-field="pickUpAddress" rowspan="1" data-title="PickUpAddress" data-index="16" id="32177798-0b5a-4b71-a1a2-1abb725d69d7" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">PickUpAddress</a></th></tr></thead></table></div></div><div class="k-grid-content k-auto-scrollable" style="height: 375px;"><table role="grid" style="height: auto;" data-role="selectable" class="k-selectable"><colgroup><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"></colgroup><tbody role="rowgroup"><tr data-uid="b13d5602-12f8-4a89-b941-d1c6da12fe5d" role="row"><td role="gridcell">IND-JOB#-000000013</td><td role="gridcell">Locking</td><td role="gridcell">wwww</td><td role="gridcell">Booked-In</td><td role="gridcell">24-Oct-2017 05:57 AM</td><td role="gridcell">Direct Accessories-CP</td><td role="gridcell">OOW(Beyond warranty period)</td><td role="gridcell">ddd</td><td role="gridcell">Repair</td><td role="gridcell">HGC9V1UR</td><td role="gridcell">2</td><td role="gridcell">false</td><td role="gridcell">false</td><td role="gridcell">Mayur</td><td role="gridcell">Chabukswar</td><td role="gridcell">7066832754</td><td role="gridcell">Hydrabad </td></tr><tr class="k-alt" data-uid="a4d1f001-3858-4fae-9233-c4a31e97844a" role="row"><td role="gridcell">IND-JOB#-000000014</td><td role="gridcell">Screen crash</td><td role="gridcell">vvvvv</td><td role="gridcell">Booked-In</td><td role="gridcell">24-Oct-2017 06:00 AM</td><td role="gridcell">By Hand</td><td role="gridcell">OOW(Beyond warranty period)</td><td role="gridcell">vvvv</td><td role="gridcell">Repair</td><td role="gridcell">HGC9V1UJ</td><td role="gridcell">2</td><td role="gridcell">false</td><td role="gridcell">false</td><td role="gridcell">Mayur</td><td role="gridcell">Chabukswar</td><td role="gridcell">7066832754</td><td role="gridcell">Hydrabad </td></tr></tbody></table></div><div class="k-pager-wrap k-grid-pager k-widget k-floatwrap" data-role="pager"><a href="#" title="Go to the first page" class="k-link k-pager-nav k-pager-first k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-seek-w">Go to the first page</span></a><a href="#" title="Go to the previous page" class="k-link k-pager-nav  k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-w">Go to the previous page</span></a><ul class="k-pager-numbers k-reset"><li class="k-current-page"><span class="k-link k-pager-nav">1</span></li><li><span class="k-state-selected">1</span></li></ul><a href="#" title="Go to the next page" class="k-link k-pager-nav  k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-e">Go to the next page</span></a><a href="#" title="Go to the last page" class="k-link k-pager-nav k-pager-last k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-seek-e">Go to the last page</span></a><span class="k-pager-sizes k-label"><span title="" style="" class="k-widget k-dropdown k-header" unselectable="on" role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="" aria-disabled="false" aria-busy="false" aria-activedescendant="411e70fd-dd35-45ee-8c6a-179740f73b14"><span unselectable="on" class="k-dropdown-wrap k-state-default"><span unselectable="on" class="k-input">10</span><span unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-arrow-s">select</span></span></span><select data-role="dropdownlist" style="display: none;"><option value="all">All</option><option value="5">5</option><option value="10">10</option><option value="20">20</option></select></span>items per page</span><span class="k-pager-info k-label">1 - 2 of 2 items</span></div></div>
+</div>
+
+<div class="modal fade vertical-alignment-helper ng-scope" tabindex="-1" role="dialog" id="JobHistoryDetailsModel">
+    <div class="modal-dialog ertical-align-center model-dialog-broad-width">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"> Job History</h4>
+            </div>
+            <div class="modal-body ng-scope" ng-controller="repairJobHistoryController as repairJobHistoryCtrl">
+                <!-- ngInclude:  --><div ng-include="" src="'~/../app/views/RepairJobHistory.html'" class="ng-scope"><div id="JobHistoryInfo" class="ng-scope">
+    <div id="GDMasterJobHistoryDetails" class="row table kendo-grid-custom"></div>
+</div></div>
+            </div>
+            <hr>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+</ui-view>
+    </div>
+</div>
+            </div>
+            <a class="scrollToTop" href="#" style="display: none;"></a>
+        </div>
+        
+
+    </div>
+
+    
+
+    <footer style="background-image: linear-gradient(27deg, rgb(255, 150, 0) 19%, rgb(27, 169, 225) 0%); background-position: initial initial; background-repeat: initial initial;">
+        <div class="col-lg-12 ">
+            <div class="col-lg-6">
+                <span class="ng-binding">Flexlink 2.3.1.1 (DEMO)</span>
+            </div>
+            <div class="col-lg-6 text-right top-zero">
+                <span class="ng-binding"><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2017</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="storesModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header adjust-top-bottom-padding">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title page-heading">Stores</h4>
+                </div>
+                <div class="modal-body padding-top-five height-290">
+                    <div class="tab-content margin-top-zero">
+                        <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            
+                            <div class="stores-div">
+                                <!-- ngRepeat: store in masterCtrl.storesCollection --><div ng-repeat="store in masterCtrl.storesCollection" class="row cursor-pointer ng-scope">
+                                    <!-- ngIf: store.localStoreID == masterCtrl.displaySelectedStoreID -->
+                                    <!-- ngIf: store.localStoreID != masterCtrl.displaySelectedStoreID --><div ng-if="store.localStoreID != masterCtrl.displaySelectedStoreID" class="store-display ng-binding ng-scope" ng-click="masterCtrl.onStoreChange(store)">mayurcp</div><!-- end ngIf: store.localStoreID != masterCtrl.displaySelectedStoreID -->
+                                </div><!-- end ngRepeat: store in masterCtrl.storesCollection --><div ng-repeat="store in masterCtrl.storesCollection" class="row cursor-pointer ng-scope">
+                                    <!-- ngIf: store.localStoreID == masterCtrl.displaySelectedStoreID --><div ng-if="store.localStoreID == masterCtrl.displaySelectedStoreID" class="selected-store-display ng-binding ng-scope" ng-click="masterCtrl.onStoreChange(store)">store1</div><!-- end ngIf: store.localStoreID == masterCtrl.displaySelectedStoreID -->
+                                    <!-- ngIf: store.localStoreID != masterCtrl.displaySelectedStoreID -->
+                                </div><!-- end ngRepeat: store in masterCtrl.storesCollection -->
+                            </div>
+                        </div>
+                        <div class="row text-right col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            <button type="button" ng-click="masterCtrl.onStoreSelect()" value="Save" class="btn btn-info btn-auto-width">
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                OK
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="sessionModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content" style="width:400px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h2 class="modal-title"><i class="fa fa-clock-o fa-2x" aria-hidden="true"></i> Session Timeout  </h2>
+                </div>
+                <div class="modal-body">
+                    <h3 style="font-variant:normal">Your Session will expire in <span id="sessionTime"></span> Seconds</h3>
+                    <br>
+                    <h3 style="font-variant:normal">Do you Want to Continue?</h3>
+                </div>
+                <div class="modal-footer" style="background-color:lightgray">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="closeSession()">Continue</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<div class="k-tooltip k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-tooltip-content"></div></div><div class="k-tooltip k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-tooltip-content"></div></div><div class="k-list-container k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-group-header" style="display: none;"></div><div class="k-list-scroller" unselectable="on"><ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" aria-live="off" data-role="staticlist" role="listbox"><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="0">All</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="1">5</li><li tabindex="-1" role="option" unselectable="on" class="k-item k-state-selected k-state-focused" aria-selected="true" data-offset-index="2" id="3b345b89-bb28-4acb-8e21-70c2bb39dde0">10</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="3">20</li></ul></div></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div class="k-list-container k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-group-header" style="display: none;"></div><div class="k-list-scroller" unselectable="on"><ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" aria-live="off" data-role="staticlist" role="listbox"><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="0">All</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="1">5</li><li tabindex="-1" role="option" unselectable="on" class="k-item k-state-selected k-state-focused" aria-selected="true" data-offset-index="2" id="411e70fd-dd35-45ee-8c6a-179740f73b14">10</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="3">20</li></ul></div></div></body>
