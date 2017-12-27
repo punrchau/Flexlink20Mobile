@@ -1,7 +1,7 @@
 angular.module('app').controller('app_jobdetails', app_jobdetails);
 function app_jobdetails($scope, app) {
     'use strict';
-    app.init($scope);
+    
     app.init($scope,function(){
          $scope.data.categories = [
                     {categoryName:"Job Info", image:"images/jobdetails/Service_Info.png"},
@@ -12,8 +12,6 @@ function app_jobdetails($scope, app) {
                     {categoryName:"Unit Info", image:"images/jobdetails/unit_info.png"}
                 ];  
     });
-    
-    
    
                 
     $scope.goToServiceJob = function () {
