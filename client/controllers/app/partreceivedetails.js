@@ -9,6 +9,7 @@ function app_partreceivedetails($scope, app, $ionicPopup) {
 
      $scope.showPopup($scope.data);
     });
+    
 
     $scope.goToHome = function () {
         if (window.mocks) {
