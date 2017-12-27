@@ -9,6 +9,5 @@ function app_jobdetails($scope, app) {
         } else {
             app.call('PartReceiveDetail.goToServiceJob', {});
         }
-
     }
 }
