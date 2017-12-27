@@ -3,6 +3,6 @@ exports.goToHome = function(page, params) {
 }
 
 exports.goToServiceJob = function(page, params) {
-    page.action('servicejob', 'actions.cancel');
+    page.action('jobdetails', 'actions.cancel');
 }
 
