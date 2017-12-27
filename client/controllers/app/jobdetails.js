@@ -12,6 +12,7 @@ function app_jobdetails($scope, app) {
                 {categoryName:'Photo', image:'images/jobdetails/Photo.jpg'},
                 {categoryName:'Unit Info', image:'images/jobdetails/unit_info.png'}
                 ]; 
+               
     });
    
                 
