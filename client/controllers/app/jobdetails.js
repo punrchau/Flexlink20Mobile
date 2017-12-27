@@ -3,7 +3,7 @@ function app_jobdetails($scope, app) {
     'use strict';
     
     app.init($scope,function(){
-        $scope.data.company=JSON.parse("Flex");
+        $scope.data.company='Flex';
     });
    
                 
