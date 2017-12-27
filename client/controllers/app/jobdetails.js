@@ -10,7 +10,7 @@ function app_jobdetails($scope, app) {
     app.init($scope);
     
     $scope.goToServiceJob = function () {
-        if (!window.mocks) {
+        if (window.mocks) {
             app.go('servicejob');
         } else {
             app.call('PartReceiveDetail.goToServiceJob', {});
