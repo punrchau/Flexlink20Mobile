@@ -13,7 +13,7 @@ function app_jobdetails($scope, app) {
         if (window.mocks) {
             app.go('servicejob');
         } else {
-            app.call('jobdetails.goToServiceJob', {});
+            app.call('PartReceiveDetail.goToServiceJob', {});
         }
 
     }
