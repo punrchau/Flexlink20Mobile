@@ -10,22 +10,22 @@
       "image": "images/jobdetails/contact.png"
     },
     {
-      "categoryName": "Training",
+      "categoryName": "Job History",
       "icon": "ion-ios-paper1",
       "image": "images/jobdetails/History.png"
     },
     {
-      "categoryName": "FAQs",
+      "categoryName": "Remarks",
       "icon": "ion-ios-help1",
       "image": "images/jobdetails/Remarks.jpg"
     },
     {
-      "categoryName": "Alerts",
+      "categoryName": "Photo",
       "icon": "ion-ios-bell1",
       "image": "images/jobdetails/Photo.png"
     },
     {
-      "categoryName": "Email",
+      "categoryName": "Unit Info",
       "icon": "ion-ios-email1",
       "image": "images/jobdetails/unit.jpg"
     }
