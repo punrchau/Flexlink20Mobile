@@ -9,7 +9,8 @@ function app_jobdetails($scope, app) {
                     {categoryName:"Remarks", image:"images/jobdetails/Remarks.png"},
                     {categoryName:"Photo", image:"images/jobdetails/Photo.jpg"},
                     {categoryName:"Unit Info", image:"images/jobdetails/unit_info.png"}
-                ];    
+                ];  
+                
     $scope.goToServiceJob = function () {
         if (window.mocks) {
             app.go('servicejob');
