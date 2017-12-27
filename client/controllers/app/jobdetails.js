@@ -4,6 +4,10 @@ function app_jobdetails($scope, app) {
     
     app.init($scope,function(){
         $scope.data.company='Flex';
+        
+        $scope.data.categories = [
+                            {categoryName:'Job Info', image:'images/jobdetails/Service_Info.png'}
+                    ];
     });
    
                 
