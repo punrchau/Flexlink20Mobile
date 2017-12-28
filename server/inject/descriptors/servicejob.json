@@ -77,7 +77,7 @@
           },
           "clickTab": {
             "type": "action",
-            "selector": "#ActiveServiceJobs",
+            "selector": "a[#ActiveServiceJobs",
             "control": "action.button"
           }
         }
