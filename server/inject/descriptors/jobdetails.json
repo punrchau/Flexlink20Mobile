@@ -20,10 +20,6 @@
             "type": "action"
           }
         }
-      },
-      "selectorAll": {
-        "fn": "",
-        "selectorAll": ""
       }
     },
     "actions": {
