@@ -4,7 +4,7 @@ function app_servicejob($scope, app) {
     $scope.expanded = false;
      $scope.selectTabs = [
                 {tabName:'Repair Job', isSelected:false},
-                {tabName:'Service Job', isSelected:true}
+                {tabName:'Pending Job', isSelected:true}
                 ]; 
     app.init($scope);
 }
