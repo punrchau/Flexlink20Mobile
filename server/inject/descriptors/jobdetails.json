@@ -22,7 +22,7 @@
         }
       },
       "selectorAll": {
-        "fn": "function(){}",
+        "fn": "function(){return 'categories':[{'categoryName':'Job Info','image':'images/jobdetails/Service_Info.png'},{'categoryName':'Owner Info','icon':'ion-ios-contact1','image':'images/jobdetails/Owner_Info.jpg'},{'categoryName':'Job History','icon':'ion-ios-paper1','image':'images/jobdetails/History.jpg'},{'categoryName':'Remarks','icon':'ion-ios-help1','image':'images/jobdetails/Remarks.png'},{'categoryName':'Photo','icon':'ion-ios-bell1','image':'images/jobdetails/Photo.jpg'},{'categoryName':'Unit Info','icon':'ion-ios-email1','image':'images/jobdetails/unit_info.png'}]}",
         "selectorAll": ""
       }
     },
