@@ -1,7 +1,6 @@
 angular.module('app').controller('app_jobdetails', app_jobdetails);
 function app_jobdetails($scope, app) {
      'use strict';
-       $scope.company ="Ram";
       $scope.categories = [
                 {categoryName:'Job Info', image:'images/jobdetails/Service_Info.png'},
                 {categoryName:'Owner Info', image:'images/jobdetails/Owner_Info.jpg'},
@@ -11,7 +10,6 @@ function app_jobdetails($scope, app) {
                 {categoryName:'Unit Info', image:'images/jobdetails/unit_info.png'}
                 ]; 
      app.init($scope);
-   
                 
     $scope.goToServiceJob = function () {
         if (window.mocks) {
