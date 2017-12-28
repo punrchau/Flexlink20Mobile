@@ -69,7 +69,7 @@
           },
           "isSelected": {
             "type": "boolean",
-            "control": "property.innerText",
+            "control": "exists",
             "selector": {
               "fn": "function(node){if(node.getAttribute('class')=='active'){return true}}",
               "selector": ""
