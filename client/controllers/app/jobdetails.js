@@ -1,11 +1,7 @@
 angular.module('app').controller('app_jobdetails', app_jobdetails);
 function app_jobdetails($scope, app) {
      'use strict';
-   $scope.data.company ='Flex';
-    app.init($scope,function(){
-        
-        
-        $scope.data.categories = [
+      $scope.data.categories = [
                 {categoryName:'Job Info', image:'images/jobdetails/Service_Info.png'},
                 {categoryName:'Owner Info', image:'images/jobdetails/Owner_Info.jpg'},
                 {categoryName:'Job History', image:'images/jobdetails/History.jpg'},
@@ -13,6 +9,10 @@ function app_jobdetails($scope, app) {
                 {categoryName:'Photo', image:'images/jobdetails/Photo.jpg'},
                 {categoryName:'Unit Info', image:'images/jobdetails/unit_info.png'}
                 ]; 
+    app.init($scope,function(){
+        
+        
+     
     });
    
                 
