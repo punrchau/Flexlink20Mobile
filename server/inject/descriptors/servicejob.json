@@ -77,7 +77,7 @@
           },
           "clickTab": {
             "type": "action",
-            "control": "action.button",
+            "control": "action.link",
             "selector": "a"
           }
         }
