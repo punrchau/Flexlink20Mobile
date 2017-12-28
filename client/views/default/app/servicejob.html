@@ -19,6 +19,8 @@
                 </div>
             </div>
         </div>
+        <div data-comp-id="text.2">Selected Tabs :
+            {{}}</div>
     </ion-header-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
         <div class=" card" data-comp-id="div.2" ng-repeat="item in data.listItems"
@@ -27,25 +29,25 @@
                 <div class="col" data-comp-id="column.2" style="padding: 0px;">
                     <div class="row" data-comp-id="row.3" style="padding: 0px 10px;">
                         <div class="col" data-comp-id="column.3">
-                            <div class="" data-comp-id="text.2"
+                            <div class="" data-comp-id="text.3"
                                 style="color: rgb(51, 51, 51); font-size: 12px;">{{item.firstname +' '+ item.lastname}}</div>
                         </div>
                         <div class="col" data-comp-id="column.4">
-                            <div class="" data-comp-id="text.3" ng-bind="item.pickupaddress"
+                            <div class="" data-comp-id="text.4" ng-bind="item.pickupaddress"
                                 style="color: rgb(51, 51, 51); font-size: 12px;">PR-000000189</div>
                         </div>
                     </div>
                     <div class="row" data-comp-id="row.4" style="padding: 0px 10px;">
                         <div class="col" data-comp-id="column.5">
-                            <div class="" data-comp-id="text.4" ng-bind="item.problemcategory"
+                            <div class="" data-comp-id="text.5" ng-bind="item.problemcategory"
                                 style="color: rgb(51, 51, 51); font-size: 12px;">1234566</div>
                         </div>
                         <div class="col" data-comp-id="column.6">
-                            <div class="" data-comp-id="text.5" ng-bind="item.ticketnumber"
+                            <div class="" data-comp-id="text.6" ng-bind="item.ticketnumber"
                                 style="color: rgb(51, 51, 51); font-size: 12px;">PR-000000189</div>
                         </div>
                     </div>
-                    <span class=" positive" data-comp-id="text.6" ng-click="expanded = !expanded"
+                    <span class=" positive" data-comp-id="text.7" ng-click="expanded = !expanded"
                         style="font-size: 10px; padding: 0px 17px;">{{expanded ? 'Less details' : 'More Details'}}</span>
                 </div>
                 <div class="col text-right col-10" data-comp-id="column.7"
@@ -63,7 +65,7 @@
         </div>
         <div data-comp-id="div.3" ng-show="data.listItems.length==0"
             style="text-align:center; margin-top: 10px">
-            <div class=" assertive" data-comp-id="text.7">No Data Available</div>
+            <div class=" assertive" data-comp-id="text.8">No Data Available</div>
         </div>
     </ion-content>
 </ion-view>
