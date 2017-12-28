@@ -92,7 +92,7 @@
     "isServiceActive": {
       "type": "identifier",
       "control": "exists",
-      "selector": "#liActiveServiceJobs"
+      "selector": "#liActiveServiceJobs.active"
     }
   },
   "connect": [
