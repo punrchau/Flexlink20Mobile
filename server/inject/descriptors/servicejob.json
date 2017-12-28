@@ -91,11 +91,7 @@
     },
     "isServiceActive": {
       "type": "identifier",
-      "control": "exists",
-      "selector": {
-        "fn": "function(node){if(node.getAttribute('class')=='active'){return true}}",
-        "selector": ""
-      }
+      "control": "exists"
     }
   },
   "connect": [
