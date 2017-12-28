@@ -106,7 +106,7 @@
     },
     {
       "match": [
-        "isrepairjob"
+        "isServiceActive"
       ],
       "action": "selectTabs.clickTab"
     }
