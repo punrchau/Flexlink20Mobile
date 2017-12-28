@@ -91,7 +91,7 @@
     "isServiceActive": {
       "type": "identifier",
       "control": "exists",
-      "selector": "#liActiveServiceJobs.active"
+      "selector": "a[data-target=\"#ActiveServiceJobs\"]"
     }
   },
   "connect": [
