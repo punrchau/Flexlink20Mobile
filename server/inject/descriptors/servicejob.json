@@ -88,11 +88,6 @@
       "type": "identifier",
       "selector": "#liRepairJobs",
       "control": "exists"
-    },
-    "isServiceActive": {
-      "type": "identifier",
-      "control": "exists",
-      "selector": "#liRepairJobs.active"
     }
   },
   "connect": [
