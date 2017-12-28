@@ -15,7 +15,7 @@
                     ng-click="app.action('servicejob', 'selectTabs[item].clickTab', this)"
                     ng-repeat="item in data.selectTabs"
                     ng-style="item.isSelected ? {'color': '#006bb6', 'border-bottom': '3px solid rgb(0, 107, 182)', 'margin': '0px 0px 0x'} : {'font-size': '14px', 'color': 'rgb(102, 102, 102)'}">
-                    <div data-comp-id="text.1" style="font-size: 14px;">{{item.tabName.replace(' Info', '')}}</div>
+                    <div data-comp-id="text.1" style="font-size: 14px;">{{item.tabName.replace(' service', 'Pending')}}</div>
                 </div>
             </div>
         </div>
