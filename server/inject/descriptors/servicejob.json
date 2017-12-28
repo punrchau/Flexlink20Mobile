@@ -90,8 +90,7 @@
     },
     "isServiceActive": {
       "type": "identifier",
-      "control": "exists",
-      "selector": "a[data-target=\"#ActiveServiceJobs\"]"
+      "control": "exists"
     }
   },
   "connect": [
