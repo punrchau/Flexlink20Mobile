@@ -103,12 +103,6 @@
       "screens": [
         "servicejob"
       ]
-    },
-    {
-      "match": [
-        "isServiceActive"
-      ],
-      "action": "selectTabs.clickTab"
     }
   ]
 }
