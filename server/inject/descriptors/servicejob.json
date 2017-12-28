@@ -77,7 +77,7 @@
           },
           "clickTab": {
             "type": "action",
-            "selector": "a[#ActiveServiceJobs",
+            "selector": "a[data-target=\"#ActiveServiceJobs\"]",
             "control": "action.button"
           }
         }
