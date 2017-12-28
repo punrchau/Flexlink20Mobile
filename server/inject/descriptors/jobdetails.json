@@ -22,7 +22,7 @@
         }
       },
       "selectorAll": {
-        "fn": "",
+        "fn": "function(){}",
         "selectorAll": ""
       }
     },
