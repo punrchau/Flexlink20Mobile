@@ -91,7 +91,11 @@
     },
     "isServiceActive": {
       "type": "identifier",
-      "control": "action.link"
+      "control": "action.link",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     }
   },
   "connect": [
