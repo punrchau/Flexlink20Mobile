@@ -91,7 +91,7 @@
     },
     "isServiceActive": {
       "type": "identifier",
-      "control": "action.link",
+      "control": "exists",
       "selector": {
         "fn": "function(node){if(node.getAttribute('class')=='active'){return true}}",
         "selector": ""
