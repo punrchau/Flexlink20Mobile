@@ -10,12 +10,4 @@ function app_jobdetails($scope, app) {
                 {categoryName:'Unit Info', image:'images/jobdetails/unit_info.png'}
                 ]; 
      app.init($scope);
-                
-    $scope.goToServiceJob = function () {
-        if (window.mocks) {
-            app.go('servicejob');
-        } else {
-            app.call('PartReceiveDetail.goToServiceJob', {});
-        }
-    }
 }
