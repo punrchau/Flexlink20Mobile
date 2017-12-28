@@ -1,7 +1,7 @@
 angular.module('app').controller('app_jobdetails', app_jobdetails);
 function app_jobdetails($scope, app) {
      'use strict';
-      $scope.data.categories = [
+      $scope.categories = [
                 {categoryName:'Job Info', image:'images/jobdetails/Service_Info.png'},
                 {categoryName:'Owner Info', image:'images/jobdetails/Owner_Info.jpg'},
                 {categoryName:'Job History', image:'images/jobdetails/History.jpg'},
