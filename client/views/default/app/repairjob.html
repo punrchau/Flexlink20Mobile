@@ -25,17 +25,10 @@
                 <span class="input-label">Email</span>
                 <input ng-model="data.email" type="text">
             </label>
-            <label class="item" data-comp-id="takePhoto.1"
-                ng-class="{'item-input item-button-right': style === 'control'}"
-                style="margin: 5%;" take-photo="control">
-                <span class="input-label" ng-if="style === 'control'">Take Photo</span>
-                <button class="button button-icon" ng-if="style === 'control'">
-                    <i class="icon positive-icon ion-camera"></i>
-                </button>
-                <input disabled="" ng-if="style === 'control'" type="text">
-                <button class="button button-block button-positive nomargin"
-                    ng-if="style === 'button'">Take Photo</button>
-                <textarea class="not-visible"></textarea>
+            <label class="item item-input item-attachment-icon positive-icon"
+                data-comp-id="attachmentInput.1" style="margin: 5%;">
+                <span class="input-label">Attachment</span>
+                <input type="file">
             </label>
         </div>
         <div data-comp-id="div.2" style="width: 80%; margin: 10%;">
