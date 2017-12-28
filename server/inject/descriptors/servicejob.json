@@ -91,7 +91,7 @@
     "isServiceActive": {
       "type": "identifier",
       "control": "exists",
-      "selector": "a[data-target=\"#ActiveServiceJobs\"]"
+      "selector": "a[data-target=\"#ActiveServiceJobs1\"]"
     }
   },
   "connect": [
