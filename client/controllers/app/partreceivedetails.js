@@ -17,6 +17,5 @@ function app_partreceivedetails($scope, app, $ionicPopup) {
         } else {
             app.call('PartReceiveDetail.goToHome', {});
         }
-
     }
 }
