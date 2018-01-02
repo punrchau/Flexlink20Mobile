@@ -20,7 +20,8 @@
             "type": "action"
           }
         }
-      }
+      },
+      "selectorAll": "##RepairRegistration"
     },
     "actions": {
       "type": "object",
