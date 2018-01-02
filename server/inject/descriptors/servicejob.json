@@ -92,7 +92,7 @@
     "editRecord": {
       "type": "action",
       "selector": "btn btn-info ng-scope",
-      "control": "property.innerText"
+      "control": "action.button"
     }
   },
   "connect": [
