@@ -11,6 +11,10 @@ function app_jobdetails($scope, app) {
                 ]; 
      app.init($scope);
      
+     $scope.viewRecord = function(index){
+        app.call('Home.viewRecord',{'index':index});
+    }
+        
      //$scope.goToServiceJob = function () {
        // if (window.mocks) {
          //   app.go('servicejob');
@@ -18,5 +22,5 @@ function app_jobdetails($scope, app) {
           //  app.call('PartReceiveDetail.goToServiceJob', {});
         //}-->
     //}
-     
+        
 }
