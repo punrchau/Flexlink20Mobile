@@ -88,6 +88,11 @@
       "type": "identifier",
       "selector": "#liRepairJobs",
       "control": "exists"
+    },
+    "editRecord": {
+      "type": "string",
+      "selector": "#comment",
+      "control": "property.innerText"
     }
   },
   "connect": [
