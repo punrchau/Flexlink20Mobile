@@ -51,7 +51,7 @@
             "control": "property.innerText"
           },
           "selectRecord": {
-            "type": "string",
+            "type": "action",
             "selector": "#comment",
             "control": "property.innerText"
           }
