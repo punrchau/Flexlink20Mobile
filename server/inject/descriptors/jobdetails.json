@@ -10,7 +10,7 @@
           "categoryName": {
             "type": "string",
             "selector": "input[id=\"ServiceJob\"]",
-            "control": "property.innerText"
+            "control": "text"
           },
           "icon": {
             "type": "string"
