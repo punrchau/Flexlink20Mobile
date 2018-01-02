@@ -41,6 +41,14 @@
       "selector": "h3",
       "control": "exists",
       "selectContains": "REPAIR INFO"
+    },
+    "jobinfo": {
+      "type": "object",
+      "properties": {
+        "ticketnumber": {
+          "type": "string"
+        }
+      }
     }
   },
   "connect": []
