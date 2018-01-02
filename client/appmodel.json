@@ -594,6 +594,14 @@
             "type": "action"
           }
         }
+      },
+      "jobinfo": {
+        "type": "object",
+        "properties": {
+          "ticketnumber": {
+            "type": "string"
+          }
+        }
       }
     }
   }
