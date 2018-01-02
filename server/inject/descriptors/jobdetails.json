@@ -21,7 +21,7 @@
           }
         }
       },
-      "selectorAll": "##RepairRegistration"
+      "selectorAll": "#comment"
     },
     "actions": {
       "type": "object",
