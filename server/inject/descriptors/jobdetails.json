@@ -26,7 +26,8 @@
       "type": "object",
       "properties": {
         "cancel": {
-          "type": "action"
+          "type": "action",
+          "selector": "button"
         }
       }
     }
