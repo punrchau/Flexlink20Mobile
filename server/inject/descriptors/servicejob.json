@@ -52,7 +52,7 @@
           },
           "selectRecord": {
             "type": "action",
-            "selector": "#comment",
+            "selector": ".",
             "control": "property.innerText"
           }
         }
