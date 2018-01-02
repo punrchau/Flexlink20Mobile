@@ -9,7 +9,8 @@
         "properties": {
           "categoryName": {
             "type": "string",
-            "selector": "#ServiceJob"
+            "selector": "#ServiceJob",
+            "control": "property.innerText"
           },
           "icon": {
             "type": "string"
