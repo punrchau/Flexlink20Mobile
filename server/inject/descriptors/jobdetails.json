@@ -28,7 +28,8 @@
         "cancel": {
           "type": "action",
           "selector": "button",
-          "selectContains": "Cancel"
+          "selectContains": "Cancel",
+          "control": "action.button"
         }
       }
     }
