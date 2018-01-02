@@ -16,12 +16,16 @@ exports.on_InvokeServiceJob = function (page) {
     page.href('http://fl20dev.azurewebsites.net/lenovo/#/repairjobs').screen('prehomeloadjobmgmt');
 }
 
-
-
 exports.editRecord = function(page, params) {
     page.action('Home', 'records[' + params.index + '].selectRecord');
     page.action('Home', 'editRecord');
 }
+
+exports.viewRecord = function(page, params) {
+    page.action('servicejob', 'listItems[' + params.index + '].selectRecord');
+    page.action('servicejob', 'viewRecord');
+}
+
 exports.deleteRecord = function(page, params) {
     page.action('PartReceiveDetails', 'partDiscrepancy.details[' + params.index + '].selectRecord');
     page.action('PartReceiveDetails', 'partDiscrepancy.delete');
