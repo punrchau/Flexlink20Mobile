@@ -8,8 +8,7 @@
         "type": "object",
         "properties": {
           "categoryName": {
-            "type": "string",
-            "control": "text"
+            "type": "string"
           },
           "icon": {
             "type": "string"
