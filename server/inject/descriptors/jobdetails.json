@@ -9,7 +9,7 @@
         "properties": {
           "categoryName": {
             "type": "string",
-            "selector": "td"
+            "selector": "#ServiceJob"
           },
           "icon": {
             "type": "string"
