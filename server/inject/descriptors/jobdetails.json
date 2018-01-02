@@ -38,7 +38,7 @@
       "type": "identifier",
       "selector": "h3",
       "control": "exists",
-      "selectContains": "Repair Info"
+      "selectContains": "Repair Info Save"
     }
   },
   "connect": []
