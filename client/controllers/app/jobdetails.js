@@ -10,17 +10,13 @@ function app_jobdetails($scope, app) {
                 {categoryName:'Unit Info', image:'images/jobdetails/unit_info.png'}
                 ]; 
      app.init($scope);
-     
-     $scope.viewRecord = function(index){
-        app.call('Home.viewRecord',{'index':index});
+    
+     $scope.goToServiceJob = function () {
+     if (window.mocks) {
+         app.go('servicejob');
+        } else {
+          app.call('PartReceiveDetail.goToServiceJob', {});
+        }
     }
-        
-     //$scope.goToServiceJob = function () {
-       // if (window.mocks) {
-         //   app.go('servicejob');
-        //} else {
-          //  app.call('PartReceiveDetail.goToServiceJob', {});
-        //}-->
-    //}
         
 }
