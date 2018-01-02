@@ -35,7 +35,7 @@
     },
     "isJobDetails": {
       "type": "identifier",
-      "selector": "#comment",
+      "selector": "h3",
       "control": "property.innerText"
     }
   },
