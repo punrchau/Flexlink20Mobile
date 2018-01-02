@@ -20,7 +20,8 @@
             "type": "action"
           }
         }
-      }
+      },
+      "selectorAll": "."
     },
     "actions": {
       "type": "object",
