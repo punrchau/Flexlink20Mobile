@@ -44,7 +44,8 @@
       "properties": {
         "ticketnumber": {
           "type": "string",
-          "selector": "#ServiceJob"
+          "selector": "#ServiceJob",
+          "control": "text"
         }
       }
     }
