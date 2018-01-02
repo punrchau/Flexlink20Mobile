@@ -27,7 +27,8 @@
       "properties": {
         "cancel": {
           "type": "action",
-          "selector": "button"
+          "selector": "button",
+          "selectContains": "Cancel"
         }
       }
     }
