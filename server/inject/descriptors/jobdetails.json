@@ -32,6 +32,11 @@
           "control": "action.button"
         }
       }
+    },
+    "isJobDetails": {
+      "type": "string",
+      "selector": "#comment",
+      "control": "property.innerText"
     }
   },
   "connect": []
