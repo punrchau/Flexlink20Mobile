@@ -90,7 +90,7 @@
       "control": "exists"
     },
     "editRecord": {
-      "type": "string",
+      "type": "action",
       "selector": "#comment",
       "control": "property.innerText"
     }
