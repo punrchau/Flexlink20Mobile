@@ -92,7 +92,8 @@
     "editRecord": {
       "type": "action",
       "selector": "btn btn-info ng-scope",
-      "control": "action.button"
+      "control": "action.button",
+      "selectContains": "EDIT"
     }
   },
   "connect": [
