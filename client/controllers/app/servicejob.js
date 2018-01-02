@@ -4,7 +4,7 @@ function app_servicejob($scope, app) {
     $scope.expanded = false;
     app.init($scope);
     
-    $scope.viewRecord = function(index){
+    /*$scope.viewRecord = function(index){
         app.call('Home.viewRecord',{'index':index});
-    }
+    }*/
 }
