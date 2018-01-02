@@ -91,7 +91,7 @@
     },
     "editRecord": {
       "type": "action",
-      "selector": "#comment",
+      "selector": "btn btn-info ng-scope",
       "control": "property.innerText"
     }
   },
