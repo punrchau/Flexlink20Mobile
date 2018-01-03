@@ -1,6 +1,6 @@
 var app = angular.module('app');
 
-app.controller('app_servicejob','$cordovaSocialSharing', app_servicejob,$cordovaSocialSharing);
+app.controller('app_servicejob', app_servicejob);
 
 app.config( [
     '$compileProvider',
