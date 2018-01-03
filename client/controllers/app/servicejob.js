@@ -16,15 +16,6 @@ function app_servicejob($scope, app) {
     $scope.expanded = false;
     app.init($scope);
     
-   $scope.shareSms = function() {
-      $cordovaSocialSharing
-      .shareViaSMS("message", "+918983852226")
-      .then(function(result) {
-       
-      }, function(err) {
-        
-      });
-    }
     /*$scope.viewRecord = function(index){
         app.call('Home.viewRecord',{'index':index});
     }*/
