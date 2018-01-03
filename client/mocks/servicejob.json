@@ -7,7 +7,7 @@
       "firstname": "Ram",
       "lastname": "Chauhan",
       "pickupaddress": "Pune",
-      "mobilenumber": "+918983852226"
+      "mobilenumber": "tel:+918983852226"
     },
     {
       "$i": 1,
