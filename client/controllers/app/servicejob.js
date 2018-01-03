@@ -11,7 +11,7 @@ app.config( [
     }
     ]);
     
-function app_servicejob($scope, app,$cordovaSocialSharing) {
+function app_servicejob($scope, app) {
     'use strict';
     $scope.expanded = false;
     app.init($scope);
