@@ -13,7 +13,8 @@ exports.on_InvokePartMgmt = function (page) {
 }
 
 exports.on_InvokeServiceJob = function (page) {
-    page.href('http://fl20dev.azurewebsites.net/lenovo/#/repairjobs').screen('prehomeloadjobmgmt');
+   // page.href('http://fl20dev.azurewebsites.net/lenovo/#/repairjobs').screen('prehomeloadjobmgmt');
+    page.href(' http://localhost:20254/#/servicejobs').screen('prehomeloadjobmgmt');  
 }
 
 exports.editRecord = function(page, params) {
