@@ -7,7 +7,7 @@
       "firstname": "Ram",
       "lastname": "Chauhan",
       "pickupaddress": "Pune",
-      "mobilenumber": "+918983852280"
+      "mobilenumber": "8983852280"
     },
     {
       "$i": 1,
@@ -16,7 +16,7 @@
       "firstname": "Gaurav",
       "lastname": "Navale",
       "pickupaddress": "Nashik",
-      "mobilenumber": "+918983852290"
+      "mobilenumber": "8983852290"
     },
     {
       "$i": 2,
@@ -25,7 +25,7 @@
       "firstname": "Ravi",
       "lastname": "Patil",
       "pickupaddress": "Mumbai",
-      "mobilenumber": "+918983852228"
+      "mobilenumber": "8983852228"
     }
   ],
   "selectTabs": [
