@@ -14,7 +14,6 @@ app.config( [
 function app_servicejob($scope, app) {
     'use strict';
     $scope.expanded = false;
-     $scope.name = "tel:+919090909090"
     app.init($scope);
    
     /*$scope.viewRecord = function(index){
