@@ -1,6 +1,6 @@
 var app = angular.module('app');
 
-app.controller('app_servicejob', app_servicejob);
+app.controller('app_servicejob','$cordovaSocialSharing', app_servicejob,$cordovaSocialSharing);
 
 app.config( [
     '$compileProvider',
@@ -11,7 +11,7 @@ app.config( [
     }
     ]);
     
-function app_servicejob($scope, app) {
+function app_servicejob($scope, app,$cordovaSocialSharing) {
     'use strict';
     $scope.expanded = false;
     app.init($scope);
