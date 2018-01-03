@@ -1,4 +1,16 @@
-angular.module('app').controller('app_servicejob', app_servicejob);
+var app = angular.module('app');
+
+app.controller('app_servicejob', app_servicejob);
+
+app.config( [
+    '$compileProvider',
+    function( $compileProvider )
+    {   
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension):/);
+        // Angular before v1.2 uses $compileProvider.urlSanitizationWhitelist(...)
+    }
+    ]);
+    
 function app_servicejob($scope, app) {
     'use strict';
     $scope.expanded = false;
