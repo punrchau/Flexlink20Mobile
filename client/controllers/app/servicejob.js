@@ -48,15 +48,15 @@ function app_servicejob($scope, app) {
     
     var match = function (item, val) {
         var regex = new RegExp(val, 'i');
-        return item.name.toLowerCase().search(regex) >= 0
+        return item.firstname.toLowerCase().search(regex) >= 0
     };
     
     $scope.sortFunc = function(item){
-        if($scope.sortBy=="price"){
-            return parseFloat(item.price);
+        if($scope.sortBy=="firstname"){
+            return parseFloat(item.firstname);
         }
         else{
-            return item.name;
+            return item.pickupaddress;
         }
     };
     
