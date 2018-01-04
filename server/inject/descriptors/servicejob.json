@@ -56,7 +56,7 @@
             "control": "action.link"
           },
           "isimp": {
-            "type": "string",
+            "type": "boolean",
             "selector": {
               "fn": "function(node){if(node.getAttribute('class')=='active'){return true}}",
               "selector": ""
