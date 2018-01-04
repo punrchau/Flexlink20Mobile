@@ -15,9 +15,9 @@ function app_servicejob($scope, app) {
     'use strict';
     $scope.expanded = false;
      if($scope.isImp==1)
-        $scope.flag=false;
-    else
         $scope.flag=true;
+    else
+        $scope.flag=false;
     app.init($scope);
     
     /*$scope.viewRecord = function(index){
