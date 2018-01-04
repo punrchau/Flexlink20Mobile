@@ -26,41 +26,44 @@
             <div class="row" data-comp-id="row.2">
                 <div class="col" data-comp-id="column.2" style="padding: 0px;">
                     <div class="row" data-comp-id="row.3" style="padding: 0px 10px;">
-                        <div class="" data-comp-id="text.2"
-                            style="color: rgb(51, 51, 51); font-size: 14px; font-weight: bold;">{{item.firstname +' '+ item.lastname}}
-                            <a ng-href="{{'tel:' + item.mobilenumber}}">
-                                <img data-comp-id="image.1" data-img="" ng-src="images/call.jpg"
-                                    style="width: 15%; margin: 0px; height: 15px;"></a>
-                            <a ng-href="{{'sms:' + item.mobilenumber}}">
-                                <img data-comp-id="image.2" data-img="" ng-src="images/sms.png"
-                                    style="width: 15%; margin: 0px; height: 15px;"></a>
+                        <div class="col" data-comp-id="column.3">
+                            <div class="" data-comp-id="text.2"
+                                style="color: rgb(51, 51, 51); font-size: 12px; font-weight: bold;">{{item.firstname +' '+ item.lastname}}
+                                <a ng-href="{{'tel:' + item.mobilenumber}}">
+                                    <img data-comp-id="image.1" data-img="" ng-src="images/call.jpg"
+                                        style="width: 15%; margin: 0px; height: 15px;"></a>
+                                <a ng-href="{{'sms:' + item.mobilenumber}}">
+                                    <img data-comp-id="image.2" data-img="" ng-src="images/sms.png"
+                                        style="width: 15%; margin: 0px; height: 15px;"></a>
+                            </div>
+                        </div>
+                        <div class="col" data-comp-id="column.4">
+                            <div class="" data-comp-id="text.3" ng-bind="item.pickupaddress"
+                                style="color: rgb(51, 51, 51); font-size: 12px;">PR-000000189</div>
                         </div>
                     </div>
-                    <div class="" data-comp-id="text.3" ng-bind="item.pickupaddress"
-                        style="color: rgb(51, 51, 51); font-size: 12px;">PR-000000189
+                    <div class="row" data-comp-id="row.4" style="padding: 0px 10px;">
+                        <div class="col" data-comp-id="column.5">
+                            <div class="" data-comp-id="text.4" ng-bind="item.problemcategory"
+                                style="color: rgb(51, 51, 51); font-size: 12px;">1234566</div>
+                        </div>
+                        <div class="col" data-comp-id="column.6">
+                            <div class="" data-comp-id="text.5" ng-bind="item.ticketnumber"
+                                style="color: rgb(51, 51, 51); font-size: 12px;">PR-000000189</div>
+                        </div>
                     </div>
+                    <span class=" positive" data-comp-id="text.6" ng-click="expanded = !expanded"
+                        style="font-size: 10px; padding: 0px 17px;">{{expanded ? 'Less details' : 'More Details'}}</span>
                 </div>
-            </div>
-            <div class="row" data-comp-id="row.4" style="padding: 0px 10px;">
-                <div class="col" data-comp-id="column.3">
-                    <div class="" data-comp-id="text.4" ng-bind="item.problemcategory"
-                        style="color: rgb(51, 51, 51); font-size: 12px;">1234566</div>
-                </div>
-                <div class="col" data-comp-id="column.4">
-                    <div class="" data-comp-id="text.5" ng-bind="item.ticketnumber"
-                        style="color: rgb(51, 51, 51); font-size: 12px;">PR-000000189</div>
-                </div>
-            </div>
-            <span class=" positive" data-comp-id="text.6" ng-click="expanded = !expanded"
-                style="font-size: 10px; padding: 0px 17px;">{{expanded ? 'Less details' : 'More Details'}}</span>
-        </div>
-        <div class="col text-right col-10" data-comp-id="column.5"
-            style="padding: 10px;">
-            <div class="row" data-comp-id="row.5"
-                style="padding: 0px; position: relative;  top: 50%;  transform: translateY(-50%);">
-                <div class="col" data-comp-id="column.6" style="padding: 0px;">
-                    <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.1"
-                        ng-click="app.go('app.jobdetails')" style="font-size: 32px;"></i>
+                <div class="col text-right col-10" data-comp-id="column.7"
+                    style="padding: 10px;">
+                    <div class="row" data-comp-id="row.5"
+                        style="padding: 0px; position: relative;  top: 50%;  transform: translateY(-50%);">
+                        <div class="col" data-comp-id="column.8" style="padding: 0px;">
+                            <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.1"
+                                ng-click="app.go('app.jobdetails')" style="font-size: 32px;"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
