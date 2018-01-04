@@ -101,7 +101,7 @@
       "selectContains": "EDIT"
     },
     "isImp": {
-      "type": "string",
+      "type": "boolean",
       "selector": "#masterBody",
       "control": "property.innerText"
     }
