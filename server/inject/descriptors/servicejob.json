@@ -57,7 +57,7 @@
           },
           "isImp": {
             "type": "boolean",
-            "selector": ".escalated-RowColor.bounce-RowColor.k-state-selected",
+            "selector": ".k-alt k-state-selected",
             "control": "exists"
           }
         }
