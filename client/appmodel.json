@@ -395,6 +395,9 @@
             },
             "pickupaddress": {
               "type": "string"
+            },
+            "isImp": {
+              "type": "boolean"
             }
           }
         },
