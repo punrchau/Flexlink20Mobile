@@ -99,6 +99,11 @@
       "selector": ".btn.btn-info.ng-scope",
       "control": "action.button",
       "selectContains": "EDIT"
+    },
+    "isImp": {
+      "type": "string",
+      "selector": "#masterBody",
+      "control": "property.innerText"
     }
   },
   "connect": [
