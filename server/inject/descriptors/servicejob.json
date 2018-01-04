@@ -60,8 +60,7 @@
             "selector": {
               "fn": "function(node){return 'true'}",
               "selector": ""
-            },
-            "control": "property.innerText"
+            }
           }
         }
       },
