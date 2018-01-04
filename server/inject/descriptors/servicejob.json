@@ -56,7 +56,7 @@
             "control": "action.link"
           },
           "isimp": {
-            "type": "boolean",
+            "type": "string",
             "selector": {
               "fn": "function(node){return 'true'}",
               "selector": ""
