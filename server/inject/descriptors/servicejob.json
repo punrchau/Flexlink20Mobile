@@ -99,11 +99,6 @@
       "selector": ".btn.btn-info.ng-scope",
       "control": "action.button",
       "selectContains": "EDIT"
-    },
-    "isImp": {
-      "type": "boolean",
-      "selector": ".escalated-RowColor.bounce-RowColor.k-state-selected",
-      "control": "exists"
     }
   },
   "connect": [
