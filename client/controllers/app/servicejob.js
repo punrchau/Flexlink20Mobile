@@ -14,6 +14,7 @@ app.config( [
 function app_servicejob($scope, app) {
     'use strict';
     $scope.expanded = false;
+    
     /* if($scope.isImp==1)
         $scope.flag=true;
     else
