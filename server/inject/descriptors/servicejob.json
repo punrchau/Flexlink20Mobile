@@ -59,7 +59,7 @@
             "type": "boolean",
             "selector": {
               "fn": "function(node){if(node.getAttribute('class')=='k-alt'){return true}else{return false}}",
-              "selector": ".k-alt"
+              "selector": ""
             },
             "control": "property.className"
           }
