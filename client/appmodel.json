@@ -397,7 +397,7 @@
               "type": "string"
             },
             "isimp": {
-              "type": "string"
+              "type": "boolean"
             }
           }
         },
