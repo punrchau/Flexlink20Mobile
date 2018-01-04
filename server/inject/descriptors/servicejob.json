@@ -56,7 +56,7 @@
             "control": "action.link"
           },
           "isImp": {
-            "type": "boolean",
+            "type": "identifier",
             "selector": ".k-alt k-state-selected",
             "control": "exists"
           }
