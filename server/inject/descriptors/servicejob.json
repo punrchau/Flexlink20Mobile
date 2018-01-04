@@ -57,7 +57,7 @@
           },
           "isImp": {
             "type": "identifier",
-            "selector": ".k-alt k-state-selected",
+            "selector": "tr .k-alt",
             "control": "exists"
           }
         }
