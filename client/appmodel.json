@@ -421,6 +421,12 @@
             }
           }
         }
+      },
+      "searchstring": {
+        "type": "string"
+      },
+      "search": {
+        "type": "action"
       }
     }
   },
