@@ -55,14 +55,6 @@
             "selector": ".",
             "control": "action.link"
           },
-          "isImp": {
-            "type": "boolean",
-            "selector": {
-              "fn": "function(node){if(node.getAttribute('class')=='k-alt'){return true}else{return false}}",
-              "selector": ""
-            },
-            "control": "exists"
-          },
           "isimp": {
             "type": "boolean",
             "selector": {
