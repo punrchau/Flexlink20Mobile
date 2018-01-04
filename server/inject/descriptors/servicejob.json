@@ -54,6 +54,11 @@
             "type": "action",
             "selector": ".",
             "control": "action.link"
+          },
+          "isImp": {
+            "type": "string",
+            "selector": "<pseudo:after>",
+            "control": "property.innerText"
           }
         }
       },
