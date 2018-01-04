@@ -57,7 +57,11 @@
           },
           "isimp": {
             "type": "boolean",
-            "control": "exists"
+            "control": "exists",
+            "selector": {
+              "fn": "",
+              "selector": ""
+            }
           }
         }
       },
