@@ -61,7 +61,7 @@
               "fn": "function(node){return 'true'}",
               "selector": ""
             },
-            "control": "exists"
+            "control": "text"
           }
         }
       },
