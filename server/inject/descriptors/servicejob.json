@@ -57,7 +57,10 @@
           },
           "isImp": {
             "type": "boolean",
-            "selector": ".k-alt",
+            "selector": {
+              "fn": "",
+              "selector": ".k-alt"
+            },
             "control": "property.className"
           }
         }
