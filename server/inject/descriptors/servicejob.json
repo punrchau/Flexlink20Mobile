@@ -56,7 +56,7 @@
             "control": "action.link"
           },
           "isImp": {
-            "type": "identifier",
+            "type": "boolean",
             "selector": ".k-alt",
             "control": "property.className"
           }
