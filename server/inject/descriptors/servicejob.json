@@ -58,7 +58,7 @@
           "isimp": {
             "type": "string",
             "selector": {
-              "fn": "function(node){return 'true'}",
+              "fn": "function(node){if(node.getAttribute('class')=='active'){return true}}",
               "selector": ""
             },
             "control": "select"
