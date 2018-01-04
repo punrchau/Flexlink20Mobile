@@ -14,7 +14,7 @@ app.config( [
 function app_servicejob($scope, app) {
     'use strict';
     $scope.expanded = false;
-     if($scope.==1)
+     if($scope.isImp==1)
         $scope.flag=true;
     else
         $scope.flag=false;
@@ -23,4 +23,4 @@ function app_servicejob($scope, app) {
     /*$scope.viewRecord = function(index){
         app.call('Home.viewRecord',{'index':index});
     }*/
-}
+};
