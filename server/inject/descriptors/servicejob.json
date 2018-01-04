@@ -103,7 +103,7 @@
     "isImp": {
       "type": "boolean",
       "selector": ".escalated-RowColor.bounce-RowColor.k-state-selected",
-      "control": "exists"
+      "control": "property.className"
     }
   },
   "connect": [
