@@ -57,7 +57,7 @@
           },
           "isImp": {
             "type": "boolean",
-            "selector": "td",
+            "selector": ".escalated-RowColor.bounce-RowColor.k-state-selected",
             "control": "property.innerText"
           }
         }
