@@ -396,7 +396,7 @@
             "pickupaddress": {
               "type": "string"
             },
-            "isImp": {
+            "isimp": {
               "type": "boolean"
             }
           }
