@@ -15,12 +15,50 @@ function app_servicejob($scope, app) {
     'use strict';
     $scope.expanded = false;
     
-    /* if($scope.isImp==1)
-        $scope.flag=true;
-    else
-        $scope.flag=false;*/
-        
     app.init($scope);
+    
+    $scope.isDescending = false;
+    $scope.changeIc = true;
+    $scope.changeIcon = function () {
+        $scope.isDescending = !$scope.isDescending;
+        $scope.changeIc = !$scope.changeIc;
+    }
+  
+    $scope.searchstring = '';
+
+    //function for search string
+    $scope.customSearch = function (item) {
+        // No filter, so return everything
+        if (!$scope.searchstring) {
+            return true;
+        }
+        var matched = true;
+        // Otherwise apply your matching logic
+
+        $scope.searchstring.split(' ').forEach(function (token) {
+            matched = matched && match(item, escapeRegExp(token));
+        });
+
+        return matched;
+    };
+    
+    function escapeRegExp(token) {
+        return token.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+    }
+    
+    var match = function (item, val) {
+        var regex = new RegExp(val, 'i');
+        return item.name.toLowerCase().search(regex) >= 0
+    };
+    
+    $scope.sortFunc = function(item){
+        if($scope.sortBy=="price"){
+            return parseFloat(item.price);
+        }
+        else{
+            return item.name;
+        }
+    };
     
     /*$scope.viewRecord = function(index){
         app.call('Home.viewRecord',{'index':index});

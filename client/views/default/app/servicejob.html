@@ -63,7 +63,8 @@
         </div>
     </ion-header-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
-        <div class=" card" data-comp-id="div.3" ng-repeat="item in data.listItems"
+        <div class=" card" data-comp-id="div.3"
+            ng-repeat="item in data.listItems | orderBy:sortFunc:isDescending | filter:customSearch"
             style="margin: 10px 10px;">
             <div class="row" data-comp-id="row.3">
                 <div class="col" data-comp-id="column.7" style="padding: 0px;">
