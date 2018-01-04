@@ -61,7 +61,7 @@
               "fn": "function(node){if(node.getAttribute('class')=='active'){return true}}",
               "selector": ""
             },
-            "control": "select"
+            "control": "exists"
           }
         }
       },
