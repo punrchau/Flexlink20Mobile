@@ -58,7 +58,7 @@
           "isimp": {
             "type": "boolean",
             "selector": {
-              "fn": "function(node){if(node.getAttribute('class')=='k-alt'){return true}}",
+              "fn": "function(node){return true}",
               "selector": ""
             },
             "control": "exists"
