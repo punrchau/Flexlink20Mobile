@@ -57,7 +57,7 @@
           },
           "isImp": {
             "type": "identifier",
-            "selector": "tr.k-alt",
+            "selector": "tr[class=\"k-alt\"]",
             "control": "exists"
           }
         }
