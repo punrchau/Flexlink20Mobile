@@ -62,6 +62,9 @@
               "selector": ""
             },
             "control": "exists"
+          },
+          "isimp": {
+            "type": "boolean"
           }
         }
       },
