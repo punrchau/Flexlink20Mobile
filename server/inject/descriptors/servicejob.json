@@ -57,10 +57,6 @@
           },
           "isimp": {
             "type": "boolean",
-            "selector": {
-              "fn": "function(node){{{{{{{{{{{{if(node.getAttribute('class')=='k-alt){\nreturn true}}}}}}}}}}}}else{return false}}",
-              "selector": ""
-            },
             "control": "exists"
           }
         }
