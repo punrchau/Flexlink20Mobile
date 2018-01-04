@@ -64,7 +64,11 @@
             "control": "exists"
           },
           "isimp": {
-            "type": "boolean"
+            "type": "boolean",
+            "selector": {
+              "fn": "",
+              "selector": ""
+            }
           }
         }
       },
