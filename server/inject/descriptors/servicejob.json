@@ -57,7 +57,7 @@
           },
           "isImp": {
             "type": "boolean",
-            "selector": "<pseudo:after>",
+            "selector": "td",
             "control": "property.innerText"
           }
         }
