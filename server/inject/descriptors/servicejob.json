@@ -58,7 +58,7 @@
           "isImp": {
             "type": "identifier",
             "selector": ".k-alt",
-            "control": "exists"
+            "control": "property.className"
           }
         }
       },
