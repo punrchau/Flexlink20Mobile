@@ -102,7 +102,7 @@
     },
     "isImp": {
       "type": "boolean",
-      "selector": "#masterBody",
+      "selector": "td",
       "control": "property.innerText"
     }
   },
