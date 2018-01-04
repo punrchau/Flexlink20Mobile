@@ -58,7 +58,7 @@
           "isImp": {
             "type": "boolean",
             "selector": {
-              "fn": "",
+              "fn": "function(node){if(node.getAttribute('class')=='active'){return true}else{if(node.getAttribute('class')=='ng-scope active'){return true}}}",
               "selector": ".k-alt"
             },
             "control": "property.className"
