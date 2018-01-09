@@ -1,19 +1,21 @@
 var fs = require('fs');
 exports.on_InvokeFlexLink = function (page) {
      //page.href('http://fl20qa.azurewebsites.net/common/#/home').screen('prehomeloadflexlink');
-	 page.href('http://fl20dev.azurewebsites.net/common/#/home').screen('prehomeloadflexlink');
+     //page.href('http://fl20dev.azurewebsites.net/common/#/home').screen('prehomeloadflexlink');
+     page.href('http://fl20commonqa.azurewebsites.net/common/#/home').screen('prehomeloadflexlink');
+      
 }
 exports.on_InvokeOEM2 = function (page) {
     page.action('Home','OEM2').screen('prehomeloadoem');
 }
 exports.on_InvokePartMgmt = function (page) {
-    //page.href('http://fl20tmobqa.cloudapp.net/#/partreceives').screen('prehomeloadjobmgmt');
-	//page.href('http://fl20qa.azurewebsites.net/tmobile/#/partreceives').screen('prehomeloadjobmgmt');
-	page.href('http://fl20dev.azurewebsites.net/lenovo/#/partreceives').screen('prehomeloadjobmgmt');
+    // page.href('http://fl20dev.azurewebsites.net/lenovo/#/partreceives').screen('prehomeloadjobmgmt');
+    page.href('http://fl20commonqa.azurewebsites.net/mobile/#/repairjobs').screen('prehomeloadjobmgmt');
 }
 
 exports.on_InvokeServiceJob = function (page) {
-    page.href('http://fl20dev.azurewebsites.net/lenovo/#/repairjobs').screen('prehomeloadjobmgmt');
+    //page.href('http://fl20dev.azurewebsites.net/lenovo/#/repairjobs').screen('prehomeloadjobmgmt');
+    page.href('http://fl20commonqa.azurewebsites.net/mobile/#/repairjobs').screen('prehomeloadjobmgmt');
 }
 
 exports.editRecord = function(page, params) {
