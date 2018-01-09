@@ -108,7 +108,7 @@
       "type": "action",
       "selector": ".blog-content div[class='content-show'] span",
       "control": "action.link",
-      "selectContains": "Lenovo"
+      "selectContains": "Mobile"
     },
     "editRecord": {
       "type": "action",
