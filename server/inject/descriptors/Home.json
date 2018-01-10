@@ -84,7 +84,7 @@
       "type": "identifier",
       "selector": "h2",
       "control": "exists",
-      "selectContains": "Service Jobs"
+      "selectContains": "Part Receive"
     },
     "isFlexLink": {
       "type": "identifier",
