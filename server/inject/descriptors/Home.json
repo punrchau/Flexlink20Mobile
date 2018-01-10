@@ -106,7 +106,7 @@
     },
     "OEM2": {
       "type": "action",
-      "selector": ".blog-content div[class='content-show'] span",
+      "selector": "#container-flexlink > div.container-fluid.body-content.wow.fadeInUp.animated.page-wrapper > div.page-content-wrapper > div > div > ui-view > div:nth-child(4) > div:nth-child(2) > div > div > div.blog-thumb.flex-shadow > img",
       "control": "action.link"
     },
     "editRecord": {
