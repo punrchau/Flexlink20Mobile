@@ -19,32 +19,34 @@
                 </div>
             </div>
         </div>
-        <div class="" data-comp-id="div.2" style="">
-            <div class="bar bar-header item-input-inset calm-bg"
-                data-comp-id="searchInput.1">
+        <div class="" style="">
+            <div class="bar bar-header item-input-inset calm-bg">
                 <!--Search box-->
-                <label class="item-input-wrapper" data-comp-id="searchInput.2"
-                    style="background-color: rgb(255, 255, 255); border: none;">
-                    <i class="icon ion-ios-search placeholder-icon"></i>
-                    <input data-comp-id="searchInput.3" ng-model="searchstring" placeholder="Search"
-                        type="search">
-                </label>
+                <div style="width:50%">
+                    <label class="item-input-wrapper"
+                        style="background-color: rgb(255, 255, 255); border: none;">
+                        <i class="icon ion-ios-search placeholder-icon"></i>
+                        <input data-comp-id="searchInput.1" ng-model="searchstring" placeholder="Search"
+                            type="search">
+                    </label>
+                </div>
                 <!--Search box-->
-                <label class="item  item-input item-select-icon positive-icon"
-                    data-comp-id="selectInput.1">
-                    <select ng-model="sortBy"
-                        style="border-color: rgb(0, 153, 0); font-size: 14px; margin: 2px;">
-                        <option ng-show="true" value="firstname">Name</option>
-                        <option value="pickupaddress">Location</option>
-                        <option value="ticketnumber">Job No</option>
-                        <option value="problemcategory">Problem Description</option>
-                    </select>
-                </label>
+                <div style="width:150px;margin-left:20px;">
+                    <label class="item  item-input item-select-icon positive-icon">
+                        <select ng-model="sortBy"
+                            style="border-color: rgb(0, 153, 0); font-size: 14px; margin: 2px;">
+                            <option ng-show="true" value="firstname">Name</option>
+                            <option value="pickupaddress">Location</option>
+                            <option value="ticketnumber">Job No</option>
+                            <option value="problemcategory">Problem Description</option>
+                        </select>
+                    </label>
+                </div>
             </div>
         </div>
     </ion-header-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
-        <div class=" card" data-comp-id="div.3"
+        <div class=" card" data-comp-id="div.2"
             ng-repeat="item in data.listItems | orderBy:sortFunc:isDescending | filter:searchstring"
             style="margin: 10px 10px;">
             <div class="row" data-comp-id="row.2">
@@ -93,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div data-comp-id="div.4" ng-show="data.listItems.length==0"
+        <div data-comp-id="div.3" ng-show="data.listItems.length==0"
             style="text-align:center; margin-top: 10px">
             <div class=" assertive" data-comp-id="text.7">No Data Available</div>
         </div>
