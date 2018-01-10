@@ -68,7 +68,7 @@
       "update": {
         "type": "none"
       },
-      "selectorAll": ".ng-scope"
+      "selectorAll": "#gdServiceJobs"
     },
     "selectTabs": {
       "type": "array",
