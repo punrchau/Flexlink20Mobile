@@ -10,7 +10,7 @@ exports.on_InvokeOEM2 = function (page) {
 }
 exports.on_InvokePartMgmt = function (page) {
     // page.href('http://fl20dev.azurewebsites.net/lenovo/#/partreceives').screen('prehomeloadjobmgmt');
-    page.href('http://fl20commonqa.azurewebsites.net/mobile/#/repairjobs').screen('prehomeloadjobmgmt');
+    page.href('http://fl20commonqa.azurewebsites.net/mobile/#/partreceives').screen('prehomeloadjobmgmt');
 }
 
 exports.on_InvokeServiceJob = function (page) {
