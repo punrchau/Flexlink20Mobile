@@ -99,7 +99,7 @@
     },
     "isrepairjob": {
       "type": "identifier",
-      "selector": "#liRepairJobs",
+      "selector": "#sjsPage > div.col-lg-3.col-md-3.col-sm-3.col-xs-3.page-heading > h2",
       "control": "exists"
     },
     "viewRecord": {
