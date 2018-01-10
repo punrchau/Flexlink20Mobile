@@ -68,7 +68,7 @@
       "update": {
         "type": "none"
       },
-      "selectorAll": "#gdRepairJobs table tbody tr"
+      "selectorAll": ".ng-scope"
     },
     "selectTabs": {
       "type": "array",
