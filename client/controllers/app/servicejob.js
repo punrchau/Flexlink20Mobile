@@ -16,7 +16,7 @@ function app_servicejob($scope, app) {
     $scope.expanded = false;
     
     app.init($scope);
-    
+    $scope.sortBy="firstname";
     $scope.isDescending = false;
     $scope.changeIc = true;
     $scope.changeIcon = function () {
