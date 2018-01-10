@@ -95,7 +95,7 @@
           }
         }
       },
-      "selectorAll": "#stateTabs li"
+      "selectorAll": "#technicianActiveServiceJobs"
     },
     "isrepairjob": {
       "type": "identifier",
