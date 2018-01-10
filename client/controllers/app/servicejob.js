@@ -58,7 +58,7 @@ function app_servicejob($scope, app) {
             return parseFloat(item.pickupaddress);
         }else if($scope.sortBy=="problemcategory"){
             return parseFloat(item.problemcategory);
-        }else{
+        }else if($scope.sortBy=="ticketnumber"){
             return item.ticketnumber;
         }
     };
