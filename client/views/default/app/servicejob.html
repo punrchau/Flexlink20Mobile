@@ -8,8 +8,8 @@
     </ion-nav-bar>
     <ion-header-bar class="bar-light bar-subheader" data-comp-id="header-bar.1"
         dynamic-fixed-header="" style="padding: 0px;">
-        <div class="bar bar-header item-input-inset calm-bg">
-            <div class="row">
+        <div class="row">
+            <div class="bar bar-header item-input-inset calm-bg">
                 <!--Search box-->
                 <label class="item-input-wrapper"
                     style="background-color: rgb(255, 255, 255); border: none;">
@@ -17,18 +17,18 @@
                     <input data-comp-id="searchInput.1" ng-model="searchstring" placeholder="Search"
                         type="search">
                 </label>
-                <!--Filter box-->
-                <div style="width:45%;margin-left:20px;">
-                    <label class="item  item-input item-select-icon positive-icon">
-                        <select ng-model="sortBy"
-                            style="border-color: rgb(0, 153, 0); font-size: 14px; margin: 2px;">
-                            <option ng-show="true" value="firstname">Name</option>
-                            <option value="pickupaddress">Location</option>
-                            <option value="ticketnumber">Job No</option>
-                            <option value="problemcategory">Problem Description</option>
-                        </select>
-                    </label>
-                </div>
+            </div>
+            <!--Filter box-->
+            <div style="width:45%;margin-left:20px;">
+                <label class="item  item-input item-select-icon positive-icon">
+                    <select ng-model="sortBy"
+                        style="border-color: rgb(0, 153, 0); font-size: 14px; margin: 2px;">
+                        <option ng-show="true" value="firstname">Name</option>
+                        <option value="pickupaddress">Location</option>
+                        <option value="ticketnumber">Job No</option>
+                        <option value="problemcategory">Problem Description</option>
+                    </select>
+                </label>
             </div>
         </div>
     </ion-header-bar>
