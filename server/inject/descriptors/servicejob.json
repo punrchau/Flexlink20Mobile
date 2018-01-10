@@ -99,7 +99,7 @@
     },
     "isrepairjob": {
       "type": "identifier",
-      "selector": "#comment",
+      "selector": "h2",
       "control": "exists"
     },
     "viewRecord": {
