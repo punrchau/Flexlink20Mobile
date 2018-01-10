@@ -22,13 +22,17 @@
             <div class="bar bar-header item-input-inset calm-bg">
                 <label class="item  item-input item-select-icon positive-icon">
                     <select ng-model="sortBy"
-                        style="border-color: rgb(0, 153, 0); font-size: 12px;margin-left:30px;height:20px">
+                        style="border-color: rgb(0, 153, 0); font-size: 12px;height:20px">
                         <option ng-show="true" value="firstname">Name</option>
                         <option value="pickupaddress">Location</option>
                         <option value="ticketnumber">Job No</option>
                         <option value="problemcategory">Problem Description</option>
                     </select>
                 </label>
+            </div>
+            <div class="bar bar-header item-input-inset calm-bg">
+                <img data-img="" ng-click="changeIcon()"
+                    ng-src="images/SortDownGlyph_Active.png" style="width: 36px; height: 36px;">
             </div>
         </div>
     </ion-header-bar>

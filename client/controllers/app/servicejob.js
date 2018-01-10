@@ -21,7 +21,7 @@ function app_servicejob($scope, app) {
     $scope.changeIc = true;
     $scope.changeIcon = function () {
         $scope.isDescending = !$scope.isDescending;
-        $scope.changeIc = !$scope.changeIc;
+       // $scope.changeIc = !$scope.changeIc;
     }
   
     $scope.searchstring = '';
