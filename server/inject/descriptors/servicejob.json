@@ -95,7 +95,7 @@
           }
         }
       },
-      "selectorAll": "#stateTabs li"
+      "selectorAll": "#stateTabs li[]"
     },
     "isrepairjob": {
       "type": "identifier",
