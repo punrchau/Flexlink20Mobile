@@ -107,8 +107,7 @@
     "OEM2": {
       "type": "action",
       "selector": ".blog-content div[class='content-show'] span",
-      "control": "action.link",
-      "selectContains": "Mobile"
+      "control": "action.link"
     },
     "editRecord": {
       "type": "action",
