@@ -33,11 +33,6 @@
         "cancel": {
           "type": "action"
         },
-        "viewjob": {
-          "type": "action",
-          "control": "action.button",
-          "selector": "button[value=\"View\"]"
-        },
         "unitinfo": {
           "type": "action"
         },
