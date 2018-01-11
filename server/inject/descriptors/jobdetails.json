@@ -27,6 +27,11 @@
       "properties": {
         "cancel": {
           "type": "action"
+        },
+        "jobinfo": {
+          "type": "string",
+          "selector": "#masterBody",
+          "control": "property.innerText"
         }
       }
     },
