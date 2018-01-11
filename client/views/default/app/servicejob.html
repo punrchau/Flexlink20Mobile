@@ -7,11 +7,11 @@
         <ion-nav-buttons side="right"></ion-nav-buttons>
     </ion-nav-bar>
     <ion-header-bar class="bar-light bar-subheader" data-comp-id="header-bar.1"
-        dynamic-fixed-header="" style="padding: 0px;">
+        dynamic-fixed-header="">
         <div class="bar bar-header item-input-inset calm-bg">
             <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
                 <!--Search box-->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <label class="item-input-wrapper"
                         style="background-color: rgb(255, 255, 255); border: none;">
                         <i class="icon ion-ios-search placeholder-icon"></i>
@@ -20,10 +20,10 @@
                     </label>
                 </div>
                 <!--Filter box-->
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
                     <label class="item  item-input item-select-icon positive-icon">
                         <select ng-model="sortBy"
-                            style="border-color: rgb(0, 153, 0); font-size: 12px;height:20px;width:120px">
+                            style="border-color: rgb(0, 153, 0); font-size: 12px;height:19px;">
                             <option ng-show="true" value="firstname">Name</option>
                             <option value="pickupaddress">Location</option>
                             <option value="ticketnumber">Job No</option>
@@ -34,8 +34,7 @@
                 <!--Sorting arrow-->
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                     <img data-img="" ng-click="changeIcon()"
-                        ng-src="images/SortDownGlyph_Active.png"
-                        style="width: 20px; height: 20px;margin-left:70px">
+                        ng-src="images/SortDownGlyph_Active.png">
                 </div>
             </div>
         </div>
