@@ -31,7 +31,7 @@
         "jobinfo": {
           "type": "action",
           "selector": ".fa.fa-wpforms.fa-fw",
-          "control": "property.innerText"
+          "control": "action.button"
         }
       }
     },
