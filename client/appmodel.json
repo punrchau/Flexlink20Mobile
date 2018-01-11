@@ -427,6 +427,9 @@
       },
       "search": {
         "type": "action"
+      },
+      "selectRecord": {
+        "type": "action"
       }
     }
   },
