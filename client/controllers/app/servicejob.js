@@ -47,9 +47,10 @@ function app_servicejob($scope, app) {
     }
     
    
-    $scope.goToJobDetails = function () {
+    $scope.goToJobDetails = function (index) {
         if (window.mocks) {
             app.go('jobdetails');
+            app.call('Home.viewRecord',{'index':index});
         } 
         
         /*else {

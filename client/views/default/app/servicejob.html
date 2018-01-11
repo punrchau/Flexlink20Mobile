@@ -43,7 +43,7 @@
         <div class=" card" data-comp-id="div.1"
             ng-repeat="item in data.listItems | orderBy:sortFunc:isDescending | filter:searchstring"
             style="margin: 10px 10px;">
-            <div class="row" data-comp-id="row.1">
+            <div class="row" data-comp-id="row.1" ng-click="goToJobDetails($index)">
                 <div class="col" data-comp-id="column.1" style="padding: 0px;">
                     <div class="row" data-comp-id="row.2" style="padding: 0px 10px;">
                         <div class="col" data-comp-id="column.2">
