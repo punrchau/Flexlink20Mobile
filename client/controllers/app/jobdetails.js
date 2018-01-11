@@ -17,7 +17,7 @@ function app_jobdetails($scope, app) {
     $scope.data.photo = {categoryName:'Photo', image:'images/jobdetails/Photo.jpg'};
     $scope.data.unitinfo = {categoryName:'Unit Info', image:'images/jobdetails/unit_info.png'};
            
-     app.init($scope);
+    app.init($scope);
     
     /* $scope.goToServiceJob = function () {
      if (window.mocks) {
