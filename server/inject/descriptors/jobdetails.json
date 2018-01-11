@@ -123,6 +123,50 @@
           "type": "string"
         }
       }
+    },
+    "ownerinfos": {
+      "type": "object",
+      "properties": {
+        "categoryname": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        }
+      }
+    },
+    "viewhistorys": {
+      "type": "object",
+      "properties": {
+        "categoryname": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        }
+      }
+    },
+    "photos": {
+      "type": "object",
+      "properties": {
+        "categoryname": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        }
+      }
+    },
+    "unitinfos": {
+      "type": "object",
+      "properties": {
+        "categoryname": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        }
+      }
     }
   },
   "connect": []
