@@ -29,5 +29,9 @@
       "icon": "ion-ios-email1",
       "image": "images/jobdetails/unit_info.png"
     }
-  ]
+  ],
+  "jobinfo":{
+      "categoryName": "Job Info",
+      "image": "images/jobdetails/Service_Info.png"
+  }
 }
