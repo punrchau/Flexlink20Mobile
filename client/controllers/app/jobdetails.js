@@ -9,6 +9,14 @@ function app_jobdetails($scope, app) {
                 {categoryName:'Photo', image:'images/jobdetails/Photo.jpg'},
                 {categoryName:'Unit Info', image:'images/jobdetails/unit_info.png'}
                 ]; 
+                
+    $scope.data.viewjobs = {categoryName:'Job Info', image:'images/jobdetails/Service_Info.png'};
+    $scope.data.ownerinfo = {categoryName:'Owner Info', image:'images/jobdetails/Owner_Info.jpg'};
+    $scope.data.viewhistory = {categoryName:'Job History', image:'images/jobdetails/History.jpg'};
+    $scope.data.remarks = {categoryName:'Remarks', image:'images/jobdetails/Remarks.png'};
+    $scope.data.photo = {categoryName:'Photo', image:'images/jobdetails/Photo.jpg'};
+    $scope.data.unitinfo = {categoryName:'Unit Info', image:'images/jobdetails/unit_info.png'};
+           
      app.init($scope);
     
     /* $scope.goToServiceJob = function () {

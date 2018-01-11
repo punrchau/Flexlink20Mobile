@@ -16,17 +16,16 @@
             <line style="stroke:rgb(0,0,255);stroke-width:2" x1="0" x2="400" y1="0" y2="0"></line>
         </svg>
         <div class=" stable-bg" data-comp-id="div.1">
-            <div class="" data-comp-id="div.2" ng-repeat="item in data.categories"
+            <!-- <div class="" data-comp-id="div.2" ng-repeat="item in data.categories"
+                style="width: 40%; display: inline-block; margin: 0px 18px;">-->
+            <div class="card light-bg" data-comp-id="div.2"
+                ng-click="app.action('jobdetails', 'actions.unitinfo', this)"
                 style="width: 40%; display: inline-block; margin: 0px 18px;">
-                <div class="card light-bg" data-comp-id="div.3"
-                    ng-click="app.action('jobdetails', 'actions.unitinfo', this)"
-                    style="padding: 5px 5px 5px; border-radius: 10px;">
-                    <img data-comp-id="image.1" data-img="" ng-src="{{item.image}}"
-                        style="width: 85%; margin: 10px; height: 50px;">
-                    <div class=" energized" data-comp-id="text.2" style="font-size: 15px;">
-                        <i class="icon {{item.icon}}" data-comp-id="icon.1" style="margin: 10px;"></i>
-                        {{item.categoryName}}</div>
-                </div>
+                <img data-comp-id="image.1" data-img="" ng-src="{{data.viewjobs.image}}"
+                    style="width: 85%; margin: 10px; height: 50px;">
+                <div class=" energized" data-comp-id="text.2" style="font-size: 15px;">
+                    <i class="icon {{item.icon}}" data-comp-id="icon.1" style="margin: 10px;"></i>
+                    {{data.viewjobs.categoryName}}</div>
             </div>
         </div>
     </ion-content>
