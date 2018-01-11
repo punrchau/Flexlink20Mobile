@@ -17,7 +17,8 @@
             "type": "string"
           },
           "action": {
-            "type": "action"
+            "type": "action",
+            "selector": ".btn.btn-info.ng-scope"
           }
         }
       },
