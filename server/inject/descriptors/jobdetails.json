@@ -66,17 +66,6 @@
         }
       }
     },
-    "photo": {
-      "type": "object",
-      "properties": {
-        "categoryname": {
-          "type": "string"
-        },
-        "image": {
-          "type": "string"
-        }
-      }
-    },
     "jobinfos": {
       "type": "object",
       "properties": {
