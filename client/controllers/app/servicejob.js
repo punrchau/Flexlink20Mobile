@@ -46,8 +46,15 @@ function app_servicejob($scope, app) {
         return token.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
     }
     
-    $scope.selectRecord=function(){
-        app.go('app.jobdetails');
+   
+    $scope.goToJobDetails = function () {
+        if (window.mocks) {
+            app.go('jobdetails');
+        } 
+        
+        /*else {
+            app.call('PartReceiveDetail.goToHome', {});
+        }*/
     }
     
     var match = function (item, val) {
