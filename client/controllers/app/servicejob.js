@@ -66,4 +66,4 @@ function app_servicejob($scope, app) {
     /*$scope.viewRecord = function(index){
         app.call('Home.viewRecord',{'index':index});
     }*/
-};
+}
