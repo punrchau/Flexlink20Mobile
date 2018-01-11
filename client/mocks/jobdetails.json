@@ -30,28 +30,28 @@
       "image": "images/jobdetails/unit_info.png"
     }
   ],
-  "jobinfo":{
-      "categoryName": "Job Info",
-      "image": "images/jobdetails/Service_Info.png"
+  "jobinfo": {
+    "categoryName": "Job Info",
+    "image": "images/jobdetails/Service_Info.png"
   },
-  "ownerinfo":{
-      "categoryName": "Owner Info",
-      "image": "images/jobdetails/Owner_Info.jpg"
+  "ownerinfo": {
+    "categoryName": "Owner Info",
+    "image": "images/jobdetails/Owner_Info.jpg"
   },
-  "viewhistory":{
-       "categoryName": "Job History",
-      "image": "images/jobdetails/History.jpg"
+  "viewhistory": {
+    "categoryName": "Job History",
+    "image": "images/jobdetails/History.jpg"
   },
-  "remarks":{
-     "categoryName": "Remarks",
-      "image": "images/jobdetails/Remarks.png"
+  "remarks": {
+    "categoryName": "Remarks",
+    "image": "images/jobdetails/Remarks.png"
   },
-  "photo":{
-      "categoryName": "Photo",
-      "image": "images/jobdetails/Photo.jpg"
+  "photo": {
+    "categoryName": "Photo",
+    "image": "images/jobdetails/Photo.jpg"
   },
-  "unitinfo":{
-      "categoryName": "Unit Info",
-      "image": "images/jobdetails/unit_info.png"
+  "unitinfo": {
+    "categoryName": "Unit Info",
+    "image": "images/jobdetails/unit_info.png"
   }
 }
