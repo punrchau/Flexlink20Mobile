@@ -34,7 +34,7 @@
         "viewjob": {
           "type": "action",
           "control": "action.link",
-          "selector": "button[values=\"View\"]"
+          "selector": "button[value=\"View\"]"
         }
       }
     },
