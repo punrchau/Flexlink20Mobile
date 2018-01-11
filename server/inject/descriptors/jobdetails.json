@@ -29,7 +29,7 @@
           "type": "action"
         },
         "jobinfo": {
-          "type": "string",
+          "type": "action",
           "selector": "#masterBody",
           "control": "property.innerText"
         }
