@@ -26,7 +26,7 @@ exports.editRecord = function(page, params) {
 
 exports.viewRecord = function(page, params) {
     page.action('servicejob', 'listItems[' + params.index + '].selectRecord');
-    page.action('servicejob', 'viewRecord');
+    //page.action('servicejob', 'viewRecord');
 }
 
 exports.deleteRecord = function(page, params) {
