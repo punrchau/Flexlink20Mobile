@@ -47,7 +47,8 @@
     "isjobdetails": {
       "type": "identifier",
       "selector": "h2",
-      "control": "property.innerText"
+      "control": "property.innerText",
+      "selectContains": "Service Jobs"
     }
   },
   "connect": []
