@@ -15,15 +15,21 @@
         <svg height="1" width="400">
             <line style="stroke:rgb(0,0,255);stroke-width:2" x1="0" x2="400" y1="0" y2="0"></line>
         </svg>
-        <div class=" stable-bg" data-comp-id="div.1">
-            <!-- <div class="" data-comp-id="div.2" ng-repeat="item in data.categories"
-                style="width: 40%; display: inline-block; margin: 0px 18px;">-->
+        <div class="row stable-bg" data-comp-id="div.1">
             <div class="card light-bg" data-comp-id="div.2"
                 style="width: 40%; display: inline-block; margin: 0px 18px;">
-                <img data-comp-id="image.1" data-img="" ng-src="{{data.viewjobs.image}}"
+                <img data-comp-id="image.1" data-img="" ng-src="{{data.jobinfo.image}}"
                     style="width: 85%; margin: 10px; height: 50px;">
                 <div class=" energized" data-comp-id="text.2" style="font-size: 15px;">
-                    {{data.viewjobs.categoryName}}
+                    {{data.jobinfo.categoryName}}
+                </div>
+            </div>
+            <div class="card light-bg" data-comp-id="div.3"
+                style="width: 40%; display: inline-block; margin: 0px 18px;">
+                <img data-comp-id="image.2" data-img="" ng-src="{{data.jobinfo.image}}"
+                    style="width: 85%; margin: 10px; height: 50px;">
+                <div class=" energized" data-comp-id="text.3" style="font-size: 15px;">
+                    {{data.jobinfo.categoryName}}
                 </div>
             </div>
         </div>

@@ -629,6 +629,17 @@
             "type": "string"
           }
         }
+      },
+      "ownerinfo": {
+        "type": "object",
+        "properties": {
+          "categoryname": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          }
+        }
       }
     }
   },
