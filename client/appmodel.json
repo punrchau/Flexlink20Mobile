@@ -398,6 +398,9 @@
             },
             "isimp": {
               "type": "boolean"
+            },
+            "selectRecord": {
+              "type": "action"
             }
           }
         },
@@ -426,9 +429,6 @@
         "type": "string"
       },
       "search": {
-        "type": "action"
-      },
-      "selectRecord": {
         "type": "action"
       }
     }
