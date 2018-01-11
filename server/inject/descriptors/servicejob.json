@@ -29,7 +29,7 @@
           "problemcategory": {
             "type": "string",
             "selector": "td",
-            "selectIndex": 1,
+            "selectIndex": 2,
             "control": "property.innerText"
           },
           "lastname": {
