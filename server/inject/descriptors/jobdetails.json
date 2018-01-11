@@ -36,7 +36,8 @@
         "jobinfo": {
           "type": "action",
           "control": "action.link",
-          "selectContains": "VIEW"
+          "selectContains": "VIEW",
+          "selector": ".btn.btn-info.ng-scope"
         }
       }
     },
