@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "comment": "Categories",
+  "properties": {
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "categoryName": {
+            "type": "string"
+          },
+          "icon": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          },
+          "action": {
+            "type": "action"
+          }
+        }
+      }
+    },
+    "actions": {
+      "type": "object",
+      "properties": {
+        "cancel": {
+          "type": "action"
+        }
+      }
+    },
+    "jobinfo": {
+      "type": "object",
+      "properties": {
+        "ticketnumber": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "connect": []
+}
