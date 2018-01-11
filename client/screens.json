@@ -1,7 +1,7 @@
 {
   "id": "app",
   "name": "Flexlink20 Mobile",
-  "startScreen": "app.jobdetails",
+  "startScreen": "app.servicejob",
   "screens": [
     {
       "id": "menu",
