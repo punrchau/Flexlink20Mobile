@@ -11,7 +11,8 @@
             "type": "string"
           },
           "icon": {
-            "type": "string"
+            "type": "string",
+            "selector": "btn btn-info ng-scope"
           },
           "image": {
             "type": "string"
