@@ -19,7 +19,8 @@
           "action": {
             "type": "action",
             "selector": ".btn.btn-info.ng-scope",
-            "control": "action.link"
+            "control": "action.link",
+            "selectContains": "VIEW"
           }
         }
       },
