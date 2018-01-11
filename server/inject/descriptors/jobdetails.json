@@ -12,7 +12,6 @@
           },
           "icon": {
             "type": "string",
-            "selector": ".btn.btn-info.ng-scope",
             "control": "property.innerText",
             "selectContains": "VIEW"
           },
