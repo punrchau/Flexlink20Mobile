@@ -49,20 +49,6 @@
         }
       }
     },
-    "jobinfo": {
-      "type": "object",
-      "properties": {
-        "ticketnumber": {
-          "type": "string"
-        },
-        "categoryname": {
-          "type": "string"
-        },
-        "image": {
-          "type": "string"
-        }
-      }
-    },
     "isjobdetails": {
       "type": "identifier",
       "selector": "h2",
