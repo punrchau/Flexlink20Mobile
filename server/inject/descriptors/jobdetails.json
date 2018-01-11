@@ -43,6 +43,11 @@
           "type": "string"
         }
       }
+    },
+    "isjobdetails": {
+      "type": "string",
+      "selector": "#comment",
+      "control": "property.innerText"
     }
   },
   "connect": []
