@@ -12,7 +12,7 @@
           },
           "icon": {
             "type": "string",
-            "selector": ".fa.fa-wpforms.fa-fw",
+            "selector": ".btn.btn-info.ng-scope",
             "control": "property.innerText"
           },
           "image": {
