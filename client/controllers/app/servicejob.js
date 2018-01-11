@@ -46,6 +46,10 @@ function app_servicejob($scope, app) {
         return token.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
     }
     
+    $scope.selectRecord=function(){
+        app.go('app.jobdetails');
+    }
+    
     var match = function (item, val) {
         var regex = new RegExp(val, 'i');
         return item.firstname.toLowerCase().search(regex) >= 0 
