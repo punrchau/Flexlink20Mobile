@@ -37,6 +37,18 @@
           "type": "action",
           "control": "action.button",
           "selector": "button[value=\"View\"]"
+        },
+        "unitinfo": {
+          "type": "action"
+        },
+        "viewjobhistory": {
+          "type": "action"
+        },
+        "jobinfo": {
+          "type": "action"
+        },
+        "ownerinfo": {
+          "type": "action"
         }
       }
     },
@@ -44,6 +56,12 @@
       "type": "object",
       "properties": {
         "ticketnumber": {
+          "type": "string"
+        },
+        "categoryname": {
+          "type": "string"
+        },
+        "image": {
           "type": "string"
         }
       }
@@ -53,6 +71,61 @@
       "selector": "h2",
       "control": "exists",
       "selectContains": "Service Jobs"
+    },
+    "ownerinfo": {
+      "type": "object",
+      "properties": {
+        "categoryname": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        }
+      }
+    },
+    "viewhistory": {
+      "type": "object",
+      "properties": {
+        "categoryname": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        }
+      }
+    },
+    "unitinfo": {
+      "type": "object",
+      "properties": {
+        "categoryname": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        }
+      }
+    },
+    "remarks": {
+      "type": "object",
+      "properties": {
+        "categoryname": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        }
+      }
+    },
+    "photo": {
+      "type": "object",
+      "properties": {
+        "categoryname": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        }
+      }
     }
   },
   "connect": []
