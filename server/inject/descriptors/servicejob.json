@@ -107,6 +107,12 @@
       "selector": ".btn.btn-info.ng-scope",
       "control": "action.button",
       "selectContains": "EDIT"
+    },
+    "searchstring": {
+      "type": "string"
+    },
+    "search": {
+      "type": "action"
     }
   },
   "connect": [
