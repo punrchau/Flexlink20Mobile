@@ -30,7 +30,7 @@
         },
         "jobinfo": {
           "type": "action",
-          "selector": "#masterBody",
+          "selector": ".fa.fa-wpforms.fa-fw",
           "control": "property.innerText"
         }
       }
