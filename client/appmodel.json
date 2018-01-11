@@ -601,6 +601,18 @@
         "properties": {
           "cancel": {
             "type": "action"
+          },
+          "viewjob": {
+            "type": "action"
+          },
+          "unitowner": {
+            "type": "action"
+          },
+          "unitinfo": {
+            "type": "action"
+          },
+          "viewjobhistory": {
+            "type": "action"
           }
         }
       },
