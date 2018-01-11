@@ -13,7 +13,8 @@
           "icon": {
             "type": "string",
             "selector": ".btn.btn-info.ng-scope",
-            "control": "property.innerText"
+            "control": "property.innerText",
+            "selectContains": "VIEW"
           },
           "image": {
             "type": "string"
