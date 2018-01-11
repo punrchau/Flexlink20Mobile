@@ -31,7 +31,7 @@
         "cancel": {
           "type": "action"
         },
-        "jobinfo": {
+        "viewjob": {
           "type": "action",
           "control": "action.link",
           "selectContains": "VIEW",
