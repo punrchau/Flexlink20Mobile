@@ -11,7 +11,8 @@
             "type": "string"
           },
           "icon": {
-            "type": "string"
+            "type": "string",
+            "selector": ".fa.fa-wpforms.fa-fw"
           },
           "image": {
             "type": "string"
