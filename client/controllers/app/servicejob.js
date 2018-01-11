@@ -53,11 +53,11 @@ function app_servicejob($scope, app) {
     
     $scope.sortFunc = function(item){
         if($scope.sortBy=="firstname"){
-            return parseFloat(item.firstname);
+            return item.firstname;
         }else if($scope.sortBy=="pickupaddress"){
-            return parseFloat(item.pickupaddress);
+            return item.pickupaddress;
         }else if($scope.sortBy=="problemcategory"){
-            return parseFloat(item.problemcategory);
+            return item.problemcategory;
         }else if($scope.sortBy=="ticketnumber"){
             return item.ticketnumber;
         }
