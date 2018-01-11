@@ -55,17 +55,6 @@
       "control": "exists",
       "selectContains": "Service Jobs"
     },
-    "unitinfo": {
-      "type": "object",
-      "properties": {
-        "categoryname": {
-          "type": "string"
-        },
-        "image": {
-          "type": "string"
-        }
-      }
-    },
     "remarks": {
       "type": "object",
       "properties": {
