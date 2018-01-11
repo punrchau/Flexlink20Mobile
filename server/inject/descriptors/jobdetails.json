@@ -11,8 +11,7 @@
             "type": "string"
           },
           "icon": {
-            "type": "string",
-            "selectContains": "VIEW"
+            "type": "string"
           },
           "image": {
             "type": "string"
