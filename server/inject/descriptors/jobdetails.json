@@ -12,7 +12,6 @@
           },
           "icon": {
             "type": "string",
-            "control": "property.innerText",
             "selectContains": "VIEW"
           },
           "image": {
