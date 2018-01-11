@@ -12,8 +12,7 @@
             <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
                 <!--Search box-->
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <label class="item-input-wrapper"
-                        style="background-color: rgb(255, 255, 255); border: none;">
+                    <label class="item-input-wrapper" style="width:80%;">
                         <i class="icon ion-ios-search placeholder-icon"></i>
                         <input data-comp-id="searchInput.1" ng-model="searchstring" placeholder="Search"
                             type="search">
@@ -21,9 +20,10 @@
                 </div>
                 <!--Filter box-->
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <label class="item  item-input item-select-icon positive-icon">
+                    <label class="item  item-input item-select-icon positive-icon"
+                        style="width:100%">
                         <select ng-model="sortBy"
-                            style="border-color: rgb(0, 153, 0); font-size: 12px;height:19px;">
+                            style="border-color: rgb(0, 153, 0); font-size: 12px;height:19px;width:140px">
                             <option ng-show="true" value="firstname">Name</option>
                             <option value="pickupaddress">Location</option>
                             <option value="ticketnumber">Job No</option>
