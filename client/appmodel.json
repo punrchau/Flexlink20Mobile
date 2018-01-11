@@ -619,20 +619,6 @@
           }
         }
       },
-      "jobinfo": {
-        "type": "object",
-        "properties": {
-          "ticketnumber": {
-            "type": "string"
-          },
-          "categoryname": {
-            "type": "string"
-          },
-          "image": {
-            "type": "string"
-          }
-        }
-      },
       "ownerinfo": {
         "type": "object",
         "properties": {
@@ -680,6 +666,20 @@
       "photo": {
         "type": "object",
         "properties": {
+          "categoryname": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          }
+        }
+      },
+      "jobinfos": {
+        "type": "object",
+        "properties": {
+          "ticketnumber": {
+            "type": "string"
+          },
           "categoryname": {
             "type": "string"
           },
