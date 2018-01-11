@@ -1,27 +1,35 @@
 <ion-view data-comp-id="ionic-view.1">
     <ion-nav-bar class=" bar-positive" data-comp-id="nav-bar.1">
         <ion-nav-buttons side="left">
-            <button class="button button-icon ion-ios-arrow-left" data-comp-id="button.1" ng-click="app.go('app.servicejob')"></button>
+            <button class="button button-icon ion-ios-arrow-left" data-comp-id="button.1"
+                ng-click="app.go('app.servicejob')"></button>
         </ion-nav-buttons>
         <ion-nav-title data-comp-id="nav-title.1">Job Details</ion-nav-title>
         <ion-nav-buttons side="right"></ion-nav-buttons>
     </ion-nav-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
-        <div class=" positive" data-comp-id="text.1" style="font-size: 12px; font-style: italic;">
+        <div class=" positive" data-comp-id="text.1"
+            style="font-size: 12px; font-style: italic;">
             &lt;&lt; IND-JOB#-000000013 (Ramkewal Chauhan) &gt;&gt;
         </div>
         <svg height="1" width="400">
             <line style="stroke:rgb(0,0,255);stroke-width:2" x1="0" x2="400" y1="0" y2="0"></line>
         </svg>
         <div class="row stable-bg" data-comp-id="div.1">
-            <div class="card light-bg" data-comp-id="div.2" ng-click="app.action('jobdetails', 'actions.jobinfo', this)" style="width: 40%; display: inline-block; margin: 0px 18px;">
-                <img data-comp-id="image.1" data-img="" ng-src="{{data.jobinfos.image}}" style="width: 85%; margin: 10px; height: 50px;">
+            <div class="card light-bg" data-comp-id="div.2"
+                ng-click="app.action('jobdetails', 'actions.jobinfo', this)"
+                style="width: 40%; display: inline-block; margin: 0px 18px;">
+                <img data-comp-id="image.1" data-img="" ng-src="{{data.jobinfos.image}}"
+                    style="width: 85%; margin: 10px; height: 50px;">
                 <div class=" energized" data-comp-id="text.2" style="font-size: 15px;">
                     {{data.jobinfos.categoryName}}
                 </div>
             </div>
-            <div class="card light-bg" data-comp-id="div.3" ng-click="app.action('jobdetails', 'actions.ownerinfo', this)" style="width: 40%; display: inline-block; margin: 0px 18px;">
-                <img data-comp-id="image.2" data-img="" ng-src="{{data.ownerinfo.image}}" style="width: 85%; margin: 10px; height: 50px;">
+            <div class="card light-bg" data-comp-id="div.3"
+                ng-click="app.action('jobdetails', 'actions.ownerinfo', this)"
+                style="width: 40%; display: inline-block; margin: 0px 18px;">
+                <img data-comp-id="image.2" data-img="" ng-src="{{data.ownerinfo.image}}"
+                    style="width: 85%; margin: 10px; height: 50px;">
                 <div class=" energized" data-comp-id="text.3" style="font-size: 15px;">
                     {{data.ownerinfo.categoryName}}
                 </div>
@@ -29,14 +37,19 @@
         </div>
         <br>
         <div class="row stable-bg" data-comp-id="div.4">
-            <div class="card light-bg" data-comp-id="div.5" ng-click="app.action('jobdetails', 'actions.viewjobhistory', this)" style="width: 40%; display: inline-block; margin: 0px 18px;">
-                <img data-comp-id="image.3" data-img="" ng-src="{{data.viewhistory.image}}" style="width: 85%; margin: 10px; height: 50px;">
+            <div class="card light-bg" data-comp-id="div.5"
+                ng-click="app.action('jobdetails', 'actions.viewjobhistory', this)"
+                style="width: 40%; display: inline-block; margin: 0px 18px;">
+                <img data-comp-id="image.3" data-img="" ng-src="{{data.viewhistory.image}}"
+                    style="width: 85%; margin: 10px; height: 50px;">
                 <div class=" energized" data-comp-id="text.4" style="font-size: 15px;">
                     {{data.viewhistory.categoryName}}
                 </div>
             </div>
-            <div class="card light-bg" data-comp-id="div.6" style="width: 40%; display: inline-block; margin: 0px 18px;">
-                <img data-comp-id="image.4" data-img="" ng-src="{{data.remarks.image}}" style="width: 85%; margin: 10px; height: 50px;">
+            <div class="card light-bg" data-comp-id="div.6"
+                style="width: 40%; display: inline-block; margin: 0px 18px;">
+                <img data-comp-id="image.4" data-img="" ng-src="{{data.remarks.image}}"
+                    style="width: 85%; margin: 10px; height: 50px;">
                 <div class=" energized" data-comp-id="text.5" style="font-size: 15px;">
                     {{data.remarks.categoryName}}
                 </div>
@@ -44,14 +57,19 @@
         </div>
         <br>
         <div class="row stable-bg" data-comp-id="div.7">
-            <div class="card light-bg" data-comp-id="div.8" style="width: 40%; display: inline-block; margin: 0px 18px;">
-                <img data-comp-id="image.5" data-img="" ng-src="{{data.photo.image}}" style="width: 85%; margin: 10px; height: 50px;">
+            <div class="card light-bg" data-comp-id="div.8"
+                style="width: 40%; display: inline-block; margin: 0px 18px;">
+                <img data-comp-id="image.5" data-img="" ng-src="{{data.photo.image}}"
+                    style="width: 85%; margin: 10px; height: 50px;">
                 <div class=" energized" data-comp-id="text.6" style="font-size: 15px;">
                     {{data.photo.categoryName}}
                 </div>
             </div>
-            <div class="card light-bg" data-comp-id="div.9" ng-click="app.action('jobdetails', 'actions.unitinfo', this)" style="width: 40%; display: inline-block; margin: 0px 18px;">
-                <img data-comp-id="image.6" data-img="" ng-src="{{data.unitinfo.image}}" style="width: 85%; margin: 10px; height: 50px;">
+            <div class="card light-bg" data-comp-id="div.9"
+                ng-click="app.action('jobdetails', 'actions.unitinfo', this)"
+                style="width: 40%; display: inline-block; margin: 0px 18px;">
+                <img data-comp-id="image.6" data-img="" ng-src="{{data.unitinfo.image}}"
+                    style="width: 85%; margin: 10px; height: 50px;">
                 <div class=" energized" data-comp-id="text.7" style="font-size: 15px;">
                     {{data.unitinfo.categoryName}}
                 </div>
