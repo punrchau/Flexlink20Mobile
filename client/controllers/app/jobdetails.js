@@ -19,8 +19,8 @@ function app_jobdetails($scope, app) {
            
     app.init($scope);
     
-     $scope.getJobInfo = function () {
-          app.call('JobDetails.getJobInfo', {});
+     $scope.viewJobInfo = function () {
+          app.call('JobDetail.viewJobInfo', {});
     }
     
     /* $scope.goToServiceJob = function () {
