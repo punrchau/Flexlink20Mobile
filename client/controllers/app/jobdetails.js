@@ -19,6 +19,10 @@ function app_jobdetails($scope, app) {
            
     app.init($scope);
     
+     $scope.getJobInfo = function () {
+          app.call('home.getJobInfo', {});
+    }
+    
     /* $scope.goToServiceJob = function () {
      if (window.mocks) {
          app.go('servicejob');
