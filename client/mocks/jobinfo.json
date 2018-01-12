@@ -1,18 +1,13 @@
 {
-  "test": {
-    "selected": {
-      "label": "Radio 1",
-      "value": 1
-    },
-    "options": [
-      {
-        "label": "Radio 1",
-        "value": 1
-      },
-      {
-        "label": "Radio 2",
-        "value": 2
-      }
-    ]
-  }
+  "jobnumber":"IND-JOB#-000001649",
+  "ticketnumber":"IND-JOB#-000001649",
+  "jobcreationdate":"02-02-2017",
+  "repairstatus":"repair",
+  "priority":"high",
+  "problemcategory":"screen",
+  "problemdescription":"touch",
+  "isadp":true,
+  "servicetype":"repair",
+  "softwareversion":"1.0.0.0.0"
+  
 }
