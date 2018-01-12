@@ -1,3 +1,3 @@
-exports.getJobInfo = function(page, params) {
+exports.viewJobInfo = function(page, params) {
     page.action('jobdetails', 'actions.jobinfo');
 }
