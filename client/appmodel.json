@@ -734,7 +734,7 @@
     "type": "object",
     "comment": "Forms",
     "properties": {
-      "string": {
+      "jobnumber": {
         "type": "string",
         "label": "TextInput",
         "update": {
@@ -744,7 +744,7 @@
           ]
         }
       },
-      "string2": {
+      "ticketnumber": {
         "type": "string",
         "label": "TextInput",
         "update": {
@@ -754,7 +754,17 @@
           ]
         }
       },
-      "string3": {
+      "jobcreationdate": {
+        "type": "string",
+        "label": "Date",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "repairstatus": {
         "type": "string",
         "label": "TextArea",
         "update": {
@@ -764,71 +774,7 @@
           ]
         }
       },
-      "multiSelectData": {
-        "type": "select",
-        "label": "MultiSelect",
-        "update": {
-          "type": "action",
-          "action": [
-            "submit"
-          ]
-        }
-      },
-      "multiSelectData2": {
-        "type": "select",
-        "label": "MultiSelect",
-        "update": {
-          "type": "action",
-          "action": [
-            "submit"
-          ]
-        }
-      },
-      "radioData": {
-        "type": "select",
-        "label": "Radio"
-      },
-      "boolean": {
-        "type": "boolean",
-        "label": "CheckBoxes",
-        "update": {
-          "type": "action",
-          "action": [
-            "submit"
-          ]
-        }
-      },
-      "boolean2": {
-        "type": "boolean",
-        "label": "CheckBoxes",
-        "update": {
-          "type": "action",
-          "action": [
-            "submit"
-          ]
-        }
-      },
-      "date": {
-        "type": "date",
-        "label": "Date",
-        "update": {
-          "type": "action",
-          "action": [
-            "submit"
-          ]
-        }
-      },
-      "time": {
-        "type": "time",
-        "label": "Time",
-        "update": {
-          "type": "action",
-          "action": [
-            "submit"
-          ]
-        }
-      },
-      "name": {
+      "priority": {
         "type": "string",
         "label": "Name",
         "update": {
@@ -838,7 +784,7 @@
           ]
         }
       },
-      "email": {
+      "problemcategory": {
         "type": "string",
         "label": "Email",
         "update": {
@@ -848,7 +794,7 @@
           ]
         }
       },
-      "phone": {
+      "problemdescription": {
         "type": "string",
         "label": "Phone",
         "update": {
@@ -858,7 +804,41 @@
           ]
         }
       },
-      "submit": {
+      "isadp": {
+        "type": "boolean",
+        "label": "CheckBoxes",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "servicetype": {
+        "type": "string",
+        "label": "MultiSelect",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "servicemodel": {
+        "type": "string",
+        "label": "MultiSelect",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "softwareversion": {
+        "type": "string",
+        "label": "Radio"
+      },
+      "cancel": {
         "type": "action"
       }
     }
