@@ -11,7 +11,8 @@
           "submit"
         ]
       },
-      "selector": "#JobNumber"
+      "selector": "#JobNumber",
+      "control": "property.innerText"
     },
     "ticketnumber": {
       "type": "string",
