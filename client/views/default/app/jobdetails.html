@@ -8,20 +8,24 @@
         <ion-nav-buttons side="right"></ion-nav-buttons>
     </ion-nav-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
-        <div class=" positive" data-comp-id="text.1"
+        <div ata-comp-id="text.1" class=" positive"
             style="font-size: 12px; font-style: italic;">
             &lt;&lt; IND-JOB#-000000013 (Ramkewal Chauhan) &gt;&gt;
         </div>
         <svg height="1" width="400">
             <line style="stroke:rgb(0,0,255);stroke-width:2" x1="0" x2="400" y1="0" y2="0"></line>
         </svg>
+        <label class="item item-input" data-comp-id="textInput.3">
+            <span class="input-label">Label</span>
+            <input type="text">
+        </label>
         <div class="row stable-bg" data-comp-id="div.1">
             <div class="card light-bg" data-comp-id="div.2"
                 ng-click="app.action('jobdetails', 'actions.jobinfo', this)"
                 style="width: 40%; display: inline-block; margin: 0px 18px;">
                 <img data-comp-id="image.1" data-img="" ng-src="{{jobinfos.image}}"
                     style="width: 85%; margin: 10px; height: 50px;">
-                <div class=" energized" data-comp-id="text.2" style="font-size: 15px;">
+                <div class=" energized" data-comp-id="text.1" style="font-size: 15px;">
                     {{jobinfos.categoryName}}
                 </div>
             </div>
@@ -30,7 +34,7 @@
                 style="width: 40%; display: inline-block; margin: 0px 18px;">
                 <img data-comp-id="image.2" data-img="" ng-src="{{ownerinfos.image}}"
                     style="width: 85%; margin: 10px; height: 50px;">
-                <div class=" energized" data-comp-id="text.3" style="font-size: 15px;">
+                <div class=" energized" data-comp-id="text.2" style="font-size: 15px;">
                     {{ownerinfos.categoryName}}
                 </div>
             </div>
@@ -42,7 +46,7 @@
                 style="width: 40%; display: inline-block; margin: 0px 18px;">
                 <img data-comp-id="image.3" data-img="" ng-src="{{viewhistorys.image}}"
                     style="width: 85%; margin: 10px; height: 50px;">
-                <div class=" energized" data-comp-id="text.4" style="font-size: 15px;">
+                <div class=" energized" data-comp-id="text.3" style="font-size: 15px;">
                     {{viewhistorys.categoryName}}
                 </div>
             </div>
@@ -50,7 +54,7 @@
                 style="width: 40%; display: inline-block; margin: 0px 18px;">
                 <img data-comp-id="image.4" data-img="" ng-src="{{remarks.image}}"
                     style="width: 85%; margin: 10px; height: 50px;">
-                <div class=" energized" data-comp-id="text.5" style="font-size: 15px;">
+                <div class=" energized" data-comp-id="text.4" style="font-size: 15px;">
                     {{remarks.categoryName}}
                 </div>
             </div>
@@ -61,7 +65,7 @@
                 style="width: 40%; display: inline-block; margin: 0px 18px;">
                 <img data-comp-id="image.5" data-img="" ng-src="{{photos.image}}"
                     style="width: 85%; margin: 10px; height: 50px;">
-                <div class=" energized" data-comp-id="text.6" style="font-size: 15px;">
+                <div class=" energized" data-comp-id="text.5" style="font-size: 15px;">
                     {{photos.categoryName}}
                 </div>
             </div>
@@ -70,7 +74,7 @@
                 style="width: 40%; display: inline-block; margin: 0px 18px;">
                 <img data-comp-id="image.6" data-img="" ng-src="{{unitinfos.image}}"
                     style="width: 85%; margin: 10px; height: 50px;">
-                <div class=" energized" data-comp-id="text.7" style="font-size: 15px;">
+                <div class=" energized" data-comp-id="text.6" style="font-size: 15px;">
                     {{unitinfos.categoryName}}
                 </div>
             </div>
@@ -78,5 +82,13 @@
         <button class="button button-block button-royal" data-comp-id="button.2"
             ng-click="app.action('jobdetails', 'actions.btnviewjob', this)"
             style="width:100px;margin-left:100px">Job Info</button>
+        <label class="item item-input" data-comp-id="textInput.1">
+            <span class="input-label">Label</span>
+            <input type="text">
+        </label>
+        <label class="item item-input" data-comp-id="textInput.2">
+            <span class="input-label">Label</span>
+            <input type="text">
+        </label>
     </ion-content>
 </ion-view>
