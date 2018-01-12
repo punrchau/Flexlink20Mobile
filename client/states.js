@@ -132,5 +132,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.jobinfo', {
+        views: {
+            app: {
+                controller: 'app_jobinfo',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.jobinfo');
+                }
+            }
+        }
     });
 });
