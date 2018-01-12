@@ -12,7 +12,7 @@
         ]
       },
       "selector": "#JobNumber",
-      "control": "property.innerHTML"
+      "control": "text"
     },
     "ticketnumber": {
       "type": "string",
