@@ -1,7 +1,7 @@
 <ion-view data-comp-id="ionic-view.1">
     <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1">
         <ion-nav-buttons side="left">
-            <button class="button button-icon ion-navicon" data-comp-id="button.1"></button>
+            <button class="button button-icon ion-ios-arrow-left" data-comp-id="button.1"></button>
         </ion-nav-buttons>
         <ion-nav-title data-comp-id="nav-title.1">Job Information</ion-nav-title>
         <ion-nav-buttons side="right">
@@ -19,16 +19,48 @@
         <!--Form Contents-->
         <div data-comp-id="div.1" style="margin: 2% 2% 2%;">
             <label class="item item-input light-bg" data-comp-id="textInput.1">
-                <span class="input-label dark">Service Job No:</span>
-                <input ng-model="data.name" type="text">
+                <span class="input-label dark">Service Job No :</span>
+                <input ng-model="data.jobnumber" type="text">
             </label>
             <label class="item item-input" data-comp-id="textInput.2">
-                <span class="input-label">Phone</span>
-                <input ng-model="data.phone" type="text">
+                <span class="input-label">Ticket Number :</span>
+                <input ng-model="data.ticketnumber" type="text">
             </label>
             <label class="item item-input" data-comp-id="textInput.3">
-                <span class="input-label">Email</span>
-                <input ng-model="data.email" type="text">
+                <span class="input-label">Job Creation Date</span>
+                <input ng-model="data.jobcreationdate" type="text">
+            </label>
+            <label class="item item-input light-bg" data-comp-id="textInput.4">
+                <span class="input-label dark">Repair Status :</span>
+                <input ng-model="data.repairstatus" type="text">
+            </label>
+            <label class="item item-input" data-comp-id="textInput.5">
+                <span class="input-label">Priority :</span>
+                <input ng-model="data.priority" type="text">
+            </label>
+            <label class="item item-input" data-comp-id="textInput.6">
+                <span class="input-label">Problem Category :</span>
+                <input ng-model="data.problemcategory" type="text">
+            </label>
+            <label class="item item-input light-bg" data-comp-id="textInput.7">
+                <span class="input-label dark">Problem Description :</span>
+                <input ng-model="data.problemdescription" type="text">
+            </label>
+            <label class="item item-input" data-comp-id="textInput.8">
+                <span class="input-label">Is ADP :</span>
+                <input ng-model="data.isadp" type="text">
+            </label>
+            <label class="item item-input" data-comp-id="textInput.9">
+                <span class="input-label">Service Type :</span>
+                <input ng-model="data.servicetype" type="text">
+            </label>
+            <label class="item item-input" data-comp-id="textInput.10">
+                <span class="input-label">Service Model :</span>
+                <input ng-model="data.servicemodel" type="text">
+            </label>
+            <label class="item item-input" data-comp-id="textInput.11">
+                <span class="input-label">Software Version :</span>
+                <input ng-model="data.softwareversion" type="text">
             </label>
         </div>
         <div data-comp-id="div.2" style="width: 80%; margin: 10%;">
