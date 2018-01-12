@@ -616,6 +616,9 @@
           },
           "ownerinfo": {
             "type": "action"
+          },
+          "btnviewjob": {
+            "type": "action"
           }
         }
       },
