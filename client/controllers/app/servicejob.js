@@ -48,7 +48,7 @@ function app_servicejob($scope, app) {
     
    
     $scope.goToJobDetails = function (index) {
-            app.go('jobdetails',);
+            app.go('jobdetails');
             app.call('Home.viewRecord',{'index':index});
         /*else {
             app.call('PartReceiveDetail.goToHome', {});
