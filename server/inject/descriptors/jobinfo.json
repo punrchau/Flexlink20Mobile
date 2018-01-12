@@ -10,7 +10,8 @@
         "action": [
           "submit"
         ]
-      }
+      },
+      "selector": "#JobNumber"
     },
     "ticketnumber": {
       "type": "string",
