@@ -123,14 +123,5 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
-    }).state('app.testcategories', {
-        views: {
-            app: {
-                controller: 'app_testcategories',
-                templateProvider: function (app) {
-                    return app.templateProvider('app.testcategories');
-                }
-            }
-        }
     });
 });

@@ -89,13 +89,6 @@
       "sourceScreenId": "app.categories.categoriescaptivating",
       "sourceAppId": "universaltemplates",
       "model": "jobdetails"
-    },
-    {
-      "id": "testcategories",
-      "name": "TestCategories",
-      "sourceScreenId": "app.categories.categoriesconfident",
-      "sourceAppId": "universaltemplates",
-      "model": "testcategories"
     }
   ],
   "sourceAppId": "_blank",
