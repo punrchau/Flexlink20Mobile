@@ -23,5 +23,6 @@
   "unitinfos": {
     "categoryName": "Unit Info",
     "image": "images/jobdetails/unit_info.png"
-  }
+  },
+  "title":"my servicejob"
 }

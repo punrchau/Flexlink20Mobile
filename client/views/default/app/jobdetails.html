@@ -15,9 +15,9 @@
         <svg height="1" width="400">
             <line style="stroke:rgb(0,0,255);stroke-width:2" x1="0" x2="400" y1="0" y2="0"></line>
         </svg>
-        <label class="item item-input" data-comp-id="textInput.3">
+        <label class="item item-input" data-comp-id="textInput.1">
             <span class="input-label">Label</span>
-            <input type="text">
+            <input ng-model="data.title" type="text">
         </label>
         <div class="row stable-bg" data-comp-id="div.1">
             <div class="card light-bg" data-comp-id="div.2"
@@ -82,13 +82,5 @@
         <button class="button button-block button-royal" data-comp-id="button.2"
             ng-click="app.action('jobdetails', 'actions.btnviewjob', this)"
             style="width:100px;margin-left:100px">Job Info</button>
-        <label class="item item-input" data-comp-id="textInput.1">
-            <span class="input-label">Label</span>
-            <input type="text">
-        </label>
-        <label class="item item-input" data-comp-id="textInput.2">
-            <span class="input-label">Label</span>
-            <input type="text">
-        </label>
     </ion-content>
 </ion-view>
