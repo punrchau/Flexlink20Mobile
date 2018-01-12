@@ -110,5 +110,6 @@
       "type": "action"
     }
   },
-  "connect": []
+  "connect": [],
+  "selector": ".row.fade-backgroud.div-padding"
 }
