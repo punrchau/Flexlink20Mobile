@@ -20,7 +20,7 @@ function app_jobdetails($scope, app) {
     app.init($scope);
     
      $scope.getJobInfo = function () {
-          app.call('Home.getJobInfo', {});
+          app.call('JobDetails.getJobInfo', {});
     }
     
     /* $scope.goToServiceJob = function () {
