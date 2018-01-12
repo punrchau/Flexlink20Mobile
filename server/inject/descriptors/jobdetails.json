@@ -48,7 +48,8 @@
           "type": "action"
         },
         "btnviewjob": {
-          "type": "action"
+          "type": "action",
+          "selector": "button[value=\"View\"]"
         }
       }
     },
