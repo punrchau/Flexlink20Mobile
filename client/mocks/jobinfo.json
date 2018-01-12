@@ -2,12 +2,12 @@
   "jobnumber":"IND-JOB#-000001649",
   "ticketnumber":"IND-JOB#-000001649",
   "jobcreationdate":"02-02-2017",
-  "repairstatus":"repair",
-  "priority":"high",
-  "problemcategory":"screen",
-  "problemdescription":"touch",
+  "repairstatus":"Repair",
+  "priority":"High",
+  "problemcategory":"Screen",
+  "problemdescription":"Touch",
   "isadp":true,
-  "servicetype":"repair",
+  "servicetype":"Repair",
   "softwareversion":"1.0.0.0.0"
   
 }
