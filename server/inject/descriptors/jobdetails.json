@@ -50,7 +50,7 @@
         "btnviewjob": {
           "type": "action",
           "selector": "button[value=\"View\"]",
-          "control": "action.link"
+          "control": "action.button"
         }
       }
     },
