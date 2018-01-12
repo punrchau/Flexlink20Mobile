@@ -1,0 +1,114 @@
+{
+  "type": "object",
+  "comment": "Forms",
+  "properties": {
+    "jobnumber": {
+      "type": "string",
+      "label": "TextInput",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "ticketnumber": {
+      "type": "string",
+      "label": "TextInput",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "jobcreationdate": {
+      "type": "string",
+      "label": "Date",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "repairstatus": {
+      "type": "string",
+      "label": "TextArea",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "priority": {
+      "type": "string",
+      "label": "Name",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "problemcategory": {
+      "type": "string",
+      "label": "Email",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "problemdescription": {
+      "type": "string",
+      "label": "Phone",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "isadp": {
+      "type": "boolean",
+      "label": "CheckBoxes",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "servicetype": {
+      "type": "string",
+      "label": "MultiSelect",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "servicemodel": {
+      "type": "string",
+      "label": "MultiSelect",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "softwareversion": {
+      "type": "string",
+      "label": "Radio"
+    },
+    "cancel": {
+      "type": "action"
+    }
+  },
+  "connect": []
+}
