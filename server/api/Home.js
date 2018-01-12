@@ -34,7 +34,9 @@ exports.deleteRecord = function(page, params) {
     page.action('PartReceiveDetails', 'partDiscrepancy.delete');
 }
 
-
+exports.viewJobInfo = function(page, params) {
+    page.action('jobdetails', 'actions.jobinfo');
+}
 
 
 //upload picture of damaged part to website
