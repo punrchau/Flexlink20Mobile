@@ -21,8 +21,7 @@
             <input ng-model="data.title" type="text">
         </label>
         <div class="row stable-bg" data-comp-id="div.1">
-            <div class="card light-bg" data-comp-id="div.2"
-                ng-click="app.action('jobdetails', 'actions.jobinfo', this)"
+            <div class="card light-bg" data-comp-id="div.2" ng-click="getJobInfo();"
                 style="width: 40%; display: inline-block; margin: 0px 18px;">
                 <img data-comp-id="image.1" data-img="" ng-src="{{jobinfos.image}}"
                     style="width: 85%; margin: 10px; height: 50px;">
