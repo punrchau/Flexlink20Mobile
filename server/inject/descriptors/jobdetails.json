@@ -131,7 +131,7 @@
     },
     "title": {
       "type": "string",
-      "selector": ".col-md-4.text-right.margin-top-menu-link.text-right.dropdown",
+      "selector": "h2",
       "control": "property.innerText"
     }
   },
