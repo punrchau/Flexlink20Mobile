@@ -6,7 +6,7 @@
   "priority":"High",
   "problemcategory":"Screen",
   "problemdescription":"Touch",
-  "isadp":true,
+  "isadp":"Yes",
   "servicetype":"Repair",
   "softwareversion":"1.0.0.0.0"
   
