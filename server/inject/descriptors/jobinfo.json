@@ -48,7 +48,8 @@
       "selector": {
         "fn": "('#Status Option[selected=\"selected\"]').innerText;",
         "selector": ""
-      }
+      },
+      "control": "text"
     },
     "priority": {
       "type": "string",
