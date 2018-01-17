@@ -46,7 +46,7 @@
         ]
       },
       "control": "text",
-      "selector": "#Status"
+      "selector": "option"
     },
     "priority": {
       "type": "string",
