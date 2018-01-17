@@ -93,7 +93,8 @@
           "submit"
         ]
       },
-      "selector": ".col-lg-4.col-md-4"
+      "selector": ".col-lg-4.col-md-4",
+      "control": "text"
     },
     "servicetype": {
       "type": "string",
