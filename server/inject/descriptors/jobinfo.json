@@ -44,6 +44,10 @@
         "action": [
           "submit"
         ]
+      },
+      "selector": {
+        "fn": "",
+        "selector": ""
       }
     },
     "priority": {
