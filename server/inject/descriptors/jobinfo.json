@@ -57,7 +57,8 @@
           "submit"
         ]
       },
-      "selector": "#JobPriority"
+      "selector": "#JobPriority",
+      "control": "text"
     },
     "problemcategory": {
       "type": "string",
