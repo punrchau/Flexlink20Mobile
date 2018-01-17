@@ -128,7 +128,8 @@
     },
     "cancel": {
       "type": "action",
-      "selector": ".btn.btn-info.btn-cancel"
+      "selector": ".btn.btn-info.btn-cancel",
+      "control": "action.button"
     }
   },
   "connect": [],
