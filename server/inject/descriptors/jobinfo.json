@@ -47,7 +47,7 @@
       },
       "control": "text",
       "selector": {
-        "fn": "('#selectId option:selected').html();",
+        "fn": "('#Status option:selected').html();",
         "selector": ""
       }
     },
