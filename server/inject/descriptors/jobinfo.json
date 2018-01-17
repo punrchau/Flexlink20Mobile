@@ -46,7 +46,10 @@
         ]
       },
       "control": "property.innerText",
-      "selector": "#Status Option[value=\"number:33\"]"
+      "selector": {
+        "fn": "",
+        "selector": "#Status Option[value=\"number:33\"]"
+      }
     },
     "priority": {
       "type": "string",
