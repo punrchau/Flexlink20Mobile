@@ -127,7 +127,8 @@
       "control": "text"
     },
     "cancel": {
-      "type": "action"
+      "type": "action",
+      "selector": ".btn.btn-info.btn-cancel"
     }
   },
   "connect": [],
