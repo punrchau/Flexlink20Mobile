@@ -46,7 +46,7 @@
         ]
       },
       "control": "text",
-      "selector": "document.querySelector('#Status Option[selected=\"selected\"]').innerText"
+      "selector": "#Status .selected"
     },
     "priority": {
       "type": "string",
