@@ -46,7 +46,7 @@
         ]
       },
       "control": "text",
-      "selector": "select option[value=\"number:33\"]"
+      "selector": "select[id=\"Status\"] option[value=\"number:33\"]"
     },
     "priority": {
       "type": "string",
