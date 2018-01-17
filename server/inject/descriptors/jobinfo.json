@@ -116,7 +116,8 @@
         "action": [
           "submit"
         ]
-      }
+      },
+      "selector": "#ServiceModel"
     },
     "softwareversion": {
       "type": "string",
