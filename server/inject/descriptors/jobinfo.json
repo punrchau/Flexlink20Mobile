@@ -117,7 +117,8 @@
           "submit"
         ]
       },
-      "selector": "#ServiceModel"
+      "selector": "#ServiceModel",
+      "control": "text"
     },
     "softwareversion": {
       "type": "string",
