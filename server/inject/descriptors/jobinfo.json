@@ -46,7 +46,7 @@
         ]
       },
       "control": "text",
-      "selector": "select[id=\"Status\"] option[selected=\"selected\"].text()"
+      "selector": "select option:selected.text()"
     },
     "priority": {
       "type": "string",
