@@ -46,7 +46,7 @@
         ]
       },
       "control": "text",
-      "selector": "(\"Status\").value",
+      "selector": "#Status",
       "selectIndex": 4
     },
     "priority": {
