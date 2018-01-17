@@ -123,7 +123,8 @@
     "softwareversion": {
       "type": "string",
       "label": "Radio",
-      "selector": "#SoftwareVersion"
+      "selector": "#SoftwareVersion",
+      "control": "text"
     },
     "cancel": {
       "type": "action"
