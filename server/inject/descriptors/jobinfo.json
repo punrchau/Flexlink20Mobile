@@ -45,7 +45,6 @@
           "submit"
         ]
       },
-      "selector": "$(\"select option:selected\").text();",
       "control": "text"
     },
     "priority": {
