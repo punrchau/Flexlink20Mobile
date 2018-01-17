@@ -46,7 +46,7 @@
         ]
       },
       "control": "text",
-      "selector": "#Status .selected"
+      "selector": "'#Status Option[selected=\"selected\"]'"
     },
     "priority": {
       "type": "string",
