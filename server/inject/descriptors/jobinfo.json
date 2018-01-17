@@ -45,7 +45,8 @@
           "submit"
         ]
       },
-      "control": "property.innerText"
+      "control": "property.innerText",
+      "selector": "#Status > option:selected"
     },
     "priority": {
       "type": "string",
