@@ -37,7 +37,7 @@
       }
     },
     "repairstatus": {
-      "type": "string",
+      "type": "select",
       "label": "TextArea",
       "update": {
         "type": "action",
