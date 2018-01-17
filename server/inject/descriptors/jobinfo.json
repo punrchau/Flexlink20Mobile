@@ -44,8 +44,7 @@
         "action": [
           "submit"
         ]
-      },
-      "control": "property.innerText"
+      }
     },
     "priority": {
       "type": "string",
