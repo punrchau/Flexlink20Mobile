@@ -46,7 +46,7 @@
         ]
       },
       "selector": {
-        "fn": "('#Status Option[selected=\"selected\"]');",
+        "fn": "'#Status Option[selected=\"selected\"]';",
         "selector": ""
       },
       "control": "property.innerText"
