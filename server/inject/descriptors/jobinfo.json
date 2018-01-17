@@ -22,7 +22,8 @@
         "action": [
           "submit"
         ]
-      }
+      },
+      "selector": "#TicketNumber"
     },
     "jobcreationdate": {
       "type": "string",
