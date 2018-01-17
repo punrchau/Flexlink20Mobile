@@ -49,7 +49,7 @@
         "fn": "function(node){if(node.getAttribute('selected')=='selected'){return node.value}}",
         "selector": "#Status"
       },
-      "control": "select"
+      "control": "text"
     },
     "priority": {
       "type": "string",
