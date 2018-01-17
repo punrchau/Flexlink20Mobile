@@ -80,7 +80,8 @@
         "action": [
           "submit"
         ]
-      }
+      },
+      "selector": "#ProblemDescription"
     },
     "isadp": {
       "type": "boolean",
