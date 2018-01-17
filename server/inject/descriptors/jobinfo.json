@@ -46,7 +46,7 @@
         ]
       },
       "control": "text",
-      "selector": "select["
+      "selector": "select[label=\"Booked-In\"]"
     },
     "priority": {
       "type": "string",
