@@ -45,7 +45,7 @@
           "submit"
         ]
       },
-      "control": "action.button",
+      "control": "text",
       "selector": "(\"Status\").value",
       "selectIndex": 4
     },
