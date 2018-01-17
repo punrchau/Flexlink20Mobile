@@ -46,7 +46,7 @@
         ]
       },
       "selector": "#Status option[selected=\"selected\"]",
-      "control": "property.innerHTML"
+      "control": "property.innerText"
     },
     "priority": {
       "type": "string",
