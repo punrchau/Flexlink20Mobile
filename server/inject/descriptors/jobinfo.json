@@ -46,7 +46,7 @@
         ]
       },
       "control": "text",
-      "selector": "option"
+      "selector": "('#Status Option[value]').innerText"
     },
     "priority": {
       "type": "string",
