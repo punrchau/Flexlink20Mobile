@@ -69,7 +69,8 @@
           "submit"
         ]
       },
-      "selector": "#ProblemCategory"
+      "selector": "#ProblemCategory",
+      "control": "text"
     },
     "problemdescription": {
       "type": "string",
