@@ -46,7 +46,7 @@
         ]
       },
       "control": "action.button",
-      "selector": "#Status",
+      "selector": "(\"Status\").value",
       "selectIndex": 4
     },
     "priority": {
