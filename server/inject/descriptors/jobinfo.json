@@ -45,7 +45,7 @@
           "submit"
         ]
       },
-      "selector": "#Status > option:nth-child(31)",
+      "selector": "$(\"select option:selected\").text();",
       "control": "property.innerHTML"
     },
     "priority": {
