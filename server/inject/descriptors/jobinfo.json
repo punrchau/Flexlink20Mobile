@@ -45,7 +45,7 @@
           "submit"
         ]
       },
-      "selector": "#Status option[selected=\"selected\"]",
+      "selector": "select[id=\"Status\"] option[selected=\"selected\"]",
       "control": "property.innerText"
     },
     "priority": {
