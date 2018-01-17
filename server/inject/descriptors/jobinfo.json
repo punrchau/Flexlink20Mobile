@@ -46,7 +46,10 @@
         ]
       },
       "control": "text",
-      "selector": "(\"select[id=\"Status\"] option:selected\").text()"
+      "selector": {
+        "fn": "",
+        "selector": "(\"select[id=\"Status\"] option:selected\").text()"
+      }
     },
     "priority": {
       "type": "string",
