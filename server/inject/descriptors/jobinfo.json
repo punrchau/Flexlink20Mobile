@@ -47,7 +47,7 @@
       },
       "selector": {
         "fn": "function(node){if(node.getAttribute('selected')=='selected'){return node.value}}",
-        "selector": "#Status"
+        "selector": ""
       },
       "control": "text"
     },
