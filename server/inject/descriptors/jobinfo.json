@@ -68,7 +68,8 @@
         "action": [
           "submit"
         ]
-      }
+      },
+      "selector": "#ProblemCategory"
     },
     "problemdescription": {
       "type": "string",
