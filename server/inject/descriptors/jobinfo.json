@@ -45,7 +45,10 @@
           "submit"
         ]
       },
-      "selector": "#Status",
+      "selector": {
+        "fn": "",
+        "selector": "#Status"
+      },
       "control": "text"
     },
     "priority": {
