@@ -45,8 +45,7 @@
           "submit"
         ]
       },
-      "control": "property.innerText",
-      "selector": ".selected"
+      "control": "property.innerText"
     },
     "priority": {
       "type": "string",
