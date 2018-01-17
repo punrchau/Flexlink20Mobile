@@ -81,7 +81,8 @@
           "submit"
         ]
       },
-      "selector": "#ProblemDescription"
+      "selector": "#ProblemDescription",
+      "control": "text"
     },
     "isadp": {
       "type": "boolean",
