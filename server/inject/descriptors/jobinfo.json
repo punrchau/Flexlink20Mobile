@@ -45,7 +45,7 @@
           "submit"
         ]
       },
-      "selector": "select[id=\"Status\"]option[selected=\"selected\"]",
+      "selector": "select[id=\"Status\"]",
       "control": "text"
     },
     "priority": {
