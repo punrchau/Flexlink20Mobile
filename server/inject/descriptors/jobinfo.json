@@ -45,7 +45,7 @@
           "submit"
         ]
       },
-      "control": "select",
+      "control": "text",
       "selector": "option[label=\"Booked-In\"]"
     },
     "priority": {
