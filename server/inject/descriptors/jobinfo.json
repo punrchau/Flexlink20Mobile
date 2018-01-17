@@ -49,7 +49,7 @@
         "fn": "",
         "selector": "#Status option[selected=\"selected\"]"
       },
-      "control": "property.innerText"
+      "control": "text"
     },
     "priority": {
       "type": "string",
