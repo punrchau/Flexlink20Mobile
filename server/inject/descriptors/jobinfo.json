@@ -46,7 +46,7 @@
         ]
       },
       "selector": {
-        "fn": "function(node){if(node.getAttribute('class')=='active'){return true}}",
+        "fn": "function(node){if(node.getAttribute('selected')=='active'){return true}}",
         "selector": "#Status"
       },
       "control": "select"
