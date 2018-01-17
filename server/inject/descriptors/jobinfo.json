@@ -46,7 +46,7 @@
         ]
       },
       "selector": "$(\"select option:selected\").text();",
-      "control": "property.innerHTML"
+      "control": "text"
     },
     "priority": {
       "type": "string",
