@@ -46,7 +46,7 @@
         ]
       },
       "control": "text",
-      "selector": "option"
+      "selector": "select["
     },
     "priority": {
       "type": "string",
