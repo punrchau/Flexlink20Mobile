@@ -46,7 +46,7 @@
         ]
       },
       "control": "text",
-      "selector": "option[label=\"Booked-In\"]"
+      "selector": "select option[value=\"number:33\"]"
     },
     "priority": {
       "type": "string",
