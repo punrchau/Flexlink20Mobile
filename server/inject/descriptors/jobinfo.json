@@ -45,7 +45,7 @@
           "submit"
         ]
       },
-      "selector": "select[id=\"Status\"]",
+      "selector": "#Status > option:nth-child(31)",
       "control": "text"
     },
     "priority": {
