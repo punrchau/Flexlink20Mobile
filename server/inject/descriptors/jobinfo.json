@@ -46,7 +46,7 @@
         ]
       },
       "selector": "select[id=\"Status\"] option[selected=\"selected\"]",
-      "control": "property.innerText"
+      "control": "text"
     },
     "priority": {
       "type": "string",
