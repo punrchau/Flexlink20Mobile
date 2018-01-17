@@ -47,7 +47,7 @@
       },
       "control": "text",
       "selector": {
-        "fn": "('#Status').find('option[selected = \"selected\"]').value();",
+        "fn": "('#selectId option:selected').html();",
         "selector": ""
       }
     },
