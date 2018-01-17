@@ -47,7 +47,7 @@
       },
       "control": "text",
       "selector": {
-        "fn": "('#Status').find('option[selected = \"selected\"]').val();",
+        "fn": "('#Status').find('option[selected = \"selected\"]').text();",
         "selector": ""
       }
     },
