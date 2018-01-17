@@ -45,7 +45,8 @@
           "submit"
         ]
       },
-      "control": "text"
+      "control": "text",
+      "selector": "#Status"
     },
     "priority": {
       "type": "string",
