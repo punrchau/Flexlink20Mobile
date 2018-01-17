@@ -47,7 +47,7 @@
       },
       "control": "text",
       "selector": {
-        "fn": "('select[id='Status '] option:selected').text();",
+        "fn": "(select[id='Status']option[selected='selected').text();",
         "selector": ""
       }
     },
