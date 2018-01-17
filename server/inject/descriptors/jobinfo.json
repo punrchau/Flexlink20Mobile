@@ -105,7 +105,8 @@
           "submit"
         ]
       },
-      "selector": "#ServiceType"
+      "selector": "#ServiceType",
+      "control": "text"
     },
     "servicemodel": {
       "type": "string",
