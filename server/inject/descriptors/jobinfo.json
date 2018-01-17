@@ -45,7 +45,7 @@
           "submit"
         ]
       },
-      "selector": "option",
+      "selector": "option[value=\"15\"]",
       "control": "text"
     },
     "priority": {
