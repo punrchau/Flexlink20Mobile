@@ -46,7 +46,7 @@
         ]
       },
       "selector": "#Status > option:nth-child(31)",
-      "control": "property.innerText"
+      "control": "property.innerHTML"
     },
     "priority": {
       "type": "string",
