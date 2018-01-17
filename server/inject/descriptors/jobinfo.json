@@ -45,7 +45,7 @@
           "submit"
         ]
       },
-      "selector": "select option:selected",
+      "selector": "#Status select option:selected",
       "control": "text"
     },
     "priority": {
