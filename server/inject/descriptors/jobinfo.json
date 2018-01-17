@@ -45,7 +45,7 @@
           "submit"
         ]
       },
-      "control": "property.innerText",
+      "control": "text",
       "selector": "#Status Option[value=\"number:33\"]"
     },
     "priority": {
