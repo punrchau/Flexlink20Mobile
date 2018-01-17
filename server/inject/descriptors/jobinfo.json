@@ -23,7 +23,8 @@
           "submit"
         ]
       },
-      "selector": "#TicketNumber"
+      "selector": "#TicketNumber",
+      "control": "text"
     },
     "jobcreationdate": {
       "type": "string",
