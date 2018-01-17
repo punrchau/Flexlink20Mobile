@@ -45,10 +45,7 @@
           "submit"
         ]
       },
-      "selector": {
-        "fn": "",
-        "selector": "#Status option[selected=\"selected\"]"
-      },
+      "selector": "#Status option[selected=\"selected\"]",
       "control": "property.innerText"
     },
     "priority": {
