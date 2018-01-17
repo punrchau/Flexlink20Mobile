@@ -45,7 +45,7 @@
           "submit"
         ]
       },
-      "control": "select",
+      "control": "property.innerText",
       "selector": "#Status"
     },
     "priority": {
