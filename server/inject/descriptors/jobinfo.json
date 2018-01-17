@@ -47,7 +47,7 @@
       },
       "control": "property.innerText",
       "selector": "#Status",
-      "selectIndex": 1
+      "selectIndex": 4
     },
     "priority": {
       "type": "string",
