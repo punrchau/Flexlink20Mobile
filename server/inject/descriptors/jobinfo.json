@@ -46,10 +46,7 @@
         ]
       },
       "control": "text",
-      "selector": {
-        "fn": "('#Status option:selected').val();",
-        "selector": ""
-      }
+      "selector": "#Status"
     },
     "priority": {
       "type": "string",
