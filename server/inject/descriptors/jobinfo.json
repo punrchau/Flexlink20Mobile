@@ -142,7 +142,11 @@
     },
     "cancel": {
       "type": "action",
-      "control": "action.button"
+      "control": "action.button",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     },
     "isjobinfo": {
       "type": "identifier",
