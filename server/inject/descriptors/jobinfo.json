@@ -142,11 +142,7 @@
     },
     "cancel": {
       "type": "action",
-      "control": "action.link",
-      "selector": {
-        "fn": "function(){return document.querySelector('#sjPage > div.col-lg-3.col-md-3.col-sm-3.col-xs-3.text-right.div-padding-none-right > button.btn.btn-info.btn-cancel').click()}",
-        "selector": ""
-      }
+      "control": "action.link"
     },
     "isjobinfo": {
       "type": "identifier",
