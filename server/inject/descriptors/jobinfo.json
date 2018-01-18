@@ -147,7 +147,7 @@
     },
     "isjobinfo": {
       "type": "identifier",
-      "selector": "option",
+      "selector": "h3",
       "control": "property.innerText"
     }
   },
