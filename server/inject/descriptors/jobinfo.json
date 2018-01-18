@@ -100,7 +100,7 @@
         ]
       },
       "selector": ".col-lg-4.col-md-4",
-      "control": "text"
+      "control": "radio"
     },
     "servicetype": {
       "type": "string",
