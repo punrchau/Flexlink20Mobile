@@ -145,6 +145,9 @@
       "selector": "h3",
       "control": "exists",
       "selectContains": "Service Info"
+    },
+    "cancel": {
+      "type": "action"
     }
   },
   "connect": [
