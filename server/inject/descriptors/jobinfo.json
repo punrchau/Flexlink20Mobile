@@ -147,7 +147,7 @@
     },
     "isjobinfo": {
       "type": "identifier",
-      "selector": "#comment",
+      "selector": "h3",
       "control": "exists",
       "selectContains": "Service Info"
     }
