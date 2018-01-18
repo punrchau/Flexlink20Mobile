@@ -100,7 +100,7 @@
         ]
       },
       "selector": {
-        "fn": "",
+        "fn": "function(node){if(document.querySelector('input[name=\"IsADP\"][checked=\"checked\"]').value=='false'){return 'No'}else{return 'Yes'}}",
         "selector": "input[name=\"IsADP\"]:checked"
       },
       "control": "property.innerText"
