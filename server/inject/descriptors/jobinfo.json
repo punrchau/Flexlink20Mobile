@@ -143,7 +143,10 @@
     "cancel": {
       "type": "action",
       "control": "action.button",
-      "selector": "#sjPage > div.col-lg-3.col-md-3.col-sm-3.col-xs-3.text-right.div-padding-none-right > button.btn.btn-info.btn-cancel"
+      "selector": {
+        "fn": "",
+        "selector": "#sjPage > div.col-lg-3.col-md-3.col-sm-3.col-xs-3.text-right.div-padding-none-right > button.btn.btn-info.btn-cancel"
+      }
     },
     "isjobinfo": {
       "type": "identifier",
