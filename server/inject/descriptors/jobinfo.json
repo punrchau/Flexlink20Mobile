@@ -115,7 +115,7 @@
         "fn": "function(node){return document.querySelector('#ServiceType Option[selected=\"selected\"]')}",
         "selector": ""
       },
-      "control": "property.inner"
+      "control": "property.innerHTML"
     },
     "servicemodel": {
       "type": "string",
