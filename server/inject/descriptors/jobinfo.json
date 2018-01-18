@@ -144,6 +144,11 @@
       "type": "action",
       "selector": ".btn.btn-info.btn-cancel",
       "control": "action.button"
+    },
+    "isjobinfo": {
+      "type": "string",
+      "selector": "option",
+      "control": "property.innerText"
     }
   },
   "connect": [],
