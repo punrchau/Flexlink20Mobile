@@ -114,7 +114,7 @@
         ]
       },
       "selector": {
-        "fn": "function(node){return document.querySelector('#ServiceType Option[selected=\"selected\"]')}",
+        "fn": "function(node){return document.querySelectorAll('#ServiceType Option[selected=\"selected\"]')[1]}",
         "selector": ""
       },
       "control": "property.innerHTML"
