@@ -140,11 +140,6 @@
       "selector": "#SoftwareVersion",
       "control": "text"
     },
-    "cancel": {
-      "type": "action",
-      "control": "action.button",
-      "selector": "btn btn-info btn-cancel"
-    },
     "isjobinfo": {
       "type": "identifier",
       "selector": "h3",
