@@ -60,7 +60,6 @@
           "submit"
         ]
       },
-      "selector": "#JobPriority",
       "control": "text"
     },
     "problemcategory": {
