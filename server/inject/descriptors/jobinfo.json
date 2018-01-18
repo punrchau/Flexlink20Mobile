@@ -60,7 +60,7 @@
           "submit"
         ]
       },
-      "control": "text",
+      "control": "property.innerText",
       "selector": {
         "fn": "function(node){return document.querySelector('#JobPriority Option[selected=\"selected\"]')}",
         "selector": ""
