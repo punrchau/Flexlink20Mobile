@@ -91,7 +91,7 @@
       "control": "text"
     },
     "isadp": {
-      "type": "boolean",
+      "type": "string",
       "label": "CheckBoxes",
       "update": {
         "type": "action",
