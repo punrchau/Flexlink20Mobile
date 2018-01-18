@@ -100,7 +100,7 @@
         ]
       },
       "selector": "input[type=radio]:checked",
-      "control": "property.innerText"
+      "control": "property.innerHTML"
     },
     "servicetype": {
       "type": "string",
