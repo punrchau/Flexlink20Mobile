@@ -47,7 +47,7 @@
       },
       "control": "property.innerHTML",
       "selector": {
-        "fn": "function(node){return node.getAttribute('seleted')}",
+        "fn": "function(node){return node.getAttribute('class')}",
         "selectorAll": ""
       }
     },
