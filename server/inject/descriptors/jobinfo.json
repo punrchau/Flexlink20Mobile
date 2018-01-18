@@ -49,7 +49,7 @@
       },
       "control": "property.innerHTML",
       "selector": {
-        "fn": "function(node){return document.querySelector('#Status Option[selected=\"selected\"]')}",
+        "fn": "function(node){return document.querySelector('#Status Option[selected=\"selected\"]:n')}",
         "selectorAll": ""
       }
     },
