@@ -142,7 +142,7 @@
     },
     "cancel": {
       "type": "action",
-      "selector": ".btn.btn-info.btn-cancel",
+      "selector": "#comment",
       "control": "action.button"
     },
     "isjobinfo": {
