@@ -126,7 +126,10 @@
           "submit"
         ]
       },
-      "selector": "#ServiceModel",
+      "selector": {
+        "fn": "",
+        "selector": "#ServiceModel"
+      },
       "control": "text"
     },
     "softwareversion": {
