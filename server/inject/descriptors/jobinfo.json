@@ -99,7 +99,7 @@
           "submit"
         ]
       },
-      "selector": "input[type=checkbox]:checked",
+      "selector": "[name=\"IsADP\"]",
       "control": "property.innerText"
     },
     "servicetype": {
