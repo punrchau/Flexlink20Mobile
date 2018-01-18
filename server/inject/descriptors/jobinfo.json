@@ -62,7 +62,7 @@
       },
       "control": "text",
       "selector": {
-        "fn": "function(node){return document.querySelector('#Status Option[selected=\"selected\"]')}",
+        "fn": "function(node){return document.querySelector('#JobPriority Option[selected=\"selected\"]')}",
         "selector": ""
       }
     },
