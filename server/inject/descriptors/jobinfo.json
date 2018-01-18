@@ -47,7 +47,7 @@
       },
       "control": "text",
       "selector": {
-        "fn": "function(node){return node.document.querySelector('#Status Option[selected=\"selected\"]').innerText}",
+        "fn": "function(){return document.querySelector('#Status Option[selected=\"selected\"]').innerText}",
         "selector": ""
       }
     },
