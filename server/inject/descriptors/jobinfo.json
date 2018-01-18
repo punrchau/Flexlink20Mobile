@@ -64,7 +64,7 @@
       },
       "control": "property.innerText",
       "selector": {
-        "fn": "function(node){return document.querySelector('#JobPriority Option[selected=\"selected\"]')}",
+        "fn": "function(node){return document.querySelectorAll('#JobPriority Option[selected=\"selected\"]')[1]}",
         "selector": ""
       }
     },
