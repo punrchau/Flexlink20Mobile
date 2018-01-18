@@ -149,7 +149,7 @@
     "cancel": {
       "type": "action",
       "selector": "button[value=\"Cancel\"]",
-      "control": "attrib.onclick"
+      "control": "action.link"
     }
   },
   "connect": [
