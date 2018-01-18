@@ -103,7 +103,7 @@
         "fn": "function(node){if(document.querySelector('input[name=\"IsADP\"][checked=\"checked\"]').value=='false'){return 'No'}else{return 'Yes'}}",
         "selector": ""
       },
-      "control": "property.innerHTML"
+      "control": "text"
     },
     "servicetype": {
       "type": "string",
