@@ -45,7 +45,7 @@
           "submit"
         ]
       },
-      "control": "property.innerHTML",
+      "control": "select",
       "selector": {
         "fn": "function(){return document.querySelector('#Status Option[selected=\"selected\"]').innerText}",
         "selector": ""
