@@ -130,7 +130,7 @@
         "fn": "function(node){return document.querySelector('#ServiceModel Option[selected=\"selected\"]')}",
         "selector": ""
       },
-      "control": "text"
+      "control": "property.innerHTML"
     },
     "softwareversion": {
       "type": "string",
