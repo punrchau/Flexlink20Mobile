@@ -45,7 +45,7 @@
           "submit"
         ]
       },
-      "control": "property.innerText",
+      "control": "property.innerHTML",
       "selector": {
         "fn": "function(node){return node}",
         "selectorAll": ""
