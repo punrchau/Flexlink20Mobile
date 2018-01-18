@@ -34,7 +34,8 @@
         "action": [
           "submit"
         ]
-      }
+      },
+      "selector": "#JobCreatedDateTime"
     },
     "repairstatus": {
       "type": "string",
