@@ -100,7 +100,7 @@
         ]
       },
       "selector": "[name=\"IsADP\"] [checked=\"checked\"]",
-      "control": "radio"
+      "control": "property.innerText"
     },
     "servicetype": {
       "type": "string",
