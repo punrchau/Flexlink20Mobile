@@ -152,6 +152,15 @@
       "selectContains": "Service Info"
     }
   },
-  "connect": [],
+  "connect": [
+    {
+      "match": [
+        "isjobinfo"
+      ],
+      "screens": [
+        "jobinfo"
+      ]
+    }
+  ],
   "selector": ".row.fade-backgroud.div-padding"
 }
