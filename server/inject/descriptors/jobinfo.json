@@ -127,8 +127,8 @@
         ]
       },
       "selector": {
-        "fn": "function(node){return document.querySelector('#Status Option[selected=\"selected\"]')}",
-        "selector": "#ServiceModel"
+        "fn": "function(node){return document.querySelector('#ServiceModel Option[selected=\"selected\"]')}",
+        "selector": ""
       },
       "control": "text"
     },
