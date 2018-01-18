@@ -142,7 +142,7 @@
     },
     "cancel": {
       "type": "action",
-      "selector": "button[value=\"Cancel\"]",
+      "selector": "button.btn.btn-info.btn-cancel",
       "control": "action.button"
     },
     "isjobinfo": {
