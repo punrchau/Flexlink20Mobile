@@ -129,7 +129,7 @@
         ]
       },
       "selector": {
-        "fn": "function(node){return document.querySelector('#ServiceModel Option[selected=\"selected\"]')}",
+        "fn": "function(node){return document.querySelectorAll('#ServiceModel Option[selected=\"selected\"]')[1]}",
         "selector": ""
       },
       "control": "property.innerHTML"
