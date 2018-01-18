@@ -47,7 +47,7 @@
       },
       "control": "property.innerText",
       "selector": {
-        "fn": "",
+        "fn": "function(node){return document.querySelector('#Status Option[selected=\"selected\"]').innerText}",
         "selector": ""
       }
     },
