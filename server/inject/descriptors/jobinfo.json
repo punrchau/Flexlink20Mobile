@@ -148,7 +148,8 @@
     "isjobinfo": {
       "type": "identifier",
       "selector": "h3",
-      "control": "property.innerText"
+      "control": "property.innerText",
+      "selectContains": "Service Info"
     }
   },
   "connect": [],
