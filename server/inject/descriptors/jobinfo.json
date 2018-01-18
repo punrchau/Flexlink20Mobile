@@ -60,7 +60,11 @@
           "submit"
         ]
       },
-      "control": "text"
+      "control": "text",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     },
     "problemcategory": {
       "type": "string",
