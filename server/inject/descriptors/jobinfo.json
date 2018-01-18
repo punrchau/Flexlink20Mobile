@@ -99,7 +99,7 @@
           "submit"
         ]
       },
-      "selector": ".col-lg-4.col-md-4",
+      "selector": "[name=\"IsADP\"]",
       "control": "radio"
     },
     "servicetype": {
