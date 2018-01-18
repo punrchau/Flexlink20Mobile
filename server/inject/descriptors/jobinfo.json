@@ -47,7 +47,7 @@
       },
       "control": "text",
       "selector": {
-        "fn": "function(){return 'test'}",
+        "fn": "function(node){return node}",
         "selectorAll": ""
       }
     },
