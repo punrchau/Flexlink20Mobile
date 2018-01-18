@@ -99,7 +99,7 @@
           "submit"
         ]
       },
-      "selector": "[name=\"IsADP\"]",
+      "selector": "[name=\"IsADP\"] [checked=\"checked\"]",
       "control": "radio"
     },
     "servicetype": {
