@@ -100,7 +100,7 @@
         ]
       },
       "selector": "input[name=\"IsADP\"]:checked",
-      "control": "text"
+      "control": "property.innerText"
     },
     "servicetype": {
       "type": "string",
