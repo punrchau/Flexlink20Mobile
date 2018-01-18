@@ -805,14 +805,7 @@
         }
       },
       "isadp": {
-        "type": "boolean",
-        "label": "CheckBoxes",
-        "update": {
-          "type": "action",
-          "action": [
-            "submit"
-          ]
-        }
+        "type": "string"
       },
       "servicetype": {
         "type": "string",
