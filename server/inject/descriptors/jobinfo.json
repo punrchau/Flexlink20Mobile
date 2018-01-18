@@ -49,7 +49,7 @@
       },
       "control": "property.innerHTML",
       "selector": {
-        "fn": "function(node){return document.querySelector('#Status Option[selected=\"selected\"]:nth-child')}",
+        "fn": "function(node){return document.querySelector('#Status Option[selected=\"selected\"]:nth-child(2)')}",
         "selectorAll": ""
       }
     },
