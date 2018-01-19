@@ -147,7 +147,8 @@
       "selectContains": "Service Info"
     },
     "cancel": {
-      "type": "action"
+      "type": "action",
+      "selector": "button[ng-click=\"serviceJobCtrl.cancelServiceJob()\"]"
     }
   },
   "connect": [
