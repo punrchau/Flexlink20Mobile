@@ -148,7 +148,7 @@
     },
     "cancel": {
       "type": "string",
-      "selector": ".btn.btn-info.btn-cancel",
+      "selector": "button[value=\"Cancel\"]",
       "control": "property.innerText"
     }
   },
