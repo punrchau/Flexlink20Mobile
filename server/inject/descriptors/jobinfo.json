@@ -146,7 +146,7 @@
       "control": "action.button"
     },
     "isjobinfo": {
-      "type": "string",
+      "type": "identifier",
       "selector": "#masterBody",
       "control": "property.innerText"
     }
