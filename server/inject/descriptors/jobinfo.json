@@ -152,13 +152,6 @@
       "selectContains": "Service Info"
     }
   },
-  "connect": [
-    {
-      "match": [],
-      "screens": [
-        "jobinfo"
-      ]
-    }
-  ],
+  "connect": [],
   "selector": ".k-webkit.k-webkit63.ng-scope"
 }
