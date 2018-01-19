@@ -148,7 +148,7 @@
     },
     "cancel": {
       "type": "action",
-      "selector": ".fa.fa-times-circle-o.__web-inspector-hide-shortcut__",
+      "selector": ".btn.btn-info.btn-cancel",
       "control": "action.link"
     }
   },
