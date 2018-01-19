@@ -148,7 +148,7 @@
     },
     "cancel": {
       "type": "string",
-      "selector": "button[value=\"Cancel\"]",
+      "selector": "button[ng-click=\"serviceJobCtrl.cancelServiceJob()\"]",
       "control": "property.innerText"
     }
   },
