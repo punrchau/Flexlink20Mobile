@@ -140,12 +140,6 @@
       "selector": "#SoftwareVersion",
       "control": "text"
     },
-    "isjobinfo": {
-      "type": "identifier",
-      "selector": "h3",
-      "control": "exists",
-      "selectContains": "Service Info"
-    },
     "cancel": {
       "type": "action",
       "selector": "button[ng-click=\"serviceJobCtrl.cancelServiceJob()\"]",
