@@ -144,6 +144,11 @@
       "type": "action",
       "selector": "button[ng-click=\"serviceJobCtrl.cancelServiceJob()\"]",
       "control": "action.button"
+    },
+    "isjobinfo": {
+      "type": "string",
+      "selector": "#masterBody",
+      "control": "property.innerText"
     }
   },
   "connect": [
