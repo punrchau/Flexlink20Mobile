@@ -154,9 +154,7 @@
   },
   "connect": [
     {
-      "match": [
-        "isjobinfo"
-      ],
+      "match": [],
       "screens": [
         "jobinfo"
       ]
