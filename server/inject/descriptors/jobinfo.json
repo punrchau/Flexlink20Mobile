@@ -145,6 +145,11 @@
       "selector": "h3",
       "control": "exists",
       "selectContains": "Service Info"
+    },
+    "Cancel": {
+      "type": "action",
+      "selector": ".btn.btn-info.btn-cancel",
+      "control": "action.button"
     }
   },
   "connect": [
