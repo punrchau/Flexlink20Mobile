@@ -148,7 +148,7 @@
     "isjobinfo": {
       "type": "identifier",
       "selector": "#masterBody",
-      "control": "property.innerText"
+      "control": "exists"
     }
   },
   "connect": [
