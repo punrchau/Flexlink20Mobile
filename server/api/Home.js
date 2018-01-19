@@ -35,7 +35,7 @@ exports.deleteRecord = function(page, params) {
 }
 
 exports.viewJobInfo = function(page, params) {
-    page.action('jobdetails', 'actions.jobinfo').screen('obinfo');
+    page.action('jobdetails', 'actions.jobinfo');
 }
 
 
