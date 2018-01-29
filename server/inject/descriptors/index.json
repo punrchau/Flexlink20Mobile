@@ -7,7 +7,7 @@
   "PartReceiveDetails.json",
   "repairjob.json",
   "servicejob.json",
+  "unitinfo.json",
   "jobdetails.json",
-  "jobinfo.json",
-  "unitinfo.json"
+  "jobinfo.json"
 ]
