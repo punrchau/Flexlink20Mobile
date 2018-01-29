@@ -47,7 +47,8 @@
           "submit"
         ]
       },
-      "selector": "#IMEINumber2"
+      "selector": "#IMEINumber2",
+      "control": "text"
     },
     "manufacturer": {
       "type": "string",
