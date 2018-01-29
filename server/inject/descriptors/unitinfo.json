@@ -128,7 +128,8 @@
           "submit"
         ]
       },
-      "selector": "#WarrantyExpiredDate"
+      "selector": "#WarrantyExpiredDate",
+      "control": "text"
     },
     "dateofpurchase": {
       "type": "string",
