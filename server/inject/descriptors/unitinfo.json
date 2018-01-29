@@ -101,7 +101,8 @@
       "selector": {
         "fn": "function(node){return document.querySelectorAll('#ProductModelSKU Option[selected=\"selected\"]')[1]}",
         "selector": ""
-      }
+      },
+      "control": "property.innerText"
     },
     "warrantystatus": {
       "type": "string",
