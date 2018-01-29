@@ -140,7 +140,7 @@
           "submit"
         ]
       },
-      "selector": ".col-lg-4.col-md-4"
+      "selector": "#DatePurchased"
     },
     "cancel": {
       "type": "action"
