@@ -145,7 +145,7 @@
     },
     "cancel": {
       "type": "action",
-      "selector": "span"
+      "selector": ".close"
     },
     "isunitinfo": {
       "type": "identifier",
