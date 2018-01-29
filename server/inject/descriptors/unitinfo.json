@@ -145,7 +145,8 @@
     },
     "cancel": {
       "type": "action",
-      "selector": ".close"
+      "selector": ".close",
+      "control": "action.button"
     },
     "isunitinfo": {
       "type": "identifier",
