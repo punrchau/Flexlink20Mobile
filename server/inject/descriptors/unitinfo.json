@@ -2,9 +2,6 @@
   "type": "object",
   "comment": "Forms",
   "properties": {
-    "submit": {
-      "type": "action"
-    },
     "serialnumber": {
       "type": "string",
       "label": "TextInput",
@@ -108,6 +105,9 @@
           "submit"
         ]
       }
+    },
+    "cancel": {
+      "type": "action"
     }
   },
   "connect": []
