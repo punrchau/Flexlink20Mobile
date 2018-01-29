@@ -151,7 +151,8 @@
     "isunitinfo": {
       "type": "identifier",
       "selector": ".modal-title",
-      "control": "property.innerText"
+      "control": "property.innerText",
+      "selectContains": "Unit Details"
     }
   },
   "connect": [],
