@@ -168,5 +168,5 @@
       ]
     }
   ],
-  "selector": "#masterBody"
+  "selector": ".modal-content"
 }
