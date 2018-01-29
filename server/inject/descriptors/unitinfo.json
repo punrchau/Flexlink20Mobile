@@ -11,7 +11,8 @@
           "submit"
         ]
       },
-      "selector": "#SerialNumber"
+      "selector": "#SerialNumber",
+      "control": "text"
     },
     "machinetype": {
       "type": "string",
