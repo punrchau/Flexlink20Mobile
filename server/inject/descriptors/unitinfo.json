@@ -150,7 +150,7 @@
     },
     "isunitinfo": {
       "type": "identifier",
-      "selector": ".modal-title",
+      "selector": "h4",
       "control": "exists",
       "selectContains": "Unit Details"
     }
