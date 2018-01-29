@@ -140,7 +140,8 @@
           "submit"
         ]
       },
-      "selector": "#DatePurchased"
+      "selector": "#DatePurchased",
+      "control": "text"
     },
     "cancel": {
       "type": "action"
