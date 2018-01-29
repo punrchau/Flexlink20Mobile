@@ -1,0 +1,114 @@
+{
+  "type": "object",
+  "comment": "Forms",
+  "properties": {
+    "submit": {
+      "type": "action"
+    },
+    "serialnumber": {
+      "type": "string",
+      "label": "TextInput",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "machinetype": {
+      "type": "string",
+      "label": "TextInput",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "imei1": {
+      "type": "string",
+      "label": "TextArea",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "imei2": {
+      "type": "string",
+      "label": "MultiSelect",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "manufacturer": {
+      "type": "string",
+      "label": "MultiSelect",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "productcategory": {
+      "type": "string",
+      "label": "Radio"
+    },
+    "productmodel": {
+      "type": "string",
+      "label": "CheckBoxes",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "skuormtm": {
+      "type": "string",
+      "label": "CheckBoxes",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "warrantystatus": {
+      "type": "string",
+      "label": "Date",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "warrantyexpirydate": {
+      "type": "string",
+      "label": "Time",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "dateofpurchase": {
+      "type": "string",
+      "label": "Name",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    }
+  },
+  "connect": []
+}
