@@ -10,7 +10,8 @@
         "action": [
           "submit"
         ]
-      }
+      },
+      "selector": "#SerialNumber"
     },
     "machinetype": {
       "type": "string",
