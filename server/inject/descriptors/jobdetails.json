@@ -34,7 +34,8 @@
           "type": "action"
         },
         "unitinfo": {
-          "type": "action"
+          "type": "action",
+          "selector": "button[value=\"View\"]"
         },
         "viewjobhistory": {
           "type": "action"
