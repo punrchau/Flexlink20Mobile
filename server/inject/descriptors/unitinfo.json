@@ -67,7 +67,11 @@
     },
     "productcategory": {
       "type": "string",
-      "label": "Radio"
+      "label": "Radio",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     },
     "productmodel": {
       "type": "string",
