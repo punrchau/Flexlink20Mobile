@@ -1,18 +1,13 @@
 {
-  "productcategory": {
-    "selected": {
-      "label": "Radio 1",
-      "value": 1
-    },
-    "options": [
-      {
-        "label": "Radio 1",
-        "value": 1
-      },
-      {
-        "label": "Radio 2",
-        "value": 2
-      }
-    ]
-  }
+  "serialnumber":"SN-000001",
+  "machinetype":"Test",
+  "imei1":"IMEI0001",
+  "imei2":"IMEI0002",
+  "manufaturer":"Mobile",
+  "productcategory":"Mobile",
+  "productmodel":"A10-80",
+  "skuormtm":"ZAOQOO01",
+  "warrantystatus":"OOW",
+  "warrantyexpirydate":"08-Sep-2017",
+  "dateofpurchase":"08-Sep-2016"
 }
