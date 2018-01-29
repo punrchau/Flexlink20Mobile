@@ -99,7 +99,7 @@
         ]
       },
       "selector": {
-        "fn": "function(node){return document.querySelectorAll('#ServiceType Option[selected=\"selected\"]')[1]}",
+        "fn": "function(node){return document.querySelectorAll('#ProductModelSKU Option[selected=\"selected\"]')[1]}",
         "selector": ""
       }
     },
