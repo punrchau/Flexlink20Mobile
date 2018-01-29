@@ -97,6 +97,10 @@
         "action": [
           "submit"
         ]
+      },
+      "selector": {
+        "fn": "",
+        "selector": ""
       }
     },
     "warrantystatus": {
