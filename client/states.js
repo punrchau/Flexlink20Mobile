@@ -141,5 +141,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.unitinfo', {
+        views: {
+            app: {
+                controller: 'app_unitinfo',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.unitinfo');
+                }
+            }
+        }
     });
 });

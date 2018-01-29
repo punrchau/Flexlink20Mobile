@@ -103,6 +103,13 @@
       "sourceScreenId": "app.formsmall.formsmallcool",
       "sourceAppId": "universaltemplates",
       "model": "jobinfo"
+    },
+    {
+      "id": "unitinfo",
+      "name": "UnitInfo",
+      "sourceScreenId": "app.formsmall.formsmallclassic",
+      "sourceAppId": "universaltemplates",
+      "model": "unitinfo"
     }
   ],
   "sourceAppId": "_blank",
