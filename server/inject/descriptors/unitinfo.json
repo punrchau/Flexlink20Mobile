@@ -23,7 +23,8 @@
           "submit"
         ]
       },
-      "selector": "#MachineType"
+      "selector": "#MachineType",
+      "control": "text"
     },
     "imei1": {
       "type": "string",
