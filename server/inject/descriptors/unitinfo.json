@@ -153,7 +153,7 @@
     },
     "isunitinfo": {
       "type": "identifier",
-      "selector": "h3",
+      "selector": "#untInfo > div:nth-child(2) > h3",
       "control": "exists",
       "selectContains": "Unit Information"
     }
