@@ -1,15 +1,17 @@
 <ion-view data-comp-id="ionic-view.1">
     <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1">
         <ion-nav-buttons side="left">
-            <button class="button button-icon ion-ios-arrow-left" data-comp-id="button.1" ng-click="app.action('jobinfo', 'cancel', this)"></button>
+            <button class="button button-icon ion-ios-arrow-left" data-comp-id="button.1"
+                ng-click="app.action('jobinfo', 'cancel', this)"></button>
         </ion-nav-buttons>
-        <ion-nav-title data-comp-id="nav-title.1">Job Information</ion-nav-title>
+        <ion-nav-title data-comp-id="nav-title.1">Unit Information</ion-nav-title>
         <ion-nav-buttons side="right">
             <!--<button class="button button-icon ion-home" data-comp-id="button.2"></button>-->
         </ion-nav-buttons>
     </ion-nav-bar>
     <ion-content class="" data-comp-id="ionic-content.1">
-        <div ata-comp-id="text.1" class=" positive" style="font-size: 12px; font-style: italic;">
+        <div ata-comp-id="text.1" class=" positive"
+            style="font-size: 12px; font-style: italic;">
             &lt;&lt; IND-JOB#-000000013 (Ramkewal Chauhan) &gt;&gt;
         </div>
         <svg height="1" width="400">
@@ -17,72 +19,75 @@
         </svg>
         <!--Form Contents-->
         <div data-comp-id="div.1" style="margin: 2% 2% 2%;">
-            <label class="item item-input light-bg" data-comp-id="textInput.1" style="height:35px">
+            <label class="item item-input light-bg" data-comp-id="textInput.1"
+                style="height:35px">
                 <div class="labelstyle">
-                    <span style="text-align:right;">Service Job No :</span>
+                    <span style="text-align:right;">Serial Number :</span>
                 </div>
-                <input id="textstyle" ng-model="data.jobnumber" type="text">
+                <input id="textstyle" ng-model="data.serialnumber" type="text">
             </label>
             <label class="item item-input" data-comp-id="textInput.2" style="height:35px">
                 <div class="labelstyle">
-                    <span>Ticket Number :</span>
+                    <span>Machine Type :</span>
                 </div>
-                <input id="textstyle" ng-model="data.ticketnumber" type="text">
+                <input id="textstyle" ng-model="data.machinetype" type="text">
             </label>
             <label class="item item-input" data-comp-id="textInput.3" style="height:35px">
                 <div class="labelstyle">
-                    <span>Job Creation Date :
+                    <span>IMEI 1 :
                     </span>
                 </div>
-                <input id="textstyle" ng-model="data.jobcreationdate" type="text">
+                <input id="textstyle" ng-model="data.imei1" type="text">
             </label>
-            <label class="item item-input light-bg" data-comp-id="textInput.4" style="height:35px">
+            <label class="item item-input light-bg" data-comp-id="textInput.4"
+                style="height:35px">
                 <div class="labelstyle">
-                    <span>Repair Status :</span>
+                    <span>IMEI 2 :</span>
                 </div>
-                <input id="textstyle" ng-model="data.repairstatus" type="text">
+                <input id="textstyle" ng-model="data.imei2" type="text">
             </label>
             <label class="item item-input" data-comp-id="textInput.5" style="height:35px">
                 <div class="labelstyle">
-                    <span>Priority :</span>
+                    <span>Manufaturer :</span>
                 </div>
-                <input id="textstyle" ng-model="data.priority" type="text">
+                <input id="textstyle" ng-model="data.manufaturer" type="text">
             </label>
             <label class="item item-input" data-comp-id="textInput.6" style="height:35px">
                 <div class="labelstyle">
-                    <span>Problem Category :</span>
+                    <span>Product Category :</span>
                 </div>
-                <input id="textstyle" ng-model="data.problemcategory" type="text">
+                <input id="textstyle" ng-model="data.productcategory" type="text">
             </label>
-            <label class="item item-input light-bg" data-comp-id="textInput.7" style="height:35px">
+            <label class="item item-input light-bg" data-comp-id="textInput.7"
+                style="height:35px">
                 <div class="labelstyle">
-                    <span>Problem Description:</span>
+                    <span>Product Model :</span>
                 </div>
-                <input id="textstyle" ng-model="data.problemdescription" type="text">
+                <input id="textstyle" ng-model="data.productmodel" type="text">
             </label>
             <label class="item item-input" data-comp-id="textInput.8" style="height:35px">
                 <div class="labelstyle">
-                    <span>Is ADP :</span>
+                    <span>SKU(MTM) :</span>
                 </div>
-                <input id="textstyle" ng-model="data.isadp" type="text">
+                <input id="textstyle" ng-model="data.skuormtm" type="text">
             </label>
             <label class="item item-input" data-comp-id="textInput.9" style="height:35px">
                 <div class="labelstyle">
-                    <span>Service Type :</span>
+                    <span>Warranty Status :</span>
                 </div>
-                <input id="textstyle" ng-model="data.servicetype" type="text">
+                <input id="textstyle" ng-model="data.warrantystatus" type="text">
             </label>
             <label class="item item-input" data-comp-id="textInput.10" style="height:35px">
                 <div class="labelstyle">
-                    <span>Service Model :</span>
+                    <span>Warranty Expiry Date :</span>
                 </div>
-                <input id="textstyle" ng-model="data.servicemodel" type="text">
+                <input id="textstyle" ng-model="data.warrantyexpirydate" type="text">
             </label>
             <label class="item item-input" data-comp-id="textInput.11" style="height:35px">
                 <div class="labelstyle">
-                    <span>Software Version :</span>
+                    <span>Date of Purchase :</span>
                 </div>
-                <input id="textstyle" ng-model="data.softwareversion" type="text">
+                <input id="textstyle" ng-model="data.dateofpurchase" type="text">
             </label>
         </div>
     </ion-content>
