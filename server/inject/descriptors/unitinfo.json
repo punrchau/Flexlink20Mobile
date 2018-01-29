@@ -147,8 +147,8 @@
       "type": "action",
       "control": "action.button",
       "selector": {
-        "fn": "function(node){document.querySelector('#unitDetailsModel1 > div > div > div.modal-header > button').click()}",
-        "selector": ""
+        "fn": "",
+        "selector": "'#unitDetailsModel1 > div > div > div.modal-header > button"
       }
     },
     "isunitinfo": {
