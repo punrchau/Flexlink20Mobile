@@ -84,7 +84,7 @@
         ]
       },
       "selector": {
-        "fn": "function(node){return document.querySelectorAll('#ServiceType Option[selected=\"selected\"]')[1]}",
+        "fn": "function(node){return document.querySelectorAll('#ProductModel Option[selected=\"selected\"]')[1]}",
         "selector": ""
       }
     },
