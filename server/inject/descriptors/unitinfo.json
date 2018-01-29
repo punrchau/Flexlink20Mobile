@@ -61,7 +61,7 @@
       },
       "control": "text",
       "selector": {
-        "fn": "function(node){return document.querySelectorAll('#ServiceType Option[selected=\"selected\"]')[1]}",
+        "fn": "function(node){return document.querySelectorAll('#OEMBrand Option[selected=\"selected\"]')[1]}",
         "selector": ""
       }
     },
