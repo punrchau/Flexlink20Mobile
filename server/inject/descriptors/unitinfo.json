@@ -68,10 +68,7 @@
     "productcategory": {
       "type": "string",
       "label": "Radio",
-      "selector": {
-        "fn": "function(node){return document.querySelectorAll('#ServiceType Option[selected=\"selected\"]')[1]}",
-        "selector": ""
-      }
+      "selector": "#ProductCategory"
     },
     "productmodel": {
       "type": "string",
