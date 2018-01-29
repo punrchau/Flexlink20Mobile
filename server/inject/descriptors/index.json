@@ -5,9 +5,9 @@
   "ChangePartQuantity.json",
   "UploadImage.json",
   "PartReceiveDetails.json",
+  "unitinfo.json",
   "repairjob.json",
   "servicejob.json",
-  "unitinfo.json",
   "jobdetails.json",
   "jobinfo.json"
 ]
