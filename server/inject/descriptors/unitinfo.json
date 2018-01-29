@@ -69,7 +69,7 @@
       "type": "string",
       "label": "Radio",
       "selector": {
-        "fn": "",
+        "fn": "function(node){return document.querySelectorAll('#ServiceType Option[selected=\"selected\"]')[1]}",
         "selector": ""
       }
     },
