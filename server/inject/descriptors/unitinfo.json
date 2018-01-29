@@ -147,7 +147,7 @@
       "type": "action",
       "control": "action.link",
       "selector": {
-        "fn": "",
+        "fn": "function(node){document.querySelectorAll('#unitDetailsModel > div > div > div.modal-header > button')[0].click()}",
         "selector": ""
       }
     },
