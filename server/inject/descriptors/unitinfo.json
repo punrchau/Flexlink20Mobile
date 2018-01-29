@@ -152,7 +152,7 @@
       "type": "identifier",
       "selector": "h3",
       "control": "exists",
-      "selectContains": "Unit Details"
+      "selectContains": "Unit Information"
     }
   },
   "connect": [],
