@@ -110,7 +110,7 @@
       "type": "action"
     },
     "isunitinfo": {
-      "type": "string",
+      "type": "identifier",
       "selector": "#masterBody",
       "control": "property.innerText"
     }
