@@ -139,7 +139,8 @@
         "action": [
           "submit"
         ]
-      }
+      },
+      "selector": ".col-lg-4.col-md-4"
     },
     "cancel": {
       "type": "action"
