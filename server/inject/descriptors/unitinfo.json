@@ -35,7 +35,8 @@
           "submit"
         ]
       },
-      "selector": "#IMEINumber1"
+      "selector": "#IMEINumber1",
+      "control": "text"
     },
     "imei2": {
       "type": "string",
