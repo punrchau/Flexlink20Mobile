@@ -34,7 +34,8 @@
         "action": [
           "submit"
         ]
-      }
+      },
+      "selector": "#IMEINumber1"
     },
     "imei2": {
       "type": "string",
