@@ -158,6 +158,15 @@
       "selectContains": "Unit Information"
     }
   },
-  "connect": [],
+  "connect": [
+    {
+      "match": [
+        "isunitinfo"
+      ],
+      "screens": [
+        "unitinfo"
+      ]
+    }
+  ],
   "selector": ".modal-body.ng-scope"
 }
