@@ -108,6 +108,11 @@
     },
     "cancel": {
       "type": "action"
+    },
+    "isunitinfo": {
+      "type": "string",
+      "selector": "#masterBody",
+      "control": "property.innerText"
     }
   },
   "connect": []
