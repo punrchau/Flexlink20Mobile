@@ -168,5 +168,5 @@
       ]
     }
   ],
-  "selector": ".modal-dialog.ertical-align-center.model-dialog-broad-width"
+  "selector": "#unitDetailsModel > div"
 }
