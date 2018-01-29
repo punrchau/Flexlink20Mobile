@@ -840,7 +840,10 @@
     "type": "object",
     "comment": "Forms",
     "properties": {
-      "string": {
+      "submit": {
+        "type": "action"
+      },
+      "serialnumber": {
         "type": "string",
         "label": "TextInput",
         "update": {
@@ -850,7 +853,7 @@
           ]
         }
       },
-      "string2": {
+      "machinetype": {
         "type": "string",
         "label": "TextInput",
         "update": {
@@ -860,7 +863,7 @@
           ]
         }
       },
-      "string3": {
+      "imei1": {
         "type": "string",
         "label": "TextArea",
         "update": {
@@ -870,8 +873,8 @@
           ]
         }
       },
-      "multiSelectData": {
-        "type": "select",
+      "imei2": {
+        "type": "string",
         "label": "MultiSelect",
         "update": {
           "type": "action",
@@ -880,8 +883,8 @@
           ]
         }
       },
-      "multiSelectData2": {
-        "type": "select",
+      "manufacturer": {
+        "type": "string",
         "label": "MultiSelect",
         "update": {
           "type": "action",
@@ -890,12 +893,12 @@
           ]
         }
       },
-      "radioData": {
-        "type": "select",
+      "productcategory": {
+        "type": "string",
         "label": "Radio"
       },
-      "boolean": {
-        "type": "boolean",
+      "productmodel": {
+        "type": "string",
         "label": "CheckBoxes",
         "update": {
           "type": "action",
@@ -904,8 +907,8 @@
           ]
         }
       },
-      "boolean2": {
-        "type": "boolean",
+      "skuormtm": {
+        "type": "string",
         "label": "CheckBoxes",
         "update": {
           "type": "action",
@@ -914,8 +917,8 @@
           ]
         }
       },
-      "date": {
-        "type": "date",
+      "warrantystatus": {
+        "type": "string",
         "label": "Date",
         "update": {
           "type": "action",
@@ -924,8 +927,8 @@
           ]
         }
       },
-      "time": {
-        "type": "time",
+      "warrantyexpirydate": {
+        "type": "string",
         "label": "Time",
         "update": {
           "type": "action",
@@ -934,7 +937,7 @@
           ]
         }
       },
-      "name": {
+      "dateofpurchase": {
         "type": "string",
         "label": "Name",
         "update": {
@@ -943,29 +946,6 @@
             "submit"
           ]
         }
-      },
-      "email": {
-        "type": "string",
-        "label": "Email",
-        "update": {
-          "type": "action",
-          "action": [
-            "submit"
-          ]
-        }
-      },
-      "phone": {
-        "type": "string",
-        "label": "Phone",
-        "update": {
-          "type": "action",
-          "action": [
-            "submit"
-          ]
-        }
-      },
-      "submit": {
-        "type": "action"
       }
     }
   }
