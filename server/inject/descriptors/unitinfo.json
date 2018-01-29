@@ -59,7 +59,7 @@
           "submit"
         ]
       },
-      "control": "text",
+      "control": "property.innerHTML",
       "selector": {
         "fn": "function(node){return document.querySelectorAll('#OEMBrand Option[selected=\"selected\"]')[1]}",
         "selector": ""
