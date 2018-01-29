@@ -146,7 +146,7 @@
     "cancel": {
       "type": "action",
       "selector": "#unitDetailsModel > div > div > div.modal-header > button",
-      "control": "action.button"
+      "control": "action.link"
     },
     "isunitinfo": {
       "type": "identifier",
