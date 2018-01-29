@@ -68,7 +68,8 @@
     "productcategory": {
       "type": "string",
       "label": "Radio",
-      "selector": "#ProductCategory"
+      "selector": "#ProductCategory",
+      "control": "property.innerText"
     },
     "productmodel": {
       "type": "string",
