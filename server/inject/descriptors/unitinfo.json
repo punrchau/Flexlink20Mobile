@@ -22,7 +22,8 @@
         "action": [
           "submit"
         ]
-      }
+      },
+      "selector": "#MachineType"
     },
     "imei1": {
       "type": "string",
