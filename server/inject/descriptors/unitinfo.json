@@ -144,7 +144,8 @@
       "control": "text"
     },
     "cancel": {
-      "type": "action"
+      "type": "action",
+      "selector": "span"
     },
     "isunitinfo": {
       "type": "identifier",
