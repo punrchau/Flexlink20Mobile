@@ -115,5 +115,6 @@
       "control": "property.innerText"
     }
   },
-  "connect": []
+  "connect": [],
+  "selector": ".modal-body.ng-scope"
 }
