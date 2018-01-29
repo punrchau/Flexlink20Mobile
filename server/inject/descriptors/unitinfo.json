@@ -116,7 +116,8 @@
       "selector": {
         "fn": "function(node){return document.querySelectorAll('#WarrantyType Option[selected=\"selected\"]')[1]}",
         "selector": ""
-      }
+      },
+      "control": "property.innerText"
     },
     "warrantyexpirydate": {
       "type": "string",
