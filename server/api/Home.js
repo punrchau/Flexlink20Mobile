@@ -38,6 +38,9 @@ exports.viewJobInfo = function(page, params) {
     page.action('jobdetails', 'actions.jobinfo');
 }
 
+exports.viewUnitInfo = function(page, params) {
+    page.action('jobdetails', 'actions.unitinfo');
+}
 
 //upload picture of damaged part to website
 exports.uploadImage = function (page, params) {
