@@ -21,7 +21,11 @@ function app_jobdetails($scope, app) {
     
      $scope.viewJobInfo = function () {
           app.call('Home.viewJobInfo', {});
-    }
+    };
+     $scope.viewUnitInfo = function () {
+          app.call('Home.viewUnitInfo', {});
+    };
+    
     
     /* $scope.goToServiceJob = function () {
      if (window.mocks) {
