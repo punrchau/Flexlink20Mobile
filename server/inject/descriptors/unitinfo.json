@@ -168,5 +168,5 @@
       ]
     }
   ],
-  "selector": ".modal-body.ng-scope"
+  "selector": "#masterBody"
 }
