@@ -59,7 +59,11 @@
           "submit"
         ]
       },
-      "control": "text"
+      "control": "text",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     },
     "productcategory": {
       "type": "string",
