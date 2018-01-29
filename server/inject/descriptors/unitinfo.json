@@ -147,7 +147,7 @@
       "type": "action",
       "control": "action.button",
       "selector": {
-        "fn": "function(node){document.querySelectorAll('#unitDetailsModel > div > div > div.modal-header > button')[0].click()}",
+        "fn": "function(node){document.querySelector('#unitDetailsModel > div > div > div.modal-header > button').click()}",
         "selector": ""
       }
     },
