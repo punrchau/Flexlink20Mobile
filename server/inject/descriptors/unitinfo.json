@@ -58,7 +58,8 @@
         "action": [
           "submit"
         ]
-      }
+      },
+      "selector": "#OEMBrand"
     },
     "productcategory": {
       "type": "string",
