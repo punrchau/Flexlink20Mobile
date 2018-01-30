@@ -95,7 +95,7 @@
       "selectContains": "Pickup Address"
     },
     "close": {
-      "type": "select",
+      "type": "action",
       "selector": "#DeliveryCountry",
       "control": "select"
     }
