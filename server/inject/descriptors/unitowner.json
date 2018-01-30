@@ -15,8 +15,8 @@
     "pickupcity": {
       "type": "string",
       "selector": {
-        "fn": "function(node){return document.querySelectorAll('#ServiceType Option[selected=\"selected\"]')[1]}",
-        "selector": "#PermanentCity"
+        "fn": "function(node){return document.querySelectorAll('#PermanentCity Option[selected=\"selected\"]')[1]}",
+        "selector": ""
       },
       "control": "text"
     },
