@@ -96,7 +96,7 @@
     },
     "close": {
       "type": "action",
-      "control": "select"
+      "control": "action.button"
     }
   },
   "connect": [],
