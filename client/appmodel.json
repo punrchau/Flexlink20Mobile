@@ -953,29 +953,44 @@
     "type": "object",
     "comment": "TableView",
     "properties": {
-      "listItems": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "description": {
-              "type": "string",
-              "label": "description"
-            },
-            "name": {
-              "type": "string",
-              "label": "ListItemName"
-            },
-            "date": {
-              "type": "string",
-              "label": "Date - Time"
-            },
-            "action": {
-              "type": "action"
-            }
-          }
-        },
-        "label": "ListItems"
+      "pickupaddress1": {
+        "type": "string"
+      },
+      "pickupaddress2": {
+        "type": "string"
+      },
+      "pickupcity": {
+        "type": "string"
+      },
+      "pickupstate": {
+        "type": "string"
+      },
+      "pickupzipcode": {
+        "type": "string"
+      },
+      "pickupcountry": {
+        "type": "string"
+      },
+      "deliverymethod": {
+        "type": "string"
+      },
+      "deliveryaddress1": {
+        "type": "string"
+      },
+      "deliveryaddress2": {
+        "type": "string"
+      },
+      "deliverycity": {
+        "type": "string"
+      },
+      "deliverystate": {
+        "type": "string"
+      },
+      "deliverycountry": {
+        "type": "string"
+      },
+      "deliveryzipcode": {
+        "type": "string"
       }
     }
   }
