@@ -97,7 +97,7 @@
     "close": {
       "type": "action",
       "control": "action.button",
-      "selector": "span"
+      "selector": ".close"
     }
   },
   "connect": [],
