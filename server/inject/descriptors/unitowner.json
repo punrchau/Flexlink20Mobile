@@ -22,7 +22,6 @@
     },
     "pickupstate": {
       "type": "string",
-      "selector": "#PickupState",
       "control": "property.innerHTML"
     },
     "pickupzipcode": {
