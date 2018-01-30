@@ -24,7 +24,7 @@
       "type": "string",
       "control": "property.innerHTML",
       "selector": {
-        "fn": "",
+        "fn": "function(node){return document.querySelectorAll('#PickupCity Option[selected=\"selected\"]')[1]}",
         "selector": ""
       }
     },
