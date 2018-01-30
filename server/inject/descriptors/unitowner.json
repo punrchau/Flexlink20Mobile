@@ -68,7 +68,11 @@
       "control": "property.innerHTML"
     },
     "deliverystate": {
-      "type": "string"
+      "type": "string",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     },
     "deliverycountry": {
       "type": "string"
