@@ -8,7 +8,8 @@
       "control": "text"
     },
     "pickupaddress2": {
-      "type": "string"
+      "type": "string",
+      "selector": "#PermanentAddress2"
     },
     "pickupcity": {
       "type": "string"
