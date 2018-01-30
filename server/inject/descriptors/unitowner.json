@@ -42,7 +42,11 @@
       "control": "property.innerHTML"
     },
     "deliverymethod": {
-      "type": "string"
+      "type": "string",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     },
     "deliveryaddress1": {
       "type": "string"
