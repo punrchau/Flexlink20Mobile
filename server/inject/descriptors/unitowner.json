@@ -70,7 +70,8 @@
     },
     "deliveryzipcode": {
       "type": "string",
-      "selector": "#DeliveryZipCode"
+      "selector": "#DeliveryZipCode",
+      "control": "text"
     },
     "isunitowner": {
       "type": "identifier",
