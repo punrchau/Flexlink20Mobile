@@ -45,7 +45,7 @@
     },
     "isunitowner": {
       "type": "identifier",
-      "selector": "#PickupAddress1",
+      "selector": "h3",
       "control": "text"
     }
   },
