@@ -78,7 +78,7 @@
     "deliverycountry": {
       "type": "string",
       "selector": {
-        "fn": "DeliveryState;",
+        "fn": "function(node){return document.querySelectorAll('#DeliveryMethodID Option[selected=\"selected\"]')[1]}",
         "selector": ""
       }
     },
