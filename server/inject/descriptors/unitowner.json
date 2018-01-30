@@ -9,7 +9,8 @@
     },
     "pickupaddress2": {
       "type": "string",
-      "selector": "#PermanentAddress2"
+      "selector": "#PermanentAddress2",
+      "control": "text"
     },
     "pickupcity": {
       "type": "string"
