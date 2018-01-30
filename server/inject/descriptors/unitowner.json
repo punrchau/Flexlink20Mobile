@@ -62,7 +62,7 @@
     "deliverycity": {
       "type": "string",
       "selector": {
-        "fn": "function(node){return document.querySelectorAll('#DeliveryMethodID Option[selected=\"selected\"]')[1]}",
+        "fn": "function(node){return document.querySelectorAll('#DeliveryCity Option[selected=\"selected\"]')[1]}",
         "selector": ""
       }
     },
