@@ -64,7 +64,8 @@
       "selector": {
         "fn": "function(node){return document.querySelectorAll('#DeliveryCity Option[selected=\"selected\"]')[1]}",
         "selector": ""
-      }
+      },
+      "control": "property.innerHTML"
     },
     "deliverystate": {
       "type": "string"
