@@ -51,7 +51,8 @@
     },
     "deliveryaddress1": {
       "type": "string",
-      "selector": "#DeliveryAddress1"
+      "selector": "#DeliveryAddress1",
+      "control": "text"
     },
     "deliveryaddress2": {
       "type": "string"
