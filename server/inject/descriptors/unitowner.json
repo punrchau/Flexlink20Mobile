@@ -100,6 +100,15 @@
       "selector": "#unitOwnerDetailsModel > div > div > div.modal-header > button"
     }
   },
-  "connect": [],
+  "connect": [
+    {
+      "match": [
+        "isunitowner"
+      ],
+      "screens": [
+        "unitowner"
+      ]
+    }
+  ],
   "selector": "#unitOwnerDetailsModel > div > div"
 }
