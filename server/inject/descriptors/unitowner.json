@@ -4,7 +4,8 @@
   "properties": {
     "pickupaddress1": {
       "type": "string",
-      "selector": "#PickupAddress1"
+      "selector": "#PickupAddress1",
+      "control": "text"
     },
     "pickupaddress2": {
       "type": "string"
