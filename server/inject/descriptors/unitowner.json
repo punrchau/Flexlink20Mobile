@@ -80,7 +80,8 @@
       "selector": {
         "fn": "function(node){return document.querySelectorAll('#DeliveryCountry Option[selected=\"selected\"]')[1]}",
         "selector": ""
-      }
+      },
+      "control": "property.innerHTML"
     },
     "deliveryzipcode": {
       "type": "string",
