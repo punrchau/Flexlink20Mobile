@@ -14,7 +14,8 @@
     },
     "pickupcity": {
       "type": "string",
-      "selector": "#PermanentCity"
+      "selector": "#PermanentCity",
+      "control": "text"
     },
     "pickupstate": {
       "type": "string"
