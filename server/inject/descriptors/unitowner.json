@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "comment": "TableView",
+  "comment": "Forms",
   "properties": {
     "pickupaddress1": {
       "type": "string"
