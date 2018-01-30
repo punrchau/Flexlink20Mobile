@@ -991,6 +991,9 @@
       },
       "deliveryzipcode": {
         "type": "string"
+      },
+      "close": {
+        "type": "action"
       }
     }
   }
