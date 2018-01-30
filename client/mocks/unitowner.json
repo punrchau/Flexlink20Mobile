@@ -1,5 +1,7 @@
 {
-    "pickupaddress1": "Kothrud",  
+    "listItems":[
+        {
+            "pickupaddress1": "Kothrud",  
     "pickupaddress2": "Pune",
     "pickupcity": "Pune1",
     "pickupstate": "Mahashratra",  
@@ -12,4 +14,6 @@
     "deliverystate": "Uttar Pradesh",
     "deliverycountry": "India",
     "deliveryzipcode": "277123"
+        }
+    ]
 }
