@@ -72,7 +72,8 @@
       "selector": {
         "fn": "function(node){return document.querySelectorAll('#DeliveryState Option[selected=\"selected\"]')[1]}",
         "selector": ""
-      }
+      },
+      "control": "property.innerHTML"
     },
     "deliverycountry": {
       "type": "string"
