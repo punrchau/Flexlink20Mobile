@@ -42,6 +42,10 @@ exports.viewUnitInfo = function(page, params) {
     page.action('jobdetails', 'actions.unitinfo');
 }
 
+exports.viewUnitOwnerInfo = function(page, params) {
+    page.action('jobdetails', 'actions.ownerinfo');
+}
+
 //upload picture of damaged part to website
 exports.uploadImage = function (page, params) {
     var base64Data = params.base64string.split(',').pop();
