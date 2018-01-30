@@ -44,7 +44,7 @@
       "type": "string"
     },
     "isunitowner": {
-      "type": "string",
+      "type": "identifier",
       "selector": "#PickupAddress1",
       "control": "text"
     }
