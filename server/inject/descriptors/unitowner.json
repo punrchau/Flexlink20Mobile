@@ -15,7 +15,7 @@
     "pickupcity": {
       "type": "string",
       "selector": {
-        "fn": "function(node){return document.querySelectorAll('#PermanentCity Option[selected=\"selected\"]')[1]}",
+        "fn": "function(node){return document.querySelectorAll('#PermanentCity Option[selected=\"selected\"]')[1].innerText}",
         "selector": ""
       },
       "control": "text"
