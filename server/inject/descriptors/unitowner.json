@@ -55,7 +55,8 @@
       "control": "text"
     },
     "deliveryaddress2": {
-      "type": "string"
+      "type": "string",
+      "selector": "#DeliveryAddress2"
     },
     "deliverycity": {
       "type": "string"
