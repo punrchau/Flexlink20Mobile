@@ -21,7 +21,11 @@
       "control": "property.innerHTML"
     },
     "pickupstate": {
-      "type": "string"
+      "type": "string",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     },
     "pickupzipcode": {
       "type": "string"
