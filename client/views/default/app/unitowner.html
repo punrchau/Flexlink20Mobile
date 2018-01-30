@@ -25,6 +25,19 @@
                     <div data-comp-id="text.6" ng-bind="item.pickupcountry">Some text</div>
                     <div data-comp-id="text.7" ng-bind="item.deliverymethod">Some text</div>
                 </div>-->
+                <label class="item item-input light-bg" data-comp-id="textInput.1"
+                    style="height:35px">
+                    <div class="labelstyle">
+                        <span style="text-align:right;">Service Job No :</span>
+                    </div>
+                    <input id="textstyle" ng-model="data.jobnumber" type="text">
+                </label>
+                <label class="item item-input" data-comp-id="textInput.2" style="height:35px">
+                    <div class="labelstyle">
+                        <span>Ticket Number :</span>
+                    </div>
+                    <input id="textstyle" ng-model="data.ticketnumber" type="text">
+                </label>
             </div>
         </ion-list>
     </ion-content>
