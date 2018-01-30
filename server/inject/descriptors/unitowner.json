@@ -43,5 +43,5 @@
     }
   },
   "connect": [],
-  "selector": ".modal-dialog.ertical-align-center.model-dialog-broad-width"
+  "selector": ".modal-content"
 }
