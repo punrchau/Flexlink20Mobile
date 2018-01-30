@@ -18,7 +18,7 @@
         "fn": "function(node){return document.querySelectorAll('#PermanentCity Option[selected=\"selected\"]')[1]}",
         "selector": ""
       },
-      "control": "text"
+      "control": "property.innerHTML"
     },
     "pickupstate": {
       "type": "string"
