@@ -7,8 +7,8 @@
   "PartReceiveDetails.json",
   "unitinfo.json",
   "repairjob.json",
+  "unitowner.json",
   "servicejob.json",
   "jobdetails.json",
-  "jobinfo.json",
-  "unitowner.json"
+  "jobinfo.json"
 ]
