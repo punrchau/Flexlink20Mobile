@@ -76,7 +76,11 @@
       "control": "property.innerHTML"
     },
     "deliverycountry": {
-      "type": "string"
+      "type": "string",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     },
     "deliveryzipcode": {
       "type": "string",
