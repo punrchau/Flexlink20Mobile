@@ -34,7 +34,7 @@
     "pickupcountry": {
       "type": "string",
       "selector": {
-        "fn": "function(node){return document.querySelectorAll('#PickupCity Option[selected=\"selected\"]')[1]}",
+        "fn": "function(node){return document.querySelectorAll('#PickupCountry Option[selected=\"selected\"]')[1]}",
         "selector": ""
       }
     },
