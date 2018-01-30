@@ -12,8 +12,7 @@
         <ion-list data-comp-id="ionic-list.1" type=" stable-bg">
             <div class=" light-bg" data-comp-id="div.1"
                 style="margin: 5px 10px; border-radius: 10px;">
-                <div class="row energized fontformate" data-comp-id="row.1"
-                    style="margin: 0px; padding: 0px;">
+                <div class="row energized fontformate">
                     Pickup Address
                 </div>
                 <!-- <div class="col" data-comp-id="column.1" style="padding: 10px;">
@@ -25,19 +24,48 @@
                     <div data-comp-id="text.6" ng-bind="item.pickupcountry">Some text</div>
                     <div data-comp-id="text.7" ng-bind="item.deliverymethod">Some text</div>
                 </div>-->
-                <label class="item item-input light-bg" data-comp-id="textInput.1"
-                    style="height:35px">
-                    <div class="labelstyle">
-                        <span style="text-align:right;">Service Job No :</span>
+                <div class="row" style="margin-top:5px">
+                    <div class="col labelstyle">
+                        <span>Address1 :</span>
                     </div>
-                    <input id="textstyle" ng-model="data.pickupaddress1" type="text">
-                </label>
-                <label class="item item-input" data-comp-id="textInput.2" style="height:35px">
-                    <div class="labelstyle">
-                        <span>Ticket Number :</span>
+                    <input class="col" id="textstyle" ng-model="data.pickupaddress1" type="text">
+                </div>
+                <div class="row">
+                    <div class="col labelstyle">
+                        <span>Address1 :</span>
                     </div>
-                    <input id="textstyle" ng-model="data.pickupaddress2" type="text">
-                </label>
+                    <input class="col" id="textstyle" ng-model="data.pickupaddress2" type="text">
+                </div>
+                <div class="row">
+                    <div class="col labelstyle">
+                        <span>City :</span>
+                    </div>
+                    <input class="col" id="textstyle" ng-model="data.pickupcity" type="text">
+                </div>
+                <div class="row">
+                    <div class="col labelstyle">
+                        <span>State :</span>
+                    </div>
+                    <input class="col" id="textstyle" ng-model="data.pickupstate" type="text">
+                </div>
+                <div class="row">
+                    <div class="col labelstyle">
+                        <span>Zip Code :</span>
+                    </div>
+                    <input class="col" id="textstyle" ng-model="data.pickupzipcode" type="text">
+                </div>
+                <div class="row">
+                    <div class="col labelstyle">
+                        <span>Country :</span>
+                    </div>
+                    <input class="col" id="textstyle" ng-model="data.pickupcountry" type="text">
+                </div>
+                <div class="row">
+                    <div class="col labelstyle">
+                        <span>Delivery Method :</span>
+                    </div>
+                    <input class="col" id="textstyle" ng-model="data.deliverymethod" type="text">
+                </div>
             </div>
         </ion-list>
     </ion-content>
