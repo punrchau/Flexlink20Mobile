@@ -23,7 +23,7 @@
     "pickupstate": {
       "type": "string",
       "selector": {
-        "fn": "",
+        "fn": "function(node){return document.querySelectorAll('#PermanentCity Option[selected=\"selected\"]')[1]}",
         "selector": ""
       }
     },
