@@ -44,7 +44,7 @@
     "deliverymethod": {
       "type": "string",
       "selector": {
-        "fn": "",
+        "fn": "function(node){return document.querySelectorAll('#PickupCountry Option[selected=\"selected\"]')[1]}",
         "selector": ""
       }
     },
