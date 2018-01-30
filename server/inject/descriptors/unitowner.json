@@ -78,7 +78,7 @@
     "deliverycountry": {
       "type": "string",
       "selector": {
-        "fn": "",
+        "fn": "DeliveryState;",
         "selector": ""
       }
     },
