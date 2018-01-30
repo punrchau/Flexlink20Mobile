@@ -43,5 +43,5 @@
     }
   },
   "connect": [],
-  "selector": ".modal-content"
+  "selector": "#unitOwnerDetailsModel > div > div"
 }
