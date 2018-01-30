@@ -22,10 +22,7 @@
     },
     "pickupstate": {
       "type": "string",
-      "selector": {
-        "fn": "function(node){return document.querySelectorAll('#PermanentCity Option[selected=\"selected\"]')[1]}",
-        "selector": ""
-      }
+      "selector": "#PermanentState"
     },
     "pickupzipcode": {
       "type": "string"
