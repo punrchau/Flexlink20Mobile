@@ -30,7 +30,8 @@
     },
     "pickupzipcode": {
       "type": "string",
-      "selector": "#PickupZipCode"
+      "selector": "#PickupZipCode",
+      "control": "text"
     },
     "pickupcountry": {
       "type": "string",
