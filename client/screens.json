@@ -110,6 +110,13 @@
       "sourceScreenId": "app.formsmall.formsmallclassic",
       "sourceAppId": "universaltemplates",
       "model": "unitinfo"
+    },
+    {
+      "id": "unitowner",
+      "name": "UnitOwner",
+      "sourceScreenId": "app.tableview.tabledatacaptivating",
+      "sourceAppId": "universaltemplates",
+      "model": "unitowner"
     }
   ],
   "sourceAppId": "_blank",

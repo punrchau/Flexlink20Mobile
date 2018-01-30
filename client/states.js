@@ -150,5 +150,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.unitowner', {
+        views: {
+            app: {
+                controller: 'app_unitowner',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.unitowner');
+                }
+            }
+        }
     });
 });
