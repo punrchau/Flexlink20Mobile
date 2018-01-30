@@ -13,7 +13,8 @@
       "control": "text"
     },
     "pickupcity": {
-      "type": "string"
+      "type": "string",
+      "selector": "#PermanentCity"
     },
     "pickupstate": {
       "type": "string"
