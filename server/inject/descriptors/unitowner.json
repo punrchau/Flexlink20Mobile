@@ -42,5 +42,6 @@
       "type": "string"
     }
   },
-  "connect": []
+  "connect": [],
+  "selector": ".modal-content"
 }
