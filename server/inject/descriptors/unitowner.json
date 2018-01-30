@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "comment": "TableView",
+  "properties": {
+    "pickupaddress1": {
+      "type": "string"
+    },
+    "pickupaddress2": {
+      "type": "string"
+    },
+    "pickupcity": {
+      "type": "string"
+    },
+    "pickupstate": {
+      "type": "string"
+    },
+    "pickupzipcode": {
+      "type": "string"
+    },
+    "pickupcountry": {
+      "type": "string"
+    },
+    "deliverymethod": {
+      "type": "string"
+    },
+    "deliveryaddress1": {
+      "type": "string"
+    },
+    "deliveryaddress2": {
+      "type": "string"
+    },
+    "deliverycity": {
+      "type": "string"
+    },
+    "deliverystate": {
+      "type": "string"
+    },
+    "deliverycountry": {
+      "type": "string"
+    },
+    "deliveryzipcode": {
+      "type": "string"
+    }
+  },
+  "connect": []
+}

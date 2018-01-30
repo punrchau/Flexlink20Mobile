@@ -9,5 +9,6 @@
   "repairjob.json",
   "servicejob.json",
   "jobdetails.json",
-  "jobinfo.json"
+  "jobinfo.json",
+  "unitowner.json"
 ]
