@@ -36,7 +36,8 @@
       "selector": {
         "fn": "function(node){return document.querySelectorAll('#PickupCountry Option[selected=\"selected\"]')[1]}",
         "selector": ""
-      }
+      },
+      "control": "property.innerHTML"
     },
     "deliverymethod": {
       "type": "string"
