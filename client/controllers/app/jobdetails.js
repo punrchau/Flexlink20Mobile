@@ -28,7 +28,6 @@ function app_jobdetails($scope, app) {
       $scope.viewUnitOwnerInfo = function () {
           app.call('Home.viewUnitOwnerInfo', {});
     };
-    viewUnitOwnerInfo();
     
     
     /* $scope.goToServiceJob = function () {
