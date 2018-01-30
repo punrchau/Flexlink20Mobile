@@ -22,7 +22,11 @@
     },
     "pickupstate": {
       "type": "string",
-      "control": "property.innerHTML"
+      "control": "property.innerHTML",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     },
     "pickupzipcode": {
       "type": "string"
