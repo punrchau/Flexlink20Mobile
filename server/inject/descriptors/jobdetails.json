@@ -47,7 +47,8 @@
           "control": "action.button"
         },
         "ownerinfo": {
-          "type": "action"
+          "type": "action",
+          "selector": ".btn.btn-info.unitDetails.btn-auto-width.ng-scope"
         },
         "btnviewjob": {
           "type": "action",
