@@ -32,7 +32,11 @@
       "type": "string"
     },
     "pickupcountry": {
-      "type": "string"
+      "type": "string",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     },
     "deliverymethod": {
       "type": "string"
