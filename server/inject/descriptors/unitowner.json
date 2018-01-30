@@ -42,6 +42,11 @@
     },
     "deliveryzipcode": {
       "type": "string"
+    },
+    "isunitowner": {
+      "type": "string",
+      "selector": "#PickupAddress1",
+      "control": "text"
     }
   },
   "connect": [],
