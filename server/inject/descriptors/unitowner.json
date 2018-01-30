@@ -29,7 +29,8 @@
       }
     },
     "pickupzipcode": {
-      "type": "string"
+      "type": "string",
+      "selector": "#PickupZipCode"
     },
     "pickupcountry": {
       "type": "string",
