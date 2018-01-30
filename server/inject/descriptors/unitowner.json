@@ -3,7 +3,8 @@
   "comment": "Forms",
   "properties": {
     "pickupaddress1": {
-      "type": "string"
+      "type": "string",
+      "selector": "#PickupAddress1"
     },
     "pickupaddress2": {
       "type": "string"
