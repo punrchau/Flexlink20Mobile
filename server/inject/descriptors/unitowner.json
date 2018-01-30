@@ -96,7 +96,6 @@
     },
     "close": {
       "type": "action",
-      "selector": "#DeliveryCountry",
       "control": "select"
     }
   },
