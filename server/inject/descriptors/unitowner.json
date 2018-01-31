@@ -101,7 +101,7 @@
     },
     "isdeliverysameaspickup": {
       "type": "string",
-      "control": "exists",
+      "control": "property.className",
       "selector": "#untOwnerInfo > div:nth-child(4) > div:nth-child(3)"
     }
   },
