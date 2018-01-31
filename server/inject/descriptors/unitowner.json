@@ -100,7 +100,7 @@
       "selector": "#unitOwnerDetailsModel > div > div > div.modal-header > button"
     },
     "isdeliverysameaspickup": {
-      "type": "string",
+      "type": "boolean",
       "control": "text",
       "selector": {
         "fn": "function(node){if(document.querySelector('#untOwnerInfo > div:nth-child(4) > div:nth-child(3) > div:nth-child(4) > input')=='on'){return true}else{return false}};",
