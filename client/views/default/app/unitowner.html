@@ -74,41 +74,43 @@
                     Delivery Same As Pickup
                     <!-- <ion-checkbox class="" data-comp-id="checkbox.1">Delivery Same As Pickup</ion-checkbox>-->
                 </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>Address 1 :</span>
+                <div ng-show="data.isdeliverysameaspickup">
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Address 1 :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.deliveryaddress1" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.deliveryaddress1" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>Address 2 :</span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Address 2 :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.deliveryaddress2" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.deliveryaddress2" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>City :</span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>City :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.deliverycity" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.deliverycity" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>State :</span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>State :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.deliverystate" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.deliverystate" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>Zip Code :</span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Zip Code :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.deliverycountry" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.deliverycountry" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>Country :</span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Country :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.deliveryzipcode" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.deliveryzipcode" type="text">
                 </div>
             </div>
         </ion-list>
