@@ -98,6 +98,9 @@
       "type": "action",
       "control": "action.button",
       "selector": "#unitOwnerDetailsModel > div > div > div.modal-header > button"
+    },
+    "isdeliverysameaspickup": {
+      "type": "boolean"
     }
   },
   "connect": [
