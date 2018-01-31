@@ -101,7 +101,7 @@
     },
     "isdeliverysameaspickup": {
       "type": "boolean",
-      "control": "text",
+      "control": "checkbox",
       "selector": {
         "fn": "function(node){return document.querySelector('#untOwnerInfo > div:nth-child(4) > div:nth-child(3) > div:nth-child(4) > input').checked};",
         "selector": ""
