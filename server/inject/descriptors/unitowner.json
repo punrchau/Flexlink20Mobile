@@ -100,7 +100,7 @@
       "selector": "#unitOwnerDetailsModel > div > div > div.modal-header > button"
     },
     "isdeliverysameaspickup": {
-      "type": "string",
+      "type": "boolean",
       "control": "property.className",
       "selector": "#untOwnerInfo > div:nth-child(4) > div:nth-child(3)"
     }
