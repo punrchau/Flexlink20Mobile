@@ -101,7 +101,8 @@
     },
     "isdeliverysameaspickup": {
       "type": "boolean",
-      "selector": ".ng-pristine.ng-untouched.ng-valid.ng-empty"
+      "selector": ".ng-pristine.ng-untouched.ng-valid.ng-empty",
+      "control": "checkbox"
     }
   },
   "connect": [
