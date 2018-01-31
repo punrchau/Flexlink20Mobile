@@ -101,7 +101,11 @@
     },
     "isdeliverysameaspickup": {
       "type": "boolean",
-      "control": "checkbox"
+      "control": "checkbox",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     }
   },
   "connect": [
