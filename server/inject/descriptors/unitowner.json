@@ -100,7 +100,8 @@
       "selector": "#unitOwnerDetailsModel > div > div > div.modal-header > button"
     },
     "isdeliverysameaspickup": {
-      "type": "boolean"
+      "type": "boolean",
+      "selector": ".ng-pristine.ng-untouched.ng-valid.ng-empty"
     }
   },
   "connect": [
