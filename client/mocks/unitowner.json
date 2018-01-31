@@ -12,5 +12,5 @@
     "deliverystate": "Uttar Pradesh",
     "deliverycountry": "India",
     "deliveryzipcode": "277123",
-    "isdeliverysameaspickup":"on"
+    "isdeliverysameaspickup":false
 }
