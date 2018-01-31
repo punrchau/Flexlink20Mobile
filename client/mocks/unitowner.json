@@ -11,5 +11,6 @@
     "deliverycity": "Vanaras",  
     "deliverystate": "Uttar Pradesh",
     "deliverycountry": "India",
-    "deliveryzipcode": "277123"
+    "deliveryzipcode": "277123",
+    "isdeliverysameaspickup":true
 }
