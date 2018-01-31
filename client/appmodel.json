@@ -994,6 +994,9 @@
       },
       "close": {
         "type": "action"
+      },
+      "isdeliverysameaspickup": {
+        "type": "boolean"
       }
     }
   }
