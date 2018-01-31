@@ -103,7 +103,7 @@
       "type": "boolean",
       "control": "checkbox",
       "selector": {
-        "fn": "function(node){{if(document.querySelector('#untOwnerInfo > div:nth-child(4) > div:nth-child(3)')=='on'){return true}else{return false}}}}}}}}}}}};",
+        "fn": "function(node){if(document.querySelector('#untOwnerInfo > div:nth-child(4) > div:nth-child(3)')=='on'){return true}else{return false}};",
         "selector": ""
       }
     }
