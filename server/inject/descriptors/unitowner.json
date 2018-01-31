@@ -103,8 +103,8 @@
       "type": "string",
       "control": "text",
       "selector": {
-        "fn": "function(node){if(document.querySelector('#untOwnerInfo > div:nth-child(4) > div:nth-child(3)')=='on'){return true}else{return false}};",
-        "selector": ""
+        "fn": "function(node){if(document.querySelector('#untOwnerInfo > div:nth-child(4) > div:nth-child(3)')=='on'){return 'true'}else{return 'false'}};",
+        "selector": "#untOwnerInfo > div:nth-child(4) > div:nth-child(3)"
       }
     }
   },
