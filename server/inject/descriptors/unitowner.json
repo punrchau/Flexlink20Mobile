@@ -100,7 +100,7 @@
       "selector": "#unitOwnerDetailsModel > div > div > div.modal-header > button"
     },
     "isdeliverysameaspickup": {
-      "type": "boolean",
+      "type": "string",
       "control": "exists",
       "selector": {
         "fn": "",
