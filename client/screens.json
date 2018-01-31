@@ -1,7 +1,7 @@
 {
   "id": "app",
   "name": "Flexlink20 Mobile",
-  "startScreen": "app.unitowner",
+  "startScreen": "app.unitinfo",
   "screens": [
     {
       "id": "menu",
