@@ -8,31 +8,111 @@
             <button class="button button-icon ion-home" data-comp-id="button.2"></button>
         </ion-nav-buttons>
     </ion-nav-bar>
-    <ion-content class="" data-comp-id="ionic-content.1">
+    <ion-content class="stable-bg" data-comp-id="ionic-content.1">
         <!--Form Contents-->
-        <div data-comp-id="div.1" style="margin: 10% 10% 2%;">
-            <label class="item item-input light-bg" data-comp-id="textInput.1">
-                <span class="input-label dark">Name</span>
-                <input ng-model="data.name" type="text">
-            </label>
-            <label class="item item-input" data-comp-id="textInput.2">
-                <span class="input-label">Phone</span>
-                <input ng-model="data.phone" type="text">
-            </label>
-            <label class="item item-input" data-comp-id="textInput.3">
-                <span class="input-label">Email</span>
-                <input ng-model="data.email" type="text">
-            </label>
-        </div>
-        <div data-comp-id="div.2" style="width: 80%; margin: 10%;">
-            <div class="row" data-comp-id="row.1" style="margin: 0px;">
-                <div class="col" data-comp-id="column.1">
-                    <button class="button button-block button-positive" data-comp-id="button.3"
-                        ng-click="app.action('form', 'submit', this)"
-                        style="border-color: rgba(255, 255, 255, 0);">Submit</button>
+        <ion-list data-comp-id="ionic-list.1" type=" stable-bg">
+            <div ata-comp-id="text.1" class="headerStyle positive">
+                IND-JOB#-000000013 - Ramkewal Chauhan
+            </div>
+            <div class=" light-bg" data-comp-id="div.1"
+                style="margin: 4px 4px; border-radius: 10px;">
+                <div class="row fontformate">
+                    Pickup Address
+                </div>
+                <hr class="lineStyle">
+                <div class="row">
+                    <div class="col labelstyle">
+                        <span>
+                            Address 1 :</span>
+                    </div>
+                    <input class="col textstyle" ng-model="data.pickupaddress1" type="text">
+                </div>
+                <div class="row">
+                    <div class="col labelstyle">
+                        <span>Address 2 :</span>
+                    </div>
+                    <input class="col textstyle" ng-model="data.pickupaddress2" type="text">
+                </div>
+                <div class="row">
+                    <div class="col labelstyle">
+                        <span>City :</span>
+                    </div>
+                    <input class="col textstyle" ng-model="data.pickupcity" type="text">
+                </div>
+                <div class="row">
+                    <div class="col labelstyle">
+                        <span>State :</span>
+                    </div>
+                    <input class="col textstyle" ng-model="data.pickupstate" type="text">
+                </div>
+                <div class="row">
+                    <div class="col labelstyle">
+                        <span>Zip Code :</span>
+                    </div>
+                    <input class="col textstyle" ng-model="data.pickupzipcode" type="text">
+                </div>
+                <div class="row">
+                    <div class="col labelstyle">
+                        <span>Country :</span>
+                    </div>
+                    <input class="col textstyle" ng-model="data.pickupcountry" type="text">
+                </div>
+                <div class="row">
+                    <div class="col labelstyle">
+                        <span>Delivery Method :</span>
+                    </div>
+                    <input class="col textstyle" ng-model="data.deliverymethod" type="text">
                 </div>
             </div>
-        </div>
+            <div class=" light-bg" data-comp-id="div.2"
+                style="margin: 4px 4px; border-radius: 20px;padding-bottom:10px">
+                <div class="row fontformate">Delivery Address</div>
+                <hr class="lineStyle">
+                <div style="height:15px;margin-left:15px;">
+                    <input ng-model="data.isdeliverysameaspickup" type="checkbox">
+                    Delivery Same As Pickup
+                    <!-- <ion-checkbox class="" data-comp-id="checkbox.1">Delivery Same As Pickup</ion-checkbox>-->
+                </div>
+                <div ng-show="!data.isdeliverysameaspickup">
+                    <div class="row" style="margin-top:7px">
+                        <div class="col labelstyle">
+                            <span>Address 1 :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.deliveryaddress1" type="text">
+                    </div>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Address 2 :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.deliveryaddress2" type="text">
+                    </div>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>City :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.deliverycity" type="text">
+                    </div>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>State :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.deliverystate" type="text">
+                    </div>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Zip Code :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.deliverycountry" type="text">
+                    </div>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Country :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.deliveryzipcode" type="text">
+                    </div>
+                </div>
+            </div>
+        </ion-list>
         <!--Form Contents-->
     </ion-content>
 </ion-view>
