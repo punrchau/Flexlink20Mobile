@@ -14,8 +14,7 @@
             <div ata-comp-id="text.1" class="headerStyle positive">
                 IND-JOB#-000000013 - Ramkewal Chauhan
             </div>
-            <div class=" light-bg" data-comp-id="div.1"
-                style="margin: 4px 4px; border-radius: 10px;">
+            <div class=" light-bg" data-comp-id="div.1" style="margin: 4px 4px; border-radius: 10px;">
                 <div class="row fontformate">
                     Additional Information
                 </div>
@@ -30,52 +29,39 @@
                 </div>
             </div>
             <div></div>
-            <div class=" light-bg" data-comp-id="div.2"
-                style="margin: 4px 4px; border-radius: 20px;padding-bottom:10px">
+            <div class=" light-bg" data-comp-id="div.2" style="margin: 4px 4px; border-radius: 20px;padding-bottom:10px">
                 <div class="row fontformate">History Additional Information</div>
                 <hr style="border:#a3c1cc solid 2px;margin-top:0px;">
-                <div class="light-bg card" data-comp-id="div.3"
-                    ng-repeat="item in data.listItems"
-                    style="margin: 4px 4px;; border-radius: 10px;border:0px solid;border-color:white">
+                <div class="light-bg card" data-comp-id="div.3" ng-repeat="item in data.listItems" style="margin: 4px 4px;; border-radius: 10px;border:0px solid;border-color:white">
                     <div class="row" data-comp-id="row.1">
                         <div class="col" data-comp-id="column.1" style="padding: 0px;">
                             <div class="row" data-comp-id="row.2" style="padding: 0px 10px;">
                                 <div class="col" data-comp-id="column.2">
-                                    <div class="" data-comp-id="text.1"
-                                        style="color: rgb(51, 51, 51); font-size: 12px; font-weight: bold;">{{item.firstname +' '+ item.lastname}}
+                                    <div class="" data-comp-id="text.1" style="color: rgb(51, 51, 51); font-size: 12px; font-weight: bold;">{{item.firstname +' '+ item.lastname}}
                                         <a ng-href="{{'tel:' + item.mobilenumber}}">
-                                            <img data-comp-id="image.1" data-img="" ng-src="images/call.jpg"
-                                                style="width: 15%; margin: 0px; height: 15px;"></a>
+                                            <img data-comp-id="image.1" data-img="" ng-src="images/call.jpg" style="width: 15%; margin: 0px; height: 15px;"></a>
                                         <a ng-href="{{'sms:' + item.mobilenumber}}">
-                                            <img data-comp-id="image.2" data-img="" ng-src="images/sms.png"
-                                                style="width: 15%; margin: 0px; height: 15px;"></a>
+                                            <img data-comp-id="image.2" data-img="" ng-src="images/sms.png" style="width: 15%; margin: 0px; height: 15px;"></a>
                                     </div>
                                 </div>
                                 <div class="col" data-comp-id="column.3">
-                                    <div class="" data-comp-id="text.2" ng-bind="item.pickupaddress"
-                                        style="color: rgb(51, 51, 51); font-size: 12px;">PR-000000189</div>
+                                    <div class="" data-comp-id="text.2" ng-bind="item.pickupaddress" style="color: rgb(51, 51, 51); font-size: 12px;">PR-000000189</div>
                                 </div>
                             </div>
                             <div class="row" data-comp-id="row.3" style="padding: 0px 10px;">
                                 <div class="col" data-comp-id="column.4">
-                                    <div class="" data-comp-id="text.3" ng-bind="item.problemcategory"
-                                        style="color: rgb(51, 51, 51); font-size: 12px;">1234566</div>
+                                    <div class="" data-comp-id="text.3" ng-bind="item.problemcategory" style="color: rgb(51, 51, 51); font-size: 12px;">1234566</div>
                                 </div>
                                 <div class="col" data-comp-id="column.5">
-                                    <div class="" data-comp-id="text.4" ng-bind="item.ticketnumber"
-                                        style="color: rgb(51, 51, 51); font-size: 12px;">PR-000000189</div>
+                                    <div class="" data-comp-id="text.4" ng-bind="item.ticketnumber" style="color: rgb(51, 51, 51); font-size: 12px;">PR-000000189</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col text-right col-10" data-comp-id="column.6"
-                            style="padding: 10px;">
-                            <div class="row" data-comp-id="row.4"
-                                style="padding: 0px; position: relative;  top: 50%;  transform: translateY(-50%);">
+                        <div class="col text-right col-10" data-comp-id="column.6" style="padding: 10px;">
+                            <div class="row" data-comp-id="row.4" style="padding: 0px; position: relative;  top: 50%;  transform: translateY(-50%);">
                                 <div class="col" data-comp-id="column.7" style="padding: 0px;">
-                                    <i class="icon fa-icon fa-circle assertive" data-comp-id="icon.1"
-                                        ng-show="item.isimp" style="font-size: 16px;"></i>
-                                    <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.2"
-                                        ng-click="goToJobDetails($index);" style="font-size: 32px;"></i>
+                                    <i class="icon fa-icon fa-circle assertive" data-comp-id="icon.1" ng-show="item.isimp" style="font-size: 16px;"></i>
+                                    <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.2" ng-click="goToJobDetails($index);" style="font-size: 32px;"></i>
                                 </div>
                             </div>
                         </div>
