@@ -117,6 +117,13 @@
       "sourceScreenId": "app.tableview.tabledatacaptivating",
       "sourceAppId": "universaltemplates",
       "model": "unitowner"
+    },
+    {
+      "id": "servicejobremarks",
+      "name": "ServiceJobRemarks",
+      "sourceScreenId": "app.formsmall.formsmallcool",
+      "sourceAppId": "universaltemplates",
+      "model": "servicejobremarks"
     }
   ],
   "sourceAppId": "_blank",
