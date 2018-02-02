@@ -24,7 +24,6 @@
         "properties": {
           "jobnumber": {
             "type": "string",
-            "selector": "td:nth-child(1)",
             "control": "innerText"
           },
           "remark": {
