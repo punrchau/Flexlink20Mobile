@@ -34,7 +34,7 @@
     },
     "isremarks": {
       "type": "identifier",
-      "selector": "#masterBody",
+      "selector": ".ng-binding",
       "control": "property.innerText"
     }
   },
