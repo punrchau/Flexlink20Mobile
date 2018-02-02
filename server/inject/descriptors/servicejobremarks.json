@@ -40,5 +40,5 @@
     }
   },
   "connect": [],
-  "selector": ".modal-content"
+  "selector": ".modal-body.ng-scope"
 }
