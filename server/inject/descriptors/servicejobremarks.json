@@ -36,7 +36,8 @@
     },
     "isremarks": {
       "type": "string",
-      "selector": "#Remarks"
+      "selector": "#Remarks",
+      "control": "property.innerText"
     }
   },
   "connect": [],
