@@ -30,7 +30,8 @@
           "remark": {
             "type": "string",
             "selector": "td",
-            "control": "innerText"
+            "control": "innerText",
+            "selectIndex": 1
           },
           "createddate": {
             "type": "string"
