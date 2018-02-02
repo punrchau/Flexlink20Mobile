@@ -52,7 +52,7 @@
     },
     "isremarks": {
       "type": "identifier",
-      "selector": ".close",
+      "selector": "label",
       "control": "action.button"
     }
   },
