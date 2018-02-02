@@ -36,10 +36,7 @@
     },
     "isremarks": {
       "type": "string",
-      "selector": {
-        "fn": "function(node){return document.querySelector('#remarks > div.row.col-lg-10.col-md-10 > div > div.col-lg-3.col-md-3.text-right > label').innerText}",
-        "selector": "#remarks > div.row.col-lg-10.col-md-10 > div > div.col-lg-3.col-md-3.text-right > label"
-      },
+      "selector": "#remarks > div.row.col-lg-10.col-md-10 > div > div.col-lg-3.col-md-3.text-right > label",
       "control": "property.innerText"
     }
   },
