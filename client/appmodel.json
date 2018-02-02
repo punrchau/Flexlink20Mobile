@@ -619,6 +619,9 @@
           },
           "btnviewjob": {
             "type": "action"
+          },
+          "remarks": {
+            "type": "action"
           }
         }
       },
