@@ -1,5 +1,4 @@
 {
-  
   "jobinfos": {
     "categoryName": "Job Info",
     "image": "images/jobdetails/Service_Info.png"
@@ -24,5 +23,5 @@
     "categoryName": "Unit Info",
     "image": "images/jobdetails/unit_info.png"
   },
-  "title":"my servicejob"
+  "title": "my servicejob"
 }
