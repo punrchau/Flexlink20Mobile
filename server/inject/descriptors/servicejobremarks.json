@@ -38,7 +38,7 @@
           }
         }
       },
-      "selectorAll": ".modal-content"
+      "selectorAll": ".tab-pane active table"
     },
     "isremarks": {
       "type": "identifier",
