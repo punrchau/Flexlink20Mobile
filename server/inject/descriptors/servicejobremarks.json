@@ -26,7 +26,7 @@
             "type": "string",
             "selector": "td",
             "selectIndex": 1,
-            "control": "text"
+            "control": "innerText"
           },
           "remark": {
             "type": "string"
