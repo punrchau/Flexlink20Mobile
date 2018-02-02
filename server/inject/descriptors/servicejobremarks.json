@@ -25,7 +25,7 @@
           "jobnumber": {
             "type": "string",
             "control": "innerText",
-            "selector": "#gdServiceJobRemarksDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr:nth-child(1) > td:nth-child(1)"
+            "selector": "td"
           },
           "remark": {
             "type": "string",
