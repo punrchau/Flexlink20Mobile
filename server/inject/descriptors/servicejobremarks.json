@@ -35,7 +35,8 @@
       }
     },
     "isremarks": {
-      "type": "string"
+      "type": "string",
+      "selector": "#Remarks"
     }
   },
   "connect": [],
