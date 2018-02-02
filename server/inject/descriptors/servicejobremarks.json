@@ -53,7 +53,7 @@
     },
     "close": {
       "type": "action",
-      "selector": ".btn.btn-info.text-right",
+      "selector": "span",
       "control": "action.button"
     }
   },
