@@ -40,7 +40,7 @@
     },
     "isremarks": {
       "type": "identifier",
-      "selector": ".ng-binding",
+      "selector": "label",
       "control": "text"
     }
   },
