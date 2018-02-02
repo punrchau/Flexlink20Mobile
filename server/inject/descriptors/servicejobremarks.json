@@ -45,12 +45,6 @@
       },
       "selectorAll": "#gdServiceJobRemarksDetails table tbody tr"
     },
-    "isremarks": {
-      "type": "identifier",
-      "selector": "label",
-      "control": "exists",
-      "selectContains": "Addition Information"
-    },
     "close": {
       "type": "action",
       "selector": "#ServiceJobRemarks > div > div > div.modal-header > button",
