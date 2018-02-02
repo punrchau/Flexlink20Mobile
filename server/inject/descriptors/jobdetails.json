@@ -58,7 +58,8 @@
         },
         "remarks": {
           "type": "action",
-          "control": "action.button"
+          "control": "action.button",
+          "selector": ".btn.btn-info.ng-scope"
         }
       }
     },
