@@ -40,5 +40,5 @@
     }
   },
   "connect": [],
-  "selector": ".modal-header"
+  "selector": ".modal-content"
 }
