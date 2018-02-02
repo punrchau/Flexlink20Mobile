@@ -38,5 +38,6 @@
       "control": "property.innerText"
     }
   },
-  "connect": []
+  "connect": [],
+  "selector": ".modal-header"
 }
