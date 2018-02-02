@@ -34,7 +34,8 @@
             "selectIndex": 1
           },
           "createddate": {
-            "type": "string"
+            "type": "string",
+            "selector": "td"
           }
         }
       },
