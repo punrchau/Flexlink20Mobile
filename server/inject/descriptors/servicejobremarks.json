@@ -32,7 +32,8 @@
             "type": "string"
           }
         }
-      }
+      },
+      "selectorAll": "#remarksGrid"
     },
     "isremarks": {
       "type": "string",
