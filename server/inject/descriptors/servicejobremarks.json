@@ -16,7 +16,8 @@
     },
     "save": {
       "type": "action",
-      "selector": ".btn.btn-info.text-right"
+      "selector": ".btn.btn-info.text-right",
+      "control": "action.button"
     },
     "remarklist": {
       "type": "array",
