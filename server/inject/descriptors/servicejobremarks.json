@@ -41,7 +41,8 @@
     "isremarks": {
       "type": "identifier",
       "selector": "label",
-      "control": "text"
+      "control": "text",
+      "selectContains": "Addition Information"
     }
   },
   "connect": [],
