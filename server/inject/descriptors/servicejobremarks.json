@@ -41,7 +41,7 @@
     "isremarks": {
       "type": "identifier",
       "selector": "label",
-      "control": "text",
+      "control": "exists",
       "selectContains": "Addition Information"
     }
   },
