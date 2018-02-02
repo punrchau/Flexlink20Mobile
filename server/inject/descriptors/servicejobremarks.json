@@ -37,8 +37,7 @@
             "type": "string"
           }
         }
-      },
-      "selectorAll": ".tab-pane.active table tbody tr"
+      }
     },
     "isremarks": {
       "type": "identifier",
