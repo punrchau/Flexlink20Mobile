@@ -11,7 +11,8 @@
           "submit"
         ]
       },
-      "selector": "#Remarks"
+      "selector": "#Remarks",
+      "control": "text"
     },
     "save": {
       "type": "action"
