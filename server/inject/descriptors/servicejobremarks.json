@@ -41,5 +41,5 @@
     }
   },
   "connect": [],
-  "selector": "#ServiceJobRemarks > div > div > div.modal-body.ng-scope"
+  "selector": "#ServiceJobRemarksPopup"
 }
