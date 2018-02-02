@@ -47,7 +47,7 @@ exports.viewUnitOwnerInfo = function(page, params) {
 }
 
 exports.remarksPage = function(page, params) {
-    page.action('jobdetails', 'actions.remarks');
+    page.action('jobdetails', 'actions.servicejobremarks');
 }
 
 //upload picture of damaged part to website
