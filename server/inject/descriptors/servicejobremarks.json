@@ -48,7 +48,7 @@
     },
     "Test": {
       "type": "string",
-      "selector": "tr",
+      "selector": "td",
       "control": "property.innerText"
     }
   },
