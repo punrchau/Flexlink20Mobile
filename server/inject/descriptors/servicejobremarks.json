@@ -53,7 +53,8 @@
     "isremarks": {
       "type": "identifier",
       "selector": "label",
-      "control": "action.button"
+      "control": "action.button",
+      "selectContains": "Addition Information"
     }
   },
   "connect": [],
