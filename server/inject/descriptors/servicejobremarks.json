@@ -37,7 +37,8 @@
             "type": "string"
           }
         }
-      }
+      },
+      "selectorAll": ".modal-content"
     },
     "isremarks": {
       "type": "identifier",
