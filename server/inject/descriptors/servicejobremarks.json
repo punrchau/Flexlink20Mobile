@@ -36,7 +36,8 @@
           "createddate": {
             "type": "string",
             "selector": "td",
-            "selectIndex": 2
+            "selectIndex": 2,
+            "control": "property.innerText"
           }
         }
       },
