@@ -8,8 +8,8 @@
   "unitinfo.json",
   "repairjob.json",
   "unitowner.json",
+  "servicejobremarks.json",
   "servicejob.json",
   "jobdetails.json",
-  "jobinfo.json",
-  "servicejobremarks.json"
+  "jobinfo.json"
 ]
