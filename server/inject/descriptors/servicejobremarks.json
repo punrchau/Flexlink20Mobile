@@ -45,6 +45,11 @@
       "selector": "label",
       "control": "exists",
       "selectContains": "Addition Information"
+    },
+    "Test": {
+      "type": "string",
+      "selector": "tr",
+      "control": "property.innerText"
     }
   },
   "connect": [],
