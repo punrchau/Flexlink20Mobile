@@ -40,5 +40,5 @@
     }
   },
   "connect": [],
-  "selector": ".modal-body.ng-scope"
+  "selector": "#ServiceJobRemarks > div > div > div.modal-body.ng-scope"
 }
