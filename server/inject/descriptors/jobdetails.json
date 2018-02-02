@@ -55,6 +55,9 @@
           "type": "action",
           "selector": "button[value=\"View\"]",
           "control": "action.button"
+        },
+        "remarks": {
+          "type": "action"
         }
       }
     },
