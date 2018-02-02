@@ -35,7 +35,7 @@
     "isremarks": {
       "type": "identifier",
       "selector": "label",
-      "control": "property.innerText",
+      "control": "exists",
       "selectContains": "Addition Information"
     }
   },
