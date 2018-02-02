@@ -49,6 +49,11 @@
       "type": "action",
       "selector": "#ServiceJobRemarks > div > div > div.modal-header > button",
       "control": "action.link"
+    },
+    "isremarks": {
+      "type": "action",
+      "selector": ".close",
+      "control": "action.button"
     }
   },
   "connect": [],
