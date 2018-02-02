@@ -40,7 +40,7 @@
         "fn": "function(node){if(document.querySelector('#remarks > div.row.col-lg-10.col-md-10 > div > div.col-lg-3.col-md-3.text-right > label').innerText=='Additional Information'){return 'Found'}else{'Not found'}}",
         "selector": ""
       },
-      "control": "property.innerText"
+      "control": "text"
     }
   },
   "connect": [],
