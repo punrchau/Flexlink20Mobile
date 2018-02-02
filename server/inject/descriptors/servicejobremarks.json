@@ -24,7 +24,8 @@
         "properties": {
           "jobnumber": {
             "type": "string",
-            "selector": "td"
+            "selector": "td",
+            "selectIndex": 1
           },
           "remark": {
             "type": "string"
