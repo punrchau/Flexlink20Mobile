@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "comment": "Forms",
+  "properties": {
+    "additionalinformation": {
+      "type": "string",
+      "label": "TextInput",
+      "update": {
+        "type": "action",
+        "action": [
+          "submit"
+        ]
+      }
+    },
+    "save": {
+      "type": "action"
+    },
+    "remarklist": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "jobnumber": {
+            "type": "string"
+          },
+          "remark": {
+            "type": "string"
+          },
+          "createddate": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "connect": []
+}

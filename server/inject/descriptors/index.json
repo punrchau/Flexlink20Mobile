@@ -10,5 +10,6 @@
   "unitowner.json",
   "servicejob.json",
   "jobdetails.json",
-  "jobinfo.json"
+  "jobinfo.json",
+  "servicejobremarks.json"
 ]
