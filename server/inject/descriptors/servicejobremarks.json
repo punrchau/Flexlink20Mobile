@@ -53,7 +53,7 @@
     },
     "close": {
       "type": "action",
-      "selector": "span",
+      "selector": "#ServiceJobRemarks > div > div > div.modal-header > button > span",
       "control": "action.button"
     }
   },
