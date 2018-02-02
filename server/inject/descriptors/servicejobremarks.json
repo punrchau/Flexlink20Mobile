@@ -29,7 +29,8 @@
           },
           "remark": {
             "type": "string",
-            "selector": "#gdServiceJobRemarksDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr:nth-child(1) > td:nth-child(1)"
+            "selector": "#gdServiceJobRemarksDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr:nth-child(1) > td:nth-child(1)",
+            "control": "innerText"
           },
           "createddate": {
             "type": "string"
