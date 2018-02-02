@@ -37,7 +37,7 @@
           }
         }
       },
-      "selectorAll": "tr"
+      "selectorAll": "#gdServiceJobRemarksDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr"
     },
     "isremarks": {
       "type": "identifier",
