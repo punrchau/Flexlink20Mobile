@@ -50,6 +50,11 @@
       "selector": "label",
       "control": "exists",
       "selectContains": "Addition Information"
+    },
+    "close": {
+      "type": "action",
+      "selector": ".btn.btn-info.text-right",
+      "control": "action.button"
     }
   },
   "connect": [],
