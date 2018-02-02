@@ -34,7 +34,7 @@
     },
     "isremarks": {
       "type": "identifier",
-      "selector": ".ng-binding",
+      "selector": "label",
       "control": "exists",
       "selectContains": "Addition Information"
     }
