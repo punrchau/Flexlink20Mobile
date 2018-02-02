@@ -28,3 +28,16 @@ table tbody tr {
 table tbody tr:last-child {
   border: 0;
 }
+
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
