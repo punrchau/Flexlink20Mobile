@@ -10,7 +10,8 @@
         "action": [
           "submit"
         ]
-      }
+      },
+      "selector": "#Remarks"
     },
     "save": {
       "type": "action"
