@@ -48,7 +48,7 @@
     },
     "Test": {
       "type": "string",
-      "selector": "td",
+      "selector": "#gdServiceJobRemarksDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr:nth-child(1) > td:nth-child(1)",
       "control": "property.innerText"
     }
   },
