@@ -51,7 +51,7 @@
       "control": "action.link"
     },
     "isremarks": {
-      "type": "action",
+      "type": "identifier",
       "selector": ".close",
       "control": "action.button"
     }
