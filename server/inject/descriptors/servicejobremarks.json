@@ -25,7 +25,8 @@
           "jobnumber": {
             "type": "string",
             "selector": "td",
-            "control": "innerText"
+            "control": "innerText",
+            "selectIndex": 1
           },
           "remark": {
             "type": "string"
