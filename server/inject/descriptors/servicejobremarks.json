@@ -39,7 +39,7 @@
       "selectorAll": "#remarksGrid"
     },
     "isremarks": {
-      "type": "string",
+      "type": "identifier",
       "selector": "#Remarks",
       "control": "text"
     }
