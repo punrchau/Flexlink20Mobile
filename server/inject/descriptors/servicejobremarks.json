@@ -36,7 +36,10 @@
     },
     "isremarks": {
       "type": "string",
-      "selector": "#remarks > div.row.col-lg-10.col-md-10 > div > div.col-lg-3.col-md-3.text-right > label",
+      "selector": {
+        "fn": "",
+        "selector": "#remarks > div.row.col-lg-10.col-md-10 > div > div.col-lg-3.col-md-3.text-right > label"
+      },
       "control": "property.innerText"
     }
   },
