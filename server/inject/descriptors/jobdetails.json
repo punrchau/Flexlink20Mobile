@@ -58,8 +58,7 @@
         },
         "remarks": {
           "type": "action",
-          "control": "action.button",
-          "selector": "#comment"
+          "control": "action.button"
         }
       }
     },
