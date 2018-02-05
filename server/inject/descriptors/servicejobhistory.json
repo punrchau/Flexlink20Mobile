@@ -28,5 +28,5 @@
     }
   },
   "connect": [],
-  "selector": ".modal-content"
+  "selector": "#GDMasterJobHistoryDetails"
 }
