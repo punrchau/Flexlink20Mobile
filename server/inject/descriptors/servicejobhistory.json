@@ -13,7 +13,8 @@
           "repairdate": {
             "type": "string",
             "label": "Subject",
-            "selector": "td"
+            "selector": "td",
+            "selectIndex": 1
           },
           "issuedescription": {
             "type": "string",
