@@ -20,7 +20,8 @@
           "issuedescription": {
             "type": "string",
             "label": "From",
-            "selector": "td"
+            "selector": "td",
+            "selectIndex": 2
           },
           "status": {
             "type": "string",
