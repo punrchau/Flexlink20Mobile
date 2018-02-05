@@ -50,6 +50,10 @@ exports.remarksPage = function(page, params) {
     page.action('jobdetails', 'actions.servicejobremarks');
 }
 
+exports.viewJobHistory = function(page, params) {
+    page.action('jobdetails', 'actions.viewjobhistory');
+}
+
 //upload picture of damaged part to website
 exports.uploadImage = function (page, params) {
     var base64Data = params.base64string.split(',').pop();
