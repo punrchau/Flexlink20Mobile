@@ -21,6 +21,11 @@ exports.on_messages = function (page) {
                 page.checkState(true);
 
             }
+            if (data.isServiceJobRemarks) {
+                page.extract('servicejobremarks')
+                page.checkState(true);
+
+            }
         });
 }
 
