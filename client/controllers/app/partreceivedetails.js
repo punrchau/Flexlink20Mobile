@@ -5,6 +5,7 @@ function app_partreceivedetails($scope, app, $ionicPopup) {
     $scope.headerExpanded = true;
     $scope.detailsExpanded = true;
     $scope.viewAllExpanded = false;
+    
     app.init($scope, function () {
 
      $scope.showPopup($scope.data);
