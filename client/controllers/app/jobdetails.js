@@ -32,6 +32,10 @@ function app_jobdetails($scope, app) {
           app.call('Home.remarksPage', {});
     };
     
+     $scope.viewJobHistory = function () {
+          app.call('Home.viewJobHistory', {});
+    };
+    
     
     /* $scope.goToServiceJob = function () {
      if (window.mocks) {
