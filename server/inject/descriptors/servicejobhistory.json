@@ -28,7 +28,8 @@
             "type": "string",
             "label": "Date",
             "selector": "td",
-            "selectIndex": 5
+            "selectIndex": 5,
+            "control": "property.innerText"
           }
         }
       },
