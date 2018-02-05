@@ -40,7 +40,7 @@
         },
         "viewjobhistory": {
           "type": "action",
-          "selector": ".btn.btn-info.unitDetails.btn-auto-width.ng-scope"
+          "selector": "#sjsPage > div.col-lg-9.col-md-9.col-sm-9.col-xs-9.text-right > button:nth-child(4)"
         },
         "jobinfo": {
           "type": "action",
