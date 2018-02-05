@@ -12,5 +12,6 @@
   "servicejob.json",
   "jobdetails.json",
   "jobinfo.json",
-  "details.json"
+  "details.json",
+  "servicejobhistory.json"
 ]

@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "comment": "Messages",
+  "properties": {
+    "jobhistory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "action"
+          },
+          "repairdate": {
+            "type": "string",
+            "label": "Subject"
+          },
+          "issuedescription": {
+            "type": "string",
+            "label": "From"
+          },
+          "status": {
+            "type": "string",
+            "label": "Date"
+          }
+        }
+      },
+      "label": "Messages1"
+    }
+  },
+  "connect": []
+}
