@@ -73,7 +73,7 @@
     },
     "isServiceJobRemarks": {
       "type": "boolean",
-      "selector": ".k-list-container.k-popup.k-group.k-reset",
+      "selector": "label",
       "control": "property.innerHTML"
     }
   },
