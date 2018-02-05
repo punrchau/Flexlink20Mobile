@@ -43,7 +43,8 @@
     },
     "close": {
       "type": "action",
-      "selector": "#JobHistoryDetailsModel > div > div > div.modal-header > button"
+      "selector": "#JobHistoryDetailsModel > div > div > div.modal-header > button",
+      "control": "action.button"
     }
   },
   "connect": [
