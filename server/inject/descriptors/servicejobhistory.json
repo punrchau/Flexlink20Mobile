@@ -39,7 +39,7 @@
     "isjobhistory": {
       "type": "identifier",
       "selector": "#GDMasterJobHistoryDetails",
-      "control": "property.innerHTML"
+      "control": "exists"
     }
   },
   "connect": [],
