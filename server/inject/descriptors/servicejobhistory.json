@@ -26,7 +26,8 @@
           },
           "status": {
             "type": "string",
-            "label": "Date"
+            "label": "Date",
+            "selector": "td"
           }
         }
       },
