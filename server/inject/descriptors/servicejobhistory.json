@@ -14,7 +14,7 @@
             "type": "string",
             "label": "Subject",
             "selector": "td",
-            "selectIndex": 1,
+            "selectIndex": 2,
             "control": "property.innerText"
           },
           "issuedescription": {
