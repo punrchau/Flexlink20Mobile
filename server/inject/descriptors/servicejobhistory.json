@@ -27,5 +27,6 @@
       "label": "Messages1"
     }
   },
-  "connect": []
+  "connect": [],
+  "selector": ".modal-content"
 }
