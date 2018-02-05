@@ -3,17 +3,17 @@
   "remarklist":[
       {
           "jobnumber":"IND000001",
-          "remark":"touch issue",
+          "remark":"Touch issue",
            "createddate":"01-Feb-2018"
       },
         {
           "jobnumber":"IND000002",
-          "remark":"screen issue",
+          "remark":"Screen issue",
            "createddate":"03-Feb-2018"
       },
         {
           "jobnumber":"IND000003",
-          "remark":"mobile issue",
+          "remark":"Mobile issue",
            "createddate":"02-Feb-2018"
       }
       
