@@ -42,6 +42,15 @@
       "control": "exists"
     }
   },
-  "connect": [],
+  "connect": [
+    {
+      "match": [
+        "isjobhistory"
+      ],
+      "screens": [
+        "servicejobhistory"
+      ]
+    }
+  ],
   "selector": "#JobHistoryDetailsModel > div > div"
 }
