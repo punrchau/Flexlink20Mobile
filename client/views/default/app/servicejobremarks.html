@@ -22,7 +22,8 @@
                 <div class="row" style="margin-top:5px !important">
                     <div class="button_box2">
                         <div class="row form-wrapper-2 cf">
-                            <input placeholder="Type here..." required="" type="text">
+                            <input ng-model="data.additionalinformation" placeholder="Type here..."
+                                required="" style="font-weight:normal" type="text">
                             <button ng-click="app.action('servicejobremarks','save',this)" type="submit">Save</button>
                         </div>
                     </div>
