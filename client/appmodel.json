@@ -1046,29 +1046,25 @@
     "type": "object",
     "comment": "Messages",
     "properties": {
-      "messages": {
+      "jobhistory": {
         "type": "array",
         "items": {
           "type": "object",
           "properties": {
-            "subject": {
+            "action": {
+              "type": "action"
+            },
+            "repairdate": {
               "type": "string",
               "label": "Subject"
             },
-            "from": {
+            "issuedescription": {
               "type": "string",
               "label": "From"
             },
-            "date": {
+            "status": {
               "type": "string",
               "label": "Date"
-            },
-            "messageContent": {
-              "type": "string",
-              "label": "MessageContent"
-            },
-            "action": {
-              "type": "action"
             }
           }
         },
