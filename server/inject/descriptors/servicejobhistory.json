@@ -34,7 +34,7 @@
         }
       },
       "label": "Messages1",
-      "selectorAll": "#GDMasterJobHistoryDetails"
+      "selectorAll": "#GDMasterJobHistoryDetails table tbody tr"
     },
     "isjobhistory": {
       "type": "identifier",
