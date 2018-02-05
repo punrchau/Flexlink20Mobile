@@ -1,34 +1,29 @@
 {
   "jobhistory": [
     {
-      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "repairdate": "Subject Line 1",
-      "issuedescription": "from1@test.com",
-      "status": "Dec 01, 2016"
+      "repairdate": "02-Feb-2018",
+      "issuedescription": "Screen damaged",
+      "status": "In Testing"
     },
     {
-      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "repairdate": "Subject Line 2",
-      "issuedescription": "from2@test.com",
-      "status": "Dec 01, 2016"
+      "repairdate": "11-Feb-2018",
+      "issuedescription": "Music not working",
+      "status": "Close"
     },
     {
-      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "repairdate": "Subject Line 3",
-      "issuedescription": "from3@test.com",
-      "status": "Dec 01, 2016"
+      "repairdate": "15-Feb-2018",
+      "issuedescription": "Button not working",
+      "status": "Repaired"
     },
     {
-      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "repairdate": "Subject Line 4",
-      "issuedescription": "from4@test.com",
-      "status": "Dec 01, 2016"
+      "repairdate": "04-March-2018",
+      "issuedescription": "Phone call issue",
+      "status": "In Repair"
     },
     {
-      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "repairdate": "Subject Line 5",
-      "issuedescription": "from5@test.com",
-      "status": "Dec 01, 2016"
+      "repairdate": "02-Jan-2018",
+      "issuedescription": "Camera issue",
+      "status": "Booked-In"
     }
   ]
 }
