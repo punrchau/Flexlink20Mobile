@@ -19,7 +19,8 @@
           },
           "issuedescription": {
             "type": "string",
-            "label": "From"
+            "label": "From",
+            "selector": "td"
           },
           "status": {
             "type": "string",
