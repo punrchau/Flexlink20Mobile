@@ -14,7 +14,8 @@
             "type": "string",
             "label": "Subject",
             "selector": "td",
-            "selectIndex": 1
+            "selectIndex": 1,
+            "control": "text"
           },
           "issuedescription": {
             "type": "string",
