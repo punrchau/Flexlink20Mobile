@@ -42,7 +42,8 @@
       "control": "exists"
     },
     "close": {
-      "type": "action"
+      "type": "action",
+      "selector": "span"
     }
   },
   "connect": [
