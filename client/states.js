@@ -168,5 +168,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.servicejobhistory', {
+        views: {
+            app: {
+                controller: 'app_servicejobhistory',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.servicejobhistory');
+                }
+            }
+        }
     });
 });

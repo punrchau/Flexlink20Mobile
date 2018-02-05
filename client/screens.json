@@ -124,6 +124,13 @@
       "sourceScreenId": "app.formsmall.formsmallcool",
       "sourceAppId": "universaltemplates",
       "model": "servicejobremarks"
+    },
+    {
+      "id": "servicejobhistory",
+      "name": "ServiceJobHistory",
+      "sourceScreenId": "app.messagesinbox.messagescaptivating",
+      "sourceAppId": "universaltemplates",
+      "model": "servicejobhistory"
     }
   ],
   "sourceAppId": "_blank",
