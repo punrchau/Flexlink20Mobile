@@ -72,7 +72,7 @@
       "selectContains": "Upload Photo for Damaged Part"
     },
     "isServiceJobRemarks": {
-      "type": "boolean",
+      "type": "string",
       "selector": ".k-list-container.k-popup.k-group.k-reset",
       "control": "property.innerHTML"
     }
