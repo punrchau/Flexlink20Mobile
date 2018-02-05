@@ -21,7 +21,8 @@
             "type": "string",
             "label": "From",
             "selector": "td",
-            "selectIndex": 2
+            "selectIndex": 2,
+            "control": "property.innerText"
           },
           "status": {
             "type": "string",
