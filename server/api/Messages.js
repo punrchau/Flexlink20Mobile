@@ -23,8 +23,10 @@ exports.on_messages = function (page) {
             }
             if (data.isServiceJobRemarks) {
                 page.extract('servicejobremarks')
+                    .data(function (data) {
+                        page.screen('servicejobremarks');
+                    });
                 page.checkState(true);
-
             }
         });
 }
