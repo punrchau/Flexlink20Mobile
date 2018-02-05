@@ -40,6 +40,9 @@
       "type": "identifier",
       "selector": "#GDMasterJobHistoryDetails",
       "control": "exists"
+    },
+    "close": {
+      "type": "action"
     }
   },
   "connect": [
