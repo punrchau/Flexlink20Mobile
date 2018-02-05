@@ -35,6 +35,11 @@
       },
       "label": "Messages1",
       "selectorAll": "#GDMasterJobHistoryDetails"
+    },
+    "isjobhistory": {
+      "type": "string",
+      "selector": "#GDMasterJobHistoryDetails",
+      "control": "property.innerHTML"
     }
   },
   "connect": [],
