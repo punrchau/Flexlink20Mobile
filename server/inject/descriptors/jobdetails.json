@@ -39,7 +39,8 @@
           "control": "action.button"
         },
         "viewjobhistory": {
-          "type": "action"
+          "type": "action",
+          "selector": ".btn.btn-info.unitDetails.btn-auto-width.ng-scope"
         },
         "jobinfo": {
           "type": "action",
