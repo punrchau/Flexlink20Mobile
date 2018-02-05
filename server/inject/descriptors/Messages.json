@@ -74,7 +74,7 @@
     "isServiceJobRemarks": {
       "type": "boolean",
       "selector": "label",
-      "control": "property.innerHTML"
+      "control": "exists"
     }
   },
   "connect": [
