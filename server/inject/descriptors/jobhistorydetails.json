@@ -93,7 +93,7 @@
           "selectIndex": 15,
           "control": "property.innerText"
         },
-        "deselectRecord1": {
+        "deselectRecord": {
           "type": "action",
           "control": "action.link",
           "selector": {
