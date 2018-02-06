@@ -70,7 +70,8 @@
           "control": "property.innerText"
         },
         "productmodel": {
-          "type": "string"
+          "type": "string",
+          "selector": "td"
         },
         "unitcondition": {
           "type": "string"
