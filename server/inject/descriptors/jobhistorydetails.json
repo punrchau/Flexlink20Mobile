@@ -18,7 +18,8 @@
         },
         "ticketnumber": {
           "type": "string",
-          "selector": "td"
+          "selector": "td",
+          "selectIndex": 1
         },
         "problemdescription": {
           "type": "string"
