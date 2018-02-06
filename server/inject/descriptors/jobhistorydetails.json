@@ -84,7 +84,8 @@
         "phonecarrier": {
           "type": "string",
           "selector": "td",
-          "selectIndex": 14
+          "selectIndex": 14,
+          "control": "property.innerText"
         },
         "swapserialnumber": {
           "type": "string"
