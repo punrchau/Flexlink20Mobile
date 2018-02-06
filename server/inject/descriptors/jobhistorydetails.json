@@ -57,6 +57,6 @@
     }
   },
   "connect": [],
-  "selector": "a",
+  "selector": ".modal-content",
   "selectContains": "Problem Description"
 }
