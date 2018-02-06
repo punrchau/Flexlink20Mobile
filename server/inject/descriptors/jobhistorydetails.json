@@ -65,7 +65,8 @@
         },
         "imei": {
           "type": "string",
-          "selector": "td"
+          "selector": "td",
+          "selectIndex": 10
         },
         "productmodel": {
           "type": "string"
