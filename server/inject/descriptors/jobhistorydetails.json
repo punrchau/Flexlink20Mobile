@@ -72,7 +72,8 @@
         "productmodel": {
           "type": "string",
           "selector": "td",
-          "selectIndex": 11
+          "selectIndex": 11,
+          "control": "property.innerText"
         },
         "unitcondition": {
           "type": "string"
