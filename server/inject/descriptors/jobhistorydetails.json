@@ -46,7 +46,8 @@
           "control": "property.innerText"
         },
         "jobpriority": {
-          "type": "string"
+          "type": "string",
+          "selector": "td"
         },
         "warrantystatus": {
           "type": "string"
