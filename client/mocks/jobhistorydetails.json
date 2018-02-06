@@ -1,34 +1,16 @@
 {
-  "jobhistory": [
-    {
-      "subject": "Subject Line 1",
-      "from": "from1@test.com",
-      "date": "Dec 01, 2016",
-      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "subject": "Subject Line 2",
-      "from": "from2@test.com",
-      "date": "Dec 01, 2016",
-      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "subject": "Subject Line 3",
-      "from": "from3@test.com",
-      "date": "Dec 01, 2016",
-      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "subject": "Subject Line 4",
-      "from": "from4@test.com",
-      "date": "Dec 01, 2016",
-      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "subject": "Subject Line 5",
-      "from": "from5@test.com",
-      "date": "Dec 01, 2016",
-      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    }
-  ]
+    "jobnumber": "Subject Line 1",
+    "ticketnumber": "from1@test.com",
+    "problemdescription": "Dec 01, 2016",
+    "creationdate": "Subject Line 1",
+    "status": "from1@test.com",
+    "store": "Dec 01, 2016",
+    "jobpriority": "Subject Line 1",
+    "warrantystatus": "from1@test.com",
+    "warrantyexpiry": "Dec 01, 2016",
+    "imei": "Subject Line 1",
+    "productmodel": "from1@test.com",
+    "unitcondition": "Dec 01, 2016",
+    "phonecarrei": "from1@test.com",
+    "swapserialnumber": "Dec 01, 2016"
 }
