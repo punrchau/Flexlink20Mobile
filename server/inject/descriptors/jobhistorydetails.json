@@ -95,7 +95,11 @@
         },
         "deselectRecord1": {
           "type": "action",
-          "control": "property.innerText"
+          "control": "property.innerText",
+          "selector": {
+            "fn": "",
+            "selector": ""
+          }
         }
       },
       "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
