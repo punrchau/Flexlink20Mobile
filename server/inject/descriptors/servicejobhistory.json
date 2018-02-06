@@ -37,7 +37,7 @@
             "control": "action.link"
           },
           "unselectRecord": {
-            "type": "string",
+            "type": "action",
             "selector": "#comment",
             "control": "property.innerText"
           }
