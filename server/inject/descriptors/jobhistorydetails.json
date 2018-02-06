@@ -48,7 +48,8 @@
         "jobpriority": {
           "type": "string",
           "selector": "td",
-          "selectIndex": 7
+          "selectIndex": 7,
+          "control": "property.innerText"
         },
         "warrantystatus": {
           "type": "string"
