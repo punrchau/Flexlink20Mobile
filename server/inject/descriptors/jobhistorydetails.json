@@ -53,7 +53,8 @@
         "swapserialnumber": {
           "type": "string"
         }
-      }
+      },
+      "selector": "#JobHistoryDetailsModel"
     }
   },
   "connect": [],
