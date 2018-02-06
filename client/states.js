@@ -186,5 +186,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.jobhistorydetails', {
+        views: {
+            app: {
+                controller: 'app_jobhistorydetails',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.jobhistorydetails');
+                }
+            }
+        }
     });
 });

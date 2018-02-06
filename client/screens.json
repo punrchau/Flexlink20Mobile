@@ -137,6 +137,13 @@
       "name": "TestDetailsPage",
       "sourceScreenId": "app.blank",
       "sourceAppId": "_blank"
+    },
+    {
+      "id": "jobhistorydetails",
+      "name": "JobHistoryDetails",
+      "sourceScreenId": "app.messagesinbox.messagescaptivating",
+      "sourceAppId": "universaltemplates",
+      "model": "jobhistorydetails"
     }
   ],
   "sourceAppId": "_blank",
