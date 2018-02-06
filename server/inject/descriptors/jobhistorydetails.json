@@ -56,5 +56,5 @@
     }
   },
   "connect": [],
-  "selector": "#JobHistoryDetailsModel"
+  "selector": ".k-link"
 }
