@@ -51,7 +51,7 @@
     },
     "isjobhistorydetail": {
       "type": "identifier",
-      "selector": "#comment",
+      "selector": "a",
       "control": "property.innerText"
     }
   },
