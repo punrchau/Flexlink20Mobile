@@ -2,9 +2,6 @@
   "type": "object",
   "comment": "Messages",
   "properties": {
-    "status": {
-      "type": "string"
-    },
     "store": {
       "type": "string"
     },
