@@ -83,7 +83,8 @@
         },
         "phonecarrier": {
           "type": "string",
-          "selector": "td"
+          "selector": "td",
+          "selectIndex": 14
         },
         "swapserialnumber": {
           "type": "string"
