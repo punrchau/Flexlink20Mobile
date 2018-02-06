@@ -2,9 +2,6 @@
   "type": "object",
   "comment": "Messages",
   "properties": {
-    "swapserialnumber": {
-      "type": "string"
-    },
     "selectRecord1": {
       "type": "action",
       "selector": ".",
