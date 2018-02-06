@@ -92,6 +92,11 @@
           "selector": "td",
           "selectIndex": 15,
           "control": "property.innerText"
+        },
+        "deselectRecord1": {
+          "type": "string",
+          "selector": ".k-alt",
+          "control": "property.innerText"
         }
       },
       "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
