@@ -56,5 +56,6 @@
     }
   },
   "connect": [],
-  "selector": "a"
+  "selector": "a",
+  "selectContains": "Problem Description"
 }
