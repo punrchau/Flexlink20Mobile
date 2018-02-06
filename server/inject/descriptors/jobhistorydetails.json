@@ -71,7 +71,8 @@
         },
         "productmodel": {
           "type": "string",
-          "selector": "td"
+          "selector": "td",
+          "selectIndex": 11
         },
         "unitcondition": {
           "type": "string"
