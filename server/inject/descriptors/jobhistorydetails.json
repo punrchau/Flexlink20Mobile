@@ -2,9 +2,6 @@
   "type": "object",
   "comment": "Messages",
   "properties": {
-    "phonecarrier": {
-      "type": "string"
-    },
     "swapserialnumber": {
       "type": "string"
     },
