@@ -59,7 +59,8 @@
         },
         "warrantyexpiry": {
           "type": "string",
-          "selector": "td"
+          "selector": "td",
+          "selectIndex": 9
         },
         "imei": {
           "type": "string"
