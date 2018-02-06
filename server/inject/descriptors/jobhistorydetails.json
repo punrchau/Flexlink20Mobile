@@ -40,7 +40,8 @@
           "control": "property.innerText"
         },
         "store": {
-          "type": "string"
+          "type": "string",
+          "selector": "td"
         },
         "jobpriority": {
           "type": "string"
