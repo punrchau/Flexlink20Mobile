@@ -42,7 +42,8 @@
         "store": {
           "type": "string",
           "selector": "td",
-          "selectIndex": 6
+          "selectIndex": 6,
+          "control": "property.innerText"
         },
         "jobpriority": {
           "type": "string"
