@@ -78,7 +78,8 @@
         "unitcondition": {
           "type": "string",
           "selector": "td",
-          "selectIndex": 13
+          "selectIndex": 13,
+          "control": "property.innerText"
         },
         "phonecarrier": {
           "type": "string"
