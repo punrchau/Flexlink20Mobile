@@ -37,12 +37,8 @@
             "control": "action.link"
           },
           "unselectRecord": {
-            "type": "action",
-            "control": "action.link",
-            "selector": {
-              "fn": "",
-              "selector": ""
-            }
+            "type": "method",
+            "parameters": {}
           }
         }
       },
