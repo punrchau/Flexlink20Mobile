@@ -41,7 +41,7 @@
             "control": "action.link",
             "selector": {
               "fn": "",
-              "selector": ""
+              "selector": "."
             }
           }
         }
