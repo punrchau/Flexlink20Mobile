@@ -4,7 +4,7 @@ function app_servicejobhistory($scope, app) {
     app.init($scope);
     
     $scope.goToJobHistoryDetails = function (index) {
-            app.go('jobhistorydetails');
+            //app.go('jobhistorydetails');
             app.call('Home.viewJobHistoryDetails',{'index':index});
         /*else {
             app.call('PartReceiveDetail.goToHome', {});
