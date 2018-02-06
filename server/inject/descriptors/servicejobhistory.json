@@ -38,7 +38,7 @@
           },
           "unselectRecord": {
             "type": "action",
-            "control": "property.innerText"
+            "control": "action.link"
           }
         }
       },
