@@ -95,6 +95,11 @@
         }
       },
       "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
+    },
+    "deselectRecord": {
+      "type": "string",
+      "selector": ".k-alt",
+      "control": "property.innerText"
     }
   },
   "connect": [
