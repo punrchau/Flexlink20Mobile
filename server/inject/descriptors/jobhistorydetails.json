@@ -50,7 +50,7 @@
       "control": "action.link"
     },
     "isjobhistorydetail": {
-      "type": "string",
+      "type": "identifier",
       "selector": "#comment",
       "control": "property.innerText"
     }
