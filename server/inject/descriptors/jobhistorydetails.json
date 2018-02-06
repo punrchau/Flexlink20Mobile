@@ -103,14 +103,6 @@
         }
       },
       "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
-    },
-    "deselectRecord": {
-      "type": "action",
-      "control": "action.link",
-      "selector": {
-        "fn": "function(node){return angular.element(document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected')).removeClass('k-state-selected')}",
-        "selector": ""
-      }
     }
   },
   "connect": [
