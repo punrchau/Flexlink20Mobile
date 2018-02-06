@@ -131,6 +131,12 @@
       "sourceScreenId": "app.messagesinbox.messagescaptivating",
       "sourceAppId": "universaltemplates",
       "model": "servicejobhistory"
+    },
+    {
+      "id": "testdetailspage",
+      "name": "TestDetailsPage",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
     }
   ],
   "sourceAppId": "_blank",

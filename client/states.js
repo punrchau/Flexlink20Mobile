@@ -177,5 +177,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.testdetailspage', {
+        views: {
+            app: {
+                controller: 'app_testdetailspage',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.testdetailspage');
+                }
+            }
+        }
     });
 });
