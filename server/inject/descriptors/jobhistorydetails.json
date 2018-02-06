@@ -46,7 +46,7 @@
     },
     "selectRecord": {
       "type": "action",
-      "selector": "#JobHistoryDetailsModel",
+      "selector": ".",
       "control": "property.innerHTML"
     }
   },
