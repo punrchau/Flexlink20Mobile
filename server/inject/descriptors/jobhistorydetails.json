@@ -45,7 +45,7 @@
       "type": "string"
     },
     "selectRecord": {
-      "type": "string",
+      "type": "action",
       "selector": "#JobHistoryDetailsModel",
       "control": "property.innerHTML"
     }
