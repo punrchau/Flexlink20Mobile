@@ -28,7 +28,8 @@
           "control": "property.innerText"
         },
         "creationdate": {
-          "type": "string"
+          "type": "string",
+          "selector": "td"
         },
         "status": {
           "type": "string"
