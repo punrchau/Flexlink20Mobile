@@ -23,7 +23,8 @@
           "control": "property.innerText"
         },
         "problemdescription": {
-          "type": "string"
+          "type": "string",
+          "selectIndex": 2
         },
         "creationdate": {
           "type": "string"
