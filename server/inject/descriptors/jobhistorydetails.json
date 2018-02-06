@@ -2,9 +2,6 @@
   "type": "object",
   "comment": "Messages",
   "properties": {
-    "warrantyexpiry": {
-      "type": "string"
-    },
     "imei": {
       "type": "string"
     },
