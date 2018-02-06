@@ -38,7 +38,7 @@
           },
           "unselectRecord": {
             "type": "action",
-            "control": "action.link",
+            "control": "exists",
             "selector": {
               "fn": "",
               "selector": ""
