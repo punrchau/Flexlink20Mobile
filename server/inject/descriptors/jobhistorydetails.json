@@ -58,7 +58,8 @@
           "control": "property.innerText"
         },
         "warrantyexpiry": {
-          "type": "string"
+          "type": "string",
+          "selector": "td"
         },
         "imei": {
           "type": "string"
