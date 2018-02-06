@@ -24,7 +24,8 @@
         },
         "problemdescription": {
           "type": "string",
-          "selectIndex": 2
+          "selectIndex": 2,
+          "selector": "td"
         },
         "creationdate": {
           "type": "string"
