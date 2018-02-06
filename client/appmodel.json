@@ -1081,49 +1081,52 @@
     "properties": {
       "jobhistorylist": {
         "type": "object",
-      "properties": {
-      "jobnumber": {
-        "type": "string"
-      },
-      "ticketnumber": {
-        "type": "string"
-      },
-      "problemdescription": {
-        "type": "string"
-      },
-      "creationdate": {
-        "type": "string"
-      },
-      "status": {
-        "type": "string"
-      },
-      "store": {
-        "type": "string"
-      },
-      "jobpriority": {
-        "type": "string"
-      },
-      "warrantystatus": {
-        "type": "string"
-      },
-      "warrantyexpiry": {
-        "type": "string"
-      },
-      "imei": {
-        "type": "string"
-      },
-      "productmodel": {
-        "type": "string"
-      },
-      "unitcondition": {
-        "type": "string"
-      },
-      "phonecarrier": {
-        "type": "string"
-      },
-      "swapserialnumber": {
-        "type": "string"
-      }
+        "properties": {
+          "jobnumber": {
+            "type": "string"
+          },
+          "ticketnumber": {
+            "type": "string"
+          },
+          "problemdescription": {
+            "type": "string"
+          },
+          "creationdate": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "store": {
+            "type": "string"
+          },
+          "jobpriority": {
+            "type": "string"
+          },
+          "warrantystatus": {
+            "type": "string"
+          },
+          "warrantyexpiry": {
+            "type": "string"
+          },
+          "imei": {
+            "type": "string"
+          },
+          "productmodel": {
+            "type": "string"
+          },
+          "unitcondition": {
+            "type": "string"
+          },
+          "phonecarrier": {
+            "type": "string"
+          },
+          "swapserialnumber": {
+            "type": "string"
+          },
+          "deselectRecord": {
+            "type": "action"
+          }
         }
       }
     }
