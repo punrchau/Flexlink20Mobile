@@ -29,7 +29,8 @@
         },
         "creationdate": {
           "type": "string",
-          "selector": "td"
+          "selector": "td",
+          "selectIndex": 3
         },
         "status": {
           "type": "string"
