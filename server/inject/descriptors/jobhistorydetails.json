@@ -2,11 +2,6 @@
   "type": "object",
   "comment": "Messages",
   "properties": {
-    "selectRecord1": {
-      "type": "action",
-      "selector": ".",
-      "control": "action.link"
-    },
     "isjobhistorydetail": {
       "type": "identifier",
       "selector": "a",
