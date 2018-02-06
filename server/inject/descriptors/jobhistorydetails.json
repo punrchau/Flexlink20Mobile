@@ -54,7 +54,7 @@
           "type": "string"
         }
       },
-      "selector": "#JobHistoryDetailsModel > div > div"
+      "selector": "#GDMasterJobHistoryDetails table tbody tr"
     }
   },
   "connect": [],
