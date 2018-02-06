@@ -41,7 +41,8 @@
         },
         "store": {
           "type": "string",
-          "selector": "td"
+          "selector": "td",
+          "selectIndex": 6
         },
         "jobpriority": {
           "type": "string"
