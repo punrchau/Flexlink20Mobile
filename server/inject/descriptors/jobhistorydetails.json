@@ -2,9 +2,6 @@
   "type": "object",
   "comment": "Messages",
   "properties": {
-    "warrantystatus": {
-      "type": "string"
-    },
     "warrantyexpiry": {
       "type": "string"
     },
