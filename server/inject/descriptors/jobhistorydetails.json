@@ -2,9 +2,6 @@
   "type": "object",
   "comment": "Messages",
   "properties": {
-    "problemdescription": {
-      "type": "string"
-    },
     "creationdate": {
       "type": "string"
     },
