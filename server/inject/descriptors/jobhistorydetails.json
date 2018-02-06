@@ -2,9 +2,6 @@
   "type": "object",
   "comment": "Messages",
   "properties": {
-    "creationdate": {
-      "type": "string"
-    },
     "status": {
       "type": "string"
     },
