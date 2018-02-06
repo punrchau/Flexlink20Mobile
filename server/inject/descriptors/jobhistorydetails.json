@@ -76,7 +76,8 @@
           "control": "property.innerText"
         },
         "unitcondition": {
-          "type": "string"
+          "type": "string",
+          "selector": "td"
         },
         "phonecarrier": {
           "type": "string"
