@@ -40,7 +40,7 @@
             "type": "action",
             "control": "action.link",
             "selector": {
-              "fn": "",
+              "fn": "function(node){if(node.getAttribute('class')=='active'){return true}}",
               "selector": ""
             }
           }
