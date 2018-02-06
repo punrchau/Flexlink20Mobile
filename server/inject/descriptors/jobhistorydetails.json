@@ -47,7 +47,8 @@
         },
         "jobpriority": {
           "type": "string",
-          "selector": "td"
+          "selector": "td",
+          "selectIndex": 7
         },
         "warrantystatus": {
           "type": "string"
