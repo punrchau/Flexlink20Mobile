@@ -94,7 +94,7 @@
           "control": "property.innerText"
         },
         "deselectRecord1": {
-          "type": "string",
+          "type": "action",
           "selector": ".k-alt",
           "control": "property.innerText"
         }
