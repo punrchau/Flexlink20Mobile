@@ -25,7 +25,8 @@
         "problemdescription": {
           "type": "string",
           "selectIndex": 2,
-          "selector": "td"
+          "selector": "td",
+          "control": "property.innerText"
         },
         "creationdate": {
           "type": "string"
