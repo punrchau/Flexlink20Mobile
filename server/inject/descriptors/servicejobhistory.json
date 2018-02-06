@@ -40,7 +40,7 @@
             "type": "action",
             "control": "action.link",
             "selector": {
-              "fn": "function(node){var element=document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected');element.className=element.remove('k-state-selected')}",
+              "fn": "function(node){var element=document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected');element.remove('k-state-selected')}",
               "selector": ""
             }
           }
