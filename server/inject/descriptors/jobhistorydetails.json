@@ -95,7 +95,7 @@
         },
         "deselectRecord1": {
           "type": "action",
-          "control": "property.innerText",
+          "control": "action.link",
           "selector": {
             "fn": "",
             "selector": ""
