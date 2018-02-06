@@ -54,7 +54,8 @@
         "warrantystatus": {
           "type": "string",
           "selector": "td",
-          "selectIndex": 8
+          "selectIndex": 8,
+          "control": "property.innerText"
         },
         "warrantyexpiry": {
           "type": "string"
