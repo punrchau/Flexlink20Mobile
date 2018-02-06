@@ -2,9 +2,6 @@
   "type": "object",
   "comment": "Messages",
   "properties": {
-    "unitcondition": {
-      "type": "string"
-    },
     "phonecarrier": {
       "type": "string"
     },
