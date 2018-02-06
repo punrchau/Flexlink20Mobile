@@ -62,7 +62,7 @@
           "type": "string"
         }
       },
-      "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-alt.k-state-selected"
+      "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
     }
   },
   "connect": [],
