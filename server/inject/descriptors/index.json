@@ -10,9 +10,9 @@
   "unitowner.json",
   "servicejobremarks.json",
   "servicejobhistory.json",
+  "jobhistorydetails.json",
   "servicejob.json",
   "jobdetails.json",
   "jobinfo.json",
-  "details.json",
-  "jobhistorydetails.json"
+  "details.json"
 ]
