@@ -17,7 +17,8 @@
           "control": "property.innerText"
         },
         "ticketnumber": {
-          "type": "string"
+          "type": "string",
+          "selector": "td"
         },
         "problemdescription": {
           "type": "string"
