@@ -52,7 +52,7 @@
     "isjobhistorydetail": {
       "type": "identifier",
       "selector": "a",
-      "control": "property.innerText",
+      "control": "exists",
       "selectContains": "Problem Description"
     }
   },
