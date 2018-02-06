@@ -30,7 +30,8 @@
         "creationdate": {
           "type": "string",
           "selector": "td",
-          "selectIndex": 3
+          "selectIndex": 3,
+          "control": "property.innerText"
         },
         "status": {
           "type": "string"
