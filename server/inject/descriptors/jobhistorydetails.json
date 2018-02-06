@@ -89,7 +89,8 @@
         },
         "swapserialnumber": {
           "type": "string",
-          "selector": "td"
+          "selector": "td",
+          "selectIndex": 15
         }
       },
       "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
