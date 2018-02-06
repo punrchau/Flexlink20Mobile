@@ -82,7 +82,8 @@
           "control": "property.innerText"
         },
         "phonecarrier": {
-          "type": "string"
+          "type": "string",
+          "selector": "td"
         },
         "swapserialnumber": {
           "type": "string"
