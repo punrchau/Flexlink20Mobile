@@ -52,7 +52,8 @@
     "isjobhistorydetail": {
       "type": "identifier",
       "selector": "a",
-      "control": "property.innerText"
+      "control": "property.innerText",
+      "selectContains": "Problem Description"
     }
   },
   "connect": [],
