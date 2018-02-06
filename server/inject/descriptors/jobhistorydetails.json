@@ -13,7 +13,8 @@
       "properties": {
         "jobnumber": {
           "type": "string",
-          "selector": "td"
+          "selector": "td",
+          "control": "property.innerText"
         },
         "ticketnumber": {
           "type": "string"
