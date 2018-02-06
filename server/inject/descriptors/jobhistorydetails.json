@@ -2,9 +2,6 @@
   "type": "object",
   "comment": "Messages",
   "properties": {
-    "imei": {
-      "type": "string"
-    },
     "productmodel": {
       "type": "string"
     },
