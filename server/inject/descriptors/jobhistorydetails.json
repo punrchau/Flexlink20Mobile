@@ -34,7 +34,8 @@
           "control": "property.innerText"
         },
         "status": {
-          "type": "string"
+          "type": "string",
+          "selector": "td"
         },
         "store": {
           "type": "string"
