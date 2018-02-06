@@ -52,7 +52,8 @@
           "control": "property.innerText"
         },
         "warrantystatus": {
-          "type": "string"
+          "type": "string",
+          "selector": "td"
         },
         "warrantyexpiry": {
           "type": "string"
