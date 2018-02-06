@@ -2,9 +2,6 @@
   "type": "object",
   "comment": "Messages",
   "properties": {
-    "ticketnumber": {
-      "type": "string"
-    },
     "problemdescription": {
       "type": "string"
     },
