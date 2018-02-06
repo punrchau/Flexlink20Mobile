@@ -77,7 +77,8 @@
         },
         "unitcondition": {
           "type": "string",
-          "selector": "td"
+          "selector": "td",
+          "selectIndex": 12
         },
         "phonecarrier": {
           "type": "string"
