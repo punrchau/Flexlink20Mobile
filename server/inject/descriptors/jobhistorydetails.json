@@ -47,7 +47,7 @@
     "selectRecord": {
       "type": "action",
       "selector": ".",
-      "control": "property.innerHTML"
+      "control": "action.link"
     }
   },
   "connect": [],
