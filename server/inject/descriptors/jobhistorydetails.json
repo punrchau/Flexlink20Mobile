@@ -57,6 +57,5 @@
     }
   },
   "connect": [],
-  "selector": "#JobHistoryDetailsModel",
-  "selectContains": "Problem Description"
+  "selector": "#JobHistoryDetailsModel"
 }
