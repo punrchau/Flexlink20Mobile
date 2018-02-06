@@ -30,6 +30,11 @@
             "selector": "td",
             "selectIndex": 5,
             "control": "property.innerText"
+          },
+          "selectRecord": {
+            "type": "string",
+            "selector": "#JobHistoryDetailsModel",
+            "control": "property.innerHTML"
           }
         }
       },
