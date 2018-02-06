@@ -95,7 +95,6 @@
         },
         "deselectRecord1": {
           "type": "action",
-          "selector": ".k-alt",
           "control": "property.innerText"
         }
       },
