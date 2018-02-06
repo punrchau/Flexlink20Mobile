@@ -2,9 +2,6 @@
   "type": "object",
   "comment": "Messages",
   "properties": {
-    "store": {
-      "type": "string"
-    },
     "jobpriority": {
       "type": "string"
     },
