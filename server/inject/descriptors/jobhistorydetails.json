@@ -53,7 +53,8 @@
         },
         "warrantystatus": {
           "type": "string",
-          "selector": "td"
+          "selector": "td",
+          "selectIndex": 8
         },
         "warrantyexpiry": {
           "type": "string"
