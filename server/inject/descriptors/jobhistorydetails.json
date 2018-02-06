@@ -12,7 +12,8 @@
       "type": "object",
       "properties": {
         "jobnumber": {
-          "type": "string"
+          "type": "string",
+          "selector": "td"
         },
         "ticketnumber": {
           "type": "string"
