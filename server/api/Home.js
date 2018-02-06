@@ -29,6 +29,11 @@ exports.viewRecord = function(page, params) {
     //page.action('servicejob', 'viewRecord');
 }
 
+exports.viewJobHistoryDetails = function(page, params) {
+    page.action('servicejobhistory', 'jobhistory[' + params.index + '].selectRecord');
+    //page.action('servicejob', 'viewRecord');
+}
+
 exports.deleteRecord = function(page, params) {
     page.action('PartReceiveDetails', 'partDiscrepancy.details[' + params.index + '].selectRecord');
     page.action('PartReceiveDetails', 'partDiscrepancy.delete');
