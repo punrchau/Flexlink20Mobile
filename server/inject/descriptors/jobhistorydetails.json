@@ -54,7 +54,7 @@
           "type": "string"
         }
       },
-      "selector": "#JobHistoryDetailsModel"
+      "selector": "#JobHistoryDetailsModel > div > div"
     }
   },
   "connect": [],
