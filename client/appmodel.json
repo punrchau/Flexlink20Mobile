@@ -1120,6 +1120,10 @@
       },
       "swapserialnumber": {
         "type": "string"
+      },
+      "jobhistorylist": {
+        "type": "object",
+        "properties": {}
       }
     }
   }
