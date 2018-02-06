@@ -46,5 +46,5 @@
     }
   },
   "connect": [],
-  "selector": "span"
+  "selector": "#JobHistoryDetailsModel"
 }
