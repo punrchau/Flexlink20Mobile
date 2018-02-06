@@ -39,7 +39,10 @@
           "unselectRecord": {
             "type": "action",
             "control": "action.link",
-            "selector": "."
+            "selector": {
+              "fn": "",
+              "selector": "."
+            }
           }
         }
       },
