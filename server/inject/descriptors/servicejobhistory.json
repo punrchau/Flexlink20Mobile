@@ -38,7 +38,6 @@
           },
           "unselectRecord": {
             "type": "action",
-            "selector": "#comment",
             "control": "property.innerText"
           }
         }
