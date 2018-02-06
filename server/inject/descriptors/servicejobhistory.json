@@ -40,7 +40,7 @@
             "type": "action",
             "control": "action.link",
             "selector": {
-              "fn": "function(node){var element=document.getElementById('myDIV');element.className=element.className.replace(/\\bmystyle\\b/g,'')}",
+              "fn": "function(node){var element=document.getElementById('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected');element.className=element.className.replace(,'')}",
               "selector": ""
             }
           }
