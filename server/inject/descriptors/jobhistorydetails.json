@@ -43,6 +43,11 @@
     },
     "swapserialnumber": {
       "type": "string"
+    },
+    "selectRecord": {
+      "type": "string",
+      "selector": "#JobHistoryDetailsModel",
+      "control": "property.innerHTML"
     }
   },
   "connect": [],
