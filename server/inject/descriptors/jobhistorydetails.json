@@ -64,7 +64,8 @@
           "control": "property.innerText"
         },
         "imei": {
-          "type": "string"
+          "type": "string",
+          "selector": "td"
         },
         "productmodel": {
           "type": "string"
