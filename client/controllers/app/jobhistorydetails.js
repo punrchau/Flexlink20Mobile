@@ -3,8 +3,8 @@ function app_jobhistorydetails($scope, app) {
     'use strict';
     app.init($scope);
     
-    function goBack() {
-    window.history.back();
+    $scope.goBack=function () {
+        window.history.back();
     }
     
 }
