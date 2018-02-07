@@ -94,7 +94,7 @@
     "deselectRecord": {
       "type": "action",
       "selector": {
-        "fn": "function(node){if(document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').getAttribute('class')=='k-state-selected'){return document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').removeAttribute('class','k-state-selected')}}",
+        "fn": "function(node){var i=0;if(i==1){return document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').removeAttribute('class','k-state-selected');set i=1}}",
         "selector": ""
       },
       "control": "action.link"
