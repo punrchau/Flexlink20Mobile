@@ -91,10 +91,6 @@
       },
       "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
     },
-    "deselectRecord": {
-      "type": "method",
-      "parameters": {}
-    },
     "isjobhistorydetail": {
       "type": "identifier",
       "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected",
