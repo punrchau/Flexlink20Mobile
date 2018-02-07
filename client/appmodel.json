@@ -1065,6 +1065,9 @@
             "status": {
               "type": "string",
               "label": "Date"
+            },
+            "selectRecord": {
+              "type": "action"
             }
           }
         },
