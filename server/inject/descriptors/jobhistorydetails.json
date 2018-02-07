@@ -100,7 +100,7 @@
       "type": "action",
       "control": "action.link",
       "selector": {
-        "fn": "function(node){node.removeAttribute('k-state-selected')}",
+        "fn": "function(node){return node.removeAttribute('k-state-selected')}",
         "selector": ""
       }
     }
