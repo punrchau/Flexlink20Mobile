@@ -94,7 +94,7 @@
     "deselectRecord": {
       "type": "action",
       "selector": {
-        "fn": "function(node){return document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').setAttribute('class','k-state-selected')}",
+        "fn": "function(node){return document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').removeAttribute('class','k-state-selected')}",
         "selector": ""
       },
       "control": "property.innerText"
