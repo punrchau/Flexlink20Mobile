@@ -109,10 +109,6 @@
       "screens": [
         "jobhistorydetails"
       ]
-    },
-    {
-      "match": [],
-      "action": "deselectRecord"
     }
   ],
   "selector": "#JobHistoryDetailsModel"
