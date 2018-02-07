@@ -95,6 +95,11 @@
       "type": "action",
       "selector": "tbody",
       "control": "property.innerText"
+    },
+    "isjobhistorydetail": {
+      "type": "string",
+      "selector": "tbody",
+      "control": "property.innerText"
     }
   },
   "connect": [
