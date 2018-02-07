@@ -99,10 +99,7 @@
     "deselectRecord": {
       "type": "action",
       "control": "exists",
-      "selector": {
-        "fn": "function(node){return document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').setAttribute('class','k-state-selected')}",
-        "selector": "'#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').setAttribute('class', 'k-state-selected')"
-      }
+      "selector": "'#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').setAttribute('class', 'k-state-selected')"
     }
   },
   "connect": [
