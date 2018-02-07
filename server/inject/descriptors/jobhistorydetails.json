@@ -93,10 +93,6 @@
     },
     "deselectRecord": {
       "type": "action",
-      "selector": {
-        "fn": "",
-        "selector": ""
-      },
       "control": "action.link"
     },
     "isjobhistorydetail": {
