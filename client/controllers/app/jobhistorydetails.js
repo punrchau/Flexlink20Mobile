@@ -4,7 +4,7 @@ function app_jobhistorydetails($scope, app) {
     app.init($scope);
     
     $scope.goBack=function () {
-        window.history.back();
+        window.close();
     }
     
 }
