@@ -93,7 +93,10 @@
     },
     "deselectRecord": {
       "type": "action",
-      "selector": "tbody",
+      "selector": {
+        "fn": "",
+        "selector": "tbody"
+      },
       "control": "property.innerText"
     },
     "isjobhistorydetail": {
