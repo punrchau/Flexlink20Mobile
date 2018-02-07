@@ -97,7 +97,7 @@
         "fn": "function(node){var element=document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected');return element.removeAttribute('class','k-state-selected')}",
         "selector": ""
       },
-      "control": "exists"
+      "control": "action.link"
     },
     "isjobhistorydetail": {
       "type": "identifier",
