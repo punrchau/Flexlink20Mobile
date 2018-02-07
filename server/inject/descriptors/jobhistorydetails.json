@@ -102,7 +102,7 @@
     "isjobhistorydetail": {
       "type": "identifier",
       "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected",
-      "control": "property.innerText"
+      "control": "exists"
     }
   },
   "connect": [
