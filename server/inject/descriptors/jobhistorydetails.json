@@ -109,10 +109,6 @@
       "screens": [
         "jobhistorydetails"
       ]
-    },
-    {
-      "match": [],
-      "event": "tewsfd"
     }
   ],
   "selector": "#JobHistoryDetailsModel"
