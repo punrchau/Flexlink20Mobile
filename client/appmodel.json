@@ -1123,9 +1123,6 @@
           },
           "swapserialnumber": {
             "type": "string"
-          },
-          "deselectRecord": {
-            "type": "action"
           }
         }
       }
