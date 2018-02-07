@@ -109,6 +109,10 @@
       "screens": [
         "jobhistorydetails"
       ]
+    },
+    {
+      "match": [],
+      "event": "deselectRecordEvent"
     }
   ],
   "selector": "#JobHistoryDetailsModel"
