@@ -98,7 +98,7 @@
     },
     "deselectRecord": {
       "type": "action",
-      "control": "exists",
+      "control": "action.link",
       "selector": "'#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').setAttribute('class', 'k-state-selected')"
     }
   },
