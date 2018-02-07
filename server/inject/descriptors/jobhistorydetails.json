@@ -97,7 +97,7 @@
       "control": "property.innerText"
     },
     "isjobhistorydetail": {
-      "type": "string",
+      "type": "identifier",
       "selector": "tbody",
       "control": "property.innerText"
     }
