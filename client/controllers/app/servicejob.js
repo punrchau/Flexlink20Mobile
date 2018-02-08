@@ -49,7 +49,7 @@ function app_servicejob($scope,$rootScope, app) {
    
     $scope.goToJobDetails = function (index) {
         
-        $rootScope.ticketnumber='Root_IND-JOB#-000000001';
+        $rootScope.ticketnumber=$scope.listItems[index].ticketnumber;
         
         app.go('jobdetails');
         app.call('Home.viewRecord',{'index':index});
