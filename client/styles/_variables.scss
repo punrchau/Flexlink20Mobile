@@ -740,6 +740,7 @@ $ios-statusbar-height: 20px;
     font-size: 16px; line-height: 20px;color:#5993a6;  
 }  
 .headerStyle{  
+   border-radius: 10px !important;border-style: solid;border-color:#00ffbf;border-width: 2px;
    height:30px;font-size: 14px;text-align:center;color:white !important;background-color:#74b6cc !important;margin-top:3px  
 }  
 .lineStyle{  
