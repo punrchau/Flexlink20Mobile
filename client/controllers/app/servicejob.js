@@ -53,7 +53,7 @@ function app_servicejob($scope,$rootScope, app) {
         $rootScope.ownername=item.firstname +' '+ item.lastname;
         
         app.go('jobdetails');
-        app.call('Home.viewRecord',{'index':index});
+        app.call('Home.viewRecord',{'index':index,'ticketnumber':item.ticketnumber});
         
         /*else {
             app.call('PartReceiveDetail.goToHome', {});
