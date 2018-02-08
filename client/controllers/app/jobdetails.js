@@ -18,7 +18,7 @@ function app_jobdetails($scope,$rootScope, app) {
     $scope.unitinfos = {categoryName:'Unit Info', image:'images/jobdetails/unit_info.png'};
            
     app.init($scope);
-    $scope.Name='India';
+    $scope.name='India';
     $scope.ticketnumber=$rootScope.ticketnumber;
     
      $scope.viewJobInfo = function () {
