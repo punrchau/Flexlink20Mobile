@@ -11,7 +11,7 @@ app.config( [
     }
     ]);
     
-function app_servicejob($scope, app) {
+function app_servicejob($scope,$rootScope, app) {
     'use strict';
     $scope.expanded = false;
     
