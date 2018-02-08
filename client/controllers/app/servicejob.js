@@ -14,8 +14,7 @@ app.config( [
 function app_servicejob($scope,$rootScope, app) {
     'use strict';
     $scope.expanded = false;
-    $scope.data.listItems=[];
-    
+ 
     app.init($scope);
     $scope.sortBy="firstname";
     $scope.isDescending = false;
@@ -48,13 +47,13 @@ function app_servicejob($scope,$rootScope, app) {
     }
     
    
-    $scope.goToJobDetails = function (item,index) {
+    $scope.goToJobDetails = function (listItems,item,index) {
         
-        var newIndex=0;
-        for (var i = 0; i < $scope.data.listItems.length; i++) {
+        var newIndex=listItems.length-1;
+       /* for (var i = 0; i <.length; i++) {
            if($scope.data.listItems[i].ticketnumber!=item.ticketnumber)
              newIndex++;
-        }
+        }*/
 
         $rootScope.ticketnumber=item.ticketnumber;
         $rootScope.ownername=item.firstname +' '+ item.lastname;
