@@ -39,6 +39,10 @@ exports.deleteRecord = function(page, params) {
     page.action('PartReceiveDetails', 'partDiscrepancy.delete');
 }
 
+exports.goToServiceJob = function (page) {
+    page.href('http://fl20commonqa.azurewebsites.net/mobile/#/servicejobs'); 
+}
+
 exports.viewJobInfo = function(page, params) {
     page.action('jobdetails', 'actions.jobinfo');
 }
