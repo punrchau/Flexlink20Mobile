@@ -1,5 +1,5 @@
 angular.module('app').controller('app_jobdetails', app_jobdetails);
-function app_jobdetails($scope,, app) {
+function app_jobdetails($scope,$rootScope, app) {
      'use strict';
       /*$scope.data.categories = [
                 {categoryName:'Job Info', image:'images/jobdetails/Service_Info.png'},
@@ -18,7 +18,7 @@ function app_jobdetails($scope,, app) {
     $scope.unitinfos = {categoryName:'Unit Info', image:'images/jobdetails/unit_info.png'};
            
     app.init($scope);
-    
+    $scope.Name='India';
     $scope.ticketnumber=$rootScope.ticketnumber;
     
      $scope.viewJobInfo = function () {
