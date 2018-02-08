@@ -49,7 +49,7 @@ function app_servicejob($scope,$rootScope, app) {
    
     $scope.goToJobDetails = function (listItems,item,index) {
         
-        var newIndex=listItems.length-1;
+        var newIndex=0;
         for (var i = 0; i <listItems.length; i++) {
            if(listItems[i].ticketnumber!=item.ticketnumber)
              newIndex++;
