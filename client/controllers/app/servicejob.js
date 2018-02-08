@@ -47,13 +47,19 @@ function app_servicejob($scope,$rootScope, app) {
     }
     
    
-    $scope.goToJobDetails = function (item,index) {
+    $scope.goToJobDetails = function (listItems,item,index) {
         
+        var newIndex=0;
+        for (var i = 0; i < listItems.length; i++) {
+           if(listItems[i].ticketnumber!=item.ticketnumber)
+             newIndex++;
+        }
+
         $rootScope.ticketnumber=item.ticketnumber;
         $rootScope.ownername=item.firstname +' '+ item.lastname;
         
         app.go('jobdetails');
-        app.call('Home.viewRecord',{'index':index,'ticketnumber':item.ticketnumber});
+        app.call('Home.viewRecord',{'index':newIndex});
         
         /*else {
             app.call('PartReceiveDetail.goToHome', {});
