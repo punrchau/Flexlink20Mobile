@@ -25,7 +25,22 @@ exports.editRecord = function(page, params) {
 }
 
 exports.viewRecord = function(page, params) {
-    page.action('servicejob', 'listItems[' + params.index + '].selectRecord');
+    var index=0;
+    
+    array.forEach(function(listItems) {
+        if(array.ticketnumber==params.ticketnumber)
+            break;
+        else
+            index++;
+    }, this);
+
+
+    // for (var i = 0; i < listItems.length; i++) {
+    //     var element = array[i];
+        
+    // }
+
+    page.action('servicejob', 'listItems[' + index + '].selectRecord');
     //page.action('servicejob', 'viewRecord');
 }
 
