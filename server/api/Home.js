@@ -40,7 +40,7 @@ exports.deleteRecord = function(page, params) {
 }
 
 exports.goToServiceJob = function (page) {
-    page.href('http://fl20commonqa.azurewebsites.net/mobile/#/servicejobs');
+    page.href('http://fl20commonqa.azurewebsites.net/mobile/#/servicejobs').screen('prehomeloadjobmgmt');
 }
 
 exports.viewJobInfo = function(page, params) {
