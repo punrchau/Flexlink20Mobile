@@ -50,10 +50,10 @@ function app_servicejob($scope,$rootScope, app) {
     $scope.goToJobDetails = function (listItems,item,index) {
         
         var newIndex=listItems.length-1;
-       /* for (var i = 0; i <.length; i++) {
-           if($scope.data.listItems[i].ticketnumber!=item.ticketnumber)
+        for (var i = 0; i <listItems.length; i++) {
+           if(listItems[i].ticketnumber!=item.ticketnumber)
              newIndex++;
-        }*/
+        }
 
         $rootScope.ticketnumber=item.ticketnumber;
         $rootScope.ownername=item.firstname +' '+ item.lastname;
