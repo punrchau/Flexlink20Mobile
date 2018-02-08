@@ -19,6 +19,8 @@ function app_jobdetails($scope,$rootScope, app) {
            
     app.init($scope);
     
+    $scope.ticketnumber=$rootScope.ticketnumber;
+    
      $scope.viewJobInfo = function () {
           app.call('Home.viewJobInfo', {});
     };
