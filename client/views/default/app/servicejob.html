@@ -40,6 +40,7 @@
         </div>
     </ion-header-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
+        <div>listItme:{{listItme}}</div>
         <div class="borderStyle card" data-comp-id="div.1"
             ng-repeat="item in data.listItems | orderBy:sortFunc:isDescending | filter:searchstring"
             style="margin: 7px 7px">
