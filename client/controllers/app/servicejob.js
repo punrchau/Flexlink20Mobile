@@ -48,8 +48,12 @@ function app_servicejob($scope,$rootScope, app) {
     
    
     $scope.goToJobDetails = function (index) {
-            app.go('jobdetails');
-            app.call('Home.viewRecord',{'index':index});
+        
+        .ticketnumber=$scope.data.listItems[index].ticketnumber;
+        
+        app.go('jobdetails');
+        app.call('Home.viewRecord',{'index':index});
+        
         /*else {
             app.call('PartReceiveDetail.goToHome', {});
         }*/
