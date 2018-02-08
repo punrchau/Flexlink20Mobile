@@ -1,5 +1,5 @@
 angular.module('app').controller('app_jobdetails', app_jobdetails);
-function app_jobdetails($scope, app) {
+function app_jobdetails($scope,$rootScope, app) {
      'use strict';
       /*$scope.data.categories = [
                 {categoryName:'Job Info', image:'images/jobdetails/Service_Info.png'},
