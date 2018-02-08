@@ -50,7 +50,7 @@ function app_servicejob($scope,$rootScope, app) {
     $scope.goToJobDetails = function (item,index) {
         
         $rootScope.ticketnumber=item.ticketnumber;
-        $rootScope.ownerName=item.firstname +' '+ item.lastname;
+        $rootScope.ownername=item.firstname +' '+ item.lastname;
         
         app.go('jobdetails');
         app.call('Home.viewRecord',{'index':index});

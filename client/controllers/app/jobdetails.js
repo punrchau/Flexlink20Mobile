@@ -20,6 +20,8 @@ function app_jobdetails($scope,$rootScope, app) {
     app.init($scope);
     $scope.name='India';
     $scope.ticketnumber=$rootScope.ticketnumber;
+    $scope.ownername=$rootScope.ownername;
+    
     
      $scope.viewJobInfo = function () {
           app.call('Home.viewJobInfo', {});
