@@ -740,8 +740,9 @@ $ios-statusbar-height: 20px;
     font-size: 16px; line-height: 20px;color:#5993a6;  
 }  
 .headerStyle{  
-   border-radius: 5px !important;border-style: solid;border-color:green;border-width: 2px;
-   height:35px;font-size: 14px;text-align:center;color:white !important;background-color:#74b6cc !important;margin-top:3px  
+   border-radius: 5px !important;border-style:#00bfff solid;border-color:green;border-width: 2px;
+   height:35px;font-size: 14px;text-align:center;color:white !important;background-color:#74b6cc !important;
+   margin-top:3px  
 }  
 .lineStyle{  
     border:#a3c1cc solid 1px;margin-top:0px;  
