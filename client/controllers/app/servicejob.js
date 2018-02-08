@@ -14,7 +14,7 @@ app.config( [
 function app_servicejob($scope,$rootScope, app) {
     'use strict';
     $scope.expanded = false;
-    $scope.listItme=[];
+    $scope.nlistItme=[];
     
     app.init($scope);
     $scope.sortBy="firstname";
@@ -50,7 +50,7 @@ function app_servicejob($scope,$rootScope, app) {
    
     $scope.goToJobDetails = function (listItems,item,index) {
         
-        $scope.listItme=listItems;
+        $scope.nlistItme=listItems;
         
         var newIndex=0;
         for (var i = 0; i <listItems.length; i++) {
