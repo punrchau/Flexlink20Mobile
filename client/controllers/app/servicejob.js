@@ -1,6 +1,6 @@
 var app = angular.module('app');
 
-app.controller('app_servicejob', app_servicejob);
+app.controller('app_servicejob',['$scope','$rootScope','', app_servicejob($scope,$rootScope,app)]);
 
 app.config( [
     '$compileProvider',
@@ -11,7 +11,7 @@ app.config( [
     }
     ]);
     
-function app_servicejob($scope,$rootScope, app) {
+function app_servicejob($scope, $rootScope, app) {
     'use strict';
     $scope.expanded = false;
     
@@ -48,7 +48,7 @@ function app_servicejob($scope,$rootScope, app) {
     
    
     $scope.goToJobDetails = function (index) {
-            $rootScope.ticketnumber=data.listItems[index].;
+            $rootScope.ticketnumber=$scope.data.listItems[index].ticketnumber;
             app.go('jobdetails');
             app.call('Home.viewRecord',{'index':index});
         /*else {
