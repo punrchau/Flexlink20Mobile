@@ -186,5 +186,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.photoupload', {
+        views: {
+            app: {
+                controller: 'app_photoupload',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.photoupload');
+                }
+            }
+        }
     });
 });

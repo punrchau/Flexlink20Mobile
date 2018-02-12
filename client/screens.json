@@ -138,6 +138,13 @@
       "sourceScreenId": "app.messagesinbox.messagescaptivating",
       "sourceAppId": "universaltemplates",
       "model": "jobhistorydetails"
+    },
+    {
+      "id": "photoupload",
+      "name": "PhotoUpload",
+      "sourceScreenId": "app.detailsview.detailsviewcool",
+      "sourceAppId": "universaltemplates",
+      "model": "photoupload"
     }
   ],
   "sourceAppId": "_blank",
