@@ -57,7 +57,7 @@
           },
           "isimp": {
             "type": "string",
-            "control": "exists",
+            "control": "property.innerText",
             "selector": "td",
             "selectIndex": 18
           }
