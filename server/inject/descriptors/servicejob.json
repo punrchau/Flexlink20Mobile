@@ -124,5 +124,6 @@
         "servicejob"
       ]
     }
-  ]
+  ],
+  "selector": ".row.margin-body"
 }
