@@ -59,7 +59,7 @@
             "type": "string",
             "control": "property.innerText",
             "selector": "td",
-            "selectIndex": 18
+            "selectIndex": 17
           }
         }
       },
