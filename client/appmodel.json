@@ -430,6 +430,9 @@
       },
       "search": {
         "type": "action"
+      },
+      "viewRecord": {
+        "type": "action"
       }
     }
   },
