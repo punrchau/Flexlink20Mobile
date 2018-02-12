@@ -97,7 +97,7 @@
     "close": {
       "type": "action",
       "control": "action.button",
-      "selector": "#unitDetailsModel > div > div > div.modal-header > button"
+      "selector": "#unitOwnerDetailsModel > div > div > div.modal-header > button"
     },
     "isdeliverysameaspickup": {
       "type": "boolean",
