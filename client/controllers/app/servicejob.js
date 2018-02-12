@@ -51,6 +51,7 @@ function app_servicejob($scope,$rootScope, app) {
     $scope.goToJobDetails = function (listItems,item,index) {
         
         $scope.nlistItme=listItems;
+        $scope.nticketnumber=$scope.nlistItme[0].ticketnumber;
         
         var newIndex=0;
         for (var i = 0; i <$scope.nlistItme.length; i++) {
