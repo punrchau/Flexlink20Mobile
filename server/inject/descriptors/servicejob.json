@@ -58,7 +58,8 @@
           "isimp": {
             "type": "boolean",
             "control": "exists",
-            "selector": "td"
+            "selector": "td",
+            "selectIndex": 18
           }
         }
       },
