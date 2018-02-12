@@ -56,7 +56,7 @@
             "control": "action.link"
           },
           "isimp": {
-            "type": "boolean",
+            "type": "string",
             "control": "exists",
             "selector": "td",
             "selectIndex": 18
