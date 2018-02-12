@@ -397,7 +397,7 @@
               "type": "string"
             },
             "isimp": {
-              "type": "boolean"
+              "type": "string"
             },
             "selectRecord": {
               "type": "action"
