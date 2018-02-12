@@ -59,7 +59,7 @@
             "type": "boolean",
             "control": "exists",
             "selector": {
-              "fn": "function(node){if(document.querySelector('#gdServiceJobs  table tbody tr td:nth-child(18)').innerText=='Yes'){return true}else{return false}}",
+              "fn": "function(node){if(document.querySelectorAll('#gdServiceJobs  table tbody tr td:nth-child(18)').innerText=='Yes'){return true}else{return false}}",
               "selector": ""
             }
           }
