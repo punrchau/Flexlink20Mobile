@@ -59,7 +59,7 @@
             "type": "boolean",
             "control": "exists",
             "selector": {
-              "fn": "function(node){if(node.getAttribute('class')=='escalated-RowColor'){return true}}",
+              "fn": "function(node){if(document.querySelector('#gdServiceJobs  table tbody tr td:nth-child(18)').innerText=='Yes'){return true}else{return false}}",
               "selector": ""
             }
           }
