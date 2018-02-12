@@ -53,8 +53,8 @@ function app_servicejob($scope,$rootScope, app) {
         $scope.nlistItme=listItems;
         
         var newIndex=0;
-        for (var i = 0; i <listItems.length; i++) {
-           if(listItems[i].ticketnumber!=item.ticketnumber)
+        for (var i = 0; i <$scope.nlistItme.length; i++) {
+           if($scope.nlistItme[i].ticketnumber!=item.ticketnumber)
              newIndex++;
         }
 
