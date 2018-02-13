@@ -32,7 +32,7 @@
     "isphotoupload": {
       "type": "identifier",
       "control": "exists",
-      "selector": "#myFile"
+      "selector": ".btn.btn-default"
     }
   },
   "connect": [
