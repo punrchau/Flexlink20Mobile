@@ -13,7 +13,8 @@
     },
     "save": {
       "type": "action",
-      "label": "DescriptShort"
+      "label": "DescriptShort",
+      "selector": "#fileUpload > div > div > div.modal-body > div.modal-footer > button.btn.btn-info"
     },
     "attachementcontent": {
       "type": "string",
