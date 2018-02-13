@@ -5,7 +5,7 @@ function app_unitphoto($scope, app) {
     
     $scope.uploadPhoto = function () {
         app.action('unitphoto', 'upload', this);
-       app.action('unitphoto', 'cancel', this);
+      
     };
    
 }
