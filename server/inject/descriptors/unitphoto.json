@@ -15,7 +15,7 @@
     },
     "cancel": {
       "type": "action",
-      "selector": ".btn.btn-primary.hideFileButton",
+      "selector": "#PhotoUploadModel > div > div > div.modal-header > button",
       "control": "action.button"
     }
   },
