@@ -148,7 +148,7 @@
     },
     {
       "id": "unitphoto",
-      "name": "unitphoto",
+      "name": "UnitPhoto",
       "sourceScreenId": "app.userprofile.userprofileclassic",
       "sourceAppId": "universaltemplates",
       "model": "unitphoto"
