@@ -12,9 +12,9 @@
   "jobhistorydetails.json",
   "servicejobhistory.json",
   "unitphoto.json",
+  "photoupload.json",
   "servicejob.json",
   "jobdetails.json",
   "jobinfo.json",
-  "details.json",
-  "photoupload.json"
+  "details.json"
 ]
