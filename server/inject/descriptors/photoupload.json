@@ -9,7 +9,8 @@
     "close": {
       "type": "action",
       "label": "Title",
-      "control": "action.button"
+      "control": "action.button",
+      "selector": ".btn.btn-default"
     },
     "save": {
       "type": "action",
