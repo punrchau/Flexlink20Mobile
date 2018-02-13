@@ -65,7 +65,7 @@ exports.viewJobHistory = function(page, params) {
 }
 
 exports.photoUpload = function(page, params) {
-    page.action('jobdetails', 'actions.photoUpload');
+    page.action('jobdetails', 'actions.photoupload');
 }
 
 //upload picture of damaged part to website
