@@ -7,7 +7,7 @@
     },
     "isunitphoto": {
       "type": "identifier",
-      "selector": ".modal-title",
+      "selector": "#PhotoUploadModel > div > div > div.modal-header > h4",
       "control": "property.innerHTML"
     }
   },
