@@ -14,7 +14,8 @@
     "save": {
       "type": "action",
       "label": "DescriptShort",
-      "selector": "#fileUpload > div > div > div.modal-body > div.modal-footer > button.btn.btn-info"
+      "selector": "#fileUpload > div > div > div.modal-body > div.modal-footer > button.btn.btn-info",
+      "control": "action.button"
     },
     "attachementcontent": {
       "type": "string",
