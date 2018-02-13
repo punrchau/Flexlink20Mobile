@@ -29,7 +29,7 @@
         ]
       }
     },
-    "isunitphoto": {
+    "isphotoupload": {
       "type": "identifier",
       "control": "exists",
       "selector": "#myFile"
