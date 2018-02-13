@@ -25,7 +25,7 @@
     },
     "isunitphoto": {
       "type": "identifier",
-      "selector": ".modal-title",
+      "selector": ".btn.btn-info.btn-auto-width.hideFileButton",
       "control": "property.innerText"
     }
   },
