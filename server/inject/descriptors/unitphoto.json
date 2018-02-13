@@ -6,7 +6,7 @@
       "type": "action"
     },
     "isunitphoto": {
-      "type": "string",
+      "type": "identifier",
       "selector": "#PhotoUploadModel",
       "control": "property.innerHTML"
     }
