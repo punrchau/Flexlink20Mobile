@@ -8,7 +8,7 @@
     "isunitphoto": {
       "type": "identifier",
       "selector": "#PhotoUploadModel > div > div > div.modal-header > h4",
-      "control": "property.innerText",
+      "control": "exists",
       "selectContains": "Unit Photo"
     }
   },
