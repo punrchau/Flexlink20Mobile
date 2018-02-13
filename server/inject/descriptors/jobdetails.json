@@ -64,7 +64,8 @@
           "control": "action.button"
         },
         "photoUpload": {
-          "type": "action"
+          "type": "action",
+          "selector": ".btn.btn-info.ng-scope"
         }
       }
     },
