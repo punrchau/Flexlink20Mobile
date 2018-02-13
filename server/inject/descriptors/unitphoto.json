@@ -19,6 +19,15 @@
       "control": "action.button"
     }
   },
-  "connect": [],
+  "connect": [
+    {
+      "match": [
+        "isunitphoto"
+      ],
+      "screens": [
+        "unitphoto"
+      ]
+    }
+  ],
   "selector": "#PhotoUploadModel"
 }
