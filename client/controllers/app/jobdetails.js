@@ -44,6 +44,10 @@ function app_jobdetails($scope,$rootScope, app) {
           app.call('Home.goToServiceJob', {});
     }
     
+    $scope.photoUpload = function () {
+          app.call('Home.photoUpload', {});
+    };
+    
     /* $scope.goToServiceJob = function () {
      if (window.mocks) {
          app.go('servicejob');
