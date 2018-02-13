@@ -3,7 +3,8 @@
   "comment": "UserProfile",
   "properties": {
     "upload": {
-      "type": "action"
+      "type": "action",
+      "selector": ".btn.btn-primary.hideFileButton"
     },
     "isunitphoto": {
       "type": "identifier",
