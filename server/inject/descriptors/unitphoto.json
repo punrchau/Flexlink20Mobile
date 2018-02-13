@@ -12,6 +12,11 @@
       "selector": "#PhotoUploadModel > div > div > div.modal-header > h4",
       "control": "exists",
       "selectContains": "Unit Photo"
+    },
+    "cancel": {
+      "type": "action",
+      "selector": ".btn.btn-primary.hideFileButton",
+      "control": "action.button"
     }
   },
   "connect": [],
