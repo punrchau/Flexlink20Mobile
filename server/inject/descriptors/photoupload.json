@@ -10,7 +10,7 @@
       "type": "action",
       "label": "Title",
       "control": "action.button",
-      "selector": ".btn.btn-default"
+      "selector": "#fileUpload > div > div > div.modal-body > div.modal-footer > button.btn.btn-default"
     },
     "save": {
       "type": "action",
