@@ -8,7 +8,8 @@
     },
     "close": {
       "type": "action",
-      "label": "Title"
+      "label": "Title",
+      "selector": ".btn.btn-info"
     },
     "save": {
       "type": "action",
