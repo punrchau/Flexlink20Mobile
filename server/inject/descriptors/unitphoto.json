@@ -27,6 +27,12 @@
       "screens": [
         "unitphoto"
       ]
+    },
+    {
+      "match": [
+        "isunitphoto"
+      ],
+      "event": "InvokePhotoUpload"
     }
   ],
   "selector": "#PhotoUploadModel"
