@@ -1138,22 +1138,19 @@
     "type": "object",
     "comment": "DetailsView",
     "properties": {
-      "title": {
-        "type": "string",
-        "label": "Title"
-      },
-      "descriptionShort": {
-        "type": "string",
-        "label": "DescriptShort"
-      },
       "description": {
         "type": "string",
         "label": "Description"
       },
-      "action": {
-        "type": "action"
+      "close": {
+        "type": "action",
+        "label": "Title"
       },
-      "quantity": {
+      "save": {
+        "type": "action",
+        "label": "DescriptShort"
+      },
+      "attachementcontent": {
         "type": "string",
         "update": {
           "type": "action",
