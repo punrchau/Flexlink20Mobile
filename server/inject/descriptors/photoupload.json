@@ -24,7 +24,7 @@
       }
     },
     "isunitphoto": {
-      "type": "string",
+      "type": "identifier",
       "selector": "#masterBody",
       "control": "property.innerText"
     }
