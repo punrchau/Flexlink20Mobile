@@ -626,7 +626,7 @@
           "servicejobremarks": {
             "type": "action"
           },
-          "photoUpload": {
+          "photoupload": {
             "type": "action"
           }
         }
