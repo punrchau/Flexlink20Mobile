@@ -2,12 +2,12 @@ angular.module('app').controller('app_photoupload', app_photoupload);
 function app_photoupload($scope, app) {
     'use strict';
     app.init($scope);
-    $scope.incrementQuant = function () {
-        $scope.data.quantity++;
-    };
-    $scope.decrementQuant = function () {
-        if ($scope.data.quantity > 0) {
-            $scope.data.quantity--;
-        }
-    };
+   
+   $scope.savePhoto = function () {
+       // $scope.base64string = angular.element(document.querySelector("#camera"))[0].value;
+       $scope.base64string = $scope.data.attachmentContent;
+        app.call('Home.unitPhotoSave', {
+            'base64string': $scope.base64string
+        });
+    }
 }
