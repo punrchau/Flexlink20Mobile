@@ -3,10 +3,9 @@ function app_unitphoto($scope, app) {
     'use strict';
     app.init($scope);
     
-    $scope.uploadPhoto=function(){
+    $scope.uploadPhoto = function () {
         app.action('unitphoto', 'upload', this);
        app.action('unitphoto', 'cancel', this);
     };
-    
-    
+   
 }
