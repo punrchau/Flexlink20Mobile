@@ -11,10 +11,10 @@
   "servicejobremarks.json",
   "jobhistorydetails.json",
   "servicejobhistory.json",
+  "unitphoto.json",
   "servicejob.json",
   "jobdetails.json",
   "jobinfo.json",
   "details.json",
-  "photoupload.json",
-  "unitphoto.json"
+  "photoupload.json"
 ]
