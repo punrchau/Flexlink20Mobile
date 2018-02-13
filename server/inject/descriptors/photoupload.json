@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "comment": "DetailsView",
+  "properties": {
+    "description": {
+      "type": "string",
+      "label": "Description"
+    },
+    "close": {
+      "type": "action",
+      "label": "Title"
+    },
+    "save": {
+      "type": "action",
+      "label": "DescriptShort"
+    },
+    "attachementcontent": {
+      "type": "string",
+      "update": {
+        "type": "action",
+        "action": [
+          "action"
+        ]
+      }
+    }
+  },
+  "connect": []
+}

@@ -14,5 +14,6 @@
   "servicejob.json",
   "jobdetails.json",
   "jobinfo.json",
-  "details.json"
+  "details.json",
+  "photoupload.json"
 ]
