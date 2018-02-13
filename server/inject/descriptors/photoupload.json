@@ -32,7 +32,7 @@
     "isphotoupload": {
       "type": "identifier",
       "control": "exists",
-      "selector": ".modal-title"
+      "selector": "h4"
     }
   },
   "connect": [
