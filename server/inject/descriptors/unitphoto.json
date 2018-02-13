@@ -4,6 +4,11 @@
   "properties": {
     "upload": {
       "type": "action"
+    },
+    "isunitphoto": {
+      "type": "string",
+      "selector": "#PhotoUploadModel",
+      "control": "property.innerHTML"
     }
   },
   "connect": [],
