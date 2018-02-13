@@ -145,6 +145,13 @@
       "sourceScreenId": "app.detailsview.detailsviewcool",
       "sourceAppId": "universaltemplates",
       "model": "photoupload"
+    },
+    {
+      "id": "unitphoto",
+      "name": "unitphoto",
+      "sourceScreenId": "app.userprofile.userprofileclassic",
+      "sourceAppId": "universaltemplates",
+      "model": "unitphoto"
     }
   ],
   "sourceAppId": "_blank",

@@ -195,5 +195,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.unitphoto', {
+        views: {
+            app: {
+                controller: 'app_unitphoto',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.unitphoto');
+                }
+            }
+        }
     });
 });
