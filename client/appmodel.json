@@ -625,6 +625,9 @@
           },
           "servicejobremarks": {
             "type": "action"
+          },
+          "photoUpload": {
+            "type": "action"
           }
         }
       },
