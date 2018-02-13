@@ -64,6 +64,10 @@ exports.viewJobHistory = function(page, params) {
     page.action('jobdetails', 'actions.viewjobhistory');
 }
 
+exports.photoUpload = function(page, params) {
+    page.action('jobdetails', 'actions.photoUpload');
+}
+
 //upload picture of damaged part to website
 exports.uploadImage = function (page, params) {
     var base64Data = params.base64string.split(',').pop();
