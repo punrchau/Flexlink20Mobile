@@ -68,6 +68,10 @@ exports.photoUpload = function(page, params) {
     page.action('jobdetails', 'actions.photoupload');
 }
 
+exports.on_InvokePhotoUpload = function (page) {
+    page.action('unitphoto','upload').screen('unitphoto');
+}
+
 //upload picture of damaged part to website
 exports.uploadImage = function (page, params) {
     var base64Data = params.base64string.split(',').pop();
