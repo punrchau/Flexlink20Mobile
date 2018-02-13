@@ -4,7 +4,8 @@
   "properties": {
     "upload": {
       "type": "action",
-      "selector": ".btn.btn-primary.hideFileButton"
+      "selector": ".btn.btn-primary.hideFileButton",
+      "control": "action.button"
     },
     "isunitphoto": {
       "type": "identifier",
