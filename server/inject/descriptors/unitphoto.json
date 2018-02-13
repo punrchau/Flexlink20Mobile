@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "comment": "UserProfile",
+  "properties": {
+    "upload": {
+      "type": "action"
+    }
+  },
+  "connect": []
+}
