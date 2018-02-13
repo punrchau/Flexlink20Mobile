@@ -9,7 +9,7 @@
     "close": {
       "type": "action",
       "label": "Title",
-      "selector": ".btn.btn-info"
+      "selector": "#fileUpload > div > div > div.modal-body > div.modal-footer > button.btn.btn-info"
     },
     "save": {
       "type": "action",
