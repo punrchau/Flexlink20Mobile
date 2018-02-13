@@ -9,7 +9,6 @@
     "close": {
       "type": "action",
       "label": "Title",
-      "selector": "#fileUpload > div > div > div.modal-body > div.modal-footer > button.btn.btn-info",
       "control": "action.button"
     },
     "save": {
