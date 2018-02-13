@@ -1167,6 +1167,9 @@
     "properties": {
       "upload": {
         "type": "action"
+      },
+      "cancel": {
+        "type": "action"
       }
     }
   }
