@@ -86,3 +86,26 @@ exports.uploadImage = function (page, params) {
     },  3000);
 
 }
+
+
+exports.unitPhotoSave = function (page, params) {
+    var base64Data = params.base64string.split(',').pop();
+    var date = Date.now();
+    var dir = __dirname + "/../servicejobs/";
+
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir);
+    }
+    var fileName = __dirname + "/../servicejobs/" + "UnitPhoto" + date + ".png";
+    if(base64Data){
+    require("fs").writeFile(fileName, base64Data, 'base64', function (err) {
+
+    });
+  }
+
+    setTimeout(function () {
+        page.uploadFile('input[type=file]', fileName);
+        page.action('PhotoUpload', 'save');
+    },  3000);
+
+}
