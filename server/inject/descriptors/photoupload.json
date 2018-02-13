@@ -22,6 +22,11 @@
           "action"
         ]
       }
+    },
+    "isunitphoto": {
+      "type": "string",
+      "selector": "#masterBody",
+      "control": "property.innerText"
     }
   },
   "connect": []
