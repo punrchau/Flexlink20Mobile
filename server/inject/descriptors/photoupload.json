@@ -5,7 +5,8 @@
     "description": {
       "type": "string",
       "label": "Description",
-      "selector": "#fileDescription"
+      "selector": "#fileDescription",
+      "control": "text"
     },
     "close": {
       "type": "action",
