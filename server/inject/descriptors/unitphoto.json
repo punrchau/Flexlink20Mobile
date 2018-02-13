@@ -6,5 +6,6 @@
       "type": "action"
     }
   },
-  "connect": []
+  "connect": [],
+  "selector": ".modal-header"
 }
