@@ -25,7 +25,8 @@
     },
     "isunitphoto": {
       "type": "identifier",
-      "control": "exists"
+      "control": "exists",
+      "selector": "#myFile"
     }
   },
   "connect": []
