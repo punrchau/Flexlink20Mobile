@@ -35,5 +35,14 @@
       "selector": "#myFile"
     }
   },
-  "connect": []
+  "connect": [
+    {
+      "match": [
+        "isunitphoto"
+      ],
+      "screens": [
+        "photoupload"
+      ]
+    }
+  ]
 }
