@@ -13,8 +13,7 @@
         "fn": "function(node){if(document.activeElement.id=='PhotoUploadModel'){return true}else{return false}}",
         "selector": ""
       },
-      "control": "exists",
-      "selectContains": "Unit Photo"
+      "control": "exists"
     },
     "cancel": {
       "type": "action",
