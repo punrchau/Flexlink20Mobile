@@ -45,12 +45,6 @@
       "screens": [
         "photoupload"
       ]
-    },
-    {
-      "match": [],
-      "screens": [
-        "photoupload"
-      ]
     }
   ]
 }
