@@ -34,6 +34,11 @@
       "control": "exists",
       "selector": "h4",
       "selectContains": "F L E X L I N K 2.0"
+    },
+    "test": {
+      "type": "string",
+      "selector": "#parentType",
+      "control": "property.innerText"
     }
   },
   "connect": [
