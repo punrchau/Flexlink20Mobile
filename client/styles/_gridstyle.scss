@@ -111,13 +111,13 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  background: rgb(71, 32, 84);
+  background: rgba(71, 32, 84, 0.5);
 }
 
 .muck-up > .top {
   position: relative;
   min-height: 110px;
-  padding: 15px;
+
   color: #fff;
 }
 
