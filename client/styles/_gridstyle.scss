@@ -80,7 +80,8 @@ body {
 .clearfix:after,
 .clearfix:before {
   content: '';
-  display: table
+  display: table;
+  margin-top:5px;
 }
 
 .clearfix:after {
