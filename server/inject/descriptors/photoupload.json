@@ -39,7 +39,8 @@
   "connect": [
     {
       "match": [
-        "isunitphoto"
+        "isunitphoto",
+        "isphotoupload"
       ],
       "screens": [
         "photoupload"
