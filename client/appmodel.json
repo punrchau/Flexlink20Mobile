@@ -1161,6 +1161,9 @@
             "action"
           ]
         }
+      },
+      "test": {
+        "type": "string"
       }
     }
   },
