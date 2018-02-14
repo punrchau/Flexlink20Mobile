@@ -69,7 +69,7 @@ exports.photoUpload = function(page, params) {
 }
 
 exports.on_InvokePhotoUpload = function (page) {
-    page.action('UnitPhoto','upload').screen('PhotoUpload');
+    page.action('UnitPhoto','upload').screen('UnitPhoto');
 }
 
 //upload picture of damaged part to website
