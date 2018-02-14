@@ -31,8 +31,7 @@
     },
     "isphotoupload": {
       "type": "identifier",
-      "control": "exists",
-      "selectContains": "F L E X L I N K 2.0"
+      "control": "exists"
     },
     "test": {
       "type": "string",
