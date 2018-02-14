@@ -31,6 +31,12 @@
         "isunitphoto"
       ],
       "event": "InvokePhotoUpload"
+    },
+    {
+      "match": [
+        "isunitphoto"
+      ],
+      "action": "upload"
     }
   ],
   "selector": "#PhotoUploadModel"
