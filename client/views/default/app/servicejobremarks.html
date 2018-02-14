@@ -23,36 +23,24 @@
                 <div class="row" style="margin-top:5px !important;">
                     <div class="button_box2">
                         <div class="row form-wrapper-2 cf">
-                            <input ng-model="data.additionalinformation" placeholder="Type here..."
+                            <textarea ng-model="data.additionalinformation" placeholder="Type here..."
                                 required="" row="3" style="font-weight:normal">
-                            <button ng-click="app.action('servicejobremarks','save',this)" type="submit">Save</button>
+                                &lt;button ng-click="app.action('servicejobremarks','save',this)"
+                                type="submit"&gt;Save&lt;/button&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
+                                &lt;/div&gt; &lt;div&gt;&lt;/div&gt; &lt;div class="borderStyle light-bg"
+                                data-comp-id="div.2" style="margin: 4px 4px;padding-bottom:10px"&gt; &lt;div
+                                class="row fontformate"&gt;History Additional Information&lt;/div&gt; &lt;hr
+                                style="border:#a3c1cc solid 2px;margin-top:px;"&gt; &lt;div id="body1"&gt;
+                                &lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Remarks&lt;/th&gt;
+                                &lt;th&gt;Created Date&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody
+                                ng-repeat="item in data.remarklist"&gt; &lt;tr&gt; &lt;td&gt;{{item.remark}}&lt;/td&gt; &lt;td&gt;{{item.createddate}}&lt;/td&gt;
+                                    &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;/div&gt; &lt;/div&gt;
+                                    &lt;/ion-list&gt; &lt;!--Form Contents--&gt; &lt;/ion-content&gt;
+                                    &lt;/ion-view&gt;</textarea>
                         </div>
                     </div>
                 </div>
             </div>
-            <div></div>
-            <div class="borderStyle light-bg" data-comp-id="div.2"
-                style="margin: 4px 4px;padding-bottom:10px">
-                <div class="row fontformate">History Additional Information</div>
-                <hr style="border:#a3c1cc solid 2px;margin-top:px;">
-                <div id="body1">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Remarks</th>
-                                <th>Created Date</th>
-                            </tr>
-                        </thead>
-                        <tbody ng-repeat="item in data.remarklist">
-                            <tr>
-                                <td>{{item.remark}}</td>
-                                <td>{{item.createddate}}</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
         </ion-list>
-        <!--Form Contents-->
     </ion-content>
 </ion-view>
