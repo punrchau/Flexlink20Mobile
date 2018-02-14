@@ -126,17 +126,19 @@ body {
   display: block;
 }
 
-
+.nav p {
+  margin-top: 2px;
+  display: inline-block;
+  float: left;
+  vertical-align: bottom;
+}
 
 .ion-android-menu {
   font-size: 30px;
   margin-right: 17px;
 }
 
-.nav .ion-ios-more-outline {
-  font-size: 38px;
-  float: right !important;
-}
+
 
 .user-profile {
   margin-top: 90px;
