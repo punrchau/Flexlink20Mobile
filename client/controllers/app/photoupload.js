@@ -3,7 +3,7 @@ function app_photoupload($scope, app) {
     'use strict';
      
     app.init($scope, function () {
-        app.action('unitphoto', 'cancel', this);
+        
     });
    
    $scope.savePhoto = function () {
