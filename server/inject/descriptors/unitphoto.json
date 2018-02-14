@@ -10,7 +10,7 @@
     "isunitphoto": {
       "type": "identifier",
       "selector": {
-        "fn": "function(node){if(document.activeElement.id==''){}}",
+        "fn": "function(node){if(document.activeElement.id=='PhotoUploadModel'){return true}else{return false}}",
         "selector": "#PhotoUploadModel > div > div > div.modal-header > h4"
       },
       "control": "exists",
