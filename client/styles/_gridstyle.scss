@@ -262,7 +262,18 @@ span.toggle-btn.ion-android-funnel:hover{
   padding-top: 0px;
 }
 
-
+.bottom:after {
+  content: '';
+  position: absolute;
+  top: -46px;
+  background: #fff;
+  left: -22px;
+  right: 0;
+  height: 100px;
+  transform: rotate(20deg);
+  width: 337px;
+  z-index: -1;
+}
 
 .bottom .title {
   margin-bottom: 20px;
