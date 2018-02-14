@@ -31,7 +31,11 @@
     },
     "isphotoupload": {
       "type": "identifier",
-      "control": "exists"
+      "control": "exists",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     },
     "test": {
       "type": "string",
