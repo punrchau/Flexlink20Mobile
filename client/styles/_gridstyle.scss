@@ -336,6 +336,16 @@ ul.tasks li.yellow:after {
   background: #EAB429;
 }
 
+ul.tasks::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: #fff;
+  left: 20px;
+  top: -68px;
+}
+
 
 ul li.hang {
   margin-bottom: 48px;
