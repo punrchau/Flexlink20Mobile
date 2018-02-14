@@ -19,13 +19,6 @@
       "control": "action.button"
     }
   },
-  "connect": [
-    {
-      "match": [
-        "isunitphoto"
-      ],
-      "action": "upload"
-    }
-  ],
+  "connect": [],
   "selector": "#PhotoUploadModel"
 }
