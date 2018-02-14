@@ -43,5 +43,14 @@
       "control": "property.innerText"
     }
   },
-  "connect": []
+  "connect": [
+    {
+      "match": [
+        "isphotoupload"
+      ],
+      "screens": [
+        "photoupload"
+      ]
+    }
+  ]
 }
