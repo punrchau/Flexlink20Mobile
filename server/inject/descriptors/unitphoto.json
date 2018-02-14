@@ -22,12 +22,6 @@
   "connect": [
     {
       "match": [],
-      "screens": [
-        "unitphoto"
-      ]
-    },
-    {
-      "match": [],
       "event": "InvokePhotoUpload"
     },
     {
