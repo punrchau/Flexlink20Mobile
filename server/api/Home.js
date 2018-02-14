@@ -68,9 +68,9 @@ exports.photoUpload = function(page, params) {
     page.action('jobdetails', 'actions.photoupload');
 }
 
-exports.on_InvokePhotoUpload = function (page) {
-    page.action('UnitPhoto','upload');
-}
+// exports.on_InvokePhotoUpload = function (page) {
+//     page.action('UnitPhoto','upload');
+// }
 
 //upload picture of damaged part to website
 exports.uploadImage = function (page, params) {
