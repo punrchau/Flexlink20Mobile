@@ -9,7 +9,10 @@
     },
     "isunitphoto": {
       "type": "identifier",
-      "selector": "#PhotoUploadModel > div > div > div.modal-header > h4",
+      "selector": {
+        "fn": "",
+        "selector": "#PhotoUploadModel > div > div > div.modal-header > h4"
+      },
       "control": "exists",
       "selectContains": "Unit Photo"
     },
