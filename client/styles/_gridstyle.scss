@@ -95,7 +95,14 @@ body {
   overflow: hidden;
 }
 
-
+.overlay {
+  background: url(https://raw.githubusercontent.com/arjunamgain/FilterMenu/master/images/header.jpg) no-repeat top /contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
 
 .overlay:after {
   content: '';
@@ -104,7 +111,7 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  background: rgba(71, 32, 84, 0.5);
+  background: rgb(71, 32, 84);
 }
 
 .muck-up > .top {
