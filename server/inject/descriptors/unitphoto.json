@@ -21,10 +21,6 @@
   },
   "connect": [
     {
-      "match": [],
-      "event": "InvokePhotoUpload"
-    },
-    {
       "match": [
         "isunitphoto"
       ],
