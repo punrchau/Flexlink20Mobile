@@ -28,16 +28,32 @@ exports.on_messages = function (page) {
                     });
                 page.checkState(true);
             }
-
+            
             if (data.isphotoupload) {
                 page.extract('photoupload')
+                    .data(function (data) {
+                        page.screen('photoupload');
+                    });
                 page.checkState(true);
             }
 
-            if (data.isrepairjob) {
+             if (data.isrepairjob) {
                 page.extract('servicejob')
+                    .data(function (data) {
+                        page.screen('servicejob');
+                    });
                 page.checkState(true);
             }
+
+            // if (data.isphotoupload) {
+            //     page.extract('photoupload')
+            //     page.checkState(true);
+            // }
+
+            // if (data.isrepairjob) {
+            //     page.extract('servicejob')
+            //     page.checkState(true);
+            // }
            
         });
 }
