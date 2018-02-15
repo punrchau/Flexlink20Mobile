@@ -56,12 +56,17 @@ exports.on_messages = function (page) {
             // }
 
              if (data.isphotoupload) {
-               page.extract('servicejob')
+               page.extract('photoupload')
                 page.checkState(true);
             }
 
             if (data.isrepairjob) {
                 page.extract('servicejob')
+                page.checkState(true);
+            }
+
+             if (data.isunitphoto) {
+                page.extract('unitphoto')
                 page.checkState(true);
             }
            
