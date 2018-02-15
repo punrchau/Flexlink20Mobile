@@ -2,6 +2,10 @@ var app = angular.module('app');
 
 app.controller('app_servicejob', app_servicejob);
 
+ app.init($scope, function () {
+     $scope.showPopup($scope.data);
+    });
+
 app.config( [
     '$compileProvider',
     function( $compileProvider )
