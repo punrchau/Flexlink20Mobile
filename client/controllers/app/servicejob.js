@@ -2,9 +2,7 @@ var app = angular.module('app');
 
 app.controller('app_servicejob', app_servicejob);
 
- app.init($scope, function () {
-     $scope.showPopup($scope.data);
-    });
+
 
 app.config( [
     '$compileProvider',
@@ -20,7 +18,10 @@ function app_servicejob($scope,$rootScope, app) {
     $scope.expanded = false;
     $scope.nlistItme=[];
     
-    app.init($scope);
+    app.init($scope, function () {
+     $scope.showPopup($scope.data);
+    });
+    
     $scope.sortBy="firstname";
     $scope.isDescending = false;
     $scope.changeIc = true;
