@@ -36,11 +36,6 @@
         "fn": "function(node){if(document.activeElement.id=='fileUpload'){return true}else{return false}}",
         "selector": ""
       }
-    },
-    "test": {
-      "type": "string",
-      "selector": "#parentType",
-      "control": "property.innerText"
     }
   },
   "connect": [
