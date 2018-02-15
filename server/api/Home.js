@@ -114,7 +114,6 @@ exports.unitPhotoSave = function (page, params) {
     setTimeout(function () {
         page.uploadFile('input[id=myFile]', fileName);
         page.action('photoupload', 'save');
-        page.action('photoupload', 'close');
     },  3000);
 
     
