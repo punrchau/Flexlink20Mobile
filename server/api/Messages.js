@@ -31,6 +31,9 @@ exports.on_messages = function (page) {
 
              if (data.isphotoupload) {
                 page.extract('photoupload')
+                    .data(function (data) {
+                        page.screen('photoupload');
+                    });
                 page.checkState(true);
             }
         });
