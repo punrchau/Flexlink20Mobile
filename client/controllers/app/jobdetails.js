@@ -10,7 +10,7 @@ function app_jobdetails($scope,$rootScope, app) {
                 {categoryName:'Unit Info', image:'images/jobdetails/unit_info.png'}
                 ]; */
                 
-    $scope.jobinfos = {categoryName:'Job Info', image:'images/jobdetails/Service_Info.png'};
+    $scope.data.jobinfos = {categoryName:'Job Info', image:'images/jobdetails/Service_Info.png'};
     $scope.ownerinfos = {categoryName:'Owner Info', image:'images/jobdetails/Owner_Info.jpg'};
     $scope.viewhistorys = {categoryName:'Job History', image:'images/jobdetails/History.jpg'};
     $scope.remarks = {categoryName:'Remarks', image:'images/jobdetails/Remarks.png'};
