@@ -12,7 +12,5 @@ function app_photoupload($scope, app) {
         app.call('Home.unitPhotoSave', {
            'base64string': $scope.base64string
         });
-        
-        app.action('photoupload','save',this);
     }
 }
