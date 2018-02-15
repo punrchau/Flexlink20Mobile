@@ -29,21 +29,21 @@ exports.on_messages = function (page) {
                 page.checkState(true);
             }
             
-            if (data.isphotoupload) {
-                page.extract('photoupload')
-                    .data(function (data) {
-                        page.screen('photoupload');
-                    });
-                page.checkState(true);
-            }
+            // if (data.isphotoupload) {
+            //     page.extract('photoupload')
+            //         .data(function (data) {
+            //             page.screen('servicejob');
+            //         });
+            //     page.checkState(true);
+            // }
 
-             if (data.isrepairjob) {
-                page.extract('servicejob')
-                    .data(function (data) {
-                        page.screen('servicejob');
-                    });
-                page.checkState(true);
-            }
+            //  if (data.isrepairjob) {
+            //     page.extract('servicejob')
+            //         .data(function (data) {
+            //             page.screen('servicejob');
+            //         });
+            //     page.checkState(true);
+            // }
 
             // if (data.isphotoupload) {
             //     page.extract('photoupload')
@@ -54,6 +54,16 @@ exports.on_messages = function (page) {
             //     page.extract('servicejob')
             //     page.checkState(true);
             // }
+
+             if (data.isphotoupload) {
+               page.extract('servicejob')
+                page.checkState(true);
+            }
+
+            if (data.isrepairjob) {
+                page.extract('servicejob')
+                page.checkState(true);
+            }
            
         });
 }
