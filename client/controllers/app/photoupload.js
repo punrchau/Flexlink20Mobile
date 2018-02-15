@@ -13,6 +13,6 @@ function app_photoupload($scope, app) {
            'base64string': $scope.base64string
         });
         
-        app.action('photoupload','save',this)
+        app.action('photoupload','save',this);
     }
 }
