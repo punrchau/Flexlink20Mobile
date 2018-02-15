@@ -1,0 +1,1562 @@
+<body class="wow fadeInUp animated ng-scope" ng-controller="masterController as masterCtrl" id="masterBody" style="padding-right: 0px;">
+    <div class="container-fluid" id="container-flexlink">
+
+        <nav class="navbar navbar-default navbar-fixed-top" style="background-image: linear-gradient(39deg, rgb(255, 150, 0) 29%, rgb(27, 169, 225) 96%); background-position: initial initial; background-repeat: initial initial;">
+            <div class="row top-bar">
+                <div class="col-md-4">
+                    
+                    <i class="glyphicon glyphicon-th open-aside-nav-bar-icon" aria-hidden="true"></i>
+                    <div class="flex-logo-div" style="background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QAiRXhpZgAATU0AKgAAAAgAAQESAAMAAAABAAEAAAAAAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCABkAGcDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5rooor+Zz/XQKKKKACiiigAooooAKKKKACiiigAooooAKKkNnMDjyZMjqNpo+xzH/AJZSf98mnysCOipPsc3/ADxk/wC+TR9jm/54yf8AfJoswI6Kk+yTf88pP++TR9jm/wCeUn/fJpAR0VJ9jmH/ACyk/wC+TR9km/55Sf8AfJp2YEdFSfZJv+eUn/fJo+yTf88pP++TSCzI6Kk+xzH/AJZSf98mj7HN/wA8pP8Avk07MLMjop0kTRfeVlz0yMUUgGOuGfHy7WPU9/X/AD6itfW/hn4o8PeFrHXNW8I+KtN8N6jtWw1e80yaDT78spdBDOyhJCyKzjaTlUYjgGsp/llbHHOa/RX/AIKC8f8ABET9nD/r60XPv/xKL2vawOBjXo1qkpa01dHyPFHFFTLMxy7AUoKUcVVUG3ulZu6PzpEYA5H3fl60bV9P1ruv2ZvgBqf7VHx68N/D/Sb6DS7zxDM6PezJvSyhjR5ZZdmRvZY42KoCNzbRlQSw+zn/AGbf2S/h18VNN+AfiKbXNS+LV09vosviaOHU4bEancRqYcwJdbRkvGMKpjy43MBuIvAZJiMVD2sZKMb21drvsjDirxEy3I8SsJUhOrU5eaShG/JC9nOXkrevZH577V9P1o2r6frX6Sfsif8ABHDw9Y/G74r+A/il9n8WXPhfS9G1TRdUt7q7sEaK8F+HYxQTLyJbQptctxEGGA5Bxf2Pv2Nf2WP2n9G1b4c+G/Fl94y+JGl6fPfjxK+natpkM0bMEWRLVrhYv3DzwKVbaXIyAQWI76fCuLlFXai3dJN2d09vPa58xivHDIKdSoqNOpUjBQcpRjeKjNJqT7JXSadne9k7M/PXavp+tG1fT9a+rP2Mv+CZN78d/iT8SE8WeIrHRfC/wZ1mbS9cuIreS5OrS2srfaI4ljeORI/Lic+Znd+8TarHO31K1/Y5/Zx/4KAeGdU0f9mvWJPDPjXw6Yr26Grx6tLDdWrsUxuuJXVM8OCqluikLlivPR4dxVSmp3UZa2i3rK2j0PUzLxbyTC4n2CU5wjy89SMW4Q5knHmfmn0vbrY+Adq+n60bV9P1r7a/a8/Yc8C+Ef8AgnJ4Z+LngzQW0HWtPvLa18VxzandXTJIHksbqJBLK8bbL8KA0aqGVSQQvB2/hf8A8E4vB+vf8E5PDPiu/wBGjuvip8R7yGw8PXD6reQ29s15d+XbSSLHIYdsduDOwMRJClMM+3Nf6u4r2ro6X5ebyt0+d9Cf+IwZGsBHMGpcsqro2srqS1betuVLV+R8FbV9P1o2r6frX6CXX7L/AOyz+xuNA+HfxwvrzXvidq1nFdXmo6cmrx2dgZ3ZYxiGZVdFcMoZUDMEyyLnFfPP/BRX9hi8/YM+Kui6XJq9vrmieKrV7jSrpIWhffDtE8TRl3I2lkYMWIYSYH3SBji8hxNCi6rkny/Ek9VfudmQ+J2VZpjo4GEZ0/aXdOU4uMaqju4N7287PXRHgOMUUUV4Mnd3P0Ce45wrTN823nGW9a/Uz4j/AAds/wBsP/glB8CfBWj+NfA+i61oMGk6ldJrGsLbBFTTriFo/lWRt4aZeCo4Dc8YP5Zt8szEev51Vk0m3kdmaPcxPPzHn9fpXtZTmkMIqlOpDmU1Z620PiuNODa2eTwuIw+I9hUw8+eL5ebW1u67n31+zX+zuP8Agmf+0f4P+JXi/wAffDvUvC8l2+hal/Y+pvf3FqtzBKEm2eUm2NZVi3vk7ULHBHNe5fG5fFfirx1eeKvgFr37NXhLwH4gddR1Hx15yL4mDStvvjJcSLLGMngAoWTCD5duB+Sttp8Nn/ql2n6k/wCelI+nwy3Hmsn7zO7cGPXGK9XDcT06UfY0qVorWyeqfrY+KzXwcxWYYmOYYvG89fl5W3C8ZRvdLlutU31bXdH6uf8ABMv4gaf4V+Lf7QUevfFqx8fI+l6FDp+uXXiA3wnQQ6izQLNKEDeW8hJEY2L5nXeXr5F/4IieINP8I/tZWl1ql5a6bbLo0q+bcyrCg/4mFkcEsQOQGOPQexr5guLSO52h0yF/2jxS3EC3cWyX5lzk8/4Yrn/1j5p05KPwNvfe7v8AgetR8J4QWOj7f/eoU4v3UuVwildJaa2v0P0z/ZE/aC+Gdx42/a5+EPjvxZpvhjT/AIj+NdfuLG9nu0tY76O+kmtJhFcPmPzAvlMqsOQxZQ4V9tP9g34A6L/wSt8c+IfiV8ZviV8PIzd6Wui6PbeH9TmvnuFmmikmZrfyBK5/dQMvlghVMjMoABX82UjCRKg4VV2geg9KjsrCHTv9UhX2Df45rohxQrxlKnzThflfa+uvoeVX8F/dq4bD42UKFdQ9rBRWvJFK8X0va7unqz9DP+Caf7R2h/tM/Ef41fDf4r6jF/wg3xKe58Qabp+oyx28Fm76jLdzxIS2EkaS6Em3L5MLHOFOZP2v/wBt3R/gj+358JfCvhfVop/hD8FodJgnggiF0kEqQT28kqFDmXy7G7C/LzvUgKWXB/POeBbmMpJllOOOgOP1/WliXyYFjX/Vr0A/yT+tZLiiv9XVHl95O9+tr3t9531PB3LZZrPHTqP2MoOPs7Kyk4qHOunNypa2P0O/a7/Yr0b/AIKF/Hy3+Lnw6+JXw/XwF4qsrJ/FJ1XWmt7+yaKNYpVji8hxCwtkj+SbkSBtwANc1/wWC+KXhn9q74p+BfDvwt1rQvE2mfD6zuWvNQXWLRbUzX7RlYormeVVmKiAFjGSqbwrNnKr8I3Omw3k6ySKWZSCDk9sf4D8qcbdWC7lGUJI5PH+felic+hVpVIxpW9pbmaera7GmUeFuIwmMw1WtjHUhhIyVGLjpFS097VczS0VrDopFliVl6MMj3HbjqPx5opxPA+mKK+Wlufq0731CiiipJCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z); background-repeat: no-repeat no-repeat;"></div>
+                    
+                    
+                </div>
+
+                <div class="col-md-4">
+                    <marquee scrolldelay="200" style="color:white ; font-size:15px"><b class="ng-binding"> </b></marquee>
+                </div>
+
+                <div class="col-md-4 text-right margin-top-menu-link text-right dropdown">
+                    <a class="dropdown-toggle welcome-user text-decoration-none ng-binding" data-toggle="dropdown" id="ddlUser" href="" role="button" aria-haspopup="true" aria-expanded="false">
+                        Welcome Ram Chauhan
+                        <img src="/mobile/images/menu/user.png" class="img-circle" alt="user pic" width="35" height="35">
+                        <i class="fa fa-caret-down fa-fw"></i>
+                    </a>
+
+                    <div class="dropdown-menu text-left dropdown-menu-right margin-top-5">
+                        <div class="login-box clearfix row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        
+                                        <img src="/mobile/images/menu/user.png" alt="" class="user-photo">
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-12">
+                                        <span ng-click="masterCtrl.navigateToUser()" class="profiler-name-display ng-binding">Ram Chauhan</span>
+                                        <br>
+                                        <div class="roles-display">
+                                            <!-- ngIf: masterCtrl.isRolesAssigned --><span ng-if="masterCtrl.isRolesAssigned" class="ng-binding ng-scope"> Mobile Role, Technician</span><!-- end ngIf: masterCtrl.isRolesAssigned -->
+                                            <!-- ngIf: !masterCtrl.isRolesAssigned -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 store-name-display">
+                                <span class="ng-binding">store1</span>
+                            </div>
+                            
+                            
+                            <div class="col-lg-12 col-md-12 col-sm-12 padding-0">
+                                <a href="#" class="btn btn-flat font-normal btn-danger button-logout width-100-notimportant" ng-click="masterCtrl.closeWindow()">
+                                    <i class="glyph-icon icon-power-off"></i>&nbsp;Logout
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 sub-bar">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav main-menu-flexlink">
+                        
+                        <li href="" class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-rocket" aria-hidden="true"></i>Config Management <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#/formsConfiguration" ui-sref="FormsConfiguration">Forms Configuration</a></li>
+                                <li><a href="#/formsConfiguration" ui-sref="FormsConfiguration">Grids Configuration</a></li>
+                                <li><a href="">List Configuration</a></li>
+                                <li><a href="#/routingConfiguration" ui-sref="RoutingConfiguration">Route Configuration</a></li>
+                                <li><a href="/mobile/app/views/AppFieldDefinitionConfiguration.html" ui-sref="AppFieldDefinition">App Field Definition </a></li>
+                                <li><a href="#/approvalMatrixList" ui-sref="ApprovalMatrixList">Approval Matrix</a></li>
+                                <li><a href="#/statusMappings" ui-sref="StatusMappings">Status Mapping</a></li>
+                                <li><a href="#/EmailTemplates" ui-sref="EmailTemplates">Email Template</a></li>
+                                <li><a href="#/EmailConfigurations" ui-sref="EmailConfigurations">Email Configuration</a></li>
+                                <li><a href="#/SMSTemplates" ui-sref="SMSTemplates">SMS Template</a></li>
+                                <li><a href="#/SMSConfigurations" ui-sref="SMSConfigurations">SMS Configuration</a></li>
+                                <li><a href="#/userRoleTypeMappings" ui-sref="UserRoleTypeMappings">User Role Type</a></li>
+                                <li><a href="#/pageActionMapping" ui-sref="PageActionMapping">Page Action Map</a></li>
+                                <li><a href="#/PageRouteActions" ui-sref="PageRouteActions" title="Page Route Action Map">Page Route Action Map</a></li>
+                                <li><a href="#/rolePermissions" ui-sref="RolePermissions">Role Permission</a></li>
+                                <li><a href="#/binMaster" ui-sref="BinMaster">Bin Master</a></li>
+                                <li><a href="#/commonmaster" ui-sref="CommonMaster">Common Master</a></li>
+                                <li><a href="/mobile/app/views/ConsolidateDeliveryChallans.html" ui-sref="ConsolidateDeliveryChallans">Consolidate Delivery Challan</a></li>
+                                <li><a href="#/RTV" ui-sref="RTVCompliance">RTV Compliance</a></li>
+                                <li><a href="#/oembrands" ui-sref="OEMBrands">Brand Configuration</a></li>
+                                <li><a href="/mobile/app/views/Roles.html" ui-sref="RolesMaster">Role Master</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ticket" aria-hidden="true"></i>Job Management<span class="caret"></span></a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="#/unitowners" ui-sref="UnitOwners">Unit Owner</a></li>
+                                <li><a href="#/units" ui-sref="Units">Unit</a></li>
+                                
+                                <li><a href="#/servicejobs" ui-sref="ServiceJobs">Service Job</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        <li href="" class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs" aria-hidden="true"></i>Repair Management <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#/repairjobs" ui-sref="RepairJobs">Repair Creation</a></li>
+                            </ul>
+                        </li>
+                        <li href="" class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-empire" aria-hidden="true"></i>Retail Management <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#/swapMatrixList" ui-sref="SwapMatrixList">Swap Matrix</a></li>
+                                <li><a href="#/preapprovals" ui-sref="PreApprovals">PreApproval</a></li>
+                                <li><a href="#/MSLUpload" ui-sref="MSLUpload">MSLUpload</a></li>
+                            </ul>
+                        </li>
+                        <li href="" class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-wpforms" aria-hidden="true"></i>Quotation Management <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#/quotationList" ui-sref="QuotationList">Quotation List</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+
+        <div class="container-fluid body-content wow fadeInUp animated page-wrapper">
+            <div id="sidebar-wrapper" class="sidebar-wrapper-style" style="background-color: rgb(255, 150, 0); width: 50px; background-position: initial initial; background-repeat: initial initial;">
+                <ul class="sidebar-nav">
+
+                    <li ng-click="masterCtrl.navigateToDashboardPage()">
+                        <a>
+                            <i class="fa fa-home fa-2x aside-icon "></i>
+                            <div class="sidebar-text no-collaps-side-bar">
+                                Home
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.adminManagement --><li ng-if="masterCtrl.authorizationPageCollection.moduleCollection.adminManagement" class="ng-scope">
+                        <a href="" class="dropdown-toggle expand-menu-bar" title="Admin Management" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-television fa-2x aside-icon" aria-hidden="true" onclick="expandsideBar();"></i>
+                            <div class="sidebar-text">
+                                Admin Management
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-ul">
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.hsnAndSacUpLoader -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.cityMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.costBreakDownMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.billingCodeMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.binMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.commonMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.part --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.part" class="ng-scope"><a href="#/partMaster" title="Part Master" ui-sref="PartMaster">Part Master</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.part -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.frontEndProfiler -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.localStore -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.failureCode -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.repairActionCode -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.failureCodeRepairActionCodeMap -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.cpMapping -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.userRegistration -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.roleMaster -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.userRoleType -->
+                            
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.swapDevice -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.warrantyCheckUpload -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.warrantyMapping -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.swapConfiguration -->
+                        </ul>
+                    </li><!-- end ngIf: masterCtrl.authorizationPageCollection.moduleCollection.adminManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.configManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.jobManagement --><li ng-if="masterCtrl.authorizationPageCollection.moduleCollection.jobManagement" class="ng-scope">
+                        <a href="" class="dropdown-toggle expand-menu-bar" title="Job Management" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ticket fa-2x aside-icon" aria-hidden="true" onclick="expandsideBar();"></i>
+
+                            <div class="sidebar-text">
+                                Job Management
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-ul">
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.unitOwner --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.unitOwner" class="ng-scope"><a href="#/unitowners" title="Unit Owner" ui-sref="UnitOwners">Unit Owner</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.unitOwner -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.unit --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.unit" class="ng-scope"><a href="#/units" title="Unit" ui-sref="Units">Unit</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.unit -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.serviceJob --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.serviceJob" class="ng-scope"><a href="#/servicejobs" title="Service Job" ui-sref="ServiceJobs">Service Job</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.serviceJob -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.deliveryChallan -->
+                            <li><a href="#/inwarddeliverychallans" title="Inward Delivery Challan" ui-sref="InwardDeliveryChallans">Inward DC</a></li>
+                        </ul>
+
+                    </li><!-- end ngIf: masterCtrl.authorizationPageCollection.moduleCollection.jobManagement -->
+
+                    
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.repairManagement --><li ng-if="masterCtrl.authorizationPageCollection.moduleCollection.repairManagement" class="ng-scope">
+                        <a href="" class="dropdown-toggle expand-menu-bar" title="Repair Management" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-cogs fa-2x aside-icon" aria-hidden="true" onclick="expandsideBar();"></i>
+
+                            <div class="sidebar-text">
+                                Repair Management
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-ul">
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.repairJob --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.repairJob" class="ng-scope"><a href="#/repairjobs" ui-sref="RepairJobs" title="Repair Creation">Repair Creation</a></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.repairJob -->
+
+                        </ul>
+                    </li><!-- end ngIf: masterCtrl.authorizationPageCollection.moduleCollection.repairManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.retailManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.quotationManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.adpManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.partManagement --><li ng-if="masterCtrl.authorizationPageCollection.moduleCollection.partManagement" class="ng-scope">
+                        <a href="" class="dropdown-toggle expand-menu-bar" title="Part Management" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-shopping-cart fa-2x aside-icon" aria-hidden="true" onclick="expandsideBar();"></i>
+
+                            <div class="sidebar-text">
+                                Part Management
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-ul">
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.partOrder --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.partOrder" class="ng-scope"><a title="Part Order List" href="#/partorders" ui-sref="PartOrders">Part Order</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.partOrder -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.partReceive --><li ng-if="masterCtrl.authorizationPageCollection.pageCollection.partReceive" class="ng-scope"><a title="Part Receive List" href="#/partreceives" ui-sref="PartReceives">Part Receive</a><hr></li><!-- end ngIf: masterCtrl.authorizationPageCollection.pageCollection.partReceive -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.partTransferOrder -->
+                            
+                            <li><a title="PartTransferReceives List" href="#/parttransferreceives" ui-sref="PartTransferReceives">PartTransferReceive</a><hr></li>
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.inventoryPage -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.rtvCompliance -->
+                            <!-- ngIf: masterCtrl.authorizationPageCollection.pageCollection.inventory -->
+                            
+                        </ul>
+                    </li><!-- end ngIf: masterCtrl.authorizationPageCollection.moduleCollection.partManagement -->
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.logistics -->
+
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.reports -->
+
+
+
+
+
+                    <!-- ngIf: masterCtrl.authorizationPageCollection.moduleCollection.supportAutomation -->
+
+
+
+
+
+
+
+                </ul>
+            </div>
+            <div class="page-content-wrapper">
+                
+<div class="row margin-body" style="padding-left: 0px;">
+    <div class="col-lg-12 col-md-12">
+        <!-- uiView:  --><ui-view class="ng-scope"><div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 ng-scope" id="sjsPage">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 page-heading">
+        <h2>Service Jobs</h2>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 text-right">
+        <!-- ngIf: serviceJobsCtrl.authorizationDetails.print --><button type="button" ng-if="serviceJobsCtrl.authorizationDetails.print" value="Print" class="btn btn-info ng-scope" ng-click="serviceJobsCtrl.printServiceJob()"><i class="fa fa-print" aria-hidden="true"></i>Print</button><!-- end ngIf: serviceJobsCtrl.authorizationDetails.print -->
+        <!-- ngIf: serviceJobsCtrl.authorizationDetails.escalate --><button type="button" ng-if="serviceJobsCtrl.authorizationDetails.escalate" value="Escalation" class="btn btn-info ng-scope" ng-click="serviceJobsCtrl.viewEscalatonInfo()" ng-hide="serviceJobsCtrl.hideSJEscalationbtn"><i class="fa fa-pencil" aria-hidden="true"></i>Escalation</button><!-- end ngIf: serviceJobsCtrl.authorizationDetails.escalate -->
+        <!-- ngIf: serviceJobsCtrl.authorizationDetails.viewUnitOwner --><button type="button" ng-if="serviceJobsCtrl.authorizationDetails.viewUnitOwner" class="btn btn-info unitDetails btn-auto-width ng-scope" value="Unit Details" data-toggle="modal" ng-click="serviceJobsCtrl.viewUnitOwnerInfo()"><i class="fa fa-user" aria-hidden="true"></i> Unit Owner</button><!-- end ngIf: serviceJobsCtrl.authorizationDetails.viewUnitOwner -->
+        <!-- ngIf: serviceJobsCtrl.authorizationDetails.viewJobHistory --><button type="button" ng-if="serviceJobsCtrl.authorizationDetails.viewJobHistory" class="btn btn-info unitDetails btn-auto-width ng-scope" value="Unit Details" data-toggle="modal" ng-click="serviceJobsCtrl.viewJobHistoryInfo()"><i class="fa fa-user" aria-hidden="true"></i> View Job History</button><!-- end ngIf: serviceJobsCtrl.authorizationDetails.viewJobHistory -->
+        <!-- ngIf: serviceJobsCtrl.authorizationDetails.viewUnitDetails --><button type="button" ng-if="serviceJobsCtrl.authorizationDetails.viewUnitDetails" class="btn btn-info unitDetails btn-auto-width ng-scope" value="Unit Details" data-toggle="modal" ng-click="serviceJobsCtrl.viewUnitInfo()"><i class="fa fa-mobile" aria-hidden="true"></i> Unit Details</button><!-- end ngIf: serviceJobsCtrl.authorizationDetails.viewUnitDetails -->
+        <!-- ngIf: serviceJobsCtrl.authorizationDetails.newRepairJob --><button type="button" ng-if="serviceJobsCtrl.authorizationDetails.newRepairJob" ng-click="serviceJobsCtrl.newRepairJob()" value="New" class="btn btn-info ng-scope"><i class="fa fa-cogs" aria-hidden="true"></i>New Repair</button><!-- end ngIf: serviceJobsCtrl.authorizationDetails.newRepairJob -->
+        <!-- ngIf: serviceJobsCtrl.authorizationDetails.read --><button type="button" ng-if="serviceJobsCtrl.authorizationDetails.read" ng-click="serviceJobsCtrl.viewServiceJob()" value="View" class="btn btn-info ng-scope"><i class="fa fa-wpforms fa-fw" aria-hidden="true"> </i>View</button><!-- end ngIf: serviceJobsCtrl.authorizationDetails.read -->
+        <!-- ngIf: serviceJobsCtrl.authorizationDetails.update --><button type="button" ng-if="serviceJobsCtrl.authorizationDetails.update" ng-click="serviceJobsCtrl.editServiceJob()" ng-show="serviceJobsCtrl.showHideButton" value="Edit" class="btn btn-info ng-scope"><i class="fa fa-pencil" aria-hidden="true"></i>Edit </button><!-- end ngIf: serviceJobsCtrl.authorizationDetails.update -->
+        <!--<button type="button" ng-if="serviceJobsCtrl.authorizationDetails.delete" ng-click="serviceJobsCtrl.deleteServiceJob()" value="Delete" class="btn btn-info"><i class="fa fa-times" aria-hidden="true"></i>Delete</button>-->
+        <!-- ngIf: serviceJobsCtrl.authorizationDetails.discardServiceJob --><button type="button" ng-if="serviceJobsCtrl.authorizationDetails.discardServiceJob" ng-click="serviceJobsCtrl.discardClick()" value="Discard" ng-hide="serviceJobsCtrl.hideSJDiscardbtn" class="btn btn-info ng-scope"><i class="fa fa-trash" aria-hidden="true"></i>Discard</button><!-- end ngIf: serviceJobsCtrl.authorizationDetails.discardServiceJob -->
+        <!-- ngIf: serviceJobsCtrl.authorizationDetails.remarks --><button type="button" ng-if="serviceJobsCtrl.authorizationDetails.remarks" ng-click="serviceJobsCtrl.serviceJobRemarks()" value="Remarks" class="btn btn-info ng-scope"><i class="fa fa-trash" aria-hidden="true"></i>Remarks</button><!-- end ngIf: serviceJobsCtrl.authorizationDetails.remarks -->
+        <!-- ngIf: serviceJobsCtrl.authorizationDetails.uploadPhoto --><button type="button" ng-if="serviceJobsCtrl.authorizationDetails.uploadPhoto" ng-click="serviceJobsCtrl.uploadUnitPhoto()" value="UnitPhoto" class="btn btn-info ng-scope"><i class="fa fa-trash" aria-hidden="true"></i>Photo Upload</button><!-- end ngIf: serviceJobsCtrl.authorizationDetails.uploadPhoto -->
+    </div>
+</div>
+<!--<div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <label>Select Type</label>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <label>Search value</label>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <select name="unitOwnerSearch" class="form-control dropdown-select" data-style="btn-warning"
+                    ng-model="serviceJobsCtrl.searchModel.columnName" ng-options="obj.columnName as obj.description for obj in serviceJobsCtrl.searchColumnData">
+                <option value="">--Select--</option>
+            </select>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <input type="text" class="form-control" ng-model="serviceJobsCtrl.searchModel.searchString" />
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <button type="button" ng-click="serviceJobsCtrl.getServiceJobs()" value="Search" class="btn btn-info"><i class="fa fa-search" aria-hidden="true"></i>Search </button>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        </div>
+    </div>
+</div>-->
+<hr class="heading-hr ng-scope">
+
+<div class="panel-body ng-scope" style="padding-left: 0px !important">
+    <global-search grid="gdServiceJobs">
+<form id="formSearch" ng-submit="globalSearchCtrl.btnSearch()" class="ng-pristine ng-valid">
+    <div class="input-group">
+        <div class="left-inner-addon">
+            <i class="glyphicon glyphicon-search" style="opacity:0.5"></i>
+            <input type="text" class="form-control txtSearch ng-pristine ng-untouched ng-valid ng-empty" style="border: solid 1px #E4E4E4;border-radius: 5px;" placeholder="Search" ng-change="globalSearchCtrl.btnSearch()" ng-model="globalSearchCtrl.txtSearch">
+            <i class="glyphicon glyphicon-info-sign" style="opacity:0.5; right: 0px; cursor:pointer" tabindex="0" data-toggle="tooltip" data-trigger="focus" data-placement="right" title="For date field column(s) follow [DD MMM YYYY] format." data-content="For date field column(s) follow [DD MMM YYYY] format."></i>
+        </div>
+    </div>
+</form>
+</global-search>
+</div>
+
+<ul class="nav nav-tabs ng-scope" id="stateTabs">
+    <li id="liActiveServiceJobs"><a data-target="#activeServiceJobs" data-toggle="tab" ng-click="serviceJobsCtrl.getServiceJobs('ActiveJobs')">Service Jobs : Active</a></li>
+    <li id="liHoldForMaterialServiceJobs"><a data-target="#holdForMaterialServiceJobs" data-toggle="tab" ng-click="serviceJobsCtrl.getServiceJobs('HoldforMaterialJobs')">Service Jobs : Hold for Material </a></li>
+    <li id="liHoldForQuotationServiceJobs"><a data-target="#holdForQuotationServiceJobs" data-toggle="tab" ng-click="serviceJobsCtrl.getServiceJobs('HoldforQuotationJobs')">Service Jobs : Hold for Quotation</a></li>
+    <li id="liInActiveServiceJobs"><a data-target="#inActiveServiceJobs" data-toggle="tab" ng-click="serviceJobsCtrl.getServiceJobs('ClosedDiscardJobs')">Service Jobs : Closed/ Discard</a></li>
+    <li class="active" id="liTechnicainActiveServiceJobs"><a data-target="#technicianActiveServiceJobs" data-toggle="tab" ng-click="serviceJobsCtrl.getServiceJobs('TechnicianActiveJobs')">Pending Jobs</a></li>
+</ul>
+
+<div class="tab-content ng-scope">
+    <!-- ngIf:  -->
+    <div class="tab-pane" id="holdForMaterialServiceJobs">
+    </div>
+    <div class="tab-pane" id="holdForQuotationServiceJobs">
+    </div>
+    <div class="tab-pane" id="inActiveServiceJobs">
+    </div>
+    <div class="tab-pane active" id="technicianActiveServiceJobs">
+    </div>
+    <div id="gdServiceJobs" class="row table kendo-grid-custom k-grid k-widget" data-role="grid" style="height: 480px;"><a title="Clear Filter" class="k-pager-refresh k-link column-filter-refresh"><span class="fa fa-refresh"></span></a><div class="k-grid-header" style="padding-right: 17px;"><div class="k-grid-header-wrap k-auto-scrollable" data-role="resizable"><table role="grid"><colgroup><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:120px"></colgroup><thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader" data-field="jobNumber" rowspan="1" data-title="Job Number" data-index="0" id="3d0f69f6-0562-4736-9627-641348f1b119" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Job Number</a></th><th scope="col" role="columnheader" data-field="ticketNumber" rowspan="1" data-title="Ticket Number" data-index="1" id="ae874917-823e-4cec-b888-5247f2160c42" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Ticket Number</a></th><th scope="col" role="columnheader" data-field="problemDescription" rowspan="1" data-title="Problem Description" data-index="2" id="54d06101-6890-459e-89cd-8a26312232ec" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Problem Description</a></th><th scope="col" role="columnheader" data-field="statusName" rowspan="1" data-title="Status " data-index="3" id="57241bfd-30c8-45a4-b482-8e6e1a0f5058" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Status </a></th><th scope="col" role="columnheader" data-field="walkInDate" rowspan="1" data-title="Walk In Date" data-index="4" id="67c6e59e-1a4e-4e0a-aaa5-08f84052bf92" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Walk In Date</a></th><th scope="col" role="columnheader" data-field="deliveryTypeName" rowspan="1" data-title="Delivery Type" data-index="5" id="c43a1257-95ef-4354-9198-088f631d226a" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Delivery Type</a></th><th scope="col" role="columnheader" data-field="warrantyTypeName" rowspan="1" data-title="Warranty Type" data-index="6" id="60d3a4ab-0ebf-4554-a881-047ecb437739" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Warranty Type</a></th><th scope="col" role="columnheader" data-field="remark" rowspan="1" data-title="Remark" data-index="7" id="6d32932d-211c-49a2-a690-c2c2c161d37c" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Remark</a></th><th scope="col" role="columnheader" data-field="serviceTypeName" rowspan="1" data-title="Service Type" data-index="8" id="14c160aa-0ed6-4f3c-bfa9-670b1c6af174" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Service Type</a></th><th scope="col" role="columnheader" data-field="unitSerialNumber" rowspan="1" data-title="Serial Number" data-index="9" id="75b398b3-6fdf-4c8e-a78b-b17eb3408df4" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Serial Number</a></th><th scope="col" role="columnheader" data-field="jobPriorityName" rowspan="1" data-title="Job Priority" data-index="10" id="f0ad3086-5344-4bf6-8a1e-8e43b7af997d" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Job Priority</a></th><th scope="col" role="columnheader" data-field="isJobSheetPrinted" rowspan="1" data-title="Job Sheet Printed" data-index="11" id="555647a1-baf7-438c-b910-85c21b0cb461" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Job Sheet Printed</a></th><th scope="col" role="columnheader" data-field="warrantyChangeByFCRC" rowspan="1" data-title="Warranty Change By FCRC" data-index="12" id="70fe1bb8-a267-42da-a0af-79d9039389f2" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Warranty Change By FCRC</a></th><th scope="col" role="columnheader" data-field="firstName" rowspan="1" data-title="First Name" data-index="13" id="19aea020-376c-42c3-a826-813f5473114d" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">First Name</a></th><th scope="col" role="columnheader" data-field="lastName" rowspan="1" data-title="Last Name" data-index="14" id="577a6552-2e3f-4196-b94a-a977da9145df" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Last Name</a></th><th scope="col" role="columnheader" data-field="mobileNumber" rowspan="1" data-title="MobileNumber" data-index="15" id="e322774e-58a3-40fa-abcb-02d9900623c8" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">MobileNumber</a></th><th scope="col" role="columnheader" data-field="pickUpAddress" rowspan="1" data-title="PickUpAddress" data-index="16" id="80366f22-c22d-451b-8125-2690c311540a" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">PickUpAddress</a></th><th scope="col" role="columnheader" data-field="isEscalated" rowspan="1" data-title="Is Escalated" data-index="17" id="20586427-5fe9-49fa-b722-8b553eb04a6f" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Is Escalated</a></th><th scope="col" id="aa49ee2b-4bd4-4e78-8548-2bacbfdda58a" rowspan="1" data-index="18" class="k-header">Annotation</th></tr></thead></table></div></div><div class="k-grid-content k-auto-scrollable" style="height: 375px;"><table role="grid" style="height: auto;" data-role="selectable" class="k-selectable"><colgroup><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:120px"></colgroup><tbody role="rowgroup"><tr data-uid="75c5cf96-b4b1-4b9b-9cdf-ace1dd94680e" role="row" class="escalated-RowColor"><td role="gridcell">IND-JOB#-000001649</td><td role="gridcell">IND-JOB#-000001649</td><td role="gridcell">test</td><td role="gridcell">Booked-In</td><td role="gridcell">20-Dec-2017 05:16 AM</td><td role="gridcell">By Hand</td><td role="gridcell">IN WARRANTY</td><td role="gridcell">test</td><td role="gridcell">Repair</td><td role="gridcell">HGCB43J3</td><td role="gridcell">2</td><td role="gridcell">No</td><td role="gridcell">No</td><td role="gridcell">Shrikant</td><td role="gridcell">Kawatkar</td><td role="gridcell">+918983852226</td><td role="gridcell">Mumbai </td><td role="gridcell">Yes</td><td role="gridcell"><a class="k-button k-button-icontext grid-command-lnk annotation k-grid-Annotation display-none" href="#"><span class=" "></span>Show</a></td></tr><tr class="escalated-RowColor" data-uid="e4ada4f9-9c56-4019-959a-b3de7b7dd9a1" role="row"><td role="gridcell">IND-JOB#-000001704</td><td role="gridcell">IND-JOB#-000001704</td><td role="gridcell">screen</td><td role="gridcell">Booked-In</td><td role="gridcell">10-Jan-2018 08:38 AM</td><td role="gridcell">By Hand</td><td role="gridcell">OOW(Beyond warranty period)</td><td role="gridcell">screen</td><td role="gridcell">Repair</td><td role="gridcell">hgaccfa2</td><td role="gridcell">2</td><td role="gridcell">No</td><td role="gridcell">No</td><td role="gridcell">Sachin</td><td role="gridcell">jadhav</td><td role="gridcell">8796521091</td><td role="gridcell">pune pune</td><td role="gridcell">Yes</td><td role="gridcell"><a class="k-button k-button-icontext grid-command-lnk annotation k-grid-Annotation display-none" href="#"><span class=" "></span>Show</a></td></tr><tr data-uid="28f1c5b5-7b84-4194-b25c-7f799b45aa45" role="row" class="k-state-selected" aria-selected="true"><td role="gridcell">IND-JOB#-000001705</td><td role="gridcell">IND-JOB#-000001705</td><td role="gridcell">test</td><td role="gridcell">Booked-In</td><td role="gridcell">02-Feb-2018 10:06 AM</td><td role="gridcell">By Hand</td><td role="gridcell">OOW(Beyond warranty period)</td><td role="gridcell">not working</td><td role="gridcell">Repair</td><td role="gridcell">HGCABBE1</td><td role="gridcell">2</td><td role="gridcell">No</td><td role="gridcell">No</td><td role="gridcell">Mayur</td><td role="gridcell">Chabukswar</td><td role="gridcell">7709328668</td><td role="gridcell">Hydrabad Hydrabad</td><td role="gridcell">No</td><td role="gridcell"><a class="k-button k-button-icontext grid-command-lnk annotation k-grid-Annotation display-none" href="#"><span class=" "></span>Show</a></td></tr></tbody></table></div><div class="k-pager-wrap k-grid-pager k-widget k-floatwrap" data-role="pager"><a href="#" title="Go to the first page" class="k-link k-pager-nav k-pager-first k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-seek-w">Go to the first page</span></a><a href="#" title="Go to the previous page" class="k-link k-pager-nav  k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-w">Go to the previous page</span></a><ul class="k-pager-numbers k-reset"><li class="k-current-page"><span class="k-link k-pager-nav">1</span></li><li><span class="k-state-selected">1</span></li></ul><a href="#" title="Go to the next page" class="k-link k-pager-nav  k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-e">Go to the next page</span></a><a href="#" title="Go to the last page" class="k-link k-pager-nav k-pager-last k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-seek-e">Go to the last page</span></a><span class="k-pager-sizes k-label"><span title="" style="" class="k-widget k-dropdown k-header" unselectable="on" role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="" aria-disabled="false" aria-busy="false" aria-activedescendant="f6b96b37-130a-4a20-a0eb-aa0c33a53a01"><span unselectable="on" class="k-dropdown-wrap k-state-default"><span unselectable="on" class="k-input">10</span><span unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-arrow-s">select</span></span></span><select data-role="dropdownlist" style="display: none;"><option value="all">All</option><option value="5">5</option><option value="10">10</option><option value="20">20</option></select></span>items per page</span><span class="k-pager-info k-label">1 - 3 of 3 items</span></div></div>
+</div>
+
+
+<div class="modal fade vertical-alignment-helper ng-scope" tabindex="-1" role="dialog" id="unitOwnerDetailsModel">
+    <div class="modal-dialog ertical-align-center model-dialog-broad-width">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Unit Owner Details</h4>
+            </div>
+            <div class="modal-body ng-scope" ng-controller="unitOwnerInfoController as unitOwnerInfoCtrl">
+
+                <!-- ngInclude:  --><div ng-include="" src="'~/../app/views/UnitOwnerInfo.html'" class="ng-scope"><div id="untOwnerInfo" class="ng-scope">
+    <!--Personal Information Starts-->
+    <div class="row fade-backgroud div-padding">
+        <h3>Personal Info</h3>
+        <hr>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerSalutation.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right ">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select id="" class="form-control dropdown-select form-control-width ng-pristine ng-untouched ng-valid ng-empty" name="ddlSalutation" ng-model="unitOwnerInfoCtrl.unitOwner.salutation" ng-disabled="1" disabled="disabled">
+                        <option value="">--Select--</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mrs.">Mrs.</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerFirstName.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.firstName" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerLastName.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.lastName" ng-disabled="1" disabled="disabled">
+                    <!--ng-change="unitOwnerInfoCtrl.RegValidation('txtLastName', unitOwnerInfoCtrl.unitOwner.lastName,'LastName_Rule');"-->
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerEmail.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2  col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.emailID" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerMobileNumber.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right ">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.mobileNumber" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerHomePhoneNumber.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.homePhoneNumber" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerAltPhoneNumber.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.alternatePhoneNumber" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerDelMethod.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select id="" name="mySelect" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-model="unitOwnerInfoCtrl.selectedDeliveryTypeID" ng-disabled="1" ng-options="obj.deliveryTypeID as obj.deliveryTypeName for obj in unitOwnerInfoCtrl.deliveryTypes" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerVIPreason.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  text-right">
+                    <i ng-show="unitOwnerInfoCtrl.unitOwnerVIPreason.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select id="" name="mySelect" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-model="unitOwnerInfoCtrl.selectedVIPReasonID" ng-options="obj.vipReasonID as obj.vipReasonName for obj in unitOwnerInfoCtrl.vipReason" ng-disabled="1" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Personal Information Ends-->
+    <!--Permanent / Actual Address Starts-->
+    <div class="row fade-backgroud">
+        <h3>Permanent / Actual Address</h3>
+        <hr>
+
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerPerAddress1.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.permanentAddress1" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerPerAddress2.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.permanentAddress2" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerPerCountry.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select id="" name="PermanentCountrySelect" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-model="unitOwnerInfoCtrl.selectedPermanentCountryID" ng-disabled="1" ng-options="obj.countryID as obj.countryName for obj in unitOwnerInfoCtrl.permanentCountries" ng-change="unitOwnerInfoCtrl.getPermanentMasterStates()" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerPerState.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select id="" name="PermanentStateSelect" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-model="unitOwnerInfoCtrl.selectedPermanentStateID" ng-disabled="1" ng-options="obj.stateID as obj.stateName for obj in unitOwnerInfoCtrl.permanentStates" ng-change="unitOwnerInfoCtrl.getPermanentMasterCities()" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerPerCity.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select id="" name="PermanentCountrySelect" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-model="unitOwnerInfoCtrl.selectedPermanentCityID" ng-disabled="1" ng-options="obj.cityID as obj.cityName for obj in unitOwnerInfoCtrl.permanentCities" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerPerZipCode.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.permanentZipCode" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Permanent / Actual Address Ends-->
+    <!--Pickup Address Starts-->
+    <div class="row fade-backgroud">
+        <h3>Pickup Address</h3>
+        <hr>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 ng-hide" ng-show="unitOwnerInfoCtrl.unitOwnerPickupSameAsPer.isVisible">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <input type="checkbox" ng-model="unitOwnerInfoCtrl.unitOwner.pickupSameAsPermanent" ng-disabled="1" ng-click="unitOwnerInfoCtrl.setPermanentToPickupAddress()" class="ng-pristine ng-untouched ng-valid ng-empty" disabled="disabled">
+                <span class="checkbox-top ng-binding"></span>
+            </div>
+        </div>
+
+
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerPickUpAddress1.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.pickupAddress1" ng-disabled="1" ng-readonly="unitOwnerInfoCtrl.isEnablePickUpAddress" disabled="disabled">
+                </div>
+            </div>
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerPickUpAddress2.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right ng-binding"></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.pickupAddress2" ng-disabled="1" ng-readonly="unitOwnerInfoCtrl.isEnablePickUpAddress" disabled="disabled">
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerPickUpCountry.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select id="" name="PickupCountrySelect" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-model="unitOwnerInfoCtrl.selectedPickupCountryID" ng-disabled="1" ng-options="obj.countryID as obj.countryName for obj in unitOwnerInfoCtrl.pickupCountries" ng-change="unitOwnerInfoCtrl.getPickupMasterStates()" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerPickUpState.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select id="" name="PickupCountrySelect" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-model="unitOwnerInfoCtrl.selectedPickupStateID" ng-disabled="1" ng-options="obj.stateID as obj.stateName for obj in unitOwnerInfoCtrl.pickupStates" ng-change="unitOwnerInfoCtrl.getPickupMasterCities()" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerPickUpCity.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select id="" name="PickupCountrySelect" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-disabled="1" ng-model="unitOwnerInfoCtrl.selectedPickupCityID" ng-options="obj.cityID as obj.cityName for obj in unitOwnerInfoCtrl.pickupCities" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerPickUpZipCode.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.pickupZipCode" ng-disabled="1" ng-readonly="unitOwnerInfoCtrl.isEnablePickUpAddress" disabled="disabled">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Pickup Address Ends-->
+    <!--Delivery Address Starts-->
+    <div class="row fade-backgroud">
+        <h3>Delivery Address</h3>
+        <hr>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ng-hide" ng-show="unitOwnerInfoCtrl.unitOwnerDelSameAsAct.isVisible">
+                <input type="checkbox" ng-model="unitOwnerInfoCtrl.unitOwner.deliverySameAsActual" ng-disabled="1" ng-click="unitOwnerInfoCtrl.setPermanentToDeliveryAddress()" class="ng-pristine ng-untouched ng-valid ng-empty" disabled="disabled">
+                <span class="checkbox-top ng-binding"></span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ng-hide" ng-show="unitOwnerInfoCtrl.unitOwnerPickupSameAsPickUp.isVisible">
+                <input type="checkbox" ng-model="unitOwnerInfoCtrl.unitOwner.deliverySameAsPickup" ng-disabled="1" ng-click="unitOwnerInfoCtrl.setPickupToDeliveryAddress()" class="ng-pristine ng-untouched ng-valid ng-empty" disabled="disabled">
+                <span class="checkbox-top ng-binding"></span>
+            </div>
+        </div>
+
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerDelAddress1.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.deliveryAddress1" ng-readonly="unitOwnerInfoCtrl.isEnableDeliverySameAsActual" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerDelAddress2.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.deliveryAddress2" ng-disabled="1" ng-readonly="unitOwnerInfoCtrl.isEnableDeliverySameAsActual" disabled="disabled">
+                </div>
+            </div>
+
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerDelCountry.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select id="" name="DeliveryCountrySelect" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-model="unitOwnerInfoCtrl.selectedDeliveryCountryID" ng-disabled="1" ng-options="obj.countryID as obj.countryName for obj in unitOwnerInfoCtrl.deliveryCountries" ng-change="unitOwnerInfoCtrl.getDeliveryMasterStates()" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerDelState.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select id="" name="DeliveryCountrySelect" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-model="unitOwnerInfoCtrl.selectedDeliveryStateID" ng-disabled="1" ng-options="obj.stateID as obj.stateName for obj in unitOwnerInfoCtrl.deliveryStates" ng-change="unitOwnerInfoCtrl.getDeliveryMasterCities()" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerDelCity.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select id="" name="DeliveryCountrySelect" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-model="unitOwnerInfoCtrl.selectedDeliveryCityID" ng-disabled="1" ng-options="obj.cityID as obj.cityName for obj in unitOwnerInfoCtrl.deliveryCities" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+            <div ng-show="unitOwnerInfoCtrl.unitOwnerDelZipCode.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right"><label class="ng-binding"></label></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input id="" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="unitOwnerInfoCtrl.unitOwner.deliveryZipCode" ng-disabled="1" ng-readonly="unitOwnerInfoCtrl.isEnableDeliverySameAsActual" disabled="disabled">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Delivery Address Starts-->
+    <hr class="heading-hr">
+</div></div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade vertical-alignment-helper ng-scope" tabindex="-1" role="dialog" id="unitDetailsModel">
+    <div class="modal-dialog ertical-align-center model-dialog-broad-width">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Unit Details</h4>
+            </div>
+            <div class="modal-body ng-scope" ng-controller="unitInfoController as unitInfoCtrl">
+
+                <!-- ngInclude:  --><div ng-include="" src="'~/../app/views/UnitInfo.html'" class="ng-scope"><script class="ng-scope">
+    bindToKendoDatePicker();
+</script>
+
+<!--Service Job Details Starts-->
+<div class="tab-pane active ng-scope" id="untInfo">
+    <div class="row fade-backgroud div-padding tab-pane active" id="UnitRegistration">
+        <h3>Service Job Details </h3>
+        <hr>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <div ng-show="unitInfoCtrl.serialNumber.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="unitInfoCtrl.unit.serialNumber" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+
+            <div ng-show="unitInfoCtrl.machineType.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="unitInfoCtrl.unit.machineType" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitInfoCtrl.ticketNumber.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="unitInfoCtrl.unit.ticketNumber" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+
+            <div ng-show="unitInfoCtrl.jobNumber.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="unitInfoCtrl.unit.jobNumber" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitInfoCtrl.oEMBrand.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select custom-select="" class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-disabled="1" id="" ng-model="unitInfoCtrl.selectedOEMBrandID" ng-options="obj.oemBrandID as obj.oemBrandName for obj in unitInfoCtrl.oEMBrands" ng-change="unitInfoCtrl.getMasterProductCategories()" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+            <div ng-show="unitInfoCtrl.productCategory.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-disabled="1" id="" ng-model="unitInfoCtrl.selectedProductCategoryID" ng-options="obj.productCategoryID as obj.productCategoryName for obj in unitInfoCtrl.productCategories" ng-change="unitInfoCtrl.getMasterProductModels()" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitInfoCtrl.productModel.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-disabled="1" id="" ng-model="unitInfoCtrl.selectedProductModelID" ng-options="obj.productModelID as obj.productModelName for obj in unitInfoCtrl.productModels" ng-change="unitInfoCtrl.getMasterProductModelSKUs()" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+            <div ng-show="unitInfoCtrl.productModelSKU.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-disabled="1" id="" ng-model="unitInfoCtrl.selectedProductModelSKUID" ng-options="obj.productModelSKUID as obj.skuNumber for obj in unitInfoCtrl.productModelSKUs" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Service Job Details Starts-->
+    <!--Unit Information Starts-->
+    <div class="row fade-backgroud">
+        <h3>Unit Information</h3>
+        <hr>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <div ng-show="unitInfoCtrl.unitOwner.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="unitInfoCtrl.unit.unitOwnerFullName" ng-disabled="1" disabled="disabled">
+
+                </div>
+            </div>
+            <div ng-show="unitInfoCtrl.country.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-disabled="1" id="" ng-model="unitInfoCtrl.selectedCountryID" ng-options="obj.countryID as obj.countryName for obj in unitInfoCtrl.countries" ng-change="unitInfoCtrl.getMasterStates()" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitInfoCtrl.state.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-disabled="1" id="" ng-model="unitInfoCtrl.selectedStateID" ng-options="obj.stateID as obj.stateName for obj in unitInfoCtrl.states" ng-change="unitInfoCtrl.getMasterCities()" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+            <div ng-show="unitInfoCtrl.city.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-disabled="1" id="" ng-model="unitInfoCtrl.selectedCityID" ng-options="obj.cityID as obj.cityName for obj in unitInfoCtrl.cities" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitInfoCtrl.warrantyType.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-disabled="1" id="" ng-model="unitInfoCtrl.selectedWarrantyTypeID" ng-options="obj.warrantyTypeID as obj.warrantyTypeName for obj in unitInfoCtrl.warrantyTypes" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+            <div ng-show="unitInfoCtrl.warrantyExpiredDate.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <span class="k-widget k-datepicker k-header form-control ui-datepicker cls-datetimepicker disable-Date-Picker" readonly="readonly" style=""><span class="k-picker-wrap k-state-default"><input class="form-control ui-datepicker cls-datetimepicker disable-Date-Picker k-input ng-pristine ng-untouched ng-valid ng-empty" data-val="true" data-val-required="Date is required" id="" ng-model="unitInfoCtrl.unit.warrantyExpiredDate" ng-disabled="1" set-date-format="" data-role="datepicker" type="text" role="combobox" aria-expanded="false" aria-owns="_dateview" aria-disabled="false" readonly="readonly" style="width: 100%;" disabled="disabled"><span unselectable="on" class="k-select" role="button" aria-controls="_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitInfoCtrl.iMEINumber1.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="unitInfoCtrl.unit.imeiNumber1" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+            <div ng-show="unitInfoCtrl.iMEINumber2.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="unitInfoCtrl.unit.imeiNumber2" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitInfoCtrl.phoneCarrier.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <select class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" ng-disabled="1" id="" ng-model="unitInfoCtrl.selectedPhoneCarrierID" ng-options="obj.phoneCarrierID as obj.phoneCarrierName for obj in unitInfoCtrl.phoneCarriers" disabled="disabled"><option value="" class="" selected="selected">--Select--</option></select>
+                </div>
+            </div>
+            <div ng-show="unitInfoCtrl.softwareVersion.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="unitInfoCtrl.unit.softwareVersion" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Unit Information Ends-->
+    <!--Unit Details Starts-->
+    <div class="row fade-backgroud">
+        <h3>Unit Details</h3>
+        <hr>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitInfoCtrl.dealerDetail.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="unitInfoCtrl.unit.dealerDetail" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+
+            <!--<div ng-show="unitInfoCtrl.accessories.isVisible">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label>{{unitInfoCtrl.accessories.captionName}}</label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="text" class="form-control"
+                           id="{{unitInfoCtrl.accessories.fieldName}}"
+                           ng-model="unitInfoCtrl.unit.accessories"
+                           ng-disabled="1" />
+                </div>
+            </div>-->
+
+            <div ng-show="unitInfoCtrl.accessories.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <i ng-show="unitInfoCtrl.accessories.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="list-group-items" id="">
+                        <!-- ngRepeat: accessoriestype in unitInfoCtrl.accessoriesType -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitInfoCtrl.customerInstruction.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="unitInfoCtrl.unit.customerInstruction" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+            <div ng-show="unitInfoCtrl.isADP.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="radio" name="IsADP" id="ADPYes" value="true" ng-checked="unitInfoCtrl.isADPYes" ng-disabled="1" disabled="disabled"> Yes &nbsp;&nbsp;
+                    <input type="radio" name="IsADP" id="ADPNo" value="false" ng-checked="unitInfoCtrl.isADPNo" ng-disabled="1" disabled="disabled"> No
+
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitInfoCtrl.unitCondition.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="unitInfoCtrl.unit.unitCondition" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+            <div ng-show="unitInfoCtrl.remarks.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="unitInfoCtrl.unit.remarks" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+        </div>
+        <hr class="heading-hr">
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitInfoCtrl.proofOfPurchase.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="checkbox" id="" ng-model="unitInfoCtrl.unit.proofOfPurchase" ng-disabled="1" class="ng-pristine ng-untouched ng-valid ng-empty" disabled="disabled">
+                </div>
+            </div>
+            <div ng-show="unitInfoCtrl.datePurchased.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <span class="k-widget k-datepicker k-header form-control ui-datepicker cls-datetimepicker disable-Date-Picker" readonly="readonly" style=""><span class="k-picker-wrap k-state-default"><input class="form-control ui-datepicker cls-datetimepicker disable-Date-Picker k-input ng-pristine ng-untouched ng-valid ng-empty" data-val="true" data-val-required="Date is required" id="" ng-model="unitInfoCtrl.unit.datePurchased" ng-disabled="1" set-date-format="" data-role="datepicker" type="text" role="combobox" aria-expanded="false" aria-owns="_dateview" aria-disabled="false" readonly="readonly" style="width: 100%;" disabled="disabled"><span unselectable="on" class="k-select" role="button" aria-controls="_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitInfoCtrl.popAttachment.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="unitInfoCtrl.unit.fileName" ng-disabled="1" disabled="disabled">
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div ng-show="unitInfoCtrl.isDAP.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <i ng-show="unitInfoCtrl.isDAP.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <input type="checkbox" id="" ng-model="unitInfoCtrl.unit.isDAP" ng-disabled="1" class="ng-pristine ng-untouched ng-valid ng-empty" disabled="disabled">
+                </div>
+            </div>
+
+            <div ng-show="unitInfoCtrl.activationDate.isVisible" class="ng-hide">
+                <div class="col-lg-2 col-md-2 text-right">
+                    <label class="ng-binding"></label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <span class="k-widget k-datepicker k-header form-control ui-datepicker cls-datetimepicker disable-Date-Picker" readonly="readonly" style=""><span class="k-picker-wrap k-state-default"><input class="form-control ui-datepicker cls-datetimepicker disable-Date-Picker k-input ng-pristine ng-untouched ng-valid ng-empty" data-val="true" data-val-required="Date is required" id="" ng-model="unitInfoCtrl.unit.activationDate" ng-disabled="1" set-date-format="" data-role="datepicker" type="text" role="combobox" aria-expanded="false" aria-owns="_dateview" aria-disabled="false" readonly="readonly" style="width: 100%;" disabled="disabled"><span unselectable="on" class="k-select" role="button" aria-controls="_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade vertical-alignment-helper ng-scope" tabindex="-1" role="dialog" id="escalationModel">
+    <div class="modal-dialog ertical-align-center model-dialog-broad-width">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Escalation</h4>
+            </div>
+            <div class="modal-body ng-scope" ng-controller="escalationController as escalationCtrl">
+                <!-- ngInclude:  --><div ng-include="" src="'~/../app/views/Escalation.html'" class="ng-scope"><div class="tab-pane active ng-scope" id="dvEscalation">
+    <div class="row fade-backgroud div-padding tab-pane active">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <h3>Escalation Details </h3>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-right div-padding-none-right" id="dvEscalationAction">
+            <button type="button" ng-click="escalationCtrl.saveEscalation()" value="Save" class="btn btn-info"><i class="fa fa-floppy-o" aria-hidden="true"></i>Save</button>
+        </div>        
+        <hr>
+
+        <div>  <!--class="row fade-backgroud div-padding"-->
+            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div ng-show="escalationCtrl.escalationNumber.isVisible">
+                    <div class="col-lg-2 col-md-2 text-right">
+                        <label class="ng-binding">Escalation Number</label>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="EscalationNumber" ng-model="escalationCtrl.escalation.escalationNumber" ng-disabled="escalationCtrl.escalationNumber.isDisable" disabled="disabled">
+                    </div>
+                </div>
+                <div ng-show="escalationCtrl.unitOwner.isVisible">
+                    <div class="col-lg-2 col-md-2 text-right">
+                        <label class="ng-binding">Customer</label>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="UnitOwner" ng-model="escalationCtrl.escalation.unitOwner" ng-disabled="escalationCtrl.unitOwner.isDisable" disabled="disabled">
+                    </div>
+                </div>
+            </div>
+            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div ng-show="escalationCtrl.serviceJob.isVisible">
+                    <div class="col-lg-2 col-md-2 text-right">
+                        <label class="ng-binding">Service Job</label>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="ServiceJob" ng-model="escalationCtrl.escalation.serviceJob" ng-disabled="escalationCtrl.serviceJob.isDisable" disabled="disabled">
+                    </div>
+                </div>
+                <div ng-show="escalationCtrl.repairStore.isVisible">
+                    <div class="col-lg-2 col-md-2 text-right">
+                        <label class="ng-binding">Repair Store</label>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="RepairStore" ng-model="escalationCtrl.escalation.repairStore" ng-disabled="escalationCtrl.repairStore.isDisable" disabled="disabled">
+                    </div>
+                </div>
+            </div>
+            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div ng-show="escalationCtrl.escalationType.isVisible">
+                    <div class="col-lg-2 col-md-2 text-right">
+                        <label class="ng-binding">Escalation Category</label>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <select class="form-control dropdown-select ng-pristine ng-untouched ng-valid ng-empty" data-style="btn-warning" id="EscalationType" ng-model="escalationCtrl.selectedEscalationTypeID" ng-disabled="escalationCtrl.escalationType.isDisable" ng-options="obj.escalationTypeID as obj.escalation for obj in escalationCtrl.escalationTypes"><option value="" class="" selected="selected">--Select--</option><option label="Repeat Return" value="number:1">Repeat Return</option><option label="High TAT" value="number:2">High TAT</option></select>
+                    </div>
+                </div>
+                <div ng-show="escalationCtrl.escalationDate.isVisible">
+                    <div class="col-lg-2 col-md-2 text-right">
+                        <label class="ng-binding">Escalation Date</label>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <input class="form-control ui-datepicker cls-datetimepicker ng-pristine ng-untouched ng-valid ng-empty" data-val="true" data-val-required="Date is required" id="EscalationDate" ng-model="escalationCtrl.escalation.createdOn" ng-disabled="escalationCtrl.IsJobDateDisable" ng-readonly="true" readonly="readonly">
+                    </div>
+                </div>
+            </div>
+            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div ng-show="escalationCtrl.description.isVisible">
+                    <div class="col-lg-2 col-md-2 text-right">
+                        <label class="ng-binding">Description</label>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <textarea class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="Description" ng-model="escalationCtrl.escalation.description" ng-disabled="escalationCtrl.description.isDisable"></textarea>
+                    </div>
+                </div>
+                <div ng-show="escalationCtrl.remark.isVisible">
+                    <div class="col-lg-2 col-md-2 text-right">
+                        <label class="ng-binding">Remark</label>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <textarea class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="Remark" ng-model="escalationCtrl.escalation.remark" ng-disabled="escalationCtrl.remark.isDisable"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Escalation Extra Field Starts-->
+    <div class="panel row fade-backgroud ng-hide" id="dvExtraField" ng-show="escalationCtrl.escalationExtraFieldPanel.isVisible">
+        <div class="panel-heading modify-padding mouse-pointer" data-toggle="collapse" data-parent="#accordion" href="#AdditionalInfo" onclick="tooglePlusSign(this)">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            <!--<h3>Additional Info</h3>-->
+            <h3 class="ng-binding"></h3>
+        </div>
+        <div id="AdditionalInfo" class="panel-collapse collapse">
+            <div class="panel-body">
+                <!--Textarea 1 & 2-->
+                <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div ng-show="escalationCtrl.eTextarea1.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eTextarea1.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">TextArea1</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <textarea id="TextArea1" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="escalationCtrl.escalation.textarea1" ng-disabled="escalationCtrl.eTextarea1.isDisable"></textarea>
+                        </div>
+                    </div>
+                    <div ng-show="escalationCtrl.eTextarea2.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eTextarea2.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">TextArea2</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <textarea id="TextArea2" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="escalationCtrl.escalation.textarea2" ng-disabled="escalationCtrl.eTextarea2.isDisable"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!--END: Textarea -->
+                <!--Textbox 1 - 4-->
+                <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div ng-show="escalationCtrl.eTextbox1.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eTextbox1.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">TextBox1</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="TextBox1" ng-model="escalationCtrl.escalation.textbox1" ng-disabled="escalationCtrl.eTextbox1.isDisable">
+                        </div>
+                    </div>
+                    <div ng-show="escalationCtrl.eTextbox2.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eTextbox2.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">TextBox2</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="TextBox2" ng-model="escalationCtrl.escalation.textbox2" ng-disabled="escalationCtrl.eTextbox2.isDisable">
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div ng-show="escalationCtrl.eTextbox3.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eTextbox3.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">TextBox3</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="TextBox3" ng-model="escalationCtrl.escalation.textbox3" ng-disabled="escalationCtrl.eTextbox3.isDisable">
+                        </div>
+                    </div>
+                    <div ng-show="escalationCtrl.eTextbox4.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eTextbox4.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">TextBox4</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="TextBox4" ng-model="escalationCtrl.escalation.textbox4" ng-disabled="escalationCtrl.eTextbox4.isDisable">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Textbox 5 - 8-->
+                <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div ng-show="escalationCtrl.eTextbox5.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eTextbox5.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">TextBox5</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="TextBox5" ng-model="escalationCtrl.escalation.textbox5" ng-disabled="escalationCtrl.eTextbox5.isDisable">
+                        </div>
+                    </div>
+                    <div ng-show="escalationCtrl.eTextbox6.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eTextbox6.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">TextBox6</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="TextBox6" ng-model="escalationCtrl.escalation.textbox6" ng-disabled="escalationCtrl.eTextbox6.isDisable">
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div ng-show="escalationCtrl.eTextbox7.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eTextbox7.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">TextBox7</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="TextBox7" ng-model="escalationCtrl.escalation.textbox7" ng-disabled="escalationCtrl.eTextbox7.isDisable">
+                        </div>
+                    </div>
+                    <div ng-show="escalationCtrl.eTextbox8.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eTextbox8.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">TextBox8</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="TextBox8" ng-model="escalationCtrl.escalation.textbox8" ng-disabled="escalationCtrl.eTextbox8.isDisable">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Textbox 9 & 10-->
+                <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div ng-show="escalationCtrl.eTextbox9.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eTextbox9.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">TextBox9</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="TextBox9" ng-model="escalationCtrl.escalation.textbox9" ng-disabled="escalationCtrl.eTextbox9.isDisable">
+                        </div>
+                    </div>
+                    <div ng-show="escalationCtrl.eTextbox10.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eTextbox10.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">TextBox10</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="TextBox10" ng-model="escalationCtrl.escalation.textbox10" ng-disabled="escalationCtrl.eTextbox10.isDisable">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Date 1  - 4-->
+                <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div ng-show="escalationCtrl.eDate1.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eDate1.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">Date1</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input class="form-control ui-datepicker cls-datetimepicker ng-pristine ng-untouched ng-valid ng-empty" data-val="true" data-val-required="Date is required" id="Date1" ng-model="escalationCtrl.escalation.date1" ng-disabled="escalationCtrl.eDate1.isDisable">
+                        </div>
+                    </div>
+                    <div ng-show="escalationCtrl.eDate2.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eDate2.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">Date2</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input class="form-control ui-datepicker cls-datetimepicker ng-pristine ng-untouched ng-valid ng-empty" data-val="true" data-val-required="Date is required" id="Date2" ng-model="escalationCtrl.escalation.date2" ng-disabled="escalationCtrl.eDate2.isDisable">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div ng-show="escalationCtrl.eDate3.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eDate3.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">Date3</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input class="form-control ui-datepicker cls-datetimepicker ng-pristine ng-untouched ng-valid ng-empty" data-val="true" data-val-required="Date is required" id="Date3" ng-model="escalationCtrl.escalation.date3" ng-disabled="escalationCtrl.eDate3.isDisable">
+                        </div>
+                    </div>
+                    <div ng-show="escalationCtrl.eDate4.isVisible">
+                        <div class="col-lg-2 col-md-2 text-right">
+                            <i ng-show="escalationCtrl.eDate4.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                            <label class="ng-binding">Date4</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input class="form-control ui-datepicker cls-datetimepicker ng-pristine ng-untouched ng-valid ng-empty" data-val="true" data-val-required="Date is required" id="Date4" ng-model="escalationCtrl.escalation.date4" ng-disabled="escalationCtrl.eDate4.isDisable">
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <!--CheckBox 1 - 4-->
+                <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" ng-show="escalationCtrl.eBit1.isVisible">
+                        <input type="checkbox" ng-model="escalationCtrl.escalation.Bit1" ng-disabled="escalationCtrl.eBit1.isDisable" class="ng-pristine ng-untouched ng-valid ng-empty">
+                        <span class="checkbox-top ng-binding">Bit1</span>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" ng-show="escalationCtrl.eBit2.isVisible">
+                        <input type="checkbox" ng-model="escalationCtrl.escalation.Bit2" ng-disabled="escalationCtrl.eBit2.isDisable" class="ng-pristine ng-untouched ng-valid ng-empty">
+                        <span class="checkbox-top ng-binding">Bit2</span>
+                    </div>
+                </div>
+
+                <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" ng-show="escalationCtrl.eBit3.isVisible">
+                        <input type="checkbox" ng-model="escalationCtrl.escalation.Bit3" ng-disabled="escalationCtrl.eBit3.isDisable" class="ng-pristine ng-untouched ng-valid ng-empty">
+                        <span class="checkbox-top ng-binding">Bit3</span>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" ng-show="escalationCtrl.eBit4.isVisible">
+                        <input type="checkbox" ng-model="escalationCtrl.escalation.Bit4" ng-disabled="escalationCtrl.eBit4.isDisable" class="ng-pristine ng-untouched ng-valid ng-empty">
+                        <span class="checkbox-top ng-binding">Bit4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Escalation Extra Field Ends-->
+</div>
+
+        
+
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="mySidenav" class="sidenav-right ng-scope" style="width: 0px; border: none;">
+    <div style="overflow-y:auto; height:400px;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <!-- ngRepeat: annotation in serviceJobsCtrl.annotationData -->
+    </div>
+
+    <!--<div class="row left  bottom-zero-margin">
+        <input type="text" class="form-control" ng-model="serviceJobCtrl.annotation.annotationMessage" ng-keypress="serviceJobCtrl.saveAnnotation($event)" />
+    </div>-->
+</div>
+
+<div class="modal fade vertical-alignment-helper ng-scope" tabindex="-1" role="dialog" id="JobHistoryDetailsModel">
+    <div class="modal-dialog ertical-align-center model-dialog-broad-width">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"> Job History</h4>
+            </div>
+            <div class="modal-body ng-scope" ng-controller="repairJobHistoryController as repairJobHistoryCtrl">
+                <!-- ngInclude:  --><div ng-include="" src="'~/../app/views/RepairJobHistory.html'" class="ng-scope"><div id="JobHistoryInfo" class="ng-scope">
+    <div id="GDMasterJobHistoryDetails" class="row table kendo-grid-custom"></div>
+</div></div>
+            </div>
+            <hr>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade ng-scope" tabindex="-1" role="dialog" id="DiscardModelPopup">
+    <div class="modal-dialog model-dialog-broad-width">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Discard</h4>
+            </div>
+            <!-- ngIf: serviceJobsCtrl.showValidationDiscardMsgs -->
+            <!-- ngIf: serviceJobsCtrl.showValidationDiscardMsgs -->
+            <div class="modal-body">
+                <div class="tab-content margin-top-zero">
+                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div ng-show="serviceJobsCtrl.discardUpload.isVisible" class="ng-hide">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  text-right">
+                                <i ng-show="serviceJobsCtrl.discardUpload.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                <label class="ng-binding"></label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8  col-xs-8">
+                                <input type="file" accept=".jpg,.pdf,.png,.gif" onchange="attachPhoto(this)" id="discardFileUpload" ng-model="serviceJobsCtrl.selectedPhotoFilePath" class="ng-pristine ng-untouched ng-valid ng-empty">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                        <div ng-show="serviceJobsCtrl.discardRemarks.isVisible" class="ng-hide">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  text-right">
+                                <i ng-show="serviceJobsCtrl.discardRemarks.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                                <label class="ng-binding"></label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8  col-xs-8">
+                                <textarea type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="" ng-model="serviceJobsCtrl.discard.remarks" ng-disabled="serviceJobsCtrl.discardRemarks.isDisable"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" ng-click="serviceJobsCtrl.discardServiceJob()" value="Discard" class="btn btn-info"><i class="fa fa-trash" aria-hidden="true"></i>Discard</button>
+                <button type="button" value="Close" class="btn btn-info btn-cancel" data-dismiss="modal"><i class="fa fa-times-circle-o" aria-hidden="true"></i>Close </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade vertical-alignment-helper ng-scope" tabindex="-1" role="dialog" id="ServiceJobRemarks">
+    <div class="modal-dialog ertical-align-center model-dialog-broad-width">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"> Remarks </h4>
+            </div>
+            <div class="modal-body ng-scope" ng-controller="serviceJobRemarksController as serviceJobRemarksCtrl">
+                <!-- ngInclude:  --><div ng-include="" src="'~/../app/views/ServiceJobRemarks.html'" class="ng-scope"><div class="tab-pane active ng-scope" id="ServiceJobRemarksPopup">
+
+    <div class="row fade-backgroud div-padding tab-pane active" id="remarks">
+        <div class="row col-lg-12 col-md-12 text-right">
+            <button type="button" ng-click="serviceJobRemarksCtrl.saveServiceJobRemarks()" value="Save" class="btn btn-info text-right"><i class="fa fa-pencil" aria-hidden="true"></i>Save</button>
+        </div>
+        <div class="row col-lg-10 col-md-10">
+            <div ng-show="serviceJobRemarksCtrl.fserviceJobRemarks.isVisible">
+                <div class="col-lg-3 col-md-3 text-right">
+                    <i ng-show="serviceJobRemarksCtrl.fserviceJobRemarks.isMandatory" class="fa fa-asterisk error-asterisk ng-hide" aria-hidden="true"></i>
+                    <label class="ng-binding">Addition Information</label>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <textarea type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="Remarks" ng-model="serviceJobRemarksCtrl.serviceJobRemarks"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row fade-backgroud" id="remarksGrid">
+        <div id="gdServiceJobRemarksDetails" class="row table kendo-grid-custom"></div>
+    </div>
+
+</div>
+
+</div>
+            </div>
+            <hr>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade vertical-alignment-helper ng-scope" tabindex="-1" role="dialog" id="PhotoUploadModel" style="display: none;">
+    <div class="modal-dialog ertical-align-center model-dialog-broad-width">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"> Unit Photo</h4>
+            </div>
+            <div class="modal-body" id="UnitPhoto">
+                <!-- ngInclude:  --><div ng-include="" src="'~/../app/views/fileUpload.html'" class="ng-scope">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right ng-scope">
+    <input type="button" class="btn btn-primary hideFileButton" value="Upload" data-toggle="modal" data-target="#fileUpload" onclick="openUploadPopup()">
+    <input type="button" onclick="downloadFile()" value="Download" class="btn btn-info btn-auto-width hideFileButton">
+    <input type="button" onclick="deleteFile()" value="Delete" class="btn btn-info hideFileButton">
+</div>
+
+
+<div class="modal-body ng-scope" id="fileDownloadContainer">
+    <div id="gdFiles" class="row table kendo-grid-custom k-grid k-widget" data-role="grid" style="height: 430px;"><a title="Clear Filter" class="k-pager-refresh k-link column-filter-refresh"><span class="fa fa-refresh"></span></a>
+    <div class="k-grid-header" style="padding-right: 17px;"><div class="k-grid-header-wrap k-auto-scrollable" data-role="resizable"><table role="grid"><colgroup><col style="width:30px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"></colgroup><thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader" data-field="fileName" rowspan="1" data-title="File Name" data-index="0" id="ce9ad10c-a4ca-496a-96d8-70881bf136b3" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">File Name</a></th><th scope="col" role="columnheader" data-field="fileDescription" rowspan="1" data-title="File Description" data-index="1" id="460af271-ab0c-464e-9adb-5334678390a6" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">File Description</a></th><th scope="col" role="columnheader" data-field="fileType" rowspan="1" data-title="File Type" data-index="2" id="4831d6f0-4a9d-4316-91ea-451ad8748b3f" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">File Type</a></th><th scope="col" role="columnheader" data-field="dateTimeTaken" rowspan="1" data-title="Date Time Taken" data-index="3" id="476accbc-03fc-467c-aab4-4734d6db5f30" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Date Time Taken</a></th><th scope="col" role="columnheader" data-field="parentType" rowspan="1" data-title="Photo Type" data-index="4" id="ee48643c-4a34-42c0-88ef-125bb377d304" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="#" tabindex="-1"><span class="k-icon k-filter">Filter</span></a><a class="k-link" href="#">Photo Type</a></th></tr></thead></table></div></div><div class="k-grid-content k-auto-scrollable" style="height: 343px;"><table role="grid" style="height: auto;" data-role="selectable" class="k-selectable"><colgroup><col style="width:30px"><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"></colgroup><tbody role="rowgroup"><tr data-uid="53124bb4-f462-4e81-90b9-cd9db0f0d73e" role="row"><td role="gridcell">Desert.jpg</td><td role="gridcell">Tes1</td><td role="gridcell">image/jpeg</td><td role="gridcell">12-Feb-2018 08:12 AM</td><td role="gridcell">ServiceJob</td></tr><tr class="k-alt" data-uid="c974651d-b704-4c19-93c7-6defc37ce9b0" role="row"><td role="gridcell">Tulips.jpg</td><td role="gridcell">file upload </td><td role="gridcell">image/jpeg</td><td role="gridcell">13-Feb-2018 11:00 AM</td><td role="gridcell">ServiceJob</td></tr><tr data-uid="7191f779-fc71-43f8-923a-df31874bba47" role="row"><td role="gridcell">UnitPhoto1518669890431.png</td><td role="gridcell">Export To Excel</td><td role="gridcell">image/png</td><td role="gridcell">15-Feb-2018 04:44 AM</td><td role="gridcell">ServiceJob</td></tr><tr class="k-alt" data-uid="78ff5fe0-c5ef-44a8-860a-9e40f2f67d03" role="row"><td role="gridcell">UnitPhoto1518689030986.png</td><td role="gridcell">Export To Excel</td><td role="gridcell">image/png</td><td role="gridcell">15-Feb-2018 10:03 AM</td><td role="gridcell">ServiceJob</td></tr></tbody></table></div><div class="k-pager-wrap k-grid-pager k-widget k-floatwrap" data-role="pager"><a href="#" title="Go to the first page" class="k-link k-pager-nav k-pager-first k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-seek-w">Go to the first page</span></a><a href="#" title="Go to the previous page" class="k-link k-pager-nav  k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-w">Go to the previous page</span></a><ul class="k-pager-numbers k-reset"><li class="k-current-page"><span class="k-link k-pager-nav">1</span></li><li><span class="k-state-selected">1</span></li></ul><a href="#" title="Go to the next page" class="k-link k-pager-nav  k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-e">Go to the next page</span></a><a href="#" title="Go to the last page" class="k-link k-pager-nav k-pager-last k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-seek-e">Go to the last page</span></a><span class="k-pager-sizes k-label"><span title="" style="" class="k-widget k-dropdown k-header" unselectable="on" role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="" aria-disabled="false" aria-busy="false" aria-activedescendant="c3e4e364-899e-4590-844b-3963ac1c1bf4"><span unselectable="on" class="k-dropdown-wrap k-state-default"><span unselectable="on" class="k-input">10</span><span unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-arrow-s">select</span></span></span><select data-role="dropdownlist" style="display: none;"><option value="all">All</option><option value="5">5</option><option value="10">10</option><option value="20">20</option></select></span>items per page</span><span class="k-pager-info k-label">1 - 4 of 4 items</span></div></div>
+
+</div>
+<div class="modal fade vertical-alignment-helper ng-scope" tabindex="-1" role="dialog" id="fileUpload" style="display: none;">
+    <div class="modal-dialog vertical-align-center">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">F L E X L I N K 2.0</h4>
+            </div>
+
+            <div class="modal-body ">
+                <div class="row col-md-12">
+                    <input type="file" accept=".jpg,.pdf,.png,.gif" onchange="setFile(this)" id="myFile"><br>
+                    <label id="maxFileSizeMsg" style="color:red">Note : Upload file size limit is 2 MB.</label>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <label>Parent Type</label>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <label id="parentType">ServiceJob</label><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <label>File Name</label>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <label id="fileName">UnitPhoto1518690848531.png</label><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <label>Description </label>
+                    </div>
+                    <div class="col-lg-1 col-md-1"></div>
+                    <div class="col-lg-9 col-md-9">
+                        <input type="text" class="form-control" id="fileDescription">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal" onclick="uploadFile()">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
+</div>
+            </div>
+            <hr>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal --></ui-view>
+    </div>
+</div>
+            </div>
+            <a class="scrollToTop" href="#" style="display: none;"></a>
+        </div>
+        
+
+    </div>
+
+    
+
+    <footer style="background-image: linear-gradient(27deg, rgb(255, 150, 0) 19%, rgb(27, 169, 225) 0%); background-position: initial initial; background-repeat: initial initial;">
+        <div class="col-lg-12 ">
+            <div class="col-lg-6">
+                <span class="ng-binding">Flexlink 2.3.1.10 (QA)</span>
+            </div>
+            <div class="col-lg-6 text-right top-zero">
+                <span class="ng-binding"><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2017</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="storesModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header adjust-top-bottom-padding">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title page-heading">Stores</h4>
+                </div>
+                <div class="modal-body padding-top-five height-290">
+                    <div class="tab-content margin-top-zero">
+                        <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            
+                            <div class="stores-div">
+                                <!-- ngRepeat: store in masterCtrl.storesCollection --><div ng-repeat="store in masterCtrl.storesCollection" class="row cursor-pointer ng-scope">
+                                    <!-- ngIf: store.localStoreID == masterCtrl.displaySelectedStoreID --><div ng-if="store.localStoreID == masterCtrl.displaySelectedStoreID" class="selected-store-display ng-binding ng-scope" ng-click="masterCtrl.onStoreChange(store)">store1</div><!-- end ngIf: store.localStoreID == masterCtrl.displaySelectedStoreID -->
+                                    <!-- ngIf: store.localStoreID != masterCtrl.displaySelectedStoreID -->
+                                </div><!-- end ngRepeat: store in masterCtrl.storesCollection --><div ng-repeat="store in masterCtrl.storesCollection" class="row cursor-pointer ng-scope">
+                                    <!-- ngIf: store.localStoreID == masterCtrl.displaySelectedStoreID -->
+                                    <!-- ngIf: store.localStoreID != masterCtrl.displaySelectedStoreID --><div ng-if="store.localStoreID != masterCtrl.displaySelectedStoreID" class="store-display ng-binding ng-scope" ng-click="masterCtrl.onStoreChange(store)">mayurcp</div><!-- end ngIf: store.localStoreID != masterCtrl.displaySelectedStoreID -->
+                                </div><!-- end ngRepeat: store in masterCtrl.storesCollection -->
+                            </div>
+                        </div>
+                        <div class="row text-right col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                            <button type="button" ng-click="masterCtrl.onStoreSelect()" value="Save" class="btn btn-info btn-auto-width">
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                OK
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="sessionModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content" style="width:400px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h2 class="modal-title"><i class="fa fa-clock-o fa-2x" aria-hidden="true"></i> Session Timeout  </h2>
+                </div>
+                <div class="modal-body">
+                    <h3 style="font-variant:normal">Your Session will expire in <span id="sessionTime"></span> Seconds</h3>
+                    <br>
+                    <h3 style="font-variant:normal">Do you Want to Continue?</h3>
+                </div>
+                <div class="modal-footer" style="background-color:lightgray">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="closeSession()">Continue</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<div class="k-tooltip k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-tooltip-content"></div></div><div class="k-tooltip k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-tooltip-content"></div></div><div class="k-list-container k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-group-header" style="display: none;"></div><div class="k-list-scroller" unselectable="on"><ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" aria-live="off" data-role="staticlist" role="listbox"><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="0">All</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="1">5</li><li tabindex="-1" role="option" unselectable="on" class="k-item k-state-selected k-state-focused" aria-selected="true" data-offset-index="2" id="f6b96b37-130a-4a20-a0eb-aa0c33a53a01">10</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="3">20</li></ul></div></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div aria-hidden="true" class="k-calendar-container k-popup k-group k-reset" id="{{unitInfoCtrl.warrantyExpiredDate.fieldName}}_dateview" data-role="popup" style="display: none; position: absolute;"></div><div aria-hidden="true" class="k-calendar-container k-popup k-group k-reset" id="{{unitInfoCtrl.datePurchased.fieldName}}_dateview" data-role="popup" style="display: none; position: absolute;"></div><div aria-hidden="true" class="k-calendar-container k-popup k-group k-reset" id="{{unitInfoCtrl.activationDate.fieldName}}_dateview" data-role="popup" style="display: none; position: absolute;"></div><div class="k-list-container k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;"><div class="k-group-header" style="display: none;"></div><div class="k-list-scroller" unselectable="on"><ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" aria-live="off" data-role="staticlist" role="listbox"><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="0">All</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="1">5</li><li tabindex="-1" role="option" unselectable="on" class="k-item k-state-selected k-state-focused" aria-selected="true" data-offset-index="2" id="c3e4e364-899e-4590-844b-3963ac1c1bf4">10</li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="3">20</li></ul></div></div></body>
