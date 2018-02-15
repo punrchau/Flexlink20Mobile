@@ -33,6 +33,10 @@ exports.on_messages = function (page) {
                 page.extract('photoupload')
                 page.checkState(true);
             }
+            if (data.isrepairjob) {
+                page.extract('servicejob')
+                page.checkState(true);
+            }
         });
 }
 
