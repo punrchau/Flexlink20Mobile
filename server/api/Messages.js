@@ -31,6 +31,7 @@ exports.on_messages = function (page) {
 
              if (data.isphotoupload) {
                 page.extract('photoupload')
+                page.extract('servicejob')
                 page.checkState(true);
             }
             if (data.isrepairjob) {
