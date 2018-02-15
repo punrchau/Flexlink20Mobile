@@ -29,8 +29,13 @@ exports.on_messages = function (page) {
                 page.checkState(true);
             }
 
-             if (data.isphotoupload) {
+            if (data.isphotoupload) {
                 page.extract('photoupload')
+                page.checkState(true);
+            }
+
+            if (data.isrepairjob) {
+                page.extract('servicejob')
                 page.checkState(true);
             }
            
