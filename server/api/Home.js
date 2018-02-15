@@ -116,4 +116,5 @@ exports.unitPhotoSave = function (page, params) {
         page.action('photoupload', 'save');
     },  3000);
 
+    page.action('photoupload', 'close');
 }
