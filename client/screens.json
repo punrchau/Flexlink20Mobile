@@ -1,7 +1,7 @@
 {
   "id": "app",
   "name": "Flexlink20 Mobile",
-  "startScreen": "app.jobhistorydetails",
+  "startScreen": "app.menu1",
   "screens": [
     {
       "id": "menu",
