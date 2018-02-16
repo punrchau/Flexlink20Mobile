@@ -55,23 +55,17 @@ exports.on_messages = function (page) {
             //     page.checkState(true);
             // }
 
-             if ((data.isphotoupload!=null && data.isphotoupload!=undefined && data.isphotoupload) ||
-                ( data.isrepairjob!=null && data.isrepairjob!=undefined && data.isrepairjob) || 
-                ( data.isunitphoto!=null && data.isunitphoto!=undefined && data.isunitphoto )) {
+             if (data.isphotoupload) {
                page.extract('photoupload')
                 page.checkState(true);
             }
 
-            if ((data.isphotoupload!=null && data.isphotoupload!=undefined && data.isphotoupload) ||
-                ( data.isrepairjob!=null && data.isrepairjob!=undefined && data.isrepairjob) || 
-                ( data.isunitphoto!=null && data.isunitphoto!=undefined && data.isunitphoto )) {
+            if (data.isrepairjob) {
                 page.extract('servicejob')
                 page.checkState(true);
             }
 
-             if ((data.isphotoupload!=null && data.isphotoupload!=undefined && data.isphotoupload) ||
-                ( data.isrepairjob!=null && data.isrepairjob!=undefined && data.isrepairjob) || 
-                ( data.isunitphoto!=null && data.isunitphoto!=undefined && data.isunitphoto )) {
+            if ( data.isunitphoto ) {
                 page.extract('unitphoto')
                 page.checkState(true);
             }
