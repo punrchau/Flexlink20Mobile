@@ -6,6 +6,10 @@ function app_photoupload($scope, app) {
         $scope.showPopup($scope.data);
     });
    
+    $scope.savePhoto = function () {
+        app.call('Home.closePhotoUpload', {});
+    };
+   
    $scope.savePhoto = function () {
        // $scope.base64string = angular.element(document.querySelector("#camera"))[0].value;
        $scope.base64string = $scope.data.attachmentContent;
