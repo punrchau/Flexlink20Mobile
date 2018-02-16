@@ -70,6 +70,7 @@ exports.photoUpload = function(page, params) {
 
 exports.closePhotoUpload = function(page, params) {
     page.action('photoupload', 'close');
+    page.reload();
 }
 
 
@@ -119,7 +120,5 @@ exports.unitPhotoSave = function (page, params) {
     setTimeout(function () {
         page.uploadFile('input[id=myFile]', fileName);
         page.action('photoupload', 'save');
-    },  3000);
-
-    page.reload();
+    }, 3000);
 }
