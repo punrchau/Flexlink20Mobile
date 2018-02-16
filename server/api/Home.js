@@ -68,6 +68,11 @@ exports.photoUpload = function(page, params) {
     page.action('jobdetails', 'actions.photoupload');
 }
 
+exports.closePhotoUpload = function(page, params) {
+    page.action('photoupload', 'close');
+}
+
+
 // exports.on_InvokePhotoUpload = function (page) {
 //     page.action('UnitPhoto','upload');
 // }
