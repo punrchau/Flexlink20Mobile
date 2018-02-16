@@ -2,7 +2,7 @@
     <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1">
         <ion-nav-buttons side="left">
             <button class="button button-icon ion-home" data-comp-id="button.1"
-                ng-click="app.action('photoupload', 'close', this)"></button>
+                ng-click="closePhotoUpload();"></button>
         </ion-nav-buttons>
         <ion-nav-title data-comp-id="nav-title.1">Photo Upload</ion-nav-title>
         <ion-nav-buttons side="right">
@@ -50,7 +50,7 @@
                         ng-click="savePhoto();"
                         style="background-color:#90ccce;border-radius:5px;color:white;with:100px !important;margin-left :10%">Save</button>
                     <button class="button button-block" data-comp-id="button.3"
-                        ng-click="app.action('photoupload', 'close', this)"
+                        ng-click="closePhotoUpload();"
                         style="background-color:#90ccce;border-radius:5px;color:white;with:100px !important;margin-left :5%;margin-right :10%">Close</button>
                 </div>
             </div>

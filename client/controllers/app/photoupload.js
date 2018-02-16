@@ -6,7 +6,7 @@ function app_photoupload($scope, app) {
         $scope.showPopup($scope.data);
     });
    
-    $scope.savePhoto = function () {
+    $scope.closePhotoUpload = function () {
         app.call('Home.closePhotoUpload', {});
     };
    
