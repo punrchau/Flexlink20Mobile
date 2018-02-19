@@ -27,48 +27,22 @@ exports.on_messages = function (page) {
                         page.screen('servicejobremarks');
                     });
                 page.checkState(true);
+            }        
+
+             if (data.isUnitPhoto) {
+               page.extract('photoupload')
+                page.checkState(true);
             }
-            
-            // if (data.isphotoupload) {
-            //     page.extract('photoupload')
-            //         .data(function (data) {
-            //             page.screen('servicejob');
-            //         });
-            //     page.checkState(true);
-            // }
-
-            //  if (data.isrepairjob) {
-            //     page.extract('servicejob')
-            //         .data(function (data) {
-            //             page.screen('servicejob');
-            //         });
-            //     page.checkState(true);
-            // }
-
-            // if (data.isphotoupload) {
-            //     page.extract('photoupload')
-            //     page.checkState(true);
-            // }
 
             // if (data.isrepairjob) {
             //     page.extract('servicejob')
             //     page.checkState(true);
             // }
 
-             if (data.isphotoupload) {
-               page.extract('photoupload')
-                page.checkState(true);
-            }
-
-            if (data.isrepairjob) {
-                page.extract('servicejob')
-                page.checkState(true);
-            }
-
-            if ( data.isunitphoto ) {
-                page.extract('unitphoto')
-                page.checkState(true);
-            }
+            // if ( data.isunitphoto ) {
+            //     page.extract('unitphoto')
+            //     page.checkState(true);
+            // }
            
         });
 }
