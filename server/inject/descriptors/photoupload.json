@@ -27,7 +27,8 @@
         "action": [
           "action"
         ]
-      }
+      },
+      "selector": "#myFile"
     },
     "isphotoupload": {
       "type": "identifier",
