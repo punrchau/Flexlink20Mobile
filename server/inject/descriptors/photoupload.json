@@ -28,7 +28,8 @@
           "action"
         ]
       },
-      "selector": "#myFile"
+      "selector": "#myFile",
+      "control": "property.innerText"
     },
     "isphotoupload": {
       "type": "identifier",
