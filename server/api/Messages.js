@@ -28,11 +28,22 @@ exports.on_messages = function (page) {
                     });
                 page.checkState(true);
             }        
-
-             if (data.isUnitPhoto) {
-               page.extract('photoupload')
+            
+            if (data.isUnitPhoto) {
+                page.extract('photoupload')
+                    .data(function (data) {
+                        page.screen('photoupload');
+                    });
                 page.checkState(true);
-            }
+            }     
+            
+            if (data.isUnitPhoto) {
+                page.extract('servicejob')
+                    .data(function (data) {
+                        page.screen('servicejob');
+                    });
+                page.checkState(true);
+            }    
 
             // if (data.isrepairjob) {
             //     page.extract('servicejob')
