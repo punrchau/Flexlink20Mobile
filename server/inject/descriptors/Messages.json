@@ -84,7 +84,6 @@
     },
     "isServiceJob": {
       "type": "boolean",
-      "selector": ".col-md-4.text-right.margin-top-menu-link.text-right.dropdown",
       "control": "property.innerText"
     }
   },
