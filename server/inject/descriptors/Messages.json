@@ -81,6 +81,11 @@
       "type": "boolean",
       "selector": "#maxFileSizeMsg",
       "control": "exists"
+    },
+    "isServiceJob": {
+      "type": "string",
+      "selector": "#maxFileSizeMsg",
+      "control": "property.innerText"
     }
   },
   "connect": [
