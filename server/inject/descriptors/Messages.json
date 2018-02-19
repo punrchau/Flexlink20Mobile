@@ -76,6 +76,11 @@
       "selector": "label",
       "control": "exists",
       "selectContains": "Addition Information"
+    },
+    "isUnitPhoto": {
+      "type": "string",
+      "selector": "#maxFileSizeMsg",
+      "control": "exists"
     }
   },
   "connect": [
