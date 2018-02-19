@@ -84,7 +84,7 @@
     },
     "isServiceJob": {
       "type": "boolean",
-      "control": "property.innerText",
+      "control": "exists",
       "selector": "h2",
       "selectContains": "Service Jobs"
     }
