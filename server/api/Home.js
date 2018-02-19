@@ -111,6 +111,9 @@ exports.unitPhotoSave = function (page, params) {
         fs.mkdirSync(dir);
     }
     var fileName = __dirname + "/../servicejobs/" + "UnitPhoto" + date + ".png";
+    
+    console.log(fileName);
+
     if(base64Data){
     require("fs").writeFile(fileName, base64Data, 'base64', function (err) {
 
