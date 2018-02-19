@@ -83,7 +83,7 @@
       "control": "exists"
     },
     "isServiceJob": {
-      "type": "string",
+      "type": "boolean",
       "selector": "#maxFileSizeMsg",
       "control": "property.innerText"
     }
