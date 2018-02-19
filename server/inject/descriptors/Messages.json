@@ -80,7 +80,7 @@
     "isUnitPhoto": {
       "type": "string",
       "selector": "#maxFileSizeMsg",
-      "control": "property.innerText"
+      "control": "exists"
     }
   },
   "connect": [
