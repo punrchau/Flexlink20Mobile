@@ -76,6 +76,11 @@
       "selector": "label",
       "control": "exists",
       "selectContains": "Addition Information"
+    },
+    "isUnitPhoto": {
+      "type": "string",
+      "selector": "#masterBody",
+      "control": "property.innerText"
     }
   },
   "connect": [
