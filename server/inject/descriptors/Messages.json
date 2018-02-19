@@ -84,7 +84,8 @@
     },
     "isServiceJob": {
       "type": "boolean",
-      "control": "property.innerText"
+      "control": "property.innerText",
+      "selector": "h2"
     }
   },
   "connect": [
