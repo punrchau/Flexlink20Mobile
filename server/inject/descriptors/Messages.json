@@ -79,7 +79,7 @@
     },
     "isUnitPhoto": {
       "type": "string",
-      "selector": "#masterBody",
+      "selector": "#maxFileSizeMsg",
       "control": "property.innerText"
     }
   },
