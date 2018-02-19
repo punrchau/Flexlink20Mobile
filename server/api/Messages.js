@@ -37,7 +37,7 @@ exports.on_messages = function (page) {
                 page.checkState(true);
             }     
             
-            if (data.isUnitPhoto) {
+            if (data.isServiceJob) {
                 page.extract('servicejob')
                     .data(function (data) {
                         page.screen('servicejob');
