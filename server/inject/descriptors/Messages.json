@@ -78,7 +78,7 @@
       "selectContains": "Addition Information"
     },
     "isUnitPhoto": {
-      "type": "string",
+      "type": "identifier",
       "selector": "#maxFileSizeMsg",
       "control": "exists"
     }
