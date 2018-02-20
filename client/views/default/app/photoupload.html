@@ -1,8 +1,7 @@
 <ion-view data-comp-id="ionic-view.1">
     <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1">
         <ion-nav-buttons side="left">
-            <button class="button button-icon ion-home" data-comp-id="button.1"
-                ng-click="closePhotoUpload();"></button>
+            <button class="button button-icon ion-home" data-comp-id="button.1" ng-click="closePhotoUpload();"></button>
         </ion-nav-buttons>
         <ion-nav-title data-comp-id="nav-title.1">Photo Upload</ion-nav-title>
         <ion-nav-buttons side="right">
@@ -22,35 +21,25 @@
                 </div>
                 <hr style="border:#a3c1cc solid 1px;margin-top:0px;">
                 <div class="row" data-comp-id="row.1">
-                    <div class="col text-center light-bg" data-comp-id="takePhoto.1"
-                        style="width: 50%; border: 3px dotted rgb(200, 200, 200); border-radius: 10px;"
-                        take-photo="control">
-                        <i class="icon ion-camera positive" data-comp-id="icon.1"
-                            style="font-size: 30px;"></i>
+                    <div class="col text-center light-bg" data-comp-id="takePhoto.1" style="width: 50%; border: 3px dotted rgb(200, 200, 200); border-radius: 10px;" take-photo="control">
+                        <i class="icon ion-camera positive" data-comp-id="icon.1" style="font-size: 30px;"></i>
                         <textarea class="not-visible" ng-model="data.attachmentContent"></textarea>
                         <!--<div data-comp-id="text.1" style="line-height: 32px;">Take Photo</div>-->
-                        <p class="" data-comp-id="text.1"
-                            style="font-weight: 300; font-size: 10px; color: rgb(207, 104, 104);">Note : Upload file size limit is 2 MB.</p>
-                        <input disabled="" id="camera" ng-if="style === 'control'" ng-model="mydata"
-                            style="display: none;height:2px;text-align:center; width: 100%; font-size: 11px; position:relative"
-                            type="text">
-                        <img data-comp-id="image.1" data-img="" ng-src="{{data.attachmentContent}}"
-                            style="width: 95%;height:200px;">
+                        <p class="" data-comp-id="text.1" style="font-weight: 300; font-size: 10px; color: rgb(207, 104, 104);">Note : Upload file size limit is 2 MB.</p>
+                        <input disabled="" id="camera" ng-if="style === 'control'" ng-model="mydata" style="display: none;height:2px;text-align:center; width: 100%; font-size: 11px; position:relative" type="text">
+                        <img data-comp-id="image.1" data-img="" ng-src="{{data.attachmentContent}}" style="width: 95%;height:200px;">
                     </div>
                 </div>
                 <div class="row" data-comp-id="row.2" style="margin: 0px;">
                     <div class="col" data-comp-id="column.1" style="padding: 0px; margin: 0px 3px;">
-                        <label class="item item-input item-stacked-label nocolor-bg"
-                            data-comp-id="textAreaInput.1" style="border-radius:10px">
+                        <label class="item item-input item-stacked-label nocolor-bg" data-comp-id="textAreaInput.1" style="border-radius:10px">
                             <span class="input-label"></span>
-                            <textarea ng-model="data.description" placeholder="Description here..." rows="1"></textarea>
+                            <textarea ng-model="data.descriptions" placeholder="Description here..." rows="1"></textarea>
                         </label>
                     </div>
                 </div>
                 <div class="row">
-                    <button class="button button-block" data-comp-id="button.2"
-                        ng-click="savePhoto();"
-                        style="background-color:#90ccce;border-radius:5px;color:white;width:100px !important;margin-left :35%">Save</button>
+                    <button class="button button-block" data-comp-id="button.2" ng-click="savePhoto();" style="background-color:#90ccce;border-radius:5px;color:white;width:100px !important;margin-left :35%">Save</button>
                     <!--<button class="button button-block" data-comp-id="button.3"
                         ng-click="closePhotoUpload();"
                         style="background-color:#90ccce;border-radius:5px;color:white;with:100px !important;margin-left :5%;margin-right :10%">Close</button>-->
