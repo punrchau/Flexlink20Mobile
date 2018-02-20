@@ -103,25 +103,30 @@ exports.uploadImage = function (page, params) {
 
 
 exports.unitPhotoSave = function (page, params) {
-    var base64Data = params.base64string.split(',').pop();
-    var date = Date.now();
-    var dir = __dirname + "/../servicejobs/";
-
-    if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir);
-    }
-    var fileName = __dirname + "/../servicejobs/" + "UnitPhoto" + date + ".png";
     
-    console.log(fileName);
+    if(params.base64string==null || params.base64string==undefined){
+         page.action('photoupload', 'save');
+    }
+    else{    
+        var base64Data = params.base64string.split(',').pop();
+        var date = Date.now();
+        var dir = __dirname + "/../servicejobs/";
 
-    if(base64Data){
-    require("fs").writeFile(fileName, base64Data, 'base64', function (err) {
+        if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir);
+        }
+        var fileName = __dirname + "/../servicejobs/" + "UnitPhoto" + date + ".png";
+        
+        console.log(fileName);
 
-    });
-  }
+        if(base64Data){
+            require("fs").writeFile(fileName, base64Data, 'base64', function (err) {
+            });
+        }
 
-    setTimeout(function () {
-        page.uploadFile('input[id=myFile]', fileName);
-        page.action('photoupload', 'save');
-    }, 3000);
+        setTimeout(function () {
+            page.uploadFile('input[id=myFile]', fileName);
+            page.action('photoupload', 'save');
+        }, 3000);
+    }
 }
