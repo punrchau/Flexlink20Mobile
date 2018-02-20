@@ -103,7 +103,7 @@ exports.uploadImage = function (page, params) {
 
 
 exports.unitPhotoSave = function (page, params) {
-    
+
     if(params.base64string==null || params.base64string==undefined){
          page.action('photoupload', 'save');
     }

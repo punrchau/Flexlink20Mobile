@@ -14,7 +14,6 @@ exports.on_messages = function (page) {
             if (data.isChangePartQuantity) {
                 page.extract('ChangePartQuantity');
                 page.checkState(true);
-
             }
             if (data.isUploadPhoto) {
                 page.extract('UploadImage')
