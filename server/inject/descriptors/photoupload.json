@@ -41,7 +41,8 @@
     },
     "descriptions": {
       "type": "string",
-      "selector": "#fileDescription"
+      "selector": "#fileDescription",
+      "control": "text"
     }
   },
   "connect": [
