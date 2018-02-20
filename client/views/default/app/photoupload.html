@@ -44,7 +44,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <img data-comp-id="image.1" data-img="" ng-src="servicejobs/{{mydata}}"
+                    <img data-comp-id="image.1" data-img="" ng-src="images/{{mydata}}"
+                        style="width: 85%; margin: 10px; height: 50px;">
+                    <img ng-show="mydata.src" ng-src="{{mydata.src}}"
                         style="width: 85%; margin: 10px; height: 50px;">
                 </div>
                 <!--<div class=" assertive" data-comp-id="text.2"
