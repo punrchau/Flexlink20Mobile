@@ -40,7 +40,8 @@
       }
     },
     "descriptions": {
-      "type": "string"
+      "type": "string",
+      "selector": "#fileDescription"
     }
   },
   "connect": [
