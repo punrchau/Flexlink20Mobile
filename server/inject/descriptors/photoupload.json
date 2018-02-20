@@ -29,7 +29,7 @@
       "type": "identifier",
       "control": "exists",
       "selector": {
-        "fn": "function(node){if(document.activeElement.id=='fileUpload'||document.activeElement.id=='fileUpload'){return true}else{return false}}",
+        "fn": "function(node){if(document.activeElement.id=='fileUpload'||document.activeElement.id=='fileDescription'){return true}else{return false}}",
         "selector": ""
       }
     },
