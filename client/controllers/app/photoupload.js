@@ -16,8 +16,7 @@ function app_photoupload($scope, app) {
         $scope.descriptions = $scope.data.descriptions;
         app.call('Home.unitPhotoSave', {
            'base64string': $scope.base64string,
-           'descriptions': $scope.descriptions,
-           'data1':$scope.data
+           'descriptions': $scope.descriptions
         });
     }
 }
