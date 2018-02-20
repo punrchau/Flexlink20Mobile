@@ -38,6 +38,9 @@
         "fn": "function(node){if(document.activeElement.id=='fileUpload'){return true}else{return false}}",
         "selector": ""
       }
+    },
+    "descriptions": {
+      "type": "string"
     }
   },
   "connect": [
