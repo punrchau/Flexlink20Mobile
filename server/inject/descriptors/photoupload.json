@@ -2,12 +2,6 @@
   "type": "object",
   "comment": "DetailsView",
   "properties": {
-    "description": {
-      "type": "string",
-      "label": "Description",
-      "selector": "#fileDescription",
-      "control": "text"
-    },
     "close": {
       "type": "action",
       "label": "Title",
