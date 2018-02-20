@@ -23,9 +23,7 @@
   },
   "connect": [
     {
-      "match": [
-        "isunitphoto"
-      ],
+      "match": [],
       "screens": [
         "unitphoto"
       ]
