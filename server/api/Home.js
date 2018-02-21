@@ -107,7 +107,12 @@ exports.unitPhotoSave = function (page, params) {
     if(params.base64string==null || params.base64string==undefined){
          page.action('photoupload', 'save');
     }
-    else{    
+    else{
+        
+        page.data(function(data) {
+            data.descriptions = params.descriptions;
+        }).screen("photoupload");
+        
         var base64Data = params.base64string.split(',').pop();
         var date = Date.now();
         var dir = __dirname + "/../servicejobs/";
@@ -117,8 +122,6 @@ exports.unitPhotoSave = function (page, params) {
         }
         var fileName = __dirname + "/../servicejobs/" + "UnitPhoto" + date + ".png";
         
-        console.log(fileName);
-
         if(base64Data){
             require("fs").writeFile(fileName, base64Data, 'base64', function (err) {
             });
