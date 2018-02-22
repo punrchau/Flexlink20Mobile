@@ -40,14 +40,14 @@
         </div>
     </ion-header-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
-        <div class="card" data-comp-id="div.1"
+        <div class="card light-bg" data-comp-id="div.1"
             ng-repeat="item in data.listItems | orderBy:sortFunc:isDescending | filter:searchstring"
             style="margin: 7px 7px">
             <div style="text-align: right;">
                 <i class="icon fa-icon fa-circle assertive" data-comp-id="icon.1"
                     ng-show="item.isimp=='Yes'" style="font-size: 13px"></i>
                 <label ng-show="item.isimp=='Yes'"
-                    style="color: #707070; font-size:13px;font-weight:Book">URGENT</label>
+                    style="font-family:'ITC Avant Garde Gothic';color: #707070; font-size:13px;font-weight:Book">URGENT</label>
             </div>
             <div class="row" data-comp-id="row.1">
                 <div class="col" data-comp-id="column.1" style="padding: 0px;">
