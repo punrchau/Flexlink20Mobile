@@ -723,10 +723,16 @@ $ios-statusbar-height: 20px;
    margin:2px;line-height: 30px
 } 
 
-.lineStyle{
+/*.lineStyle{
     border:#a3c1cc solid 1px;margin-top:0px
     
+}*/
+
+.lineStyle{
+    border:solid 1px;margin-top:0px
 }
+
+
 .borderStyle{  
    border-radius: 10px !important;border-style: solid;border-color:#00ffbf;border-width: 3px
 }
