@@ -81,8 +81,17 @@
             </div>
             <div class="lineStyle"></div>
             <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
+                <div class="col">
+                    <a ng-href="{{'tel:' + item.mobilenumber}}">
+                        <img data-comp-id="image.1" data-img="" ng-src="images/call.png"
+                            style="width: 15%; margin: 0px; height: 15px;">
+                    </a>
+                </div>
+                <div class="col">
+                    <a ng-href="{{'sms:' + item.mobilenumber}}">
+                        <img data-comp-id="image.2" data-img="" ng-src="images/msg.png"
+                            style="width: 15%; margin: 0px; height: 15px;"></a>
+                </div>
             </div>
         </div>
         <div data-comp-id="div.2" ng-show="data.listItems.length==0"
