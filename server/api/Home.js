@@ -102,6 +102,7 @@ exports.uploadImage = function (page, params) {
 }
 
 
+
 exports.unitPhotoSave = function (page, params) {
 
     if(params.base64string==null || params.base64string==undefined){
@@ -109,9 +110,9 @@ exports.unitPhotoSave = function (page, params) {
     }
     else{
         
-        page.data(function(data) {
-            data.descriptions = params.descriptions;
-        }).screen("photoupload");
+        // page.data(function(data) {
+        //     data.descriptions = params.descriptions;
+        // }).screen('photoupload');
         
         var base64Data = params.base64string.split(',').pop();
         var date = Date.now();
@@ -126,10 +127,28 @@ exports.unitPhotoSave = function (page, params) {
             require("fs").writeFile(fileName, base64Data, 'base64', function (err) {
             });
         }
-
+         
         setTimeout(function () {
             page.uploadFile('input[id=myFile]', fileName);
-            page.action('photoupload', 'save');
+            //page.action('photoupload', 'save');
+
+            //page.assignData('input[id=fileDescription]', params.descriptions);
+            // page.assignData(function(data){
+            //     data.descriptions = params.descriptions;
+            // });
+
+            // page.evalAsync(function() {
+            //     document.querySelector('input[id=fileDescription]').value=params.descriptions;
+            // });
+
+            page.update('input[id=fileDescription]',params.descriptions);
+
+            page.extract('photoupload')
+            .data(function (data) {
+                data.descriptions = params.descriptions;
+                page.action('photoupload', 'save');
+            });
+
         }, 3000);
     }
 }

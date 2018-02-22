@@ -44,16 +44,6 @@ exports.on_messages = function (page) {
                 page.checkState(true);
             }    
 
-            // if (data.isrepairjob) {
-            //     page.extract('servicejob')
-            //     page.checkState(true);
-            // }
-
-            // if ( data.isunitphoto ) {
-            //     page.extract('unitphoto')
-            //     page.checkState(true);
-            // }
-           
         });
 }
 
