@@ -45,14 +45,14 @@
                             style="height:64px;width:64px">
                     </div>
                     <div class="light-bg" style="width:70%">
-                        <div style="margin:10px">
+                        <div style="margin:10px !important">
                             <label class="divHeadStyle">Delivery Address</label>
                             <div class="textstyle" style="margin-top:5px"><input ng-model="data.isdeliverysameaspickup" type="checkbox">
                                 Delivery Same As Pickup</div>
                             <div class="textstyle" style="margin-top:5px">{{data.deliveryaddress1}},
                                 {{data.deliveryaddress2}},
                                 {{data.deliverycity}}</div>
-                            <div class="textstyle">{{data.deliverystate}},
+                            <div class="textstyle" style="padding-bottom:5px !important">{{data.deliverystate}},
                                 {{data.deliverycountry}},
                                 {{data.deliveryzipcode}}</div>
                         </div>
