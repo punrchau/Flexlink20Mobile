@@ -29,14 +29,15 @@
                 <div style="margin-top:10px;text-align:center;padding-bottom:10px !important;">
                     <button class="buttonStyle"
                         ng-click="app.action('servicejobremarks','save',this)" type="submit">
-                        Save</button>
+                        Post</button>
                 </div>
             </div>
             <div></div>
             <div data-comp-id="div.2" style="margin: 7px 7px;">
                 <div class="row divHeadStyle2">Remarks History</div>
-                <div class="light-bg" style="padding-bottom:10px !important">
-                    <div ng-repeat="item in data.remarklist" style="padding-top:10px !important;">
+                <div class="light-bg" style="padding-bottom:10px !important;">
+                    <div ng-repeat="item in data.remarklist"
+                        style="padding-top:10px !important;margin-left:10px">
                         <div>
                             <label class="remarksTextstyle1">Posted on
                                 {{item.createddate}}</label>
