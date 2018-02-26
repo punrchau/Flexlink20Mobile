@@ -1,5 +1,5 @@
 <ion-view data-comp-id="ionic-view.1">
-    <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1">
+    <ion-nav-bar align-title="" class=" bar-royal" data-comp-id="nav-bar.1">
         <ion-nav-buttons side="left">
             <button class="button button-icon ion-home" data-comp-id="button.1"
                 ng-click="app.action('servicejobremarks', 'close', this)"></button>
@@ -15,19 +15,14 @@
                 -
                 {{ownername}}
             </div>
-            <div class="borderStyle light-bg" data-comp-id="div.1" style="margin: 7px 7px;">
-                <div class="row fontformate">
+            <div class="light-bg" data-comp-id="div.1" style="margin: 7px 7px;">
+                <div class="row divHeadStyle">
                     Additional Information
                 </div>
-                <hr style="border:#a3c1cc solid 2px;margin-top:0px;">
-                <div class="row" style="margin-top:5px !important;">
-                    <div class="button_box2">
-                        <div class="row form-wrapper-2 cf">
-                            <textarea ng-model="data.additionalinformation" placeholder="Type here..."
-                                required="" row="3" style="font-weight:normal" type="text"></textarea>
-                            <button ng-click="app.action('servicejobremarks','save',this)" type="submit">Save</button>
-                        </div>
-                    </div>
+                <div class="row">
+                    <textarea ng-model="data.additionalinformation" placeholder="Type here..."
+                        required="" row="3" style="font-weight:normal" type="text"></textarea>
+                    <button ng-click="app.action('servicejobremarks','save',this)" type="submit">Save</button>
                 </div>
             </div>
             <div></div>
