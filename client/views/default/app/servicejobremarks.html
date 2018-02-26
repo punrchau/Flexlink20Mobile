@@ -15,14 +15,22 @@
                 -
                 {{ownername}}
             </div>
-            <div class="light-bg" data-comp-id="div.1" style="margin: 7px 7px;">
+            <div class="light-bg1" data-comp-id="div.1" style="margin: 7px 7px;">
                 <div class="row divHeadStyle">
                     Additional Information
                 </div>
-                <div class="row">
-                    <textarea ng-model="data.additionalinformation" placeholder="Type here..."
-                        required="" row="3" style="font-weight:normal" type="text"></textarea>
-                    <button ng-click="app.action('servicejobremarks','save',this)" type="submit">Save</button>
+                <div>
+                    <label class="item item-input item-stacked-label light-bg"
+                        data-comp-id="textAreaInput.1">
+                        <textarea ng-model="data.additionalinformation" placeholder="Type here..."
+                            rows="2" type="text"></textarea>
+                    </label>
+                </div>
+                <div style="margin-top:10px;text-align:center;padding-bottom:10px !important;">
+                    <button ng-click="app.action('servicejobremarks','save',this)"
+                        style="background-color:#0198E1;color:white;width:70px;height:35px;border-color:#0198E1"
+                        type="submit">
+                        Save</button>
                 </div>
             </div>
             <div></div>
