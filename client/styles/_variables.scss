@@ -713,8 +713,9 @@ $ios-statusbar-height: 20px;
 }
 
 .textstyle{
-    font-family: "ITC Avant Garde Gothic";
-    font-size: 13px;font-weight:Book; font-style: inherit;color:#707070;
+    font-family: "ITC Avant Garde Gothic" !important;
+    font-size: 13px !important;font-weight:Book !important;
+    font-style: inherit !important;color:#707070 !important;
 }
  
 .fontformate{  
