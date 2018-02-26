@@ -1,7 +1,7 @@
 <ion-view data-comp-id="ionic-view.1">
     <ion-nav-bar align-title="" class=" bar-royal" data-comp-id="nav-bar.1">
         <ion-nav-buttons side="left">
-            <button class="button button-icon  ion-navicon" data-comp-id="button.1"></button>
+            <button class="button button-icon  " data-comp-id="button.1"></button>
         </ion-nav-buttons>
         <ion-nav-title data-comp-id="nav-title.1" style="font-weight:bold;">Pending Job</ion-nav-title>
         <ion-nav-buttons side="right"></ion-nav-buttons>
@@ -22,7 +22,8 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <label class="item  item-input item-select-icon positive-icon "
                         style="border-radius:5px;">
-                        <select class="textstyle sortStyle" ng-model="sortBy">
+                        <select class="textstyle" ng-model="sortBy"
+                            style="border-color: rgb(0, 153, 0); font-size: 12px;height:19px;width:120px">
                             <option class="textstyle" ng-show="true" value="firstname">Name</option>
                             <option class="textstyle" value="pickupaddress">Location</option>
                             <option class="textstyle" value="ticketnumber">Job No</option>
