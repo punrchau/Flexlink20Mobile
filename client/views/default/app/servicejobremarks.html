@@ -35,21 +35,15 @@
             <div></div>
             <div data-comp-id="div.2" style="margin: 7px 7px;">
                 <div class="row divHeadStyle2">Remarks History</div>
-                <div id="body1">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Remarks</th>
-                                <th>Created Date</th>
-                            </tr>
-                        </thead>
-                        <tbody ng-repeat="item in data.remarklist">
-                            <tr>
-                                <td>{{item.remark}}</td>
-                                <td>{{item.createddate}}</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div ng-repeat="item in data.remarklist">
+                    <div>
+                        <label class="textstyle" style="font-style:italic !important">Posted on
+                            {{item.createddate}}</label>
+                    </div>
+                    <div>
+                        <label class="remarksTextstyle2">Posted on
+                            {{item.remark}}</label>
+                    </div>
                 </div>
             </div>
         </ion-list>
