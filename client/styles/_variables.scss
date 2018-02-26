@@ -1,3 +1,77 @@
+// Custom css Start
+
+.fontStyle{
+   font-family: "ITC Avant Garde Gothic" !important;
+   color:#505050; 
+}
+
+.labelstyle{
+    font-family: "ITC Avant Garde Gothic" !important;
+    font-weight:bold;
+    font-size: 10px;color:#505050;   
+}
+
+.textstyle{
+    font-family: "ITC Avant Garde Gothic" !important;
+    font-size: 13px !important;font-weight:Book !important;
+    font-style: inherit !important;color:#707070 !important;
+}
+ 
+.divHeadStyle{  
+    font-family: "ITC Avant Garde Gothic";
+    font-size: 14px;color:#505050; font-weight:bold;
+    margin-top:5px !important;
+}  
+
+.headerStyle{  
+   border-radius: 5px !important;border-style:#00bfff solid;border-color:green;border-width: 2px;
+   height:35px;font-size: 14px;text-align:center;color:white !important;background-color:#74b6cc;
+   margin:2px;line-height: 30px
+} 
+.barStyle{
+    border-radius:5px !important;background-color:#f1f1f1 !important;
+}
+
+.hstyle{
+    font-size:15;font-weight:demi;color:#ffffff
+}
+
+.sortStyle{
+    border-color: rgb(0, 153, 0); font-size: 12px;height:19px;
+    width:120px !important;
+}
+
+.sortIcon{
+    width: 20; height: 25px;margin-left:5px
+}
+
+/*.lineStyle{
+    border:#a3c1cc solid 1px;margin-top:0px
+    
+}*/
+
+.VerticalLineStyle{
+    border-left:1px solid #f1f1f1;height:30px;
+}
+
+.lineStyle{
+    border:#f1f1f1 solid .5px;
+}
+
+
+.borderStyle{  
+   border-style: solid;border-width: 1px
+}
+
+.imageStyle{
+    width:30%;background-color:#0198E1
+}
+
+
+// Custom css end
+
+
+
 .spinner svg {
   width: 8% !important;
   height: 32px !important;
@@ -701,68 +775,7 @@ $z-index-click-block: 99999;
 
 $ios-statusbar-height: 20px;
 
-.fontStyle{
-   font-family: "ITC Avant Garde Gothic" !important;
-   color:#505050; 
-}
 
-.labelstyle{
-    font-family: "ITC Avant Garde Gothic" !important;
-    font-weight:bold;
-    font-size: 10px;color:#505050;   
-}
-
-.textstyle{
-    font-family: "ITC Avant Garde Gothic" !important;
-    font-size: 13px !important;font-weight:Book !important;
-    font-style: inherit !important;color:#707070 !important;
-}
- 
-.divHeadStyle{  
-    font-family: "ITC Avant Garde Gothic";
-    font-size: 14px;color:#505050; font-weight:bold;
-    margin-top:5px !important;
-}  
-
-.headerStyle{  
-   border-radius: 5px !important;border-style:#00bfff solid;border-color:green;border-width: 2px;
-   height:35px;font-size: 14px;text-align:center;color:white !important;background-color:#74b6cc;
-   margin:2px;line-height: 30px
-} 
-.barStyle{
-    border-radius:5px !important;background-color:#f1f1f1 !important;
-}
-
-.hstyle{
-    font-size:15;font-weight:demi;color:#ffffff
-}
-
-.sortStyle{
-    border-color: rgb(0, 153, 0); font-size: 12px;height:19px;
-    width:120px !important;
-}
-
-.sortIcon{
-    width: 20; height: 25px;margin-left:5px
-}
-
-/*.lineStyle{
-    border:#a3c1cc solid 1px;margin-top:0px
-    
-}*/
-
-.VerticalLineStyle{
-    border-left:1px solid #f1f1f1;height:30px;
-}
-
-.lineStyle{
-    border:#f1f1f1 solid .5px;
-}
-
-
-.borderStyle{  
-   border-style: solid;border-width: 1px
-}
 
 
  
