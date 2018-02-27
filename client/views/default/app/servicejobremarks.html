@@ -16,15 +16,15 @@
                 -
                 {{ownername}}
             </div>
-            <div data-comp-id="div.1" style="margin: 7px 7px;">
+            <div data-comp-id="div.1" style="margin: 20px 7px;">
                 <div class="row divHeadStyle2">
                     Additional Information
                 </div>
                 <div>
                     <label class="item item-input item-stacked-label light-bg"
                         data-comp-id="textAreaInput.1">
-                        <textarea ng-model="data.additionalinformation" placeholder="Write Something"
-                            rows="2" type="text"></textarea>
+                        <textarea class="textstyle" ng-model="data.additionalinformation"
+                            placeholder="Write Something" rows="2" type="text"></textarea>
                     </label>
                 </div>
                 <div style="margin-top:10px;text-align:center;padding-bottom:10px !important;">
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div></div>
-            <div data-comp-id="div.2" style="margin: 7px 7px;">
+            <div data-comp-id="div.2" style="margin: 5px 7px;">
                 <div class="row divHeadStyle2">Remarks History</div>
                 <div class="light-bg" style="padding-bottom:10px !important;">
                     <div ng-repeat="item in data.remarklist"
