@@ -7,8 +7,8 @@ function app_unitowner($scope,$rootScope, app) {
     $scope.ownername=$rootScope.ownername;
     
     $scope.goToRemarks=function(){
-      
-      
+       app.action('unitowner', 'close', this);
+       app.go('jobdetails');
        app.call('Home.remarksPage', {});
         
     };
