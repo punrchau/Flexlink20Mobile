@@ -27,12 +27,12 @@ function app_photoupload($scope, app) {
     
     $scope.goToHistory=function(){
        app.call('Home.closePhotoUpload', {});
-       app.call('Home.viewJobInfo', {});
+       app.call('Home.viewJobHistory', {});
     };
       
     $scope.goToUnitInfo=function(){
        app.call('Home.closePhotoUpload', {});
-       app.call('Home.viewJobInfo', {});
+       app.call('Home.viewUnitInfo', {});
     };
    
    $scope.savePhoto = function () {
