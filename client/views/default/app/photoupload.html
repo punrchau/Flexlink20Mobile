@@ -71,23 +71,19 @@
                         style=";border-style: none !important">
                 </div>
             </div>
-            <div class="row" data-comp-id="row.2" style="margin: 0px;">
-                <div class="col" data-comp-id="column.1" style="padding: 0px; margin: 0px 3px;">
-                    <label class="item item-input item-stacked-label nocolor-bg"
-                        data-comp-id="textAreaInput.1" style="border-radius:10px">
-                        <span class="input-label"></span>
-                        <textarea ng-model="data.descriptions" placeholder="Description here..."
-                            rows="1"></textarea>
-                    </label>
-                </div>
+            <div class="row light-bg" data-comp-id="column.1"
+                style="margin-top:5px;padding: 0px;margin-right:5px !important;border: 2px dotted rgb(200, 200, 200); border-radius: 10px;">
+                <label class="item item-input item-stacked-label nocolor-bg"
+                    data-comp-id="textAreaInput.1" style="width:100%;border-radius:10px;">
+                    <span class="input-label"></span>
+                    <textarea ng-model="data.descriptions" placeholder="Description here..."
+                        rows="1"></textarea>
+                </label>
             </div>
             <div class="row">
                 <button class="button button-block" data-comp-id="button.1"
                     ng-click="savePhoto();"
-                    style="background-color:#90ccce;border-radius:5px;color:white;width:100px !important;margin-left :35%">Save</button>
-                <!--<button class="button button-block" data-comp-id="button.3"
-                        ng-click="closePhotoUpload();"
-                        style="background-color:#90ccce;border-radius:5px;color:white;with:100px !important;margin-left :5%;margin-right :10%">Close</button>-->
+                    style="margin-top:20px;background-color:#90ccce;border-radius:5px;color:white;width:100px !important;margin-left :35%">Save</button>
             </div>
         </div>
     </ion-content>
