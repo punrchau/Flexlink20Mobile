@@ -117,7 +117,8 @@
       "properties": {
         "unitinfo": {
           "type": "action",
-          "selector": "#sjsPage > div.col-lg-9.col-md-9.col-sm-9.col-xs-9.text-right > button:nth-child(5)"
+          "selector": "#sjsPage > div.col-lg-9.col-md-9.col-sm-9.col-xs-9.text-right > button:nth-child(5)",
+          "control": "action.button"
         },
         "viewjobhistory": {
           "type": "action"
