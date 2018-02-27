@@ -433,6 +433,29 @@
       },
       "viewRecord": {
         "type": "action"
+      },
+      "actions": {
+        "type": "object",
+        "properties": {
+          "unitinfo": {
+            "type": "action"
+          },
+          "viewjobhistory": {
+            "type": "action"
+          },
+          "jobinfo": {
+            "type": "action"
+          },
+          "ownerinfo": {
+            "type": "action"
+          },
+          "servicejobremarks": {
+            "type": "action"
+          },
+          "photoupload": {
+            "type": "action"
+          }
+        }
       }
     }
   },
