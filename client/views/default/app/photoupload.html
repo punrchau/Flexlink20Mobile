@@ -88,19 +88,17 @@
         <div style="margin: 7px 7px;margin-top:20px">
             <div class="row" data-comp-id="row.1">
                 <div class="col text-center light-bg" data-comp-id="takePhoto.1"
-                    style="width: 50%; border: 3px dotted rgb(200, 200, 200); border-radius: 10px;"
+                    style="width: 50%; border: 3px dotted rgb(200, 200, 200); border-radius: 5px;"
                     take-photo="control">
-                    <i class="icon ion-camera positive" data-comp-id="icon.1"
-                        style="font-size: 30px;"></i>
+                    <img class="icon ion-camera positive" data-img="" ng-src="images/camera.png">
                     <textarea class="not-visible" ng-model="data.attachmentContent"></textarea>
-                    <!--<div data-comp-id="text.1" style="line-height: 32px;">Take Photo</div>-->
                     <p class="" data-comp-id="text.1"
                         style="font-weight: 300; font-size: 10px; color: rgb(207, 104, 104);">Note : Upload file size limit is 2 MB.</p>
                     <input disabled="" id="camera" ng-if="style === 'control'" ng-model="mydata"
-                        style="display: none;height:2px;text-align:center; width: 100%; font-size: 11px; position:relative"
+                        style="display: none;height:2px;text-align:center; font-size: 11px; position:relative"
                         type="text">
                     <img data-comp-id="image.1" data-img="" ng-src="{{data.attachmentContent}}"
-                        style="width: 95%;height:200px;">
+                        style="width: 45%;height:100px;">
                 </div>
             </div>
             <div class="row light-bg" data-comp-id="column.1"
