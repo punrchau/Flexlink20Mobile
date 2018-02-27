@@ -7,34 +7,34 @@ function app_photoupload($scope, app) {
     });
    
     $scope.closePhotoUpload = function () {
-        app.call('Home.closePhotoUpload', {});
+         app.action('photoupload', 'close', this);
     };
     
     $scope.goToRemarks=function(){
-       app.call('Home.closePhotoUpload', {});
-       app.call('Home.remarksPage', {});
+        app.action('photoupload', 'close', this);
+        app.call('Home.remarksPage', {});
     };
     
     $scope.goToJobInfo=function(){
        //app.call('Home.closePhotoUpload', {});
        
-       app.action('photoupload', 'close', this);
-       app.call('Home.viewJobInfo', {});
+        app.action('photoupload', 'close', this);
+        app.call('Home.viewJobInfo', {});
     };
     
     $scope.goToUnitOwner=function(){
-       app.call('Home.closePhotoUpload', {});
-       app.call('Home.viewUnitOwnerInfo', {});
+        app.action('photoupload', 'close', this);
+        app.call('Home.viewUnitOwnerInfo', {});
     };
     
     $scope.goToHistory=function(){
-       app.call('Home.closePhotoUpload', {});
-       app.call('Home.viewJobHistory', {});
+        app.action('photoupload', 'close', this);
+        app.call('Home.viewJobHistory', {});
     };
       
     $scope.goToUnitInfo=function(){
-       app.call('Home.closePhotoUpload', {});
-       app.call('Home.viewUnitInfo', {});
+        app.action('photoupload', 'close', this);
+        app.call('Home.viewUnitInfo', {});
     };
    
    $scope.savePhoto = function () {
