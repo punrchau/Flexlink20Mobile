@@ -57,8 +57,12 @@ exports.viewUnitOwnerInfo = function(page, params) {
 }
 
 exports.remarksPage = function(page, params) {
-    page.action('jobdetails', 'actions.servicejobremarks');
+    page.action('Home', 'actions.servicejobremarks');
 }
+
+// exports.remarksPage = function(page, params) {
+//     page.action('jobdetails', 'actions.servicejobremarks');
+// }
 
 exports.viewJobHistory = function(page, params) {
     page.action('jobdetails', 'actions.viewjobhistory');
