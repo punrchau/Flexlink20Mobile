@@ -8,8 +8,6 @@ function app_unitowner($scope,$rootScope, app) {
     
     $scope.goToRemarks=function(){
        app.action('unitowner', 'close', this);
-       app.go('jobdetails');
        app.call('Home.remarksPage', {});
-        
     };
 }
