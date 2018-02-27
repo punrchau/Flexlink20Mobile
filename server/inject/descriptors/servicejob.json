@@ -126,7 +126,8 @@
           "control": "action.button"
         },
         "jobinfo": {
-          "type": "action"
+          "type": "action",
+          "selector": "button[value=\"View\"]"
         },
         "ownerinfo": {
           "type": "action",
