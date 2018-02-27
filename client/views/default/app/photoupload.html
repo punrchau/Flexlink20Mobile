@@ -44,17 +44,25 @@
         </div>
         <div style="margin: 7px 7px">
             <div class="row" data-comp-id="row.1">
-                <div class="col text-center light-bg" data-comp-id="takePhoto.1"
-                    style=" border: 2px dotted rgb(200, 200, 200); border-radius: 10px;"
+                <div class="col text-center stable-bg" data-comp-id="takePhoto.1"
+                    style="width:50%; border: 2px dotted rgb(200, 200, 200); border-radius: 10px;"
                     take-photo="control">
-                    <i class="icon ion-camera positive" data-comp-id="icon.1"
-                        style="font-size: 30px;"></i>
+                    <div class="row" style="text-align:right">
+                        <div class="col">
+                            <img data-img="" ng-src="images/camera.png">
+                        </div>
+                        <div class="col textstyle"
+                            style="margin-right:10px;margin-top:10px;font-size:16px !important;text-align:left">
+                            <lebel>Camera</lebel>
+                        </div>
+                    </div>
                     <textarea class="not-visible" ng-model="data.attachmentContent"></textarea>
                     <p class="" data-comp-id="text.1"
-                        style="font-weight: 300; font-size: 10px; color: rgb(207, 104, 104);">Note : Upload file size limit is 2 MB.</p>
+                        style="font-weight: 300; font-size: 10px; color: rgb(207, 104, 104);">
+                        Note : Upload file size limit is 2 MB.</p>
                 </div>
-                <div class="col text-center light-bg" data-comp-id="takePhoto.2"
-                    style=" border: 2px dotted rgb(200, 200, 200); border-radius: 10px;"
+                <div class="col text-center stable-bg" data-comp-id="takePhoto.2"
+                    style="margin-left:5px; border: 2px dotted rgb(200, 200, 200); border-radius: 10px;"
                     take-photo="control">
                     <input disabled="" id="camera" ng-if="style === 'control'" ng-model="mydata"
                         style="display: none;border-style: none !important;height:2px;text-align:center; font-size: 11px; position:relative;"
