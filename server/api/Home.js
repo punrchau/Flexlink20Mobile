@@ -26,7 +26,7 @@ exports.editRecord = function(page, params) {
 
 exports.viewRecord = function(page, params) {
     page.action('servicejob', 'listItems[' + params.index + '].selectRecord');
-    //page.action('servicejob', 'viewRecord');
+    page.action('servicejob', 'actions.photoupload');
 }
 
 exports.viewJobHistoryDetails = function(page, params) {
@@ -56,9 +56,17 @@ exports.viewUnitOwnerInfo = function(page, params) {
     page.action('jobdetails', 'actions.ownerinfo');
 }
 
+//menu click
+
 exports.remarksPage = function(page, params) {
     page.action('servicejob', 'actions.servicejobremarks');
 }
+
+exports.viewJobInfo = function(page, params) {
+    page.action('servicejob', 'actions.jobinfo');
+}
+
+//end
 
 // exports.remarksPage = function(page, params) {
 //     page.action('jobdetails', 'actions.servicejobremarks');
