@@ -19,6 +19,21 @@ function app_photoupload($scope, app) {
        app.call('Home.closePhotoUpload', {});
        app.call('Home.viewJobInfo', {});
     };
+    
+    $scope.goToUnitOwner=function(){
+       app.call('Home.closePhotoUpload', {});
+       app.call('Home.viewUnitOwnerInfo', {});
+    };
+    
+    $scope.goToHistory=function(){
+       app.call('Home.closePhotoUpload', {});
+       app.call('Home.viewJobInfo', {});
+    };
+      
+    $scope.goToUnitInfo=function(){
+       app.call('Home.closePhotoUpload', {});
+       app.call('Home.viewJobInfo', {});
+    };
    
    $scope.savePhoto = function () {
         // $scope.base64string = angular.element(document.querySelector("#camera"))[0].value;
