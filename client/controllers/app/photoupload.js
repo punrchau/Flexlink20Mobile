@@ -9,6 +9,11 @@ function app_photoupload($scope, app) {
     $scope.closePhotoUpload = function () {
         app.call('Home.closePhotoUpload', {});
     };
+    
+    $scope.goToRemarks=function(){
+       app.call('Home.closePhotoUpload', {});
+       app.call('Home.remarksPage', {});
+    };
    
    $scope.savePhoto = function () {
         // $scope.base64string = angular.element(document.querySelector("#camera"))[0].value;
