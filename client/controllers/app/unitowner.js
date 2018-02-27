@@ -5,8 +5,5 @@ function app_unitowner($scope,$rootScope, app) {
     
     $scope.ticketnumber=$rootScope.ticketnumber;
     $scope.ownername=$rootScope.ownername;
-    
-    
-    $scope.ticketnumber='IND-JOB#-000000001';
-    $scope.ownername='Ram Chauhan';
+
 }
