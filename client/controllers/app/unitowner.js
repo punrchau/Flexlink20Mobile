@@ -13,7 +13,7 @@ function app_unitowner($scope,$rootScope, app) {
     
      $scope.goToPhotoUpload=function(){
        app.action('unitowner', 'close', this);
-       app.call('Home.remarksPage', {});
+       app.call('Home.photoUpload', {});
     };
     
     
