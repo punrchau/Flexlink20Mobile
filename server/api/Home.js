@@ -41,20 +41,20 @@ exports.deleteRecord = function(page, params) {
 
 exports.goToServiceJob = function (page) {
     //page.href('http://fl20commonqa.azurewebsites.net/mobile/#/servicejobs');
-    page.reload();
+    //page.reload();
 }
 
-exports.viewJobInfo = function(page, params) {
-    page.action('jobdetails', 'actions.jobinfo');
-}
+// exports.viewJobInfo = function(page, params) {
+//     page.action('jobdetails', 'actions.jobinfo');
+// }
 
-exports.viewUnitInfo = function(page, params) {
-    page.action('jobdetails', 'actions.unitinfo');
-}
+// exports.viewUnitInfo = function(page, params) {
+//     page.action('jobdetails', 'actions.unitinfo');
+// }
 
-exports.viewUnitOwnerInfo = function(page, params) {
-    page.action('jobdetails', 'actions.ownerinfo');
-}
+// exports.viewUnitOwnerInfo = function(page, params) {
+//     page.action('jobdetails', 'actions.ownerinfo');
+// }
 
 //menu click
 
@@ -66,23 +66,39 @@ exports.viewJobInfo = function(page, params) {
     page.action('servicejob', 'actions.jobinfo');
 }
 
+exports.viewUnitOwnerInfo = function(page, params) {
+    page.action('servicejob', 'actions.ownerinfo');
+}
+
+exports.viewJobHistory = function(page, params) {
+    page.action('servicejob', 'actions.viewjobhistory');
+}
+
+exports.viewUnitInfo = function(page, params) {
+    page.action('servicejob', 'actions.unitinfo');
+}
+
+exports.unitPhoto = function(page, params) {
+    page.action('servicejob', 'actions.photoupload');
+}
+
 //end
 
 // exports.remarksPage = function(page, params) {
 //     page.action('jobdetails', 'actions.servicejobremarks');
 // }
 
-exports.viewJobHistory = function(page, params) {
-    page.action('jobdetails', 'actions.viewjobhistory');
-}
+// exports.viewJobHistory = function(page, params) {
+//     page.action('jobdetails', 'actions.viewjobhistory');
+// }
 
-exports.photoUpload = function(page, params) {
-    page.action('jobdetails', 'actions.photoupload');
-}
+// exports.photoUpload = function(page, params) {
+//     page.action('jobdetails', 'actions.photoupload');
+// }
 
 exports.closePhotoUpload = function(page, params) {
     page.action('photoupload', 'close');
-    page.reload();
+   // page.reload();
 }
 
 
