@@ -10,4 +10,11 @@ function app_unitowner($scope,$rootScope, app) {
        app.action('unitowner', 'close', this);
        app.call('Home.remarksPage', {});
     };
+    
+     $scope.goToPhotoUpload=function(){
+       app.action('unitowner', 'close', this);
+       app.call('Home.remarksPage', {});
+    };
+    
+    
 }
