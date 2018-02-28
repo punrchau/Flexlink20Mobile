@@ -10,15 +10,14 @@
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
         <ion-list class=" stable-bg" data-comp-id="ionic-content.2">
             <div ata-comp-id="text.1" class="menuStyle">
-                <div class="row"
-                    style="margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;">
-                    <div class="col">
-                        <div ng-if="!isJobInfoSeleted">
+                <div class="row" style="margin: 0;padding: 0;">
+                    <div class="col" style="margin: 0;padding: 0;">
+                        <div ng-if="isJobInfoSeleted">
                             <img class="sortIcon" data-img="" ng-click="goToJobInfo();"
                                 ng-src="images/information.png">
                             <div class="iconTextstyle">Job Info</div>
                         </div>
-                        <div ng-if="isJobInfoSeleted" style="background-color:#6a478d">
+                        <div ng-if="!isJobInfoSeleted" style="background-color:#6a478d">
                             <img class="sortIcon" data-img="" ng-click="goToJobInfo();"
                                 ng-src="images/information_white.png">
                             <div class="iconTextstyle">Job Info</div>
