@@ -16,5 +16,25 @@ function app_unitowner($scope,$rootScope, app) {
        app.call('Home.photoUpload', {});
     };
     
+    $scope.goToRemarks=function(){
+        app.action('unitowner', 'close', this);
+        app.call('Home.remarksPage', {});
+    };
+    
+    $scope.goToJobInfo=function(){
+        app.action('unitowner', 'close', this);
+        app.call('Home.viewJobInfo', {});
+    };
+    
+    $scope.goToHistory=function(){
+        app.action('unitowner', 'close', this);
+        app.call('Home.viewJobHistory', {});
+    };
+      
+    $scope.goToUnitInfo=function(){
+        app.action('unitowner', 'close', this);
+        app.call('Home.viewUnitInfo', {});
+    };
+    
     
 }
