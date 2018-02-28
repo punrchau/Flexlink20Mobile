@@ -12,33 +12,33 @@
             <div ata-comp-id="text.1" class="menuStyle">
                 <div class="row" style="margin: 0;padding: 0;">
                     <div class="col" style="margin: 0;padding: 0;">
-                        <div ng-if="isJobInfoSeleted">
+                        <div ng-if="!isJobInfoSeleted">
                             <img class="sortIcon" data-img="" ng-click="goToJobInfo();"
                                 ng-src="images/information.png">
                             <div class="iconTextstyle">Job Info</div>
                         </div>
-                        <div ng-if="!isJobInfoSeleted" style="background-color:#6a478d">
+                        <div ng-if="isJobInfoSeleted" style="background-color:#6a478d">
                             <img class="sortIcon" data-img="" ng-click="goToJobInfo();"
                                 ng-src="images/information_white.png">
-                            <div class="iconTextstyle">Job Info</div>
+                            <div class="iconTextstyleWhite">Job Info</div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" style="margin: 0;padding: 0;">
                         <img class="sortIcon" data-img="" ng-click="goToUnitOwner();"
                             ng-src="images/logistics.png">
                         <div class="iconTextstyle">logistic</div>
                     </div>
-                    <div class="col">
+                    <div class="col" style="margin: 0;padding: 0;">
                         <img class="sortIcon" data-img="" ng-click="goToRemarks()"
                             ng-src="images/remarks.png">
                         <div class="iconTextstyle">Remarks</div>
                     </div>
-                    <div class="col">
+                    <div class="col" style="margin: 0;padding: 0;">
                         <img class="sortIcon" data-img="" ng-click="goToHistory();"
                             ng-src="images/history.png">
                         <div class="iconTextstyle">History</div>
                     </div>
-                    <div class="col">
+                    <div class="col" style="margin: 0;padding: 0;">
                         <img class="sortIcon" data-img="" ng-click="goToUnitInfo();"
                             ng-src="images/information.png">
                         <div class="iconTextstyle">Unit Info</div>
