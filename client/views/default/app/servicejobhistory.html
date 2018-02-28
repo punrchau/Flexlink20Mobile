@@ -8,27 +8,47 @@
         <ion-nav-buttons side="right"></ion-nav-buttons>
     </ion-nav-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
-        <div ata-comp-id="text.1" class="headerStyle positive">
-            {{ticketnumber}}-{{ownername}}
-        </div>
-        <div class="borderStyle card light-bg" data-comp-id="div.1"
-            ng-repeat="item in data.jobhistory" style="margin:7px 7px;">
-            <div class="row" data-comp-id="row.1" style="border-color:red !important">
-                <div class="col" data-comp-id="column.1" style="margin: 0% 4%;">
-                    <div class="row" data-comp-id="row.2" style="padding: 2px 0px;">
-                        <div class="col" data-comp-id="column.2" style="padding: 0px;">
-                            <div data-comp-id="text.1" ng-bind="item.repairdate" style="font-size: 18px;"></div>
-                            <i class="icon ion-ios-arrow-right" data-comp-id="icon.1"
-                                ng-click="goToJobHistoryDetails($index);"
-                                style="font-size: 22px; float : right;color: rgb(153, 153, 153); "></i>
-                            <div class=" positive" data-comp-id="text.2" ng-bind="item.issuedescription"
-                                style="font-size: 19px; float: left;">from@test.com</div>
-                        </div>
+        <ion-list class=" stable-bg" data-comp-id="ionic-content.2">
+            <div ata-comp-id="text.1" class="menuStyle">
+                <div class="row spaceStyle">
+                    <div class="col spaceStyle">
+                        <img class="sortIcon" data-img="" ng-click="goToJobInfo();"
+                            ng-src="images/information.png">
+                        <div class="iconTextstyle">Job Info</div>
                     </div>
-                    <div data-comp-id="text.3" ng-bind="item.status"
-                        style="font-size: 16px; color: rgb(153, 153, 153); margin: 0%; line-height: 18px;">Subject Line</div>
+                    <div class="col spaceStyle">
+                        <img class="sortIcon" data-img="" ng-click="goToPhotoUpload();"
+                            ng-src="images/upload.png">
+                        <div class="iconTextstyle">Upload</div>
+                    </div>
+                    <div class="col spaceStyle">
+                        <img class="sortIcon" data-img="" ng-click="goToRemarks()"
+                            ng-src="images/remarks.png">
+                        <div class="iconTextstyle">Remarks</div>
+                    </div>
+                    <div class="col spaceStyle">
+                        <img class="sortIcon" data-img="" ng-click="goToHistory();"
+                            ng-src="images/history.png">
+                        <div class="iconTextstyle">History</div>
+                    </div>
+                    <div class="col spaceStyle">
+                        <img class="sortIcon" data-img="" ng-click="goToUnitInfo();"
+                            ng-src="images/information.png">
+                        <div class="iconTextstyle">Unit Info</div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </ion-list>
+        <ion-list>
+            <div ata-comp-id="text.1" class="headerStyle positive">
+                {{ticketnumber}}-{{ownername}}
+            </div>
+            <div class="card light-bg" data-comp-id="div.1"
+                ng-repeat="item in data.jobhistory" style="margin:10px">
+                <div class="row labelstyle" data-comp-id="text.1"
+                    ng-bind="item.issuedescription"></div>
+                <div class="row textstyle" data-comp-id="text.2" ng-bind="item.issuedescription"></div>
+            </div>
+        </ion-list>
     </ion-content>
 </ion-view>
