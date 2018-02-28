@@ -67,10 +67,8 @@
                             </div>
                             <textarea class="not-visible" ng-model="data.attachmentContent"></textarea>
                             <p class="noteStyle" data-comp-id="text.1">Upload file size limit is 2 MB.</p>
-                            <input calss="" disabled="" id="camera" ng-if="style === 'control'"
-                                ng-model="mydata"
-                                style="display: none;height:2px;text-align:center; font-size: 11px; position:relative"
-                                type="text">
+                            <input disabled="" id="camera" ng-if="style === 'control'" ng-model="mydata"
+                                style="display: none" type="text">
                         </div>
                         <img data-comp-id="image.1" data-img="" ng-src="{{data.attachmentContent}}"
                             placeholder="Preview here..." style="width: 50%;height:110px; ">
