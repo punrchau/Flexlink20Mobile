@@ -63,11 +63,9 @@
     font-style: inherit !important;color:white !important;
 }
 
-
-/*.lineStyle{
-    border:#a3c1cc solid 1px;margin-top:0px
-    
-}*/
+.spaceStyle{
+    margin: 0;padding: 0;
+}
 
 .VerticalLineStyle{
     border-left:1px solid #f1f1f1;height:30px;
@@ -109,7 +107,7 @@
 }
 
 .menuStyle{
-    font-size: 14px;text-align:center;background-color:white;height:50px;
+    font-size: 14px;text-align:center;background-color:white;height:47px;
 } 
 
 // Custom css end
