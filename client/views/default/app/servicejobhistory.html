@@ -47,8 +47,17 @@
                 ng-repeat="item in data.jobhistory" style="margin:10px">
                 <div class="row labelstyle2" data-comp-id="text.1"
                     ng-bind="item.issuedescription"></div>
-                <div class="row textstyleItalic" data-comp-id="text.2" ng-bind="item.repairdate"></div>
-                <div class="VerticalLineStyle2"></div>
+                <div class="row">
+                    <div class="textstyleItalic" data-comp-id="text.2" ng-bind="item.repairdate"></div>
+                    <div
+                        style="border-left:2px solid #f1f1f1;height:15px;margin-left:10px;margin-right:10px"></div>
+                    <div class="textstyleItalic" data-comp-id="text.3" ng-bind="item.status"></div>
+                    <div style="padding-right :30% !important">
+                        <i class="icon ion-ios-arrow-right" data-comp-id="icon.1"
+                            ng-click="goToJobHistoryDetails($index);"
+                            style="font-size: 15px; color: rgb(153, 153, 153) ; "></i>
+                    </div>
+                </div>
             </div>
         </ion-list>
     </ion-content>
