@@ -6,7 +6,7 @@ function app_jobhistorydetails($scope,$rootScope, app) {
     $scope.ticketnumber=$rootScope.ticketnumber;
     $scope.ownername=$rootScope.ownername;
     
-     $scope.goToRemarks=function(){
+    $scope.goToRemarks=function(){
         app.action('servicejobhistory', 'close', this);
         app.call('Home.remarksPage', {});
     };
