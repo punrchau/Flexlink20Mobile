@@ -3,7 +3,6 @@ exports.on_InvokeFlexLink = function (page) {
      //page.href('http://fl20qa.azurewebsites.net/common/#/home').screen('prehomeloadflexlink');
      //page.href('http://fl20dev.azurewebsites.net/common/#/home').screen('prehomeloadflexlink');
      page.href('http://fl20commonqa.azurewebsites.net/common/#/home').screen('prehomeloadflexlink');
-      
 }
 exports.on_InvokeOEM2 = function (page) {
     page.action('Home','OEM2').screen('prehomeloadoem');
@@ -29,10 +28,10 @@ exports.viewRecord = function(page, params) {
     page.action('servicejob', 'actions.photoupload');
 }
 
-exports.viewJobHistoryDetails = function(page, params) {
-    page.action('servicejobhistory', 'jobhistory[' + params.index + '].selectRecord');
-    //page.action('servicejob', 'viewRecord');
-}
+// exports.viewJobHistoryDetails = function(page, params) {
+//     page.action('servicejobhistory', 'jobhistory[' + params.index + '].selectRecord');
+//     //page.action('servicejob', 'viewRecord');
+// }
 
 exports.deleteRecord = function(page, params) {
     page.action('PartReceiveDetails', 'partDiscrepancy.details[' + params.index + '].selectRecord');
@@ -40,6 +39,7 @@ exports.deleteRecord = function(page, params) {
 }
 
 exports.goToServiceJob = function (page) {
+    var test=page;
     //page.href('http://fl20commonqa.azurewebsites.net/mobile/#/servicejobs');
     //page.reload();
 }
