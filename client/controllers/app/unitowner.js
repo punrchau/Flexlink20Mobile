@@ -1,8 +1,11 @@
 angular.module('app').controller('app_unitowner', app_unitowner);
 function app_unitowner($scope,$rootScope, app) {
     'use strict';
-    app.init($scope);
     
+    app.init($scope, function () {
+      $scope.togglemenus=false;
+    });
+ 
     $scope.ticketnumber=$rootScope.ticketnumber;
     $scope.ownername=$rootScope.ownername;
     
@@ -37,7 +40,7 @@ function app_unitowner($scope,$rootScope, app) {
     };
     
      $scope.toggleMenu = function(){
-       $scope.togglemenus=true;  
+       $scope.togglemenus=!$scope.togglemenus;  
      };
     
     
