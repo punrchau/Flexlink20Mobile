@@ -36,5 +36,9 @@ function app_unitowner($scope,$rootScope, app) {
         app.call('Home.viewUnitInfo', {});
     };
     
+     $scope.toggleMenu = function(){
+       $scope.togglemenus=true;  
+     };
+    
     
 }
