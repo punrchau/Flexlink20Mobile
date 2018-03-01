@@ -306,7 +306,7 @@ ul.tasks li:after {
   content: '';
   position: absolute;
   left: -18px;
-  top: 8px;
+  top: 6px;
   height: 8px;
   width: 8px;
   border-radius: 50%;
@@ -331,7 +331,7 @@ ul.tasks::after {
   width: 1px;
   background: #eee;
   left: 20px;
-  top: 0px;
+  top: -68px;
 }
 
 
