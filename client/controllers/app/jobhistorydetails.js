@@ -3,6 +3,6 @@ function app_jobhistorydetails($scope,$rootScope, app) {
     'use strict';
     app.init($scope);
     
-     $scope.ticketnumber=$rootScope.ticketnumber;
+    $scope.ticketnumber=$rootScope.ticketnumber;
     $scope.ownername=$rootScope.ownername;
 }

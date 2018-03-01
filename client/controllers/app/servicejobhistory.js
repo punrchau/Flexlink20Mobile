@@ -6,6 +6,7 @@ function app_servicejobhistory($scope,$rootScope, app) {
      $scope.ticketnumber=$rootScope.ticketnumber;
     $scope.ownername=$rootScope.ownername;
     
+    
     $scope.goToJobHistoryDetails = function (index) {
             //app.go('jobhistorydetails');
             app.call('Home.viewJobHistoryDetails',{'index':index});
