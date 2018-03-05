@@ -9,6 +9,44 @@
         <ion-nav-buttons side="right"></ion-nav-buttons>
     </ion-nav-bar>
     <ion-content class="stable-bg" data-comp-id="ionic-content.1">
+        <ion-list class=" stable-bg" data-comp-id="ionic-content.2">
+            <div ata-comp-id="text.1" class="menuStyle">
+                <div class="row spaceStyle">
+                    <div class="col spaceStyle">
+                        <div ng-if="!isJobInfoSeleted">
+                            <img class="sortIcon " data-img="" ng-click="goToJobInfo();"
+                                ng-src="images/information.png">
+                            <div class="iconTextstyle">Job Info</div>
+                        </div>
+                        <div ng-if="isJobInfoSeleted" style="background-color:#6a478d">
+                            <img class="sortIcon" data-img="" ng-click="goToJobInfo();"
+                                ng-src="images/information_white.png">
+                            <div class="iconTextstyleWhite">Job Info</div>
+                        </div>
+                    </div>
+                    <div class="col spaceStyle">
+                        <img class="sortIcon" data-img="" ng-click="goToUnitOwner();"
+                            ng-src="images/logistics.png">
+                        <div class="iconTextstyle">Logistic</div>
+                    </div>
+                    <div class="col spaceStyle">
+                        <img class="sortIcon" data-img="" ng-click="goToPhotoUpload();"
+                            ng-src="images/upload.png">
+                        <div class="iconTextstyle">Upload</div>
+                    </div>
+                    <div class="col spaceStyle">
+                        <img class="sortIcon" data-img="" ng-click="goToHistory();"
+                            ng-src="images/history.png">
+                        <div class="iconTextstyle">History</div>
+                    </div>
+                    <div class="col spaceStyle">
+                        <img class="sortIcon" data-img="" ng-click="goToUnitInfo();"
+                            ng-src="images/unit_info_white.png">
+                        <div class="iconTextstyle">Unit Info</div>
+                    </div>
+                </div>
+            </div>
+        </ion-list>
         <!--Form Contents-->
         <ion-list data-comp-id="ionic-list.1" type=" stable-bg">
             <div ata-comp-id="text.2" class="headerStyle textstyle">
