@@ -90,7 +90,6 @@
         },
         "removeselection": {
           "type": "action",
-          "selector": "#JobHistoryDetailsModel > div > div > div.modal-header > button",
           "control": "action.button"
         }
       },
