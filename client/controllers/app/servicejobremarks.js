@@ -9,27 +9,27 @@ function app_servicejobremarks($scope,$rootScope, app) {
     
     
     $scope.goToPhotoUpload=function(){
-       app.action('unitowner', 'close', this);
+       app.action('servicejobremarks', 'close', this);
        app.call('Home.unitPhoto', {});
     };
     
     $scope.goToJobInfo=function(){
-        app.action('photoupload', 'close', this);
+        app.action('servicejobremarks', 'close', this);
         app.call('Home.viewJobInfo', {});
     };
     
     $scope.goToUnitOwner=function(){
-        app.action('photoupload', 'close', this);
+        app.action('servicejobremarks', 'close', this);
         app.call('Home.viewUnitOwnerInfo', {});
     };
     
     $scope.goToHistory=function(){
-        app.action('photoupload', 'close', this);
+        app.action('servicejobremarks', 'close', this);
         app.call('Home.viewJobHistory', {});
     };
       
     $scope.goToUnitInfo=function(){
-        app.action('photoupload', 'close', this);
+        app.action('servicejobremarks', 'close', this);
         app.call('Home.viewUnitInfo', {});
     };
 }
