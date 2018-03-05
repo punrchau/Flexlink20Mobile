@@ -90,7 +90,7 @@
         },
         "removeselection": {
           "type": "action",
-          "selector": "tbody",
+          "selector": ".",
           "control": "property.innerText"
         }
       },
