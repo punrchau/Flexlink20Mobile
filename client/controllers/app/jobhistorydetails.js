@@ -26,12 +26,12 @@ function app_jobhistorydetails($scope,$rootScope, app) {
         app.call('Home.viewUnitOwnerInfo', {});
     };
     
-    $scope.goToHistory=function(){
+    $scope.goToHistory=(){
       
-        app.call('Home.reloadJobHistoryPage', {});
+        //app.call('Home.reloadJobHistoryPage', {});
         
-        //app.action('servicejobhistory', 'close', this);
-        //app.call('Home.viewJobHistory', {});
+        app.action('servicejobhistory', 'close', this);
+        app.call('Home.viewJobHistory', {});
     };
       
     $scope.goToUnitInfo=function(){

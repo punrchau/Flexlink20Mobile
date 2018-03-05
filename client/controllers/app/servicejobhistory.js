@@ -42,5 +42,5 @@ function app_servicejobhistory($scope,$rootScope, app) {
         /*else {
             app.call('PartReceiveDetail.goToHome', {});
         }*/
-    }
+    };
 }
