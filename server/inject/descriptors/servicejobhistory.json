@@ -35,11 +35,6 @@
             "type": "action",
             "selector": ".",
             "control": "action.link"
-          },
-          "unselectRecord": {
-            "type": "action",
-            "control": "action.link",
-            "selector": "."
           }
         }
       },
