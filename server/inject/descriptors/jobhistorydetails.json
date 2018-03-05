@@ -97,7 +97,7 @@
       "control": "exists"
     },
     "selectRecord": {
-      "type": "string",
+      "type": "action",
       "selector": ".k-selectable",
       "control": "property.innerText"
     }
