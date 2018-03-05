@@ -92,7 +92,7 @@
           "type": "action",
           "control": "action.link",
           "selector": {
-            "fn": "function(node){if(){var t=document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').removeAttribute('class','k-state-selected')}return true}",
+            "fn": "function(node){var t=document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').removeAttribute('class','k-state-selected');return true}",
             "selector": ""
           }
         }
