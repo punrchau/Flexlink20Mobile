@@ -92,7 +92,7 @@
           "type": "action",
           "control": "action.link",
           "selector": {
-            "fn": "function(node){var t=document.querySelector('.');return true}",
+            "fn": "function(node){return document.querySelector('.')}",
             "selector": ""
           }
         }
