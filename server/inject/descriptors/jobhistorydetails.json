@@ -89,7 +89,7 @@
           "control": "property.innerText"
         },
         "unselectrecord": {
-          "type": "string",
+          "type": "action",
           "selector": "tbody",
           "control": "property.innerText"
         }
