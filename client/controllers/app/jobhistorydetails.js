@@ -33,6 +33,6 @@ function app_jobhistorydetails($scope,$rootScope, app) {
       
     $scope.goToUnitInfo=function(){
         app.action('servicejobhistory', 'close', this);
-        app.call('Home.viewJobHistory', {});
+        app.call('Home.viewUnitInfo', {});
     };
 }
