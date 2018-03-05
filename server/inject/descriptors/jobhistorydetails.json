@@ -95,6 +95,11 @@
       "type": "identifier",
       "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected",
       "control": "exists"
+    },
+    "selectRecord": {
+      "type": "string",
+      "selector": ".k-selectable",
+      "control": "property.innerText"
     }
   },
   "connect": [
