@@ -90,7 +90,7 @@
         },
         "unselectrecord": {
           "type": "action",
-          "control": "exists",
+          "control": "action.link",
           "selector": {
             "fn": "function(node){return document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').removeAttribute('class','k-state-selected')}",
             "selector": ""
