@@ -99,7 +99,7 @@
     "selectRecord": {
       "type": "action",
       "selector": ".k-selectable",
-      "control": "property.innerText"
+      "control": "action.link"
     }
   },
   "connect": [
