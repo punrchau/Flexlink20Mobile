@@ -47,74 +47,54 @@
             </div>
         </ion-list>
         <ion-list>
-            <div class="borderStyle light-bg" style="margin: 7px 7px;">
-                <div style="margin-top:10px;margin-bottom:10px">
-                    <div class="row">
-                        <div class="col labelstyle">
-                            <span style="text-align:right;">Service Job No :</span>
-                        </div>
-                        <input class="col textstyle" ng-model="data.jobnumber" type="text">
-                    </div>
-                    <div class="row">
-                        <div class="col labelstyle">
-                            <span>Ticket Number :</span>
-                        </div>
-                        <input class="col textstyle" ng-model="data.ticketnumber" type="text">
-                    </div>
-                    <div class="row">
-                        <div class="col labelstyle">
-                            <span>Job Creation Date :</span>
-                        </div>
-                        <input class="col textstyle" ng-model="data.jobcreationdate" type="text">
-                    </div>
-                    <div class="row">
-                        <div class="col labelstyle">
-                            <span>Repair Status :</span>
-                        </div>
-                        <input class="col textstyle" ng-model="data.repairstatus" type="text">
-                    </div>
-                    <div class="row">
-                        <div class="col labelstyle">
-                            <span>Priority :</span>
-                        </div>
-                        <input class="col textstyle" ng-model="data.priority" type="text">
-                    </div>
-                    <div class="row">
-                        <div class="col labelstyle">
-                            <span>Problem Category :</span>
-                        </div>
-                        <input class="col textstyle" ng-model="data.problemcategory" type="text">
-                    </div>
-                    <div class="row">
-                        <div class="col labelstyle">
-                            <span>Problem Description:</span>
-                        </div>
-                        <input class="col textstyle" ng-model="data.problemdescription" type="text">
-                    </div>
-                    <div class="row">
-                        <div class="col labelstyle">
-                            <span>Is ADP :</span>
-                        </div>
-                        <input class="col textstyle" ng-model="data.isadp" type="text">
-                    </div>
-                    <div class="row">
-                        <div class="col labelstyle">
-                            <span>Service Type :</span>
-                        </div>
-                        <input class="col textstyle" ng-model="data.servicetype" type="text">
-                    </div>
-                    <div class="row">
-                        <div class="col labelstyle">
-                            <span>Service Model :</span>
-                        </div>
-                        <input class="col textstyle" ng-model="data.servicemodel" type="text">
-                    </div>
-                    <div class="row">
-                        <div class="col labelstyle">
-                            <span>Software Version :</span>
-                        </div>
-                        <input class="col textstyle" ng-model="data.softwareversion" type="text">
-                    </div>
+            <div class="light-bg muck-up" style="margin:10px;margin-top:5px">
+                <div class="bottom">
+                    <ul class="tasks">
+                        <li class="green" style="margin-top:1px !important">
+                            <div class="labelstyle">SERVICE JOB NUMBER</div>
+                            <div class="textstyle">{{data.jobnumber}}</div>
+                        </li>
+                        <li class="green" style="margin-top:1px !important">
+                            <div class="labelstyle">TICKET NUMBER</div>
+                            <div class="textstyle">{{data.jobnumber}}</div>
+                        </li>
+                        <li class="green" style="margin-top:1px !important">
+                            <div class="labelstyle">JOB CREATION DATE</div>
+                            <div class="textstyle">{{data.jobcreationdate}}</div>
+                        </li>
+                        <li class="green" style="margin-top:1px !important">
+                            <div class="labelstyle">REPAIR STATUS</div>
+                            <div class="textstyle">{{data.repairstatus}}</div>
+                        </li>
+                        <li class="green" style="margin-top:1px !important">
+                            <div class="labelstyle">PRIORITY</div>
+                            <div class="textstyle">{{data.priority}}</div>
+                        </li>
+                        <li class="green" style="margin-top:1px !important">
+                            <div class="labelstyle">PROBLEM CATEGORY</div>
+                            <div class="textstyle">{{data.problemcategory}}</div>
+                        </li>
+                        <li class="green" style="margin-top:1px !important">
+                            <div class="labelstyle">PROBLEM DESCRIPTION</div>
+                            <div class="textstyle">{{data.problemdescription}}</div>
+                        </li>
+                        <li class="green" style="margin-top:1px !important">
+                            <div class="labelstyle">IS ADP</div>
+                            <div class="textstyle">{{data.isadp}}</div>
+                        </li>
+                        <li class="green" style="margin-top:1px !important">
+                            <div class="labelstyle">SERVICE TYPE</div>
+                            <div class="textstyle">{{data.servicetype}}</div>
+                        </li>
+                        <li class="green" style="margin-top:1px !important">
+                            <div class="labelstyle">SERVICE MODEL</div>
+                            <div class="textstyle">{{data.servicemodel}}</div>
+                        </li>
+                        <li class="green" style="margin-top:1px !important">
+                            <div class="labelstyle">SOFTWARE VERSION</div>
+                            <div class="textstyle">{{data.softwareversion}}</div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </ion-list>
