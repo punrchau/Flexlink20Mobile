@@ -87,11 +87,6 @@
           "selector": "td",
           "selectIndex": 15,
           "control": "property.innerText"
-        },
-        "unselectrecord": {
-          "type": "action",
-          "control": "action.link",
-          "selector": "."
         }
       },
       "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
