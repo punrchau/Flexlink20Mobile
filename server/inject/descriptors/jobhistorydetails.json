@@ -98,7 +98,7 @@
     },
     "selectRecord": {
       "type": "action",
-      "selector": ".k-selectable",
+      "selector": ".",
       "control": "action.link"
     }
   },
