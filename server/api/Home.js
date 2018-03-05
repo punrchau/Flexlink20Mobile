@@ -38,7 +38,7 @@ exports.deleteRecord = function(page, params) {
     page.action('PartReceiveDetails', 'partDiscrepancy.delete');
 }
 
-exports.reloadJobHistoryPage = function (page , params){
+exports.reloadJobHistoryPage = function (page , params) {
     page.reload();
 }
 
