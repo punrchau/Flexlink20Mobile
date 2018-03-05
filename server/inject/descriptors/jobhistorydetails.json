@@ -91,7 +91,7 @@
         "removeselection": {
           "type": "action",
           "selector": "#JobHistoryDetailsModel > div > div > div.modal-header > button",
-          "control": "action.link"
+          "control": "action.button"
         }
       },
       "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
