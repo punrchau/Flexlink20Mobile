@@ -90,7 +90,6 @@
         },
         "unselectrecord": {
           "type": "action",
-          "selector": "tbody",
           "control": "property.innerText"
         }
       },
