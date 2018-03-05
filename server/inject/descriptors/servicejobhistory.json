@@ -35,6 +35,11 @@
             "type": "action",
             "selector": ".",
             "control": "action.link"
+          },
+          "unselectRecord": {
+            "type": "string",
+            "selector": "#masterBody",
+            "control": "property.innerText"
           }
         }
       },
