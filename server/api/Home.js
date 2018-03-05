@@ -38,6 +38,10 @@ exports.deleteRecord = function(page, params) {
     page.action('PartReceiveDetails', 'partDiscrepancy.delete');
 }
 
+exports.reloadJobHistoryPage = function (page , params){
+    page.reload();
+}
+
 exports.goToServiceJob = function (page) {
     var test=page;
     //page.href('http://fl20commonqa.azurewebsites.net/mobile/#/servicejobs');
