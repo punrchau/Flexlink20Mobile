@@ -90,11 +90,7 @@
         },
         "unselectrecord": {
           "type": "action",
-          "control": "action.link",
-          "selector": {
-            "fn": "",
-            "selector": ""
-          }
+          "control": "action.link"
         }
       },
       "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
