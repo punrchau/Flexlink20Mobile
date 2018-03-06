@@ -14,6 +14,7 @@
 .item-select-icon:after{
    z-index:-1 !important;
 }
+
 .labelstyle2{
     font-family:"Avant Garde Gothic", "Open Sans", Helvetica, Calibri, sans-serif;
     font-weight:bold;
@@ -73,6 +74,7 @@
     font-family:"Avant Garde Gothic", "Open Sans", Helvetica, Calibri, sans-serif;
     border-color: rgb(0, 153, 0); font-size: 12px;height:19px;
     width:150px !important;
+    z-index:100;
 }
 
 .sortIcon{
