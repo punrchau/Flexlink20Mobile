@@ -10,38 +10,39 @@
                 ng-click="app.action('unitowner', 'close', this)" ng-src="images/home.png">
         </ion-nav-buttons>
     </ion-nav-bar>
-    <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
-        <ion-list class=" stable-bg" data-comp-id="ionic-content.2">
-            <div ata-comp-id="text.1" class="menuStyle" ng-if="togglemenus">
-                <div class="row spaceStyle1">
-                    <div class="col spaceStyle">
-                        <img class="sortIcon" data-img="" ng-click="goToJobInfo();"
-                            ng-src="images/information.png">
-                        <div class="iconTextstyle">Job Info</div>
-                    </div>
-                    <div class="col spaceStyle">
-                        <img class="sortIcon" data-img="" ng-click="goToPhotoUpload();"
-                            ng-src="images/upload.png">
-                        <div class="iconTextstyle">Upload</div>
-                    </div>
-                    <div class="col spaceStyle">
-                        <img class="sortIcon" data-img="" ng-click="goToRemarks()"
-                            ng-src="images/remarks.png">
-                        <div class="iconTextstyle">Remarks</div>
-                    </div>
-                    <div class="col spaceStyle">
-                        <img class="sortIcon" data-img="" ng-click="goToHistory();"
-                            ng-src="images/history.png">
-                        <div class="iconTextstyle">History</div>
-                    </div>
-                    <div class="col spaceStyle">
-                        <img class="sortIcon" data-img="" ng-click="goToUnitInfo();"
-                            ng-src="images/unit_info_white.png">
-                        <div class="iconTextstyle">Unit Info</div>
-                    </div>
+    <ion-header-bar class="bar-subheader bar-light spaceStyle"
+        data-comp-id="header-bar.1" dynamic-fixed-header="">
+        <div ata-comp-id="text.1" class="menuStyle" ng-if="togglemenus">
+            <div class="row spaceStyle1">
+                <div class="col spaceStyle">
+                    <img class="sortIcon" data-img="" ng-click="goToJobInfo();"
+                        ng-src="images/information.png">
+                    <div class="iconTextstyle">Job Info</div>
+                </div>
+                <div class="col spaceStyle">
+                    <img class="sortIcon" data-img="" ng-click="goToPhotoUpload();"
+                        ng-src="images/upload.png">
+                    <div class="iconTextstyle">Upload</div>
+                </div>
+                <div class="col spaceStyle">
+                    <img class="sortIcon" data-img="" ng-click="goToRemarks()"
+                        ng-src="images/remarks.png">
+                    <div class="iconTextstyle">Remarks</div>
+                </div>
+                <div class="col spaceStyle">
+                    <img class="sortIcon" data-img="" ng-click="goToHistory();"
+                        ng-src="images/history.png">
+                    <div class="iconTextstyle">History</div>
+                </div>
+                <div class="col spaceStyle">
+                    <img class="sortIcon" data-img="" ng-click="goToUnitInfo();"
+                        ng-src="images/unit_info_white.png">
+                    <div class="iconTextstyle">Unit Info</div>
                 </div>
             </div>
-        </ion-list>
+        </div>
+    </ion-header-bar>
+    <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
         <ion-list data-comp-id="ionic-list.1" type=" stable-bg">
             <div ata-comp-id="text.1" class="headerStyle textstyle">
                 {{ticketnumber}}
