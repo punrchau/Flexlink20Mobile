@@ -40,16 +40,6 @@
         </div>
     </ion-header-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
-        <label class="item  item-input item-select-icon positive-icon"
-            data-comp-id="selectInput.1">
-            <span class="input-label">Select Label</span>
-            <select ng-model="sortBy">
-                <option class="textstyle" ng-show="true" value="firstname">Name</option>
-                <option class="textstyle" value="pickupaddress">Location</option>
-                <option class="textstyle" value="ticketnumber">Job No</option>
-                <option class="textstyle" value="problemcategory">Problem Description</option>
-            </select>
-        </label>
         <div class="card light-bg" data-comp-id="div.1"
             ng-repeat="item in data.listItems | orderBy:sortFunc:isDescending | filter:searchstring"
             style="margin: 7px 7px">
