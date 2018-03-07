@@ -106,7 +106,13 @@
       "selectorAll": "#GDMasterJobHistoryDetails table tbody tr",
       "items": {
         "type": "object",
-        "properties": {}
+        "properties": {
+          "deselectRecord": {
+            "type": "string",
+            "selector": "td",
+            "control": "property.innerText"
+          }
+        }
       }
     }
   },
