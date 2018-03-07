@@ -97,7 +97,11 @@
       "control": "exists"
     },
     "unselectRecord": {
-      "type": "action"
+      "type": "action",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     }
   },
   "connect": [
