@@ -97,7 +97,11 @@
       "control": "exists"
     },
     "unselectRecord": {
-      "type": "action"
+      "type": "action",
+      "selector": {
+        "fn": "function(node){var element=document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected');element.classList.remove('k-state-selected')}",
+        "selector": "#GDMasterJobHistoryDetails"
+      }
     }
   },
   "connect": [
