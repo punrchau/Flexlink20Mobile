@@ -1,8 +1,8 @@
 <ion-view data-comp-id="ionic-view.1">
-    <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1">
+    <ion-nav-bar align-title="" class=" bar-royal" data-comp-id="nav-bar.1">
         <ion-nav-buttons side="left">
-            <button class="button button-icon ion-home" data-comp-id="button.1"
-                ng-click="app.action('unitinfo', 'cancel', this)"></button>
+            <img class="sortIcon" data-img=""
+                ng-click="app.action('unitinfo', 'cancel', this)" ng-src="images/home.png">
         </ion-nav-buttons>
         <ion-nav-title class="mainHeader" data-comp-id="nav-title.1">Unit Information</ion-nav-title>
         <ion-nav-buttons side="right">
@@ -42,81 +42,91 @@
         </div>
     </ion-header-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
-        <div ata-comp-id="text.1" class="headerStyle calm-bg positive">
-            {{ticketnumber}}-{{ownername}}
-        </div>
-        <!--<hr style="border:#0099e6  solid .5px;width:500px">-->
-        <!--Form Contents-->
-        <div class="borderStyle light-bg" style="margin: 7px 7px">
-            <div style="margin-top:0px;margin-bottom:10px">
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span style="text-align:right;">Serial Number :</span>
-                    </div>
-                    <input class="col textstyle" ng-model="data.serialnumber" type="text">
+        <ion-list>
+            <div ata-comp-id="text.1" class="headerStyle positive">
+                {{ticketnumber}}-{{ownername}}
+            </div>
+        </ion-list>
+        <ion-list>
+            <div class="light-bg muck-up" style="margin:10px;margin-top:5px">
+                <div class="bottom">
+                    <ul class="tasks">
+                        <li class="green">
+                            <div class="labelstyle">SERIAL NUMBER</div>
+                            <div class="textstyle">{{data.serialnumber}}</div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>Machine Type :</span>
+                <div style="margin-top:0px;margin-bottom:10px">
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span style="text-align:right;">Serial Number :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.serialnumber" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.machinetype" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>IMEI 1 :
-                        </span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Machine Type :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.machinetype" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.imei1" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>IMEI 2 :</span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>IMEI 1 :
+                            </span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.imei1" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.imei2" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>Manufacturer :</span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>IMEI 2 :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.imei2" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.manufacturer" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>Product Category :</span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Manufacturer :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.manufacturer" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.productcategory" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>Product Model :</span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Product Category :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.productcategory" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.productmodel" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>SKU(MTM) :</span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Product Model :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.productmodel" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.skuormtm" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>Warranty Status :</span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>SKU(MTM) :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.skuormtm" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.warrantystatus" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>Warranty Expiry Date :</span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Warranty Status :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.warrantystatus" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.warrantyexpirydate" type="text">
-                </div>
-                <div class="row">
-                    <div class="col labelstyle">
-                        <span>Date of Purchase :</span>
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Warranty Expiry Date :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.warrantyexpirydate" type="text">
                     </div>
-                    <input class="col textstyle" ng-model="data.dateofpurchase" type="text">
+                    <div class="row">
+                        <div class="col labelstyle">
+                            <span>Date of Purchase :</span>
+                        </div>
+                        <input class="col textstyle" ng-model="data.dateofpurchase" type="text">
+                    </div>
                 </div>
             </div>
-        </div>
+        </ion-list>
     </ion-content>
 </ion-view>
