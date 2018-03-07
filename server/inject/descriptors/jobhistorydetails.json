@@ -100,7 +100,7 @@
       "type": "action",
       "control": "property.innerText",
       "selector": {
-        "fn": "",
+        "fn": "function myFunction(){var element=document.getElementById('myDIV');element.classList.remove('mystyle')}",
         "selector": ""
       }
     }
