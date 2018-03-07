@@ -98,7 +98,6 @@
     },
     "unselectRecord": {
       "type": "action",
-      "selector": "td",
       "control": "property.innerText"
     }
   },
