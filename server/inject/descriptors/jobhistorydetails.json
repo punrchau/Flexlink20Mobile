@@ -111,7 +111,7 @@
             "type": "action",
             "control": "action.button",
             "selector": {
-              "fn": "function(node){document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').classList.remove('k-state-selected');return true}",
+              "fn": "function(node){document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').classList.remove('k-state-selected1');return true}",
               "selector": ""
             }
           }
