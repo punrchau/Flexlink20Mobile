@@ -111,7 +111,7 @@
             "type": "action",
             "control": "action.link",
             "selector": {
-              "fn": "function(node){}",
+              "fn": "function(node){removeClass(node,'')}",
               "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
             }
           }
