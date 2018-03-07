@@ -98,7 +98,7 @@
     },
     "unselectRecord": {
       "type": "action",
-      "selector": ":not(#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected)"
+      "selector": "not(#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected)"
     }
   },
   "connect": [
