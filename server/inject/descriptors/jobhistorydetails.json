@@ -98,10 +98,7 @@
     },
     "unselectRecord": {
       "type": "action",
-      "selector": {
-        "fn": "function(node){var element=node.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected');element.classList.remove('k-state-selected')}",
-        "selector": "#GDMasterJobHistoryDetails"
-      }
+      "selector": "#GDMasterJobHistoryDetails"
     }
   },
   "connect": [
