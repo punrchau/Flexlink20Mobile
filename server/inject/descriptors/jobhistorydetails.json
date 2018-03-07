@@ -109,7 +109,7 @@
         "properties": {
           "deselectRecord": {
             "type": "action",
-            "control": "action.link",
+            "control": "exists",
             "selector": {
               "fn": "function(node){document.querySelector('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected').classList.remove('k-state-selected')}",
               "selector": ""
