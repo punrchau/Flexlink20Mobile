@@ -111,8 +111,8 @@
             "type": "action",
             "control": "action.link",
             "selector": {
-              "fn": "function(node){return node.classList.remove('k-state-selected')}",
-              "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
+              "fn": "",
+              "selector": ":not(#GDMasterJobHistoryDetails table tbody tr)"
             }
           }
         }
