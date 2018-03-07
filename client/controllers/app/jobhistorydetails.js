@@ -28,7 +28,8 @@ function app_jobhistorydetails($scope,$rootScope, app) {
     
     $scope.goToHistory=function(){
         app.action('servicejobhistory', 'close', this);
-        $rootScope.jobHistory="jobHistory";
+        app.call('Home.viewJobHistory', {});
+        $rootScope.jobHistory="jobHistory1";
     };
       
     $scope.goToUnitInfo=function(){
