@@ -109,7 +109,7 @@
         "properties": {
           "deselectRecord": {
             "type": "action",
-            "selector": "not()",
+            "selector": ".not()",
             "control": "action.link"
           }
         }
