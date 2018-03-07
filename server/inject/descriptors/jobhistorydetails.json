@@ -103,7 +103,7 @@
     },
     "details": {
       "type": "array",
-      "selectorAll": "td",
+      "selectorAll": "#GDMasterJobHistoryDetails table tbody tr",
       "items": {
         "type": "object",
         "properties": {}
