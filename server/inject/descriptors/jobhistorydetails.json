@@ -91,7 +91,7 @@
         "deselectRecord": {
           "type": "action",
           "selector": ".",
-          "control": "property.innerText"
+          "control": "action.link"
         }
       },
       "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
