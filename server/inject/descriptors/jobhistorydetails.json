@@ -98,7 +98,7 @@
     },
     "unselectRecord": {
       "type": "action",
-      "selector": "#GDMasterJobHistoryDetails"
+      "selector": ":not(#thisone)"
     }
   },
   "connect": [
