@@ -90,7 +90,7 @@
         },
         "deselectRecord": {
           "type": "action",
-          "selector": "td",
+          "selector": ".",
           "control": "property.innerText"
         }
       },
