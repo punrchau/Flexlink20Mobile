@@ -102,9 +102,12 @@
       "control": "exists"
     },
     "details": {
-      "type": "string",
-      "selector": "td",
-      "control": "property.innerText"
+      "type": "array",
+      "selectorAll": "td",
+      "items": {
+        "type": "object",
+        "properties": {}
+      }
     }
   },
   "connect": [
