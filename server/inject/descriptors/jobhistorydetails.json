@@ -97,8 +97,7 @@
       "control": "exists"
     },
     "unselectRecord": {
-      "type": "method",
-      "parameters": {}
+      "type": "action"
     }
   },
   "connect": [
