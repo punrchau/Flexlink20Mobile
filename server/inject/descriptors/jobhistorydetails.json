@@ -112,7 +112,7 @@
             "control": "action.link",
             "selector": {
               "fn": "",
-              "selector": ":not(#GDMasterJobHistoryDetails table tbody tr)"
+              "selector": ":not('#GDMasterJobHistoryDetails table tbody tr')"
             }
           }
         }
