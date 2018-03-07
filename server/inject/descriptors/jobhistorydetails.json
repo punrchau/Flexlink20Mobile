@@ -97,7 +97,7 @@
       "control": "exists"
     },
     "unselectRecord": {
-      "type": "string",
+      "type": "action",
       "selector": "td",
       "control": "property.innerText"
     }
