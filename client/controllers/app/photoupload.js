@@ -16,8 +16,6 @@ function app_photoupload($scope, app) {
     };
     
     $scope.goToJobInfo=function(){
-       //app.call('Home.closePhotoUpload', {});
-       
         app.action('photoupload', 'close', this);
         app.call('Home.viewJobInfo', {});
     };
