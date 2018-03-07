@@ -98,7 +98,11 @@
     },
     "unselectRecord": {
       "type": "action",
-      "control": "property.innerText"
+      "control": "property.innerText",
+      "selector": {
+        "fn": "",
+        "selector": ""
+      }
     }
   },
   "connect": [
