@@ -20,6 +20,9 @@ function app_servicejob($scope,$rootScope, app) {
     
     app.init($scope, function () {
      $scope.showPopup($scope.data);
+      if($rootScope.jobHistory=="jobHistory"){
+            app.call('Home.viewJobHistory', {});
+      }
     });
     
     $scope.sortBy="firstname";

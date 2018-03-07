@@ -4,10 +4,7 @@ function app_unitowner($scope,$rootScope, app) {
     
     app.init($scope, function () {
       $scope.togglemenus=false;
-      if($rootScope.jobHistory=="jobHistory"){
-            app.action('unitowner', 'close', this);
-            app.call('Home.viewJobHistory', {});
-      }
+     
     });
  
     $scope.ticketnumber=$rootScope.ticketnumber;
