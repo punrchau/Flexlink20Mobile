@@ -99,7 +99,7 @@
     "unselectRecord": {
       "type": "action",
       "selector": {
-        "fn": "function(node){not('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected')}",
+        "fn": "",
         "selector": ""
       }
     }
