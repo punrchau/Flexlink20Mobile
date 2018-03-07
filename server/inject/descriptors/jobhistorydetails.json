@@ -110,7 +110,7 @@
           "deselectRecord": {
             "type": "action",
             "selector": ".",
-            "control": "property.innerText"
+            "control": "action.link"
           }
         }
       }
