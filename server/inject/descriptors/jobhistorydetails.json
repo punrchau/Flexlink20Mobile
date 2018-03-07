@@ -89,7 +89,7 @@
           "control": "property.innerText"
         },
         "deselectRecord": {
-          "type": "string",
+          "type": "action",
           "selector": "td",
           "control": "property.innerText"
         }
