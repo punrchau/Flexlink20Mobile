@@ -109,7 +109,7 @@
         "properties": {
           "deselectRecord": {
             "type": "action",
-            "selector": ".not()",
+            "selector": ".not('#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected')",
             "control": "action.link"
           }
         }
