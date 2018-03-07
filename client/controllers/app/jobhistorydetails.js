@@ -27,9 +27,7 @@ function app_jobhistorydetails($scope,$rootScope, app) {
     };
     
     $scope.goToHistory=function(){
-        //app.action('servicejobhistory', 'close', this);
         app.call('Home.backToJobHistory', {});
-        //$rootScope.jobHistory="jobHistory";
     };
       
     $scope.goToUnitInfo=function(){
