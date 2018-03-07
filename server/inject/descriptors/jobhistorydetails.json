@@ -102,18 +102,15 @@
       "control": "exists"
     },
     "details": {
-      "type": "array",
-      "selectorAll": "#GDMasterJobHistoryDetails table tbody tr",
-      "items": {
-        "type": "object",
-        "properties": {
-          "deselectRecord": {
-            "type": "action",
-            "control": "action.link",
-            "selector": {
-              "fn": "function(node){return node.classList.remove('k-state-selected')}",
-              "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
-            }
+      "type": "object",
+      "selector": "#GDMasterJobHistoryDetails table tbody tr",
+      "properties": {
+        "deselectRecord": {
+          "type": "action",
+          "control": "action.link",
+          "selector": {
+            "fn": "function(node){return node.classList.remove('k-state-selected')}",
+            "selector": "#GDMasterJobHistoryDetails > div.k-grid-content.k-auto-scrollable > table > tbody > tr.k-state-selected"
           }
         }
       }
