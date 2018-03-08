@@ -48,7 +48,8 @@
                     ng-show="item.isimp=='Yes'" style="font-size:11px"></i>
                 <label class="imptextstyle" ng-show="item.isimp=='Yes'">URGENT</label>
             </div>
-            <div class="row" data-comp-id="row.1" style="padding: 0px;">
+            <div class="row" data-comp-id="row.1"
+                ng-click="goToJobDetails(data.listItems,item,$index);" style="padding: 0px;">
                 <div class="col" data-comp-id="column.1" style="padding: 0px ;">
                     <div class="row" data-comp-id="row.2" style="padding: 0px 10px;">
                         <div class="col" data-comp-id="column.2">
@@ -78,7 +79,8 @@
                         style="padding: 0px; position: relative;  top: 50%;  transform: translateY(-50%);">
                         <div class="col" data-comp-id="column.7" style="padding: 0px;margin-right:20px;">
                             <i class="icon  ion-ios-arrow-right " data-comp-id="icon.2"
-                                ng-click="goToJobDetails(data.listItems,item,$index);" style="font-size:40px;"></i>
+                                ng-click="goToJobDetails(data.listItems,item,$index);"
+                                style="font-size:40px;color:purple"></i>
                         </div>
                     </div>
                 </div>
@@ -91,7 +93,10 @@
                             style="!important;height:18px"></a>
                 </div>
                 <div class="col textstyle">
-                    <lebel>Message</lebel>
+                    <a ng-href="{{'sms:' + item.mobilenumber}}"
+                        style="text-decoration: none !important;">
+                        <lebel class="textstyle">Message</lebel>
+                    </a>
                 </div>
                 <div class="VerticalLineStyle"></div>
                 <div class="col" style="text-align:right">
@@ -100,8 +105,11 @@
                             style="!important;height:18px;">
                     </a>
                 </div>
-                <div class="col textstyle">
-                    <lebel>Call</lebel>
+                <div class="col">
+                    <a ng-href="{{'tel:' + item.mobilenumber}}"
+                        style="text-decoration: none !important;">
+                        <lebel class="textstyle">Call</lebel>
+                    </a>
                 </div>
             </div>
         </div>
