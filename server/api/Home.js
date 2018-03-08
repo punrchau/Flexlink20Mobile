@@ -101,6 +101,11 @@ exports.closePhotoUpload = function(page, params) {
    // page.reload();
 }
 
+exports.backToJobHistory = function(page, params) {
+    page.action('servicejobhistory', 'close');
+    page.action('servicejob', 'actions.viewjobhistory');
+}
+
 
 // exports.on_InvokePhotoUpload = function (page) {
 //     page.action('UnitPhoto','upload');
