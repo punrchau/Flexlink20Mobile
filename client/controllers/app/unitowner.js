@@ -20,11 +20,6 @@ function app_unitowner($scope,$rootScope, app) {
        app.call('Home.unitPhoto', {});
     };
     
-    $scope.goToRemarks=function(){
-        app.action('unitowner', 'close', this);
-        app.call('Home.remarksPage', {});
-    };
-    
     $scope.goToJobInfo=function(){
         app.action('unitowner', 'close', this);
         app.call('Home.viewJobInfo', {});
