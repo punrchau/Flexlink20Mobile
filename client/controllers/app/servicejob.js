@@ -2,8 +2,6 @@ var app = angular.module('app');
 
 app.controller('app_servicejob', app_servicejob);
 
-
-
 app.config( [
     '$compileProvider',
     function( $compileProvider )
