@@ -2,7 +2,7 @@
   "name": "Flexlink20 Mobile",
   "defaultLayout": "phone-portrait",
   "previewToken": "de7aca4a",
-  "uiCommonVersion": "5.2.10",
+  "uiCommonVersion": "5.0.58",
   "id": "flexlink20mobile",
   "previewImageURL": "/previews/de7aca4a-flexlink20mobile/app/servicejobhistory.png",
   "isBuiltInTemplate": false,
