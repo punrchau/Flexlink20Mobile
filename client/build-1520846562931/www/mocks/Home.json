@@ -1,0 +1,110 @@
+{
+  "records": [
+    {
+      "$i": 0,
+      "partReceiveNumber": "PR-000000145",
+      "partOrder": "PO-000000201",
+      "partReceiveDate": "2017-07-14T04:08:33.863",
+      "partReceivedBy": "Mr. Yogesh Jadhav",
+      "partReceivedStatus": "FullyReceive",
+      "partOrderStatus": "ALLPartsReceived"
+    },
+    {
+      "$i": 1,
+      "partReceiveNumber": "PR-000000134",
+      "partOrder": "PO-000000191",
+      "partReceiveDate": "2017-07-06T04:40:33.58",
+      "partReceivedBy": "Mr. shrikant kawatkar",
+      "partReceivedStatus": "FullyReceive",
+      "partOrderStatus": "ALLPartsReceived"
+    },
+    {
+      "$i": 2,
+      "partReceiveNumber": "PR-000000129",
+      "partOrder": "PO-000000185",
+      "partReceiveDate": "2017-07-03T06:30:44.377",
+      "partReceivedBy": "Ms. shradha deshmukh",
+      "partReceivedStatus": "FullyReceive",
+      "partOrderStatus": "ALLPartsReceived"
+    },
+    {
+      "$i": 3,
+      "partReceiveNumber": "PR-000000123",
+      "partOrder": "PO-000000179",
+      "partReceiveDate": "2017-06-30T06:22:13.64",
+      "partReceivedBy": "Mr. Mayur Chabukswar",
+      "partReceivedStatus": "FullyReceive",
+      "partOrderStatus": "ALLPartsReceived"
+    },
+    {
+      "$i": 4,
+      "partReceiveNumber": "PR-000000119",
+      "partOrder": "PO-000000175",
+      "partReceiveDate": "2017-06-30T02:57:11.69",
+      "partReceivedBy": "Mr. shrikant kawatkar",
+      "partReceivedStatus": "FullyReceive",
+      "partOrderStatus": "ALLPartsReceived"
+    },
+    {
+      "$i": 5,
+      "partReceiveNumber": "PR-000000114",
+      "partOrder": "PO-000000170",
+      "partReceiveDate": "2017-06-29T09:07:35.127",
+      "partReceivedBy": "Mr. shrikant kawatkar",
+      "partReceivedStatus": "FullyReceive",
+      "partOrderStatus": "ALLPartsReceived"
+    },
+    {
+      "$i": 6,
+      "partReceiveNumber": "PR-000000107",
+      "partOrder": "PO-000000159",
+      "partReceiveDate": "2017-06-07T11:17:01.63",
+      "partReceivedBy": "Mr. Tushar Paste",
+      "partReceivedStatus": "FullyReceive",
+      "partOrderStatus": "ALLPartsReceived"
+    },
+    {
+      "$i": 7,
+      "partReceiveNumber": "PR-000000096",
+      "partOrder": "PO-000000139",
+      "partReceiveDate": "2017-06-06T11:34:50.533",
+      "partReceivedBy": "Mr. Insiya Harnesswala",
+      "partReceivedStatus": "FullyReceive",
+      "partOrderStatus": "ALLPartsReceived"
+    },
+    {
+      "$i": 8,
+      "partReceiveNumber": "PR-000000086",
+      "partOrder": "PO-000000132",
+      "partReceiveDate": "2017-06-06T05:59:04.07",
+      "partReceivedBy": "Mr. Mayur Chabukswar",
+      "partReceivedStatus": "FullyReceive",
+      "partOrderStatus": "ALLPartsReceived"
+    },
+    {
+      "$i": 9,
+      "partReceiveNumber": "PR-000000081",
+      "partOrder": "PO-000000092",
+      "partReceiveDate": "2017-06-05T09:32:29.37",
+      "partReceivedBy": "Mr. Tushar Paste",
+      "partReceivedStatus": "FullyReceive",
+      "partOrderStatus": "ALLPartsReceived"
+    }
+  ],
+  "selectTabs": [
+    {
+      "$i": 0,
+      "tabName": "Partially Receive Info"
+    },
+    {
+      "$i": 1,
+      "tabName": "Fully Receive Info",
+      "isSelected": true
+    },
+    {
+      "$i": 2,
+      "tabName": "Closed Info"
+    }
+  ],
+  "isHome": true
+}

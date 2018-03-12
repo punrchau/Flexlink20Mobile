@@ -1,0 +1,117 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-nav-bar align-title="" class=" bar-royal" data-comp-id="nav-bar.1">
+        <ion-nav-buttons side="left">
+            <img class="sortIcon" data-img="" ng-click="goToHistory();"
+                ng-src="images/back.png" style="height:21px;margin-top:5px">
+        </ion-nav-buttons>
+        <ion-nav-title class="mainHeader" data-comp-id="nav-title.1">Job History Details</ion-nav-title>
+        <ion-nav-buttons side="right">
+            <img class="sortIcon" data-img=""
+                ng-click="app.action('servicejobhistory', 'close', this)"
+                ng-src="images/home.png">
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-header-bar class="bar-subheader bar-light spaceStyle"
+        data-comp-id="header-bar.1" dynamic-fixed-header="">
+        <div ata-comp-id="text.1" class="menuStyle">
+            <div class="row spaceStyle1">
+                <div class="col spaceStyle">
+                    <img class="sortIcon" data-img="" ng-click="goToJobInfo();"
+                        ng-src="images/information.png">
+                    <div class="iconTextstyle">Job Info</div>
+                </div>
+                <div class="col spaceStyle">
+                    <img class="sortIcon" data-img="" ng-click="goToPhotoUpload();"
+                        ng-src="images/upload.png">
+                    <div class="iconTextstyle">Upload</div>
+                </div>
+                <div class="col spaceStyle">
+                    <img class="sortIcon" data-img="" ng-click="goToRemarks();"
+                        ng-src="images/remarks.png">
+                    <div class="iconTextstyle">Remarks</div>
+                </div>
+                <div class="col spaceStyle">
+                    <img class="sortIcon" data-img="" ng-click="goToUnitOwner();"
+                        ng-src="images/logistics.png">
+                    <div class="iconTextstyle">Logistic</div>
+                </div>
+                <div class="col spaceStyle">
+                    <img class="sortIcon" data-img="" ng-click="goToUnitInfo();"
+                        ng-src="images/unit_info_white.png">
+                    <div class="iconTextstyle">Unit Info</div>
+                </div>
+            </div>
+        </div>
+    </ion-header-bar>
+    <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
+        <ion-list>
+            <div ata-comp-id="text.1" class="headerStyle positive">
+                {{ticketnumber}}-{{ownername}}
+            </div>
+        </ion-list>
+        <ion-list>
+            <div class="muck-up" style="margin:10px;margin-top:5px">
+                <div class="bottom">
+                    <ul class="tasks">
+                        <li class="green">
+                            <div class="labelstyle">SERVICE JOB NUMBER</div>
+                            <div class="textstyle">{{data.jobhistorylist.jobnumber}}</div>
+                        </li>
+                        <li class="green">
+                            <div class="labelstyle">TICKET NUMBER</div>
+                            <div class="textstyle">{{data.jobhistorylist.ticketnumber}}</div>
+                        </li>
+                        <li class="green">
+                            <div class="labelstyle">PROBLEM DESCRIPTION</div>
+                            <div class="textstyle">{{data.jobhistorylist.problemdescription}}</div>
+                        </li>
+                        <li class="green">
+                            <div class="labelstyle">CREATION DATE</div>
+                            <div class="textstyle" ng-bind="data.jobhistorylist.creationdate"></div>
+                        </li>
+                        <li class="green">
+                            <div class="labelstyle">STATUS</div>
+                            <div class="textstyle" ng-bind="data.jobhistorylist.status"></div>
+                        </li>
+                        <li class="green">
+                            <div class="labelstyle">STORE</div>
+                            <div class="textstyle">{{data.jobhistorylist.store}}</div>
+                        </li>
+                        <li class="green">
+                            <div class="labelstyle">JOB PRIORITY</div>
+                            <div class="textstyle">{{data.jobhistorylist.jobpriority}}</div>
+                        </li>
+                        <li class="green">
+                            <div class="labelstyle">WARRANTY STATUS</div>
+                            <div class="textstyle">{{data.jobhistorylist.warrantystatus}}</div>
+                        </li>
+                        <li class="green">
+                            <div class="labelstyle">WARRANTY EXPIRY</div>
+                            <div class="textstyle">{{data.jobhistorylist.warrantyexpiry}}</div>
+                        </li>
+                        <li class="green">
+                            <div class="labelstyle">IMEI</div>
+                            <div class="textstyle">{{data.jobhistorylist.imei}}</div>
+                        </li>
+                        <li class="green">
+                            <div class="labelstyle">PRODUCT MODEL</div>
+                            <div class="textstyle">{{data.jobhistorylist.productmodel}}</div>
+                        </li>
+                        <li class="green">
+                            <div class="labelstyle">UNIT CONDITION</div>
+                            <div class="textstyle">{{data.jobhistorylist.unitcondition}}</div>
+                        </li>
+                        <li class="green">
+                            <div class="labelstyle">PHONE CARRIER</div>
+                            <div class="textstyle">{{data.jobhistorylist.phonecarrier}}</div>
+                        </li>
+                        <li class="green">
+                            <div class="labelstyle">SWAP SERIAL NUMBER</div>
+                            <div class="textstyle">{{data.jobhistorylist.swapserialnumber}}</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>
