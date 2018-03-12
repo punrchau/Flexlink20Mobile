@@ -1,20 +1,15 @@
 var fs = require('fs');
 exports.on_InvokeFlexLink = function (page) {
-     //page.href('http://fl20qa.azurewebsites.net/common/#/home').screen('prehomeloadflexlink');
-     //page.href('http://fl20dev.azurewebsites.net/common/#/home').screen('prehomeloadflexlink');
      page.href('http://fl20commonqa.azurewebsites.net/common/#/home').screen('prehomeloadflexlink');
 }
 exports.on_InvokeOEM2 = function (page) {
     page.action('Home','OEM2').screen('prehomeloadoem');
 }
 exports.on_InvokePartMgmt = function (page) {
-    // page.href('http://fl20dev.azurewebsites.net/lenovo/#/partreceives').screen('prehomeloadjobmgmt');
     page.href('http://fl20commonqa.azurewebsites.net/mobile/#/partreceives').screen('prehomeloadjobmgmt');
 }
 
 exports.on_InvokeServiceJob = function (page) {
-    //page.href('http://fl20dev.azurewebsites.net/lenovo/#/repairjobs').screen('prehomeloadjobmgmt');
-    //page.href('http://fl20commonqa.azurewebsites.net/mobile/#/repairjobs').screen('prehomeloadjobmgmt');
     page.href('http://fl20commonqa.azurewebsites.net/mobile/#/servicejobs').screen('prehomeloadjobmgmt');  
 }
 
@@ -30,7 +25,6 @@ exports.viewRecord = function(page, params) {
 
 exports.viewJobHistoryDetails = function(page, params) {
     page.action('servicejobhistory', 'jobhistory[' + params.index + '].selectRecord');
-    //page.action('servicejob', 'viewRecord');
 }
 
 exports.deleteRecord = function(page, params) {
@@ -40,21 +34,7 @@ exports.deleteRecord = function(page, params) {
 
 exports.goToServiceJob = function (page) {
     var test=page;
-    //page.href('http://fl20commonqa.azurewebsites.net/mobile/#/servicejobs');
-    //page.reload();
 }
-
-// exports.viewJobInfo = function(page, params) {
-//     page.action('jobdetails', 'actions.jobinfo');
-// }
-
-// exports.viewUnitInfo = function(page, params) {
-//     page.action('jobdetails', 'actions.unitinfo');
-// }
-
-// exports.viewUnitOwnerInfo = function(page, params) {
-//     page.action('jobdetails', 'actions.ownerinfo');
-// }
 
 //menu click
 
@@ -84,18 +64,6 @@ exports.unitPhoto = function(page, params) {
 
 //end
 
-// exports.remarksPage = function(page, params) {
-//     page.action('jobdetails', 'actions.servicejobremarks');
-// }
-
-// exports.viewJobHistory = function(page, params) {
-//     page.action('jobdetails', 'actions.viewjobhistory');
-// }
-
-// exports.photoUpload = function(page, params) {
-//     page.action('jobdetails', 'actions.photoupload');
-// }
-
 exports.closePhotoUpload = function(page, params) {
     page.action('photoupload', 'close');
    // page.reload();
@@ -105,11 +73,6 @@ exports.backToJobHistory = function(page, params) {
     page.action('servicejobhistory', 'close');
     page.action('servicejob', 'actions.viewjobhistory');
 }
-
-
-// exports.on_InvokePhotoUpload = function (page) {
-//     page.action('UnitPhoto','upload');
-// }
 
 //upload picture of damaged part to website
 exports.uploadImage = function (page, params) {
@@ -134,19 +97,13 @@ exports.uploadImage = function (page, params) {
 
 }
 
-
-
 exports.unitPhotoSave = function (page, params) {
 
     if(params.base64string==null || params.base64string==undefined){
          page.action('photoupload', 'save');
     }
     else{
-        
-        // page.data(function(data) {
-        //     data.descriptions = params.descriptions;
-        // }).screen('photoupload');
-        
+       
         var base64Data = params.base64string.split(',').pop();
         var date = Date.now();
         var dir = __dirname + "/../servicejobs/";
@@ -163,17 +120,7 @@ exports.unitPhotoSave = function (page, params) {
          
         setTimeout(function () {
             page.uploadFile('input[id=myFile]', fileName);
-            //page.action('photoupload', 'save');
-
-            //page.assignData('input[id=fileDescription]', params.descriptions);
-            // page.assignData(function(data){
-            //     data.descriptions = params.descriptions;
-            // });
-
-            // page.evalAsync(function() {
-            //     document.querySelector('input[id=fileDescription]').value=params.descriptions;
-            // });
-
+            
             page.update('input[id=fileDescription]',params.descriptions);
 
             page.extract('photoupload')
