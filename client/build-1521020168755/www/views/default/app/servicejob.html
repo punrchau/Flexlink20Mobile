@@ -1,0 +1,123 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-nav-bar align-title="" class=" bar-royal" data-comp-id="nav-bar.1">
+        <ion-nav-buttons side="left"></ion-nav-buttons>
+        <ion-nav-title class="mainHeader" data-comp-id="nav-title.1">Pending Job</ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button class="button button-icon labelstyle" data-comp-id="button.1">Logout</button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-header-bar class="bar-subheader bar-light" data-comp-id="header-bar.1"
+        dynamic-fixed-header="">
+        <div class="bar bar-header item-input-inset">
+            <div class="row col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                <!--Search box-->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+                    <label class="item-input-wrapper barStyle"
+                        style="width:80%;background-color:white;border-radius:20px !important">
+                        <i class="icon ion-ios-search royal-icon placeholder-icon barStyle"
+                            style="font-size:20px"></i>
+                        <input class="textstyle" data-comp-id="searchInput.1" ng-model="searchstring"
+                            placeholder="Search" type="search">
+                    </label>
+                </div>
+                <!--Filter box-->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <label class="item item-input item-select-icon royal-icon barStyle"
+                        style="border-radius:20px !important;">
+                        <select class="textstyle sortStyle" ng-model="sortBy">
+                            <option ng-show="true" value="firstname">Name</option>
+                            <option value="pickupaddress">Location</option>
+                            <option value="ticketnumber">Job No</option>
+                            <option value="problemcategory">Problem Description</option>
+                        </select>
+                    </label>
+                </div>
+                <!--Sorting arrow-->
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <img class="sortIcon" data-img="" ng-click="changeIcon()"
+                        ng-src="images/sort_purple.png">
+                </div>
+            </div>
+        </div>
+    </ion-header-bar>
+    <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
+        <div class="card light-bg" data-comp-id="div.1"
+            ng-repeat="item in data.listItems | orderBy:sortFunc:isDescending | filter:searchstring"
+            style="margin: 7px 7px">
+            <div style="text-align: right;margin-right:10px;">
+                <i class="icon fa-icon fa-circle assertive" data-comp-id="icon.1"
+                    ng-show="item.isimp=='Yes'" style="font-size:11px"></i>
+                <label class="imptextstyle" ng-show="item.isimp=='Yes'">URGENT</label>
+            </div>
+            <div class="row" data-comp-id="row.1"
+                ng-click="goToJobDetails(data.listItems,item,$index);" style="padding: 0px;">
+                <div class="col" data-comp-id="column.1" style="padding: 0px ;">
+                    <div class="row" data-comp-id="row.2" style="padding: 0px 10px;">
+                        <div class="col" data-comp-id="column.2">
+                            <label class="labelstyle">ASSIGNED TO</label>
+                            <div class="textstyle" data-comp-id="text.1">{{item.firstname +' '+ item.lastname}}
+                            </div>
+                        </div>
+                        <div class="col" data-comp-id="column.3">
+                            <label class="labelstyle">LOCATION</label>
+                            <div class="textstyle" data-comp-id="text.2" ng-bind="item.pickupaddress"></div>
+                        </div>
+                    </div>
+                    <div class="row" data-comp-id="row.3" style="padding: 5px 10px;">
+                        <div class="col" data-comp-id="column.4">
+                            <label class="labelstyle">ISSUE</label>
+                            <div class="textstyle" data-comp-id="text.3" ng-bind="item.problemcategory"></div>
+                        </div>
+                        <div class="col" data-comp-id="column.5">
+                            <label class="labelstyle">JOB ID</label>
+                            <div class="textstyle" data-comp-id="text.4" ng-bind="item.ticketnumber"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-right col-10" data-comp-id="column.6"
+                    style="padding: 10px;">
+                    <div class="row" data-comp-id="row.4"
+                        style="padding: 0px; position: relative;  top: 50%;  transform: translateY(-50%);">
+                        <div class="col" data-comp-id="column.7"
+                            style="text-align:left;padding: 0px;margin-right:15px;">
+                            <i class="icon ion-ios-arrow-right" data-comp-id="icon.2"
+                                ng-click="goToJobDetails(data.listItems,item,$index);"
+                                style="osition:absolute;right:30px;font-size:20px;color:purple"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lineStyle"></div>
+            <div class="row" style="padding-bottom:.2px;height:35px">
+                <div class="col " style="text-align:right">
+                    <a ng-href="{{'sms:' + item.mobilenumber}}">
+                        <img data-comp-id="image.1" data-img="" ng-src="images/msg.png"
+                            style="!important;height:18px"></a>
+                </div>
+                <div class="col textstyle">
+                    <a ng-href="{{'sms:' + item.mobilenumber}}"
+                        style="text-decoration: none !important;">
+                        <lebel class="textstyle">Message</lebel>
+                    </a>
+                </div>
+                <div class="VerticalLineStyle"></div>
+                <div class="col" style="text-align:right">
+                    <a ng-href="{{'tel:' + item.mobilenumber}}">
+                        <img data-comp-id="image.2" data-img="" ng-src="images/call.png"
+                            style="!important;height:18px;">
+                    </a>
+                </div>
+                <div class="col">
+                    <a ng-href="{{'tel:' + item.mobilenumber}}"
+                        style="text-decoration: none !important;">
+                        <lebel class="textstyle">Call</lebel>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div data-comp-id="div.2" ng-show="data.listItems.length==0"
+            style="text-align:center; margin-top: 10px">
+            <div class=" assertive" data-comp-id="text.5">No Data Available</div>
+        </div>
+    </ion-content>
+</ion-view>

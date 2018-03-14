@@ -1,0 +1,1242 @@
+{
+  "Login": {
+    "type": "object",
+    "properties": {
+      "userName": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
+      },
+      "signIn": {
+        "type": "action"
+      },
+      "signInError": {
+        "type": "string"
+      }
+    }
+  },
+  "Messages": {
+    "type": "object",
+    "properties": {
+      "validationMsg": {
+        "type": "object",
+        "properties": {
+          "msg": {
+            "type": "string"
+          },
+          "ok": {
+            "type": "action"
+          },
+          "isValidationMsg": {
+            "type": "boolean"
+          }
+        }
+      },
+      "confirmationMsg": {
+        "type": "object",
+        "properties": {
+          "msg": {
+            "type": "string"
+          },
+          "ok": {
+            "type": "action"
+          },
+          "cancel": {
+            "type": "action"
+          },
+          "isConfirmMsg": {
+            "type": "boolean"
+          }
+        }
+      },
+      "isPartReceiveDetail": {
+        "type": "boolean",
+        "selectContains": "PART RECEIVE DETAIL"
+      },
+      "isChangePartQuantity": {
+        "type": "boolean",
+        "selectContains": "Part Quantity Change"
+      },
+      "isUploadPhoto": {
+        "type": "boolean",
+        "selectContains": "Upload Photo for Damaged Part"
+      }
+    }
+  },
+  "Home": {
+    "type": "object",
+    "properties": {
+      "records": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "partReceiveNumber": {
+              "type": "string"
+            },
+            "partOrder": {
+              "type": "string"
+            },
+            "partReceiveDate": {
+              "type": "string"
+            },
+            "partReceivedBy": {
+              "type": "string"
+            },
+            "partReceivedStatus": {
+              "type": "string"
+            },
+            "partOrderStatus": {
+              "type": "string"
+            },
+            "selectRecord": {
+              "type": "action"
+            }
+          }
+        }
+      },
+      "selectTabs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "clickTab": {
+              "type": "action"
+            },
+            "tabName": {
+              "type": "string"
+            },
+            "isSelected": {
+              "type": "boolean"
+            }
+          }
+        }
+      },
+      "OEM2": {
+        "type": "action",
+        "selectContains": "OEM2"
+      },
+      "editRecord": {
+        "type": "action",
+        "selectContains": "EDIT"
+      },
+      "flexLink20": {
+        "type": "action"
+      }
+    }
+  },
+  "ChangePartQuantity": {
+    "type": "object",
+    "properties": {
+      "partNumber": {
+        "type": "string"
+      },
+      "orderedQuantity": {
+        "type": "string"
+      },
+      "binMaster": {
+        "type": "select"
+      },
+      "alternativePart": {
+        "type": "select"
+      },
+      "receivedQuantity": {
+        "type": "string"
+      },
+      "damagedQuantity": {
+        "type": "string"
+      },
+      "excessQuantity": {
+        "type": "string"
+      },
+      "lostQuantity": {
+        "type": "string"
+      },
+      "update": {
+        "type": "action",
+        "selectContains": "Update Received Quantity"
+      },
+      "close": {
+        "type": "action",
+        "selectContains": "Close"
+      }
+    }
+  },
+  "UploadImage": {
+    "type": "object",
+    "properties": {
+      "cancel": {
+        "type": "action",
+        "selectContains": "Cancel"
+      },
+      "add": {
+        "type": "action",
+        "selectContains": "Add"
+      },
+      "description": {
+        "type": "string"
+      }
+    }
+  },
+  "PartReceiveDetails": {
+    "type": "object",
+    "properties": {
+      "partInfo": {
+        "type": "object",
+        "properties": {
+          "info": {
+            "type": "object",
+            "properties": {
+              "PRNumber": {
+                "type": "string"
+              },
+              "PO": {
+                "type": "string"
+              },
+              "remarks": {
+                "type": "string"
+              },
+              "PRDate": {
+                "type": "date",
+                "format": "MM/DD/YYYY"
+              },
+              "AWBNumber": {
+                "type": "string"
+              }
+            }
+          },
+          "partDetails": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "editQuantity": {
+                  "type": "action"
+                },
+                "partNumber": {
+                  "type": "string"
+                },
+                "partDescription": {
+                  "type": "string"
+                },
+                "receiveQty": {
+                  "type": "string"
+                },
+                "shortageQty": {
+                  "type": "string"
+                },
+                "damagedQty": {
+                  "type": "string"
+                },
+                "excessQty": {
+                  "type": "string"
+                },
+                "lostQty": {
+                  "type": "string"
+                },
+                "unitPrice": {
+                  "type": "string"
+                },
+                "totalAmount": {
+                  "type": "string"
+                },
+                "binName": {
+                  "type": "string"
+                },
+                "partID": {
+                  "type": "string"
+                },
+                "alternativePartNumber": {
+                  "type": "string"
+                },
+                "alternativePartID": {
+                  "type": "string"
+                },
+                "alternativeLSmapID": {
+                  "type": "string"
+                },
+                "isEditQuantity": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      },
+      "partDiscrepancy": {
+        "type": "object",
+        "properties": {
+          "details": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "upload": {
+                  "type": "action"
+                },
+                "partNumber": {
+                  "type": "string"
+                },
+                "partDescription": {
+                  "type": "string"
+                },
+                "fileName": {
+                  "type": "string"
+                },
+                "fileDescription": {
+                  "type": "string"
+                },
+                "fileType": {
+                  "type": "string"
+                },
+                "DateTime": {
+                  "type": "string"
+                },
+                "photoType": {
+                  "type": "string"
+                },
+                "isUpload": {
+                  "type": "boolean"
+                },
+                "selectRecord": {
+                  "type": "action"
+                }
+              }
+            }
+          },
+          "download": {
+            "type": "action",
+            "selectContains": "Download"
+          },
+          "delete": {
+            "type": "action",
+            "selectContains": "Delete"
+          },
+          "isDownloadEnabled": {
+            "type": "boolean",
+            "selectContains": "Download"
+          }
+        }
+      },
+      "selectTab": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "tabName": {
+              "type": "string"
+            },
+            "isSelected": {
+              "type": "boolean"
+            },
+            "clickTab": {
+              "type": "action"
+            }
+          }
+        }
+      },
+      "actions": {
+        "type": "object",
+        "properties": {
+          "save": {
+            "type": "action",
+            "selectContains": "Save Receive"
+          },
+          "update": {
+            "type": "action",
+            "selectContains": "Update Inventory"
+          },
+          "cancel": {
+            "type": "action",
+            "selectContains": "Cancel"
+          },
+          "isUpdateDisable": {
+            "type": "boolean",
+            "selectContains": "Update Inventory"
+          },
+          "isSaveDisable": {
+            "type": "boolean",
+            "selectContains": "Save Receive"
+          }
+        }
+      }
+    }
+  },
+  "servicejob": {
+    "type": "object",
+    "comment": "ListView",
+    "properties": {
+      "listItems": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "action": {
+              "type": "action"
+            },
+            "ticketnumber": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "firstname": {
+              "type": "string"
+            },
+            "problemcategory": {
+              "type": "string"
+            },
+            "lastname": {
+              "type": "string"
+            },
+            "mobilenumber": {
+              "type": "string"
+            },
+            "pickupaddress": {
+              "type": "string"
+            },
+            "isimp": {
+              "type": "string"
+            },
+            "selectRecord": {
+              "type": "action"
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      },
+      "selectTabs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "tabName": {
+              "type": "string"
+            },
+            "isSelected": {
+              "type": "boolean"
+            },
+            "clickTab": {
+              "type": "action"
+            }
+          }
+        }
+      },
+      "searchstring": {
+        "type": "string"
+      },
+      "search": {
+        "type": "action"
+      },
+      "viewRecord": {
+        "type": "action"
+      },
+      "actions": {
+        "type": "object",
+        "properties": {
+          "unitinfo": {
+            "type": "action"
+          },
+          "viewjobhistory": {
+            "type": "action"
+          },
+          "jobinfo": {
+            "type": "action"
+          },
+          "ownerinfo": {
+            "type": "action"
+          },
+          "servicejobremarks": {
+            "type": "action"
+          },
+          "photoupload": {
+            "type": "action"
+          }
+        }
+      }
+    }
+  },
+  "menu": {
+    "type": "object",
+    "comment": "",
+    "properties": {
+      "logout": {
+        "type": "string"
+      }
+    }
+  },
+  "repairjob": {
+    "type": "object",
+    "comment": "Forms",
+    "properties": {
+      "string": {
+        "type": "string",
+        "label": "TextInput",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "string2": {
+        "type": "string",
+        "label": "TextInput",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "string3": {
+        "type": "string",
+        "label": "TextArea",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "multiSelectData": {
+        "type": "select",
+        "label": "MultiSelect",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "multiSelectData2": {
+        "type": "select",
+        "label": "MultiSelect",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "radioData": {
+        "type": "select",
+        "label": "Radio"
+      },
+      "boolean": {
+        "type": "boolean",
+        "label": "CheckBoxes",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "boolean2": {
+        "type": "boolean",
+        "label": "CheckBoxes",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "date": {
+        "type": "date",
+        "label": "Date",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "time": {
+        "type": "time",
+        "label": "Time",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "name": {
+        "type": "string",
+        "label": "Name",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "email": {
+        "type": "string",
+        "label": "Email",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "phone": {
+        "type": "string",
+        "label": "Phone",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "submit": {
+        "type": "action"
+      }
+    }
+  },
+  "jobdetails": {
+    "type": "object",
+    "comment": "Categories",
+    "properties": {
+      "categories": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "categoryName": {
+              "type": "string"
+            },
+            "icon": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            },
+            "action": {
+              "type": "action"
+            }
+          }
+        }
+      },
+      "actions": {
+        "type": "object",
+        "properties": {
+          "cancel": {
+            "type": "action"
+          },
+          "unitinfo": {
+            "type": "action"
+          },
+          "viewjobhistory": {
+            "type": "action"
+          },
+          "jobinfo": {
+            "type": "action"
+          },
+          "ownerinfo": {
+            "type": "action"
+          },
+          "btnviewjob": {
+            "type": "action"
+          },
+          "servicejobremarks": {
+            "type": "action"
+          },
+          "photoupload": {
+            "type": "action"
+          }
+        }
+      },
+      "remarks": {
+        "type": "object",
+        "properties": {
+          "categoryname": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          }
+        }
+      },
+      "jobinfos": {
+        "type": "object",
+        "properties": {
+          "ticketnumber": {
+            "type": "string"
+          },
+          "categoryname": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          }
+        }
+      },
+      "ownerinfos": {
+        "type": "object",
+        "properties": {
+          "categoryname": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          }
+        }
+      },
+      "viewhistorys": {
+        "type": "object",
+        "properties": {
+          "categoryname": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          }
+        }
+      },
+      "photos": {
+        "type": "object",
+        "properties": {
+          "categoryname": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          }
+        }
+      },
+      "unitinfos": {
+        "type": "object",
+        "properties": {
+          "categoryname": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          }
+        }
+      },
+      "title": {
+        "type": "string"
+      }
+    }
+  },
+  "details": {
+    "type": "object",
+    "comment": "Messages",
+    "properties": {
+      "messages": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "subject": {
+              "type": "string",
+              "label": "Subject"
+            },
+            "from": {
+              "type": "string",
+              "label": "From"
+            },
+            "date": {
+              "type": "string",
+              "label": "Date"
+            },
+            "messageContent": {
+              "type": "string",
+              "label": "MessageContent"
+            },
+            "action": {
+              "type": "action"
+            }
+          }
+        },
+        "label": "Messages1"
+      }
+    }
+  },
+  "jobinfo": {
+    "type": "object",
+    "comment": "Forms",
+    "properties": {
+      "jobnumber": {
+        "type": "string",
+        "label": "TextInput",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "ticketnumber": {
+        "type": "string",
+        "label": "TextInput",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "jobcreationdate": {
+        "type": "string",
+        "label": "Date",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "repairstatus": {
+        "type": "string",
+        "label": "TextArea",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "priority": {
+        "type": "string",
+        "label": "Name",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "problemcategory": {
+        "type": "string",
+        "label": "Email",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "problemdescription": {
+        "type": "string",
+        "label": "Phone",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "isadp": {
+        "type": "string"
+      },
+      "servicetype": {
+        "type": "string",
+        "label": "MultiSelect",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "servicemodel": {
+        "type": "string",
+        "label": "MultiSelect",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "softwareversion": {
+        "type": "string",
+        "label": "Radio"
+      },
+      "cancel": {
+        "type": "action"
+      }
+    }
+  },
+  "unitinfo": {
+    "type": "object",
+    "comment": "Forms",
+    "properties": {
+      "serialnumber": {
+        "type": "string",
+        "label": "TextInput",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "machinetype": {
+        "type": "string",
+        "label": "TextInput",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "imei1": {
+        "type": "string",
+        "label": "TextArea",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "imei2": {
+        "type": "string",
+        "label": "MultiSelect",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "manufacturer": {
+        "type": "string",
+        "label": "MultiSelect",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "productcategory": {
+        "type": "string",
+        "label": "Radio"
+      },
+      "productmodel": {
+        "type": "string",
+        "label": "CheckBoxes",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "skuormtm": {
+        "type": "string",
+        "label": "CheckBoxes",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "warrantystatus": {
+        "type": "string",
+        "label": "Date",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "warrantyexpirydate": {
+        "type": "string",
+        "label": "Time",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "dateofpurchase": {
+        "type": "string",
+        "label": "Name",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "cancel": {
+        "type": "action"
+      }
+    }
+  },
+  "unitowner": {
+    "type": "object",
+    "comment": "TableView",
+    "properties": {
+      "pickupaddress1": {
+        "type": "string"
+      },
+      "pickupaddress2": {
+        "type": "string"
+      },
+      "pickupcity": {
+        "type": "string"
+      },
+      "pickupstate": {
+        "type": "string"
+      },
+      "pickupzipcode": {
+        "type": "string"
+      },
+      "pickupcountry": {
+        "type": "string"
+      },
+      "deliverymethod": {
+        "type": "string"
+      },
+      "deliveryaddress1": {
+        "type": "string"
+      },
+      "deliveryaddress2": {
+        "type": "string"
+      },
+      "deliverycity": {
+        "type": "string"
+      },
+      "deliverystate": {
+        "type": "string"
+      },
+      "deliverycountry": {
+        "type": "string"
+      },
+      "deliveryzipcode": {
+        "type": "string"
+      },
+      "close": {
+        "type": "action"
+      },
+      "isdeliverysameaspickup": {
+        "type": "boolean"
+      }
+    }
+  },
+  "servicejobremarks": {
+    "type": "object",
+    "comment": "Forms",
+    "properties": {
+      "additionalinformation": {
+        "type": "string",
+        "label": "TextInput",
+        "update": {
+          "type": "action",
+          "action": [
+            "submit"
+          ]
+        }
+      },
+      "save": {
+        "type": "action"
+      },
+      "remarklist": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "jobnumber": {
+              "type": "string"
+            },
+            "remark": {
+              "type": "string"
+            },
+            "createddate": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "close": {
+        "type": "action"
+      }
+    }
+  },
+  "servicejobhistory": {
+    "type": "object",
+    "comment": "Messages",
+    "properties": {
+      "jobhistory": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "action": {
+              "type": "action"
+            },
+            "repairdate": {
+              "type": "string",
+              "label": "Subject"
+            },
+            "issuedescription": {
+              "type": "string",
+              "label": "From"
+            },
+            "status": {
+              "type": "string",
+              "label": "Date"
+            },
+            "selectRecord": {
+              "type": "action"
+            }
+          }
+        },
+        "label": "Messages1"
+      },
+      "close": {
+        "type": "action"
+      }
+    }
+  },
+  "jobhistorydetails": {
+    "type": "object",
+    "comment": "Messages",
+    "properties": {
+      "jobhistorylist": {
+        "type": "object",
+        "properties": {
+          "jobnumber": {
+            "type": "string"
+          },
+          "ticketnumber": {
+            "type": "string"
+          },
+          "problemdescription": {
+            "type": "string"
+          },
+          "creationdate": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "store": {
+            "type": "string"
+          },
+          "jobpriority": {
+            "type": "string"
+          },
+          "warrantystatus": {
+            "type": "string"
+          },
+          "warrantyexpiry": {
+            "type": "string"
+          },
+          "imei": {
+            "type": "string"
+          },
+          "productmodel": {
+            "type": "string"
+          },
+          "unitcondition": {
+            "type": "string"
+          },
+          "phonecarrier": {
+            "type": "string"
+          },
+          "swapserialnumber": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "photoupload": {
+    "type": "object",
+    "comment": "DetailsView",
+    "properties": {
+      "close": {
+        "type": "action",
+        "label": "Title"
+      },
+      "save": {
+        "type": "action",
+        "label": "DescriptShort"
+      },
+      "attachementcontent": {
+        "type": "string",
+        "update": {
+          "type": "action",
+          "action": [
+            "action"
+          ]
+        }
+      },
+      "descriptions": {
+        "type": "string",
+        "label": "Description"
+      }
+    }
+  },
+  "unitphoto": {
+    "type": "object",
+    "comment": "UserProfile",
+    "properties": {
+      "upload": {
+        "type": "action"
+      },
+      "cancel": {
+        "type": "action"
+      }
+    }
+  },
+  "menu1": {
+    "type": "object",
+    "comment": "SlideOutMenu",
+    "properties": {
+      "sideMenuGroups": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "sideMenuItems": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "itemName": {
+                    "type": "string"
+                  },
+                  "action": {
+                    "type": "action"
+                  }
+                }
+              }
+            },
+            "groupName": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      },
+      "logout": {
+        "type": "action"
+      }
+    }
+  }
+}

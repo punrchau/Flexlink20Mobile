@@ -1,0 +1,34 @@
+{
+  "messages": [
+    {
+      "subject": "Subject Line 1",
+      "from": "from1@test.com",
+      "date": "Dec 01, 2016",
+      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "subject": "Subject Line 2",
+      "from": "from2@test.com",
+      "date": "Dec 01, 2016",
+      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "subject": "Subject Line 3",
+      "from": "from3@test.com",
+      "date": "Dec 01, 2016",
+      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "subject": "Subject Line 4",
+      "from": "from4@test.com",
+      "date": "Dec 01, 2016",
+      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "subject": "Subject Line 5",
+      "from": "from5@test.com",
+      "date": "Dec 01, 2016",
+      "messageContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ]
+}
