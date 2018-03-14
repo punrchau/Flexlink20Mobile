@@ -1,0 +1,27 @@
+{
+  "jobinfos": {
+    "categoryName": "Job Info",
+    "image": ""
+  },
+  "remarks": {
+    "categoryName": "Remarks",
+    "image": "images/jobdetails/Remarks.png"
+  },
+  "ownerinfos": {
+    "categoryName": "Owner Info",
+    "image": "images/jobdetails/Owner_Info.jpg"
+  },
+  "viewhistorys": {
+    "categoryName": "Job History",
+    "image": "images/jobdetails/History.jpg"
+  },
+  "photos": {
+    "categoryName": "Photo",
+    "image": "images/jobdetails/Photo.jpg"
+  },
+  "unitinfos": {
+    "categoryName": "Unit Info",
+    "image": "images/jobdetails/unit_info.png"
+  },
+  "title": "my servicejob"
+}

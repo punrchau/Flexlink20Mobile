@@ -1,0 +1,166 @@
+{
+  "id": "app",
+  "name": "Flexlink20 Mobile",
+  "startScreen": "app.servicejobhistory",
+  "screens": [
+    {
+      "id": "menu",
+      "name": "menu",
+      "sourceAppId": "_blank",
+      "sourceScreenId": "app.menu",
+      "model": "menu"
+    },
+    {
+      "id": "multiselect",
+      "name": "multiselect",
+      "sourceAppId": "_blank",
+      "sourceScreenId": "app.multiselect"
+    },
+    {
+      "id": "login",
+      "name": "Login",
+      "sourceScreenId": "app.login.loginconfident",
+      "sourceAppId": "universaltemplates",
+      "model": "Login"
+    },
+    {
+      "id": "home",
+      "name": "Home",
+      "sourceScreenId": "app.home.homecool",
+      "sourceAppId": "universaltemplates",
+      "model": "Home"
+    },
+    {
+      "id": "partreceivedetails",
+      "name": "Part Receive Details",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank",
+      "model": "PartReceiveDetails"
+    },
+    {
+      "id": "changepartquantity",
+      "name": "Change Part Quantity",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank",
+      "model": "ChangePartQuantity"
+    },
+    {
+      "id": "uploadimage",
+      "name": "Upload Image",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank",
+      "model": "UploadImage"
+    },
+    {
+      "id": "prehomeloadflexlink",
+      "name": "preHome Load Flexlink",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    },
+    {
+      "id": "prehomeloadoem",
+      "name": "preHome Load OEM",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    },
+    {
+      "id": "prehomeloadjobmgmt",
+      "name": "preHome Load Job Mgmt",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
+    },
+    {
+      "id": "servicejob",
+      "name": "ServiceJob",
+      "sourceScreenId": "app.listview.listviewcool",
+      "sourceAppId": "universaltemplates",
+      "model": "servicejob"
+    },
+    {
+      "id": "repairjob",
+      "name": "RepairJob",
+      "sourceScreenId": "app.formsmall.formsmallclassic",
+      "sourceAppId": "universaltemplates",
+      "model": "repairjob"
+    },
+    {
+      "id": "jobdetails",
+      "name": "JobDetails",
+      "sourceScreenId": "app.categories.categoriescaptivating",
+      "sourceAppId": "universaltemplates",
+      "model": "jobdetails"
+    },
+    {
+      "id": "details",
+      "name": "Details",
+      "sourceScreenId": "app.messagesinbox.messagescaptivating",
+      "sourceAppId": "universaltemplates",
+      "model": "details"
+    },
+    {
+      "id": "jobinfo",
+      "name": "JobInfo",
+      "sourceScreenId": "app.formsmall.formsmallcool",
+      "sourceAppId": "universaltemplates",
+      "model": "jobinfo"
+    },
+    {
+      "id": "unitinfo",
+      "name": "UnitInfo",
+      "sourceScreenId": "app.formsmall.formsmallclassic",
+      "sourceAppId": "universaltemplates",
+      "model": "unitinfo"
+    },
+    {
+      "id": "unitowner",
+      "name": "UnitOwner",
+      "sourceScreenId": "app.tableview.tabledatacaptivating",
+      "sourceAppId": "universaltemplates",
+      "model": "unitowner"
+    },
+    {
+      "id": "servicejobremarks",
+      "name": "ServiceJobRemarks",
+      "sourceScreenId": "app.formsmall.formsmallcool",
+      "sourceAppId": "universaltemplates",
+      "model": "servicejobremarks"
+    },
+    {
+      "id": "servicejobhistory",
+      "name": "ServiceJobHistory",
+      "sourceScreenId": "app.messagesinbox.messagescaptivating",
+      "sourceAppId": "universaltemplates",
+      "model": "servicejobhistory"
+    },
+    {
+      "id": "jobhistorydetails",
+      "name": "JobHistoryDetails",
+      "sourceScreenId": "app.messagesinbox.messagescaptivating",
+      "sourceAppId": "universaltemplates",
+      "model": "jobhistorydetails"
+    },
+    {
+      "id": "photoupload",
+      "name": "PhotoUpload",
+      "sourceScreenId": "app.detailsview.detailsviewcool",
+      "sourceAppId": "universaltemplates",
+      "model": "photoupload"
+    },
+    {
+      "id": "unitphoto",
+      "name": "UnitPhoto",
+      "sourceScreenId": "app.userprofile.userprofileclassic",
+      "sourceAppId": "universaltemplates",
+      "model": "unitphoto"
+    },
+    {
+      "id": "menu1",
+      "name": "menu1",
+      "sourceScreenId": "app.slideoutmenu.sidemenuclassic",
+      "sourceAppId": "universaltemplates",
+      "model": "menu1"
+    }
+  ],
+  "sourceAppId": "_blank",
+  "sourceScreenId": "app"
+}
