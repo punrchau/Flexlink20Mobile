@@ -74,6 +74,7 @@ exports.backToJobHistory = function(page, params) {
     page.action('servicejob', 'actions.viewjobhistory');
 }
 
+
 //upload picture of damaged part to website
 exports.uploadImage = function (page, params) {
     var base64Data = params.base64string.split(',').pop();
@@ -120,10 +121,9 @@ exports.unitPhotoSave = function (page, params) {
          
         setTimeout(function () {
             page.uploadFile('input[id=myFile]', fileName);
-            
-            page.update('input[id=fileDescription]',params.descriptions);
 
-            page.extract('photoupload')
+             page.update('input[id=fileDescription]',params.descriptions);
+             page.extract('photoupload')
             .data(function (data) {
                 data.descriptions = params.descriptions;
                 page.action('photoupload', 'save');
