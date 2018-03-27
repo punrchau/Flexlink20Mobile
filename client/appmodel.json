@@ -5,14 +5,14 @@
       "password": {
         "type": "string"
       },
-      "signInError": {
-        "type": "string"
-      },
       "username": {
         "type": "string"
       },
       "submit": {
         "type": "action"
+      },
+      "errorMessage": {
+        "type": "string"
       }
     }
   },
