@@ -2,6 +2,7 @@ angular.module('app').controller('app', app);
 
 function app($scope, app, $ionicPopup) {
     'use strict';
+     app.loginModel = 'Login';
 
     $scope.showPopup = function (data) {
 
