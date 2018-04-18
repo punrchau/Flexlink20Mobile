@@ -15,7 +15,11 @@ function app($scope, app, $ionicPopup) {
             screen.orientation.lock('portrait');
         }
         
-     
+app.loginScreen = 'app.Login';
+app.loginModel = 'Login';
+app.loginAction = 'submit';
+app.loginErrorField = 'errorMessage';
+app.loginIsAction = true;
 
 
     $scope.showPopup = function (data) {
@@ -80,8 +84,3 @@ function app($scope, app, $ionicPopup) {
     }
 
 }
-app.loginScreen = 'app.Login';
-app.loginModel = 'Login';
-app.loginAction = 'submit';
-app.loginErrorField = 'errorMessage';
-app.loginIsAction = true;
