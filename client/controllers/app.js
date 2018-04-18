@@ -16,11 +16,7 @@ function app($scope, app, $ionicPopup) {
         }
         
      
-app.loginScreen = 'app.Login';
-app.loginModel = 'Login';
-app.loginAction = 'submit';
-app.loginErrorField = 'errorMessage';
-app.loginIsAction = true;
+
 
     $scope.showPopup = function (data) {
 
@@ -84,3 +80,8 @@ app.loginIsAction = true;
     }
 
 }
+app.loginScreen = 'app.Login';
+app.loginModel = 'Login';
+app.loginAction = 'submit';
+app.loginErrorField = 'errorMessage';
+app.loginIsAction = true;
