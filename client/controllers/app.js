@@ -15,7 +15,7 @@ function app($scope, app, $ionicPopup) {
             screen.orientation.lock('portrait');
         }
         
-app.loginScreen = 'app.Login';
+app.loginScreen = 'app.login';
 app.loginModel = 'Login';
 app.loginAction = 'submit';
 app.loginErrorField = 'errorMessage';
