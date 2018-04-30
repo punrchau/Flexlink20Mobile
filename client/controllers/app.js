@@ -16,7 +16,7 @@ function app($scope, app, $ionicPopup) {
         }
         
 //app.loginScreen = 'app.login';
-//app.loginModel = 'Login';
+app.loginModel = 'Login';
 /*app.loginAction = 'submit';
 app.loginErrorField = 'errorMessage';*/
 //app.loginIsAction = true;
