@@ -1,15 +1,26 @@
-var app = angular.module('app');
+//var app = angular.module('app');
 
-app.controller('app_servicejob', app_servicejob);
+//app.controller('app_servicejob', app_servicejob);
+angular.module('app').controller('app_servicejob', app_servicejob);
 
-app.config( [
+/*
+
+angular.module('app').controller('app_repairjob', app_repairjob);
+function app_repairjob($scope, app) {
+    'use strict';
+    $scope.chart.label='Ram Chart';
+    app.init($scope);
+}
+*/
+
+/*app.config( [
     '$compileProvider',
     function( $compileProvider )
     {   
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|tel|sms):/);
         // Angular before v1.2 uses $compileProvider.urlSanitizationWhitelist(...)
     }
-    ]);
+    ]);*/
     
 function app_servicejob($scope,$rootScope, app) {
     'use strict';
