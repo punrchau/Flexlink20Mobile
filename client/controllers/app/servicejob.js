@@ -63,7 +63,7 @@ function app_servicejob($scope,$rootScope, app) {
     
     $scope.makePhoneCall = function(phone) {
         if (window) {
-            window.open('tel:9894609744','_blank');
+            window.open('tel:9894609744','_system');
         }  
     }
     
