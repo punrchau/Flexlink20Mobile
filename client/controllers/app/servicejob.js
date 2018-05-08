@@ -61,7 +61,12 @@ function app_servicejob($scope,$rootScope, app) {
         return token.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
     }
     
-   
+       $scope.makePhoneCall = function(phone) {
+        if (window) {
+            window.open('tel:9894609744', '_system');
+        }  
+    }
+    
     $scope.goToJobDetails = function (listItems,item,index) {
         
         $scope.nlistItme=listItems;
@@ -109,9 +114,5 @@ function app_servicejob($scope,$rootScope, app) {
         app.call('Home.viewRecord',{'index':index});
     }*/
     
-    $scope.makePhoneCall = function(phone) {
-        if (window) {
-            window.open('tel:9894609744', '_system');
-        }  
-    }
+
 }
