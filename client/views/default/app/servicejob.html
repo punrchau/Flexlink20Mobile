@@ -102,18 +102,13 @@
                     </a>
                 </div>
                 <div class="VerticalLineStyle"></div>
-                <div class="col" style="text-align:right">
-                    <a ng-click="makePhoneCall()">
-                        <!--//"{{'tel:' + item.mobilenumber}}" -->
-                        <img data-comp-id="image.2" data-img="" ng-src="images/call.png"
-                            style="!important;height:18px;">
-                    </a>
+                <div class="col" ng-click="makePhoneCall()" style="text-align:right">
+                    <!--//"{{'tel:' + item.mobilenumber}}" -->
+                    <img data-comp-id="image.2" data-img="" ng-src="images/call.png"
+                        style="!important;height:18px;">
                 </div>
-                <div class="col">
-                    <a ng-href="{{'tel:' + item.mobilenumber}}"
-                        style="text-decoration: none !important;">
-                        <label class="textstyle">Call</label>
-                    </a>
+                <div class="col" ng-click="makePhoneCall()">
+                    <label class="textstyle">Call</label>
                 </div>
             </div>
         </div>
