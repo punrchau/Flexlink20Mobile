@@ -1,4 +1,10 @@
-angular.module('app').service('$appEventHandler', function ($rootScope, $injector) {
+angular.module('app').config( 
+    function( $compileProvider )
+    {   
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|tel|sms):/);
+        // Angular before v1.2 uses $compileProvider.urlSanitizationWhitelist(...)
+    }
+    ).service('$appEventHandler', function ($rootScope, $injector) {
     'use strict';
     // This contains methods that can override the default app behavior.
 
@@ -11,6 +17,16 @@ angular.module('app').service('$appEventHandler', function ($rootScope, $injecto
         // Return null or undefined if no data needs to be sent to the server.
     };
 
+
+/*
+app.config( 
+    function( $compileProvider )
+    {   
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|tel|sms):/);
+        // Angular before v1.2 uses $compileProvider.urlSanitizationWhitelist(...)
+    }
+    );
+*/
     this.initializeUI = function(params) {
         var app = $injector.get('app');
         // This method is used to initialize the UI based on initial data
