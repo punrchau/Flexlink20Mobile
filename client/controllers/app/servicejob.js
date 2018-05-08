@@ -108,4 +108,10 @@ function app_servicejob($scope,$rootScope, app) {
     /*$scope.viewRecord = function(index){
         app.call('Home.viewRecord',{'index':index});
     }*/
+    
+    $scope.makePhoneCall = function(phone) {
+        if (window) {
+            window.open('tel:9894609744', '_system');
+        }  
+    }
 }
