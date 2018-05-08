@@ -61,7 +61,7 @@ function app_servicejob($scope,$rootScope, app) {
         return token.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
     }
     
-       $scope.makePhoneCall = function(phone) {
+    $scope.makePhoneCall = function(phone) {
         if (window) {
             window.open('tel:9894609744', '_system');
         }  
