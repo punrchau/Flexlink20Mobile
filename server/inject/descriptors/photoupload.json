@@ -30,7 +30,7 @@
       "control": "exists",
       "selector": {
         "fn": "function(node){if(document.activeElement.id=='fileUpload'||document.activeElement.id=='fileDescription'){return true}else{return false}}",
-        "selector": "body"
+        "selector": ""
       }
     },
     "descriptions": {
