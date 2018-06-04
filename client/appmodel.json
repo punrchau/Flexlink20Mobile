@@ -64,68 +64,6 @@
       }
     }
   },
-  "Home": {
-    "type": "object",
-    "properties": {
-      "records": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "partReceiveNumber": {
-              "type": "string"
-            },
-            "partOrder": {
-              "type": "string"
-            },
-            "partReceiveDate": {
-              "type": "string"
-            },
-            "partReceivedBy": {
-              "type": "string"
-            },
-            "partReceivedStatus": {
-              "type": "string"
-            },
-            "partOrderStatus": {
-              "type": "string"
-            },
-            "selectRecord": {
-              "type": "action"
-            }
-          }
-        }
-      },
-      "selectTabs": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "clickTab": {
-              "type": "action"
-            },
-            "tabName": {
-              "type": "string"
-            },
-            "isSelected": {
-              "type": "boolean"
-            }
-          }
-        }
-      },
-      "OEM2": {
-        "type": "action",
-        "selectContains": "OEM2"
-      },
-      "editRecord": {
-        "type": "action",
-        "selectContains": "EDIT"
-      },
-      "flexLink20": {
-        "type": "action"
-      }
-    }
-  },
   "ChangePartQuantity": {
     "type": "object",
     "properties": {
