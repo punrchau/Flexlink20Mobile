@@ -24,13 +24,6 @@
       "model": "Login"
     },
     {
-      "id": "home",
-      "name": "Home",
-      "sourceScreenId": "app.home.homecool",
-      "sourceAppId": "universaltemplates",
-      "model": "Home"
-    },
-    {
       "id": "changepartquantity",
       "name": "Change Part Quantity",
       "sourceScreenId": "app.blank",
