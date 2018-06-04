@@ -64,43 +64,6 @@
       }
     }
   },
-  "ChangePartQuantity": {
-    "type": "object",
-    "properties": {
-      "partNumber": {
-        "type": "string"
-      },
-      "orderedQuantity": {
-        "type": "string"
-      },
-      "binMaster": {
-        "type": "select"
-      },
-      "alternativePart": {
-        "type": "select"
-      },
-      "receivedQuantity": {
-        "type": "string"
-      },
-      "damagedQuantity": {
-        "type": "string"
-      },
-      "excessQuantity": {
-        "type": "string"
-      },
-      "lostQuantity": {
-        "type": "string"
-      },
-      "update": {
-        "type": "action",
-        "selectContains": "Update Received Quantity"
-      },
-      "close": {
-        "type": "action",
-        "selectContains": "Close"
-      }
-    }
-  },
   "UploadImage": {
     "type": "object",
     "properties": {
