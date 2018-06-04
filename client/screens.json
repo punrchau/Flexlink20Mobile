@@ -105,13 +105,6 @@
       "model": "photoupload"
     },
     {
-      "id": "unitphoto",
-      "name": "UnitPhoto",
-      "sourceScreenId": "app.userprofile.userprofileclassic",
-      "sourceAppId": "universaltemplates",
-      "model": "unitphoto"
-    },
-    {
       "id": "menu1",
       "name": "menu1",
       "sourceScreenId": "app.slideoutmenu.sidemenuclassic",
