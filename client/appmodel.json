@@ -727,18 +727,6 @@
       }
     }
   },
-  "unitphoto": {
-    "type": "object",
-    "comment": "UserProfile",
-    "properties": {
-      "upload": {
-        "type": "action"
-      },
-      "cancel": {
-        "type": "action"
-      }
-    }
-  },
   "menu1": {
     "type": "object",
     "comment": "SlideOutMenu",
