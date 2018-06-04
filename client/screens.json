@@ -24,13 +24,6 @@
       "model": "Login"
     },
     {
-      "id": "uploadimage",
-      "name": "Upload Image",
-      "sourceScreenId": "app.blank",
-      "sourceAppId": "_blank",
-      "model": "UploadImage"
-    },
-    {
       "id": "prehomeloadflexlink",
       "name": "preHome Load Flexlink",
       "sourceScreenId": "app.blank",

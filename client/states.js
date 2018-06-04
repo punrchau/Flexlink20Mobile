@@ -33,15 +33,6 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
-    }).state('app.uploadimage', {
-        views: {
-            app: {
-                controller: 'app_uploadimage',
-                templateProvider: function (app) {
-                    return app.templateProvider('app.uploadimage');
-                }
-            }
-        }
     }).state('app.prehomeloadflexlink', {
         views: {
             app: {
