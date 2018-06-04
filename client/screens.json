@@ -56,13 +56,6 @@
       "model": "repairjob"
     },
     {
-      "id": "jobdetails",
-      "name": "JobDetails",
-      "sourceScreenId": "app.categories.categoriescaptivating",
-      "sourceAppId": "universaltemplates",
-      "model": "jobdetails"
-    },
-    {
       "id": "details",
       "name": "Details",
       "sourceScreenId": "app.messagesinbox.messagescaptivating",
