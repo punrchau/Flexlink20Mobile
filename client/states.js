@@ -42,15 +42,6 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
-    }).state('app.partreceivedetails', {
-        views: {
-            app: {
-                controller: 'app_partreceivedetails',
-                templateProvider: function (app) {
-                    return app.templateProvider('app.partreceivedetails');
-                }
-            }
-        }
     }).state('app.changepartquantity', {
         views: {
             app: {

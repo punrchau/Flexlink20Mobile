@@ -31,13 +31,6 @@
       "model": "Home"
     },
     {
-      "id": "partreceivedetails",
-      "name": "Part Receive Details",
-      "sourceScreenId": "app.blank",
-      "sourceAppId": "_blank",
-      "model": "PartReceiveDetails"
-    },
-    {
       "id": "changepartquantity",
       "name": "Change Part Quantity",
       "sourceScreenId": "app.blank",
