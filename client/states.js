@@ -33,15 +33,6 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
-    }).state('app.changepartquantity', {
-        views: {
-            app: {
-                controller: 'app_changepartquantity',
-                templateProvider: function (app) {
-                    return app.templateProvider('app.changepartquantity');
-                }
-            }
-        }
     }).state('app.uploadimage', {
         views: {
             app: {

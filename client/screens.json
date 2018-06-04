@@ -24,13 +24,6 @@
       "model": "Login"
     },
     {
-      "id": "changepartquantity",
-      "name": "Change Part Quantity",
-      "sourceScreenId": "app.blank",
-      "sourceAppId": "_blank",
-      "model": "ChangePartQuantity"
-    },
-    {
       "id": "uploadimage",
       "name": "Upload Image",
       "sourceScreenId": "app.blank",
