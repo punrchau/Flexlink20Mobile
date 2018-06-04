@@ -56,13 +56,6 @@
       "model": "repairjob"
     },
     {
-      "id": "details",
-      "name": "Details",
-      "sourceScreenId": "app.messagesinbox.messagescaptivating",
-      "sourceAppId": "universaltemplates",
-      "model": "details"
-    },
-    {
       "id": "jobinfo",
       "name": "JobInfo",
       "sourceScreenId": "app.formsmall.formsmallcool",
