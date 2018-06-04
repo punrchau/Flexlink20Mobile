@@ -64,22 +64,6 @@
       }
     }
   },
-  "UploadImage": {
-    "type": "object",
-    "properties": {
-      "cancel": {
-        "type": "action",
-        "selectContains": "Cancel"
-      },
-      "add": {
-        "type": "action",
-        "selectContains": "Add"
-      },
-      "description": {
-        "type": "string"
-      }
-    }
-  },
   "servicejob": {
     "type": "object",
     "comment": "ListView",
