@@ -302,40 +302,6 @@
       }
     }
   },
-  "details": {
-    "type": "object",
-    "comment": "Messages",
-    "properties": {
-      "messages": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "subject": {
-              "type": "string",
-              "label": "Subject"
-            },
-            "from": {
-              "type": "string",
-              "label": "From"
-            },
-            "date": {
-              "type": "string",
-              "label": "Date"
-            },
-            "messageContent": {
-              "type": "string",
-              "label": "MessageContent"
-            },
-            "action": {
-              "type": "action"
-            }
-          }
-        },
-        "label": "Messages1"
-      }
-    }
-  },
   "jobinfo": {
     "type": "object",
     "comment": "Forms",
