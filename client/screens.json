@@ -103,13 +103,6 @@
       "sourceScreenId": "app.detailsview.detailsviewcool",
       "sourceAppId": "universaltemplates",
       "model": "photoupload"
-    },
-    {
-      "id": "menu1",
-      "name": "menu1",
-      "sourceScreenId": "app.slideoutmenu.sidemenuclassic",
-      "sourceAppId": "universaltemplates",
-      "model": "menu1"
     }
   ],
   "sourceAppId": "_blank",
