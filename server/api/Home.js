@@ -10,8 +10,12 @@ exports.on_InvokePartMgmt = function (page) {
 }
 
 exports.on_InvokeServiceJob = function (page) {
-    page.href('http://fl20commonqa.azurewebsites.net/mobile/#/servicejobs').screen('prehomeloadjobmgmt');  
+    page.href('http://fl20lenovoqa.azurewebsites.net/mobile/#/servicejobs').screen('prehomeloadjobmgmt');  
 }
+
+// exports.on_InvokeServiceJob = function (page) {
+    // page.href('http://fl20commonqa.azurewebsites.net/mobile/#/servicejobs').screen('prehomeloadjobmgmt');  
+// }
 
 exports.editRecord = function(page, params) {
     page.action('Home', 'records[' + params.index + '].selectRecord');

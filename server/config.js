@@ -25,7 +25,7 @@ module.exports = {
     //
     // ******* App Server Configuration *******
     // Where is the Powwow Application server running?
-    appServerPort: 8443,
+    appServerPort: 8090,
     // appServerProtocol: "http",
     // appServerHost: "localhost",
     // appServerRejectUnauthorized: false, // False by default, set true to reject app server without proper certificate.
