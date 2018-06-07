@@ -147,9 +147,8 @@
     },
     "isjobinfo": {
       "type": "identifier",
-      "selector": "h3",
-      "control": "exists",
-      "selectContains": "Service Info"
+      "selector": "#serviceInfo",
+      "control": "exists"
     }
   },
   "connect": [
