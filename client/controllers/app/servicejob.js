@@ -1,10 +1,11 @@
 //var app = angular.module('app');
 
 //app.controller('app_servicejob', app_servicejob);
-angular.module('app').controller('app_servicejob', app_servicejob);
+angular.module('app').controller('app_servicejob', app_servicejob).config(function($compileProvider){
+   $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|file|tel):/);
+});
 
 /*
-
 angular.module('app').controller('app_repairjob', app_repairjob);
 function app_repairjob($scope, app) {
     'use strict';
