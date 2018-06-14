@@ -1,16 +1,16 @@
 var fs = require('fs');
 exports.on_InvokeFlexLink = function (page) {
-     page.href('http://fl20commonqa.azurewebsites.net/common/#/home').screen('prehomeloadflexlink');
+     page.href('http://fl20commonqa.azurewebsites.net').screen('prehomeloadflexlink');
 }
 exports.on_InvokeOEM2 = function (page) {
     page.action('Home','OEM2').screen('prehomeloadoem');
 }
 exports.on_InvokePartMgmt = function (page) {
-    page.href('http://fl20commonqa.azurewebsites.net/mobile/#/partreceives').screen('prehomeloadjobmgmt');
+    page.href('https://fl20commonqa.azurewebsites.net/mobile/#/partreceives').screen('prehomeloadjobmgmt');
 }
 
 exports.on_InvokeServiceJob = function (page) {
-    page.href('http://fl20lenovoqa.azurewebsites.net/mobile/#/servicejobs').screen('prehomeloadjobmgmt');  
+    page.href('https://fl20lenovoqa.azurewebsites.net/mobile/#/servicejobs').screen('prehomeloadjobmgmt');  
 }
 
 // exports.on_InvokeServiceJob = function (page) {
