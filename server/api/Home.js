@@ -1,6 +1,6 @@
 var fs = require('fs');
 exports.on_InvokeFlexLink = function (page) {
-     page.href('http://fl20commonqa.azurewebsites.net').screen('prehomeloadflexlink');
+     page.href('https://fl20commonqa.azurewebsites.net').screen('prehomeloadflexlink');
 }
 exports.on_InvokeOEM2 = function (page) {
     page.action('Home','OEM2').screen('prehomeloadoem');
